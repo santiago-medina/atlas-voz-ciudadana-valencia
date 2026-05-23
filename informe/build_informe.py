@@ -1,8 +1,12 @@
 """
-build_informe.py — Construye el informe PDF a partir del Markdown.
+build_informe.py — Construye los PDFs del proyecto (informe técnico + memoria
+resumen) a partir de Markdown. Pipeline:
 
-Inserta los 13 hallazgos generados por 10_hallazgos.py dentro de la sección
-correspondiente del informe.md, y compila con pandoc.
+    pandoc --standalone --toc → HTML temporal
+    wkhtmltopdf               → PDF final con tipografía editorial
+
+Inserta los 13 hallazgos generados por 10_hallazgos.py donde aparece el
+marcador {HALLAZGOS} en informe.md.
 """
 
 import json
@@ -28,64 +32,32 @@ def build_hallazgos_md(hallazgos: list[dict]) -> str:
     return "\n".join(parts)
 
 
+def build_one(md_path: Path, pdf_path: Path, html_path: Path, *, css_path: Path) -> None:
+    md = md_path.read_text(encoding="utf-8")
+    if "{HALLAZGOS}" in md:
+        hallazgos = json.loads((PROC / "hallazgos.json").read_text(encoding="utf-8"))
+        md = md.replace("{HALLAZGOS}", build_hallazgos_md(hallazgos))
+    built_md = md_path.with_name(f"_built_{md_path.stem}.md")
+    built_md.write_text(md, encoding="utf-8")
+    subprocess.run(
+        ["pandoc", str(built_md), "-o", str(html_path), "--toc", "--toc-depth=2",
+         "--number-sections", "--standalone", "--css", str(css_path)],
+        check=True,
+    )
+    subprocess.run(
+        ["wkhtmltopdf", "--enable-local-file-access", "--encoding", "utf-8",
+         "--margin-top", "22mm", "--margin-bottom", "22mm",
+         "--margin-left", "20mm", "--margin-right", "20mm",
+         str(html_path), str(pdf_path)],
+        check=True,
+    )
+    print(f"  PDF: {pdf_path.name}  ({pdf_path.stat().st_size/1024:.1f} KB)")
+
+
 def main() -> None:
-    md = (INF / "informe.md").read_text(encoding="utf-8")
-    hallazgos = json.loads((PROC / "hallazgos.json").read_text(encoding="utf-8"))
-    md = md.replace("{HALLAZGOS}", build_hallazgos_md(hallazgos))
-
-    out_md = INF / "_informe_built.md"
-    out_md.write_text(md, encoding="utf-8")
-
-    html = INF / "_informe_built.html"
-    pdf = INF / "informe.pdf"
-
-    # 1. Markdown -> HTML con pandoc (sin LaTeX)
     css = INF / "informe.css"
-    subprocess.run(
-        [
-            "pandoc",
-            str(out_md),
-            "-o",
-            str(html),
-            "--toc",
-            "--toc-depth=2",
-            "--number-sections",
-            "--standalone",
-            "--metadata=title:Atlas de la Voz Ciudadana de València",
-            "--css",
-            str(css),
-        ],
-        check=True,
-    )
-    print(f"  HTML generado: {html.name}")
-
-    # 2. HTML -> PDF con wkhtmltopdf
-    subprocess.run(
-        [
-            "wkhtmltopdf",
-            "--enable-local-file-access",
-            "--encoding",
-            "utf-8",
-            "--margin-top",
-            "22mm",
-            "--margin-bottom",
-            "22mm",
-            "--margin-left",
-            "20mm",
-            "--margin-right",
-            "20mm",
-            "--footer-center",
-            "[page] · Atlas de la Voz Ciudadana de València",
-            "--footer-font-size",
-            "8",
-            "--footer-spacing",
-            "5",
-            str(html),
-            str(pdf),
-        ],
-        check=True,
-    )
-    print(f"  PDF generado: {pdf} ({pdf.stat().st_size/1024:.1f} KB)")
+    build_one(INF / "informe.md", INF / "informe.pdf", INF / "_informe_built.html", css_path=css)
+    build_one(INF / "MEMORIA_RESUMEN.md", INF / "MEMORIA_RESUMEN.pdf", INF / "_memoria_built.html", css_path=css)
 
 
 if __name__ == "__main__":
