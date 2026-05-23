@@ -1,0 +1,17 @@
+{
+  "n_propuestas_total": 5285,
+  "n_apoyos_total": 179584,
+  "n_seleccionadas_total": 601,
+  "n_distritos": 19,
+  "n_temas": 38,
+  "n_ediciones": 7,
+  "periodo": "2015-2023",
+  "tasa_seleccion_global": 0.114,
+  "cuadrante_counts": {
+    "Silencioso vulnerable": 280,
+    "Cómodo": 256,
+    "Demanda legítima": 104,
+    "Sobre-demandante": 82
+  },
+  "presupuesto_total_solicitado_eur": 116465480
+}
