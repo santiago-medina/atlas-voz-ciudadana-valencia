@@ -44,6 +44,7 @@ Thumbs.db
 
 # Build artifacts of the informe pipeline (regenerable)
 informe/_built_*.md
+informe/_built_*.html
 informe/_*_built.html
 informe/_informe_built.html
 informe/_memoria_built.html
