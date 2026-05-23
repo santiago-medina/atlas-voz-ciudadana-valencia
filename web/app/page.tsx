@@ -13,6 +13,8 @@ import {
 } from '@/lib/data';
 
 const AtlasMap = dynamic(() => import('@/components/AtlasMap'), { ssr: false });
+import HallazgosSection from '@/components/HallazgosSection';
+import TimelineEdiciones from '@/components/TimelineEdiciones';
 
 export default function Home() {
   const [selectedTema, setSelectedTema] = useState<string | null>(null);
@@ -204,6 +206,9 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <TimelineEdiciones />
+      <HallazgosSection />
 
       <footer style={{ borderTop: '1px solid var(--color-rule)', paddingTop: '1rem', color: 'var(--color-muted)', fontSize: '0.85rem' }}>
         Datos: Portal de Datos Abiertos del Ayuntamiento de València (opendata.vlci.valencia.es) ·{' '}

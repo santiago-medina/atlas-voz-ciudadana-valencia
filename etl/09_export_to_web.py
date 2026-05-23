@@ -180,6 +180,13 @@ def main() -> None:
         json.dumps(_clean(resumen), ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    # 7. Hallazgos (regenerar para web si existe el archivo)
+    hallazgos_path = PROC / "hallazgos.json"
+    if hallazgos_path.exists():
+        (OUT / "hallazgos.json").write_text(
+            hallazgos_path.read_text(encoding="utf-8"), encoding="utf-8"
+        )
+
     # Report sizes
     for f in sorted(OUT.glob("*")):
         size = f.stat().st_size / 1024

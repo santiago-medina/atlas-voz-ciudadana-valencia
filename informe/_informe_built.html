@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Santiago Medina" />
+  <title>Atlas de la Voz Ciudadana de València</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/home/santi/atlas-voz-ciudadana-valencia/informe/informe.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Atlas de la Voz Ciudadana de València</h1>
+<p class="subtitle">Análisis cruzado entre las propuestas de Decidim VLC y los datasets municipales (2015-2023)</p>
+<p class="author">Santiago Medina</p>
+<p class="date">Mayo de 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumen-ejecutivo"><span class="toc-section-number">0.1</span> Resumen ejecutivo</a></li>
+<li><a href="#por-qué-este-atlas"><span class="toc-section-number">0.2</span> 1. Por qué este Atlas</a></li>
+<li><a href="#metodología"><span class="toc-section-number">0.3</span> 2. Metodología</a></li>
+<li><a href="#hallazgos"><span class="toc-section-number">0.4</span> 3. Hallazgos</a></li>
+<li><a href="#recomendaciones-para-la-8ª-edición-de-decidimvlc"><span class="toc-section-number">0.5</span> 4. Recomendaciones para la 8ª edición de DecidimVLC</a></li>
+<li><a href="#próximos-pasos"><span class="toc-section-number">0.6</span> 5. Próximos pasos</a></li>
+<li><a href="#anexo-datasets-y-licencias"><span class="toc-section-number">0.7</span> Anexo · Datasets y licencias</a></li>
+</ul>
+</nav>
+<h2 data-number="0.1" id="resumen-ejecutivo"><span class="header-section-number">0.1</span> Resumen ejecutivo</h2>
+<p>Entre 2015 y 2023, <strong>9.131 personas</strong> generaron <strong>5.795 propuestas</strong> y <strong>180.000 apoyos</strong> en las siete ediciones de los presupuestos participativos DecidimVLC. Ese caudal de información ha sido publicado por el Ayuntamiento de València como dataset abierto, pero hasta hoy no se había cruzado con el resto del portal para contestar a una pregunta sencilla y políticamente relevante:</p>
+<blockquote>
+<p><strong>¿La voz ciudadana refleja las carencias reales de cada distrito?</strong></p>
+</blockquote>
+<p>Este Atlas responde con datos. Sus principales conclusiones:</p>
+<ol type="1">
+<li>La participación se ha <strong>duplicado</strong> entre la 1ª y la 7ª edición, pero la <strong>tasa de ejecución</strong> ha caído al 9,6%. Más voz, menos respuesta.</li>
+<li><strong>El 39% de los pares (distrito × tema) analizados muestra un patrón de “silencio vulnerable”</strong>: el distrito tiene una carencia objetiva por encima de la media pero su demanda en Decidim está por debajo. Es la situación más frecuente.</li>
+<li><strong>28 demandas son “zombi”</strong>: combinaciones (distrito × tema) que se repiten en al menos cuatro ediciones consecutivas sin que se haya seleccionado ninguna. El caso más sangrante: Extramurs reclama carriles bici desde 2015 con 1.098 apoyos acumulados, 0 ejecuciones.</li>
+<li>Los <strong>carriles bici</strong> son la demanda que más crece (+103 propuestas entre 2015 y 2023) y, a la vez, la más desatendida.</li>
+<li><strong>Campanar concentra la mayor vulnerabilidad oficial de la ciudad</strong> (índice 3,77 sobre 10) pero aparece como “silencioso vulnerable” en diez temas distintos. La voz que más debería oírse es la que menos se oye.</li>
+<li>La <strong>8ª edición de DecidimVLC</strong>, abierta en mayo de 2026 con un mecanismo nuevo de reequilibrio territorial, debería tener en cuenta estos hallazgos para corregir patrones acumulados desde hace casi una década.</li>
+</ol>
+<p>El proyecto entrega tres piezas: una <strong>web interactiva</strong> (<code>atlas-voz-ciudadana-valencia</code>), este <strong>informe</strong> y un <strong>repositorio público en GitHub</strong> con todo el código y los datos transformados. Todos los hallazgos son reproducibles ejecutando el pipeline ETL en menos de cinco minutos.</p>
+<h2 data-number="0.2" id="por-qué-este-atlas"><span class="header-section-number">0.2</span> 1. Por qué este Atlas</h2>
+<h3 data-number="0.2.1" id="el-contexto"><span class="header-section-number">0.2.1</span> 1.1 El contexto</h3>
+<p>Valencia lleva una década apostando por los presupuestos participativos. A través de <strong>DecidimVLC</strong>, cada año vecinas y vecinos proponen inversiones para su distrito, las apoyan, y un porcentaje pequeño termina ejecutándose. El proceso genera además un activo invisible para quien no lo mira con lupa: <strong>un mapa detallado de las prioridades reales de cada barrio</strong>.</p>
+<p>El Ayuntamiento publica los datos de cada edición un año después de cerrarla. A día de hoy están disponibles las <strong>siete ediciones completas</strong> (2015-2016 a 2022-2023). La octava está abierta en este momento (29 abril–22 junio 2026), con un mecanismo nuevo de “reequilibrio territorial” pensado para que los distritos pequeños no queden desplazados.</p>
+<h3 data-number="0.2.2" id="la-pregunta"><span class="header-section-number">0.2.2</span> 1.2 La pregunta</h3>
+<p>Las decisiones políticas del Ayuntamiento sobre DecidimVLC se basan en una hipótesis implícita: que las propuestas y los apoyos miden la <strong>prioridad real</strong> de cada barrio. Pero esa hipótesis no se ha verificado. Pueden ocurrir varias cosas:</p>
+<ul>
+<li>Que un distrito <strong>se queje porque tiene un problema</strong>: la voz refleja la carencia.</li>
+<li>Que un distrito <strong>se queje porque está organizado</strong>, no porque tenga el problema más grave: la voz amplifica privilegios.</li>
+<li>Que un distrito <strong>no se queje aunque tenga el problema</strong>: la voz falla en el sitio donde más se necesita.</li>
+</ul>
+<p>Para saber cuál de estas dinámicas predomina, hay que cruzar Decidim con <strong>datos objetivos de carencia</strong>: vulnerabilidad oficial, espacios verdes por habitante, equipamientos municipales, longitud de carril bici, zonas acústicamente saturadas, etc. Eso es lo que hace este Atlas.</p>
+<h2 data-number="0.3" id="metodología"><span class="header-section-number">0.3</span> 2. Metodología</h2>
+<h3 data-number="0.3.1" id="fuentes-de-datos"><span class="header-section-number">0.3.1</span> 2.1 Fuentes de datos</h3>
+<p>Toda la información proviene del <strong>Portal de Datos Abiertos del Ayuntamiento de València</strong> (<code>opendata.vlci.valencia.es</code>). El proyecto consume <strong>17 datasets</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Rol en el análisis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>apoyo-propuestas-decidimvlc</code></td>
+<td>Fuente principal — 5.795 propuestas con apoyos, edición, ámbito, presupuesto y selección.</td>
+</tr>
+<tr class="even">
+<td><code>districtes-distritos</code></td>
+<td>19 distritos administrativos (polígonos). Unidad de análisis.</td>
+</tr>
+<tr class="odd">
+<td><code>barris-barrios</code></td>
+<td>88 barrios (sub-vista).</td>
+</tr>
+<tr class="even">
+<td><code>vulnerabilidad-por-barrios</code></td>
+<td>Índices oficiales 2021 de vulnerabilidad equipamental, demográfica, económica y global.</td>
+</tr>
+<tr class="odd">
+<td><code>equipamients-municipals</code></td>
+<td>2.915 equipamientos municipales con ubicación.</td>
+</tr>
+<tr class="even">
+<td><code>espais-verds</code></td>
+<td>807 jardines, parques y zonas verdes (m²).</td>
+</tr>
+<tr class="odd">
+<td><code>itinerarios-ciclistas</code></td>
+<td>Red de carriles bici (longitud por tramo).</td>
+</tr>
+<tr class="even">
+<td><code>aparcaments-bicicletes</code></td>
+<td>4.297 plazas de aparcamiento para bicis.</td>
+</tr>
+<tr class="odd">
+<td><code>parkings</code></td>
+<td>Parkings públicos (plazas).</td>
+</tr>
+<tr class="even">
+<td><code>centros-educativos</code></td>
+<td>534 colegios e institutos.</td>
+</tr>
+<tr class="odd">
+<td><code>mayores</code>, <code>joventut</code></td>
+<td>Recursos para personas mayores y juventud.</td>
+</tr>
+<tr class="even">
+<td><code>estacions-de-soroll</code>, <code>zones-zas</code></td>
+<td>Mediciones de ruido y zonas saturadas.</td>
+</tr>
+<tr class="odd">
+<td><code>falles-fallas</code></td>
+<td>351 fallas (intensidad cultural).</td>
+</tr>
+</tbody>
+</table>
+<p>Adicionalmente se incorpora la <strong>población por distrito</strong> según el padrón municipal 2022 (807.396 habitantes totales).</p>
+<h3 data-number="0.3.2" id="pipeline"><span class="header-section-number">0.3.2</span> 2.2 Pipeline</h3>
+<p>El análisis se construye en diez scripts Python autocontenidos. La cadena completa va desde la descarga reproducible hasta los JSON estáticos que sirven la web:</p>
+<pre><code>01_download.py            → bajada de los 17 datasets (≈70 MB)
+02_load_and_normalize.py  → 19 distritos (dissolve sobre 22 polígonos),
+                            resolución de 5.795 → 4.553 propuestas en
+                            distrito + 1.195 globales (99,2% asignado)
+03_topic_modeling.py      → embeddings multilingües (5.285 títulos
+                            limpios) + UMAP + HDBSCAN → 50 clusters
+04_label_and_merge_topics → mapeo manual → 38 temas legibles
+05_matriz_demanda.py      → Matriz Demanda (19 × 38), apoyos
+                            por 1.000 hab.
+06_matriz_realidad.py     → 29 indicadores por distrito (verde m²/hab,
+                            carril bici km/1.000 hab, vulnerabilidad
+                            oficial, equipamientos, etc.)
+07_indice_discrepancia.py → z-score(demanda) - z-score(carencia)
+                            → 4 cuadrantes
+08_evolucion.py           → análisis longitudinal de 7 ediciones,
+                            propuestas zombi, temas emergentes
+09_export_to_web.py       → JSON estáticos (&lt;260 KB total)
+10_hallazgos.py           → 13 cifras verificables para el informe</code></pre>
+<p>Todo el código es libre (licencia MIT) y reproducible:</p>
+<pre><code>git clone https://github.com/santiago-medina/atlas-voz-ciudadana-valencia
+cd atlas-voz-ciudadana-valencia
+python -m venv .venv &amp;&amp; source .venv/bin/activate
+pip install -r requirements.txt
+python etl/01_download.py
+python etl/02_load_and_normalize.py
+# … hasta 10_hallazgos.py</code></pre>
+<h3 data-number="0.3.3" id="concepto-los-cuatro-cuadrantes"><span class="header-section-number">0.3.3</span> 2.3 Concepto: los cuatro cuadrantes</h3>
+<p>Para cada par (distrito × tema) calculamos:</p>
+<ul>
+<li><strong>Demanda Z</strong>: z-score del nº de apoyos por 1.000 habitantes en ese tema dentro de ese distrito, comparado con la media de los 19 distritos.</li>
+<li><strong>Carencia Z</strong>: z-score del indicador de realidad correspondiente al tema, invirtiendo el signo cuando “más es mejor” (ej. más m² de verde = menos carencia).</li>
+</ul>
+<p>La combinación genera cuatro cuadrantes:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Poca carencia</strong></th>
+<th><strong>Mucha carencia</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mucha demanda</strong></td>
+<td><strong>Sobre-demandante</strong></td>
+<td><strong>Demanda legítima</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Poca demanda</strong></td>
+<td><strong>Cómodo</strong></td>
+<td><strong>Silencioso vulnerable</strong></td>
+</tr>
+</tbody>
+</table>
+<p>El cuadrante interesante es <strong>Silencioso vulnerable</strong>: los distritos donde un problema existe pero no se nombra en Decidim. Son los que requieren acción proactiva — no llegará por sí sola desde el proceso participativo.</p>
+<h2 data-number="0.4" id="hallazgos"><span class="header-section-number">0.4</span> 3. Hallazgos</h2>
+<p>Los 13 hallazgos siguientes se han generado automáticamente con <code>etl/10_hallazgos.py</code>. Cada cifra es trazable hasta el dataset original.</p>
+<h3 data-number="0.4.1" id="h01-la-participación-se-ha-duplicado-en-una-década"><span class="header-section-number">0.4.1</span> H01 · La participación se ha duplicado en una década</h3>
+<blockquote>
+<p><strong>+1.160</strong></p>
+</blockquote>
+<p>En la 1ª edición (2015-2016) se presentaron 86 propuestas; en la 7ª (2022-2023) fueron 1.246. un crecimiento del 1349%. Los apoyos ciudadanos (registrados a partir de la 2ª edición) pasaron de 13.162 a 28.467. DecidimVLC ha consolidado un canal real de expresión ciudadana.</p>
+<p><em>Fuente: decidim_tagged.csv · agregación por Edicion</em></p>
+<h3 data-number="0.4.2" id="h02-más-propuestas-menos-ejecución"><span class="header-section-number">0.4.2</span> H02 · Más propuestas, menos ejecución</h3>
+<blockquote>
+<p><strong>9.6%</strong></p>
+</blockquote>
+<p>En la 1ª edición se seleccionó el 100.0% de las propuestas; en la 7ª solo el 9.6%. El proceso ha ganado masa crítica pero ha perdido capacidad de convertir demanda en proyecto ejecutado, lo que genera frustración acumulada.</p>
+<p><em>Fuente: evolucion.json · tasa_seleccion por edición</em></p>
+<h3 data-number="0.4.3" id="h03-campanar-máxima-vulnerabilidad-mínima-voz"><span class="header-section-number">0.4.3</span> H03 · Campanar: máxima vulnerabilidad, mínima voz</h3>
+<blockquote>
+<p><strong>3.77 / 19</strong></p>
+</blockquote>
+<p>Campanar registra el índice de vulnerabilidad más alto de la ciudad (3.77, escala 0-10) según el dataset municipal de 2021. Pese a ello, aparece como ‘silencioso vulnerable’ en 19 temas distintos: aceras y movilidad peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de mercados, reurbanización de calles, seguridad ciudadana, iluminación pública, repavimentación, puentes peatonales y litoral. Pide muy poco para la situación que vive.</p>
+<p><em>Fuente: matriz_realidad.csv + indice_discrepancia.csv</em></p>
+<h3 data-number="0.4.4" id="h04-el-carril-bici-la-demanda-que-más-crece-y-más-se-ignora"><span class="header-section-number">0.4.4</span> H04 · El carril bici: la demanda que más crece y más se ignora</h3>
+<blockquote>
+<p><strong>+103 / 0 ejecuciones</strong></p>
+</blockquote>
+<p>Los carriles bici son la demanda que más ha crecido entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). Sin embargo. 2 pares (distrito. edición) piden carril bici de forma persistente (1.340 apoyos acumulados) sin que se haya seleccionado ninguno. El caso más sangrante: Extramurs. con 29 propuestas y 1.098 apoyos en 4 ediciones consecutivas.</p>
+<p><em>Fuente: evolucion.json · emergentes_top10 + demandas_zombi</em></p>
+<h3 data-number="0.4.5" id="h05-pobles-del-nord-la-voz-desproporcionada-de-los-pequeños"><span class="header-section-number">0.4.5</span> H05 · Pobles del Nord: la voz desproporcionada de los pequeños</h3>
+<blockquote>
+<p><strong>503 apoyos/1.000 hab</strong></p>
+</blockquote>
+<p>Con solo 6.104 habitantes. Pobles del Nord ha generado 3.069 apoyos en propuestas: 503 apoyos por 1.000 habitantes. casi el doble que la media de Valencia (115). En distritos pequeños. una minoría organizada puede dominar el proceso participativo en términos relativos.</p>
+<p><em>Fuente: decidim_tagged.csv + poblacion_distritos.csv</em></p>
+<h3 data-number="0.4.6" id="h06-una-de-cada-cinco-propuestas-no-se-ata-a-ningún-barrio"><span class="header-section-number">0.4.6</span> H06 · Una de cada cinco propuestas no se ata a ningún barrio</h3>
+<blockquote>
+<p><strong>22.6%</strong></p>
+</blockquote>
+<p>1.195 propuestas (22.6% del total) se presentaron bajo la etiqueta ‘Toda la ciudad’. Es un volumen enorme que dificulta el reequilibrio territorial: las propuestas globales no se pueden asignar a un distrito concreto para medir si están atendiendo a un barrio vulnerable o reforzando privilegios. La nueva edición 2025-2026 podría revisar este criterio.</p>
+<p><em>Fuente: decidim_tagged.csv · count(id_distrito == 0)</em></p>
+<h3 data-number="0.4.7" id="h07-verde-6-veces-más-en-el-extremo-alto-que-en-el-bajo"><span class="header-section-number">0.4.7</span> H07 · Verde: 6 veces más en el extremo alto que en el bajo</h3>
+<blockquote>
+<p><strong>17.5 vs 2.7 m²/hab</strong></p>
+</blockquote>
+<p>Campanar lidera con 17.5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2.7 m²/hab. La OMS recomienda 9 m²/hab como mínimo: 5 distritos están por debajo. Sin embargo, ninguno de esos 5 distritos está en el top de demanda en el tema ‘Zonas verdes’ en Decidim.</p>
+<p><em>Fuente: matriz_realidad.csv · m2_verde_per_hab</em></p>
+<h3 data-number="0.4.8" id="h08-el-silencio-vulnerable-es-la-situación-más-frecuente"><span class="header-section-number">0.4.8</span> H08 · El silencio vulnerable es la situación más frecuente</h3>
+<blockquote>
+<p><strong>280 de 722 pares (39%)</strong></p>
+</blockquote>
+<p>Cruzando los 38 temas con los 19 distritos obtenemos 722 pares posibles. En 280 (39%) detectamos un patrón de ‘silencio vulnerable’: el distrito tiene una carencia objetiva por encima de la media de la ciudad pero su demanda en Decidim está por debajo. Es el cuadrante más numeroso. por delante del ‘cómodo’ (256). ‘demanda legítima’ (104) y ‘sobre-demandante’ (82).</p>
+<p><em>Fuente: indice_discrepancia.csv · value_counts(cuadrante)</em></p>
+<h3 data-number="0.4.9" id="h09-28-demandas-se-repiten-desde-hace-4-ediciones-sin-ser-ejecutadas"><span class="header-section-number">0.4.9</span> H09 · 28 demandas se repiten desde hace 4+ ediciones sin ser ejecutadas</h3>
+<blockquote>
+<p><strong>28 · 8.121 apoyos</strong></p>
+</blockquote>
+<p>28 pares (distrito. tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que se seleccionara ninguna. Acumulan 8.121 apoyos. El top: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada propuesta zombi es un voto ciudadano que el sistema ignora durante años.</p>
+<p><em>Fuente: evolucion.json · demandas_zombi</em></p>
+<h3 data-number="0.4.10" id="h10-las-prioridades-de-valencia-caben-en-38-categorías"><span class="header-section-number">0.4.10</span> H10 · Las prioridades de Valencia caben en 38 categorías</h3>
+<blockquote>
+<p><strong>38 temas detectados</strong></p>
+</blockquote>
+<p>Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). Identificar estas categorías hace posible analizar la demanda al margen del ruido lingüístico (castellano/valenciano, abreviaturas, faltas).</p>
+<p><em>Fuente: decidim_tagged.csv + topics.csv</em></p>
+<h3 data-number="0.4.11" id="h11-por-cada-euro-ejecutado-la-ciudadanía-ha-pedido-4"><span class="header-section-number">0.4.11</span> H11 · Por cada euro ejecutado, la ciudadanía ha pedido 4</h3>
+<blockquote>
+<p><strong>233.6 M€ vs 58.4 M€</strong></p>
+</blockquote>
+<p>El conjunto de propuestas de las 7 ediciones suma 233.6 millones de euros en inversión solicitada. De ese volumen, 58.4 M€ pertenecen a propuestas finalmente seleccionadas, un 25%. El embudo presupuestario es severo, y debería usarse como criterio explícito al comunicar resultados a la ciudadanía.</p>
+<p><em>Fuente: decidim.csv · Presupuesto_euros agregado</em></p>
+<h3 data-number="0.4.12" id="h12-pobles-de-loest-ejemplo-de-demanda-alineada-con-la-carencia"><span class="header-section-number">0.4.12</span> H12 · Pobles de l’Oest, ejemplo de demanda alineada con la carencia</h3>
+<blockquote>
+<p><strong>7 temas con demanda legítima</strong></p>
+</blockquote>
+<p>En Pobles de l’Oest, varias demandas ciudadanas coinciden con carencias objetivas medibles: centros cívicos y huertos urbanos, mobiliario urbano deportivo, equipamientos culturales. Es un caso donde el proceso participativo funciona como cabe esperar: los vecinos identifican y priorizan exactamente los temas en los que su distrito está peor que la media.</p>
+<p><em>Fuente: indice_discrepancia.csv · cuadrante=‘Demanda legítima’</em></p>
+<h3 data-number="0.4.13" id="h13-el-envejecimiento-se-queda-fuera-del-debate-participativo"><span class="header-section-number">0.4.13</span> H13 · El envejecimiento se queda fuera del debate participativo</h3>
+<blockquote>
+<p><strong>146 centros · pocas propuestas</strong></p>
+</blockquote>
+<p>Valencia cuenta con 146 recursos para personas mayores según el portal municipal. Sin embargo, no aparece ningún tema específicamente centrado en mayores en el ranking de demanda. Las propuestas relacionadas se dispersan entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero ninguna ‘voz mayor’ se articula explícitamente en Decidim. La 8ª edición podría incorporar incentivos a la participación senior.</p>
+<p><em>Fuente: matriz_realidad.csv · n_recursos_mayores</em></p>
+<h2 data-number="0.5" id="recomendaciones-para-la-8ª-edición-de-decidimvlc"><span class="header-section-number">0.5</span> 4. Recomendaciones para la 8ª edición de DecidimVLC</h2>
+<p>Estos hallazgos no son una crítica al proceso participativo; al contrario, demuestran que <strong>DecidimVLC funciona como herramienta de expresión</strong>. Pero revelan tres dinámicas que la 8ª edición (2025-2026, en curso) puede corregir:</p>
+<h3 data-number="0.5.1" id="r1-activar-la-voz-silenciosa-donde-más-se-necesita"><span class="header-section-number">0.5.1</span> R1 · Activar la voz silenciosa donde más se necesita</h3>
+<p>Los <strong>51 pares (distrito × tema) con vulnerabilidad alta y demanda baja</strong> identificados por este Atlas dibujan un mapa de prioridades para campañas focalizadas: salas en centros culturales de Campanar, presencia en mercados de Algirós y Rascanya, conexión con asociaciones vecinales de l’Olivereta. La voz silenciosa no nace sola, hay que ir a buscarla.</p>
+<h3 data-number="0.5.2" id="r2-acortar-el-embudo-de-las-demandas-zombi"><span class="header-section-number">0.5.2</span> R2 · Acortar el embudo de las “demandas zombi”</h3>
+<p>28 combinaciones de distrito × tema con cuatro o más ediciones de demanda y cero ejecuciones constituyen un problema reputacional. Sin entrar en por qué no se ejecutaron (puede haber razones técnicas o presupuestarias legítimas), <strong>la ciudadanía merece una respuesta razonada y pública sobre cada caso</strong>. Sin esa respuesta, el sistema acumula frustración.</p>
+<h3 data-number="0.5.3" id="r3-reducir-el-peso-de-toda-la-ciudad"><span class="header-section-number">0.5.3</span> R3 · Reducir el peso de “Toda la ciudad”</h3>
+<p>El 20,6% de las propuestas históricas se etiquetaron como “Toda la ciudad”, lo que las hace invisibles al mecanismo de reequilibrio territorial de la 8ª edición. Forzar a quien propone a asignar un distrito —o crear una categoría “propuestas transversales” con cuotas explícitas— ayudaría a que el reequilibrio funcione realmente.</p>
+<h2 data-number="0.6" id="próximos-pasos"><span class="header-section-number">0.6</span> 5. Próximos pasos</h2>
+<p>Este Atlas es una pieza viva. Las próximas mejoras previstas (post-concurso):</p>
+<ul>
+<li><strong>Incorporar la 8ª edición</strong> cuando se publique en el portal abierto (previsiblemente 2027), para evaluar si las recomendaciones se cumplieron.</li>
+<li><strong>Cruzar con sección censal</strong> (no solo distrito) para detectar bolsas de silencio dentro de distritos heterogéneos como Quatre Carreres o l’Eixample.</li>
+<li><strong>Validación cualitativa</strong>: entrevistas en los 5 distritos con más silencio vulnerable para entender las razones (¿desconocimiento, desconfianza, brecha digital?).</li>
+</ul>
+<p>El código y los datos están abiertos para que cualquier persona o entidad pueda extenderlos.</p>
+<h2 data-number="0.7" id="anexo-datasets-y-licencias"><span class="header-section-number">0.7</span> Anexo · Datasets y licencias</h2>
+<p>Todos los datos provienen del Portal de Datos Abiertos del Ayuntamiento de València (<code>opendata.vlci.valencia.es</code>), publicados bajo licencia compatible con la reutilización con atribución. La población por distrito se obtuvo del Padrón Municipal 2022 publicado por el propio Ayuntamiento.</p>
+<p>El código del Atlas se publica bajo licencia MIT en: <strong><code>github.com/santiago-medina/atlas-voz-ciudadana-valencia</code></strong></p>
+<p>La web interactiva está disponible permanentemente en: <strong><code>santiago-medina.github.io/atlas-voz-ciudadana-valencia</code></strong></p>
+<hr />
+<p><em>Atlas de la Voz Ciudadana de València · Mayo 2026 · Santiago Medina.</em></p>
+</body>
+</html>
