@@ -1,0 +1,935 @@
+{
+  "distritos": {
+    "count": 19
+  },
+  "decidim": {
+    "total": 5795,
+    "by_status": {
+      "matched": 4553,
+      "global": 1195,
+      "missing": 47
+    },
+    "by_distrito": {
+      "Toda la ciudad": 1195,
+      "Quatre Carreres": 376,
+      "Pobles del Sud": 371,
+      "Patraix": 330,
+      "Extramurs": 300,
+      "la Saïdia": 266,
+      "l'Eixample": 253,
+      "Poblats Marítims": 243,
+      "Camins al Grau": 226,
+      "Benicalap": 223,
+      "Ciutat Vella": 223,
+      "Campanar": 220,
+      "Pobles del Nord": 213,
+      "l'Olivereta": 204,
+      "Rascanya": 203,
+      "Algirós": 193,
+      "Jesús": 190,
+      "Pobles de l'Oest": 188,
+      "Benimaclet": 172,
+      "el Pla del Real": 159,
+      "No consta": 47
+    }
+  },
+  "pois": {
+    "equipamientos": {
+      "features": 2915,
+      "assigned": 2840,
+      "unassigned": 75,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 454
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 183
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 213
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 139
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 159
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 138
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 158
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 119
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 115
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 185
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 227
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 113
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 167
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 101
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 129
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 90
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 33
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 42
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 75
+        }
+      ]
+    },
+    "centros_educativos": {
+      "features": 534,
+      "assigned": 520,
+      "unassigned": 14,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 19
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 36
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 44
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 37
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 31
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 23
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 33
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 26
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 27
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 39
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 38
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 38
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 25
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 21
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 31
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 20
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 4
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 11
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 17
+        }
+      ]
+    },
+    "fallas": {
+      "features": 351,
+      "assigned": 349,
+      "unassigned": 2,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 41
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 36
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 30
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 14
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 19
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 8
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 18
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 20
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 17
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 22
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 31
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 19
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 12
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 11
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 14
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 18
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 3
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 5
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 11
+        }
+      ]
+    },
+    "espacios_verdes": {
+      "features": 807,
+      "assigned": 805,
+      "unassigned": 2,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 46
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 18
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 33
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 62
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 37
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 34
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 42
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 39
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 41
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 83
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 72
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 46
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 50
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 27
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 44
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 51
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 21
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 17
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 42
+        }
+      ]
+    },
+    "aparcabicis": {
+      "features": 4297,
+      "assigned": 4294,
+      "unassigned": 3,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 320
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 328
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 271
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 289
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 269
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 288
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 259
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 165
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 89
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 425
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 399
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 229
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 204
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 226
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 298
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 134
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 7
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 23
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 71
+        }
+      ]
+    },
+    "parkings": {
+      "features": 23,
+      "assigned": 23,
+      "unassigned": 0,
+      "per_distrito": [
+        {
+          "id_distrito": 1,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 5
+        },
+        {
+          "id_distrito": 2,
+          "nombre_distrito": "l'Eixample",
+          "count": 4
+        },
+        {
+          "id_distrito": 3,
+          "nombre_distrito": "Extramurs",
+          "count": 1
+        },
+        {
+          "id_distrito": 5,
+          "nombre_distrito": "la Saïdia",
+          "count": 1
+        },
+        {
+          "id_distrito": 6,
+          "nombre_distrito": "el Pla del Real",
+          "count": 2
+        },
+        {
+          "id_distrito": 7,
+          "nombre_distrito": "l'Olivereta",
+          "count": 2
+        },
+        {
+          "id_distrito": 10,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 3
+        },
+        {
+          "id_distrito": 11,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 2
+        },
+        {
+          "id_distrito": 13,
+          "nombre_distrito": "Algirós",
+          "count": 1
+        },
+        {
+          "id_distrito": 14,
+          "nombre_distrito": "Benimaclet",
+          "count": 1
+        },
+        {
+          "id_distrito": 18,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 1
+        }
+      ]
+    },
+    "mayores": {
+      "features": 151,
+      "assigned": 146,
+      "unassigned": 5,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 19
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 8
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 9
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 7
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 6
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 5
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 10
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 9
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 9
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 9
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 12
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 6
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 6
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 2
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 6
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 7
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 5
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 3
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 8
+        }
+      ]
+    },
+    "juventud": {
+      "features": 47,
+      "assigned": 46,
+      "unassigned": 1,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 12
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 1
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 1
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 7
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 3
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 3
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 3
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 5
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 2
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 2
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 3
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 2
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 2
+        }
+      ]
+    },
+    "estaciones_ruido": {
+      "features": 4,
+      "assigned": 4,
+      "unassigned": 0,
+      "per_distrito": [
+        {
+          "id_distrito": 1,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 2
+        },
+        {
+          "id_distrito": 2,
+          "nombre_distrito": "l'Eixample",
+          "count": 1
+        },
+        {
+          "id_distrito": 6,
+          "nombre_distrito": "el Pla del Real",
+          "count": 1
+        }
+      ]
+    },
+    "zones_zas": {
+      "features": 5,
+      "assigned": 5,
+      "unassigned": 0,
+      "per_distrito": [
+        {
+          "id_distrito": 1,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 1
+        },
+        {
+          "id_distrito": 3,
+          "nombre_distrito": "Extramurs",
+          "count": 1
+        },
+        {
+          "id_distrito": 6,
+          "nombre_distrito": "el Pla del Real",
+          "count": 1
+        },
+        {
+          "id_distrito": 13,
+          "nombre_distrito": "Algirós",
+          "count": 2
+        }
+      ]
+    },
+    "itinerarios_ciclistas": {
+      "features": 1449,
+      "assigned": 1413,
+      "unassigned": 36,
+      "per_distrito": [
+        {
+          "id_distrito": 1.0,
+          "nombre_distrito": "Ciutat Vella",
+          "count": 42
+        },
+        {
+          "id_distrito": 2.0,
+          "nombre_distrito": "l'Eixample",
+          "count": 99
+        },
+        {
+          "id_distrito": 3.0,
+          "nombre_distrito": "Extramurs",
+          "count": 87
+        },
+        {
+          "id_distrito": 4.0,
+          "nombre_distrito": "Campanar",
+          "count": 140
+        },
+        {
+          "id_distrito": 5.0,
+          "nombre_distrito": "la Saïdia",
+          "count": 73
+        },
+        {
+          "id_distrito": 6.0,
+          "nombre_distrito": "el Pla del Real",
+          "count": 128
+        },
+        {
+          "id_distrito": 7.0,
+          "nombre_distrito": "l'Olivereta",
+          "count": 78
+        },
+        {
+          "id_distrito": 8.0,
+          "nombre_distrito": "Patraix",
+          "count": 71
+        },
+        {
+          "id_distrito": 9.0,
+          "nombre_distrito": "Jesús",
+          "count": 66
+        },
+        {
+          "id_distrito": 10.0,
+          "nombre_distrito": "Quatre Carreres",
+          "count": 141
+        },
+        {
+          "id_distrito": 11.0,
+          "nombre_distrito": "Poblats Marítims",
+          "count": 88
+        },
+        {
+          "id_distrito": 12.0,
+          "nombre_distrito": "Camins al Grau",
+          "count": 90
+        },
+        {
+          "id_distrito": 13.0,
+          "nombre_distrito": "Algirós",
+          "count": 79
+        },
+        {
+          "id_distrito": 14.0,
+          "nombre_distrito": "Benimaclet",
+          "count": 31
+        },
+        {
+          "id_distrito": 15.0,
+          "nombre_distrito": "Rascanya",
+          "count": 70
+        },
+        {
+          "id_distrito": 16.0,
+          "nombre_distrito": "Benicalap",
+          "count": 72
+        },
+        {
+          "id_distrito": 17.0,
+          "nombre_distrito": "Pobles del Nord",
+          "count": 4
+        },
+        {
+          "id_distrito": 18.0,
+          "nombre_distrito": "Pobles de l'Oest",
+          "count": 18
+        },
+        {
+          "id_distrito": 19.0,
+          "nombre_distrito": "Pobles del Sud",
+          "count": 36
+        }
+      ]
+    }
+  }
+}
