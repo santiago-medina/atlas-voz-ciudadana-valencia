@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# Node
+node_modules/
+.next/
+out/
+.env*.local
+
+# Data — raw downloads are reproducible from data/raw/MANIFEST.json
+data/raw/*.csv
+data/raw/*.geojson
+data/raw/*.json
+data/raw/*.zip
+data/raw/*.shp
+data/raw/*.dbf
+data/raw/*.shx
+data/raw/*.prj
+data/raw/*.cpg
+!data/raw/MANIFEST.json
+!data/raw/.gitkeep
+
+# Local processed outputs (regenerable)
+data/processed/cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local credentials
+.env
+*.local

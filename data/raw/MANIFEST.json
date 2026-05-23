@@ -1,0 +1,143 @@
+{
+  "source_portal": "https://opendata.vlci.valencia.es/",
+  "license": "Datos sujetos a la licencia del Portal de Datos Abiertos del Ayuntamiento de València (CC BY 4.0 / asimilada).",
+  "fetched_with": "etl/01_download.py",
+  "datasets": [
+    {
+      "id": "apoyo-propuestas-decidimvlc",
+      "title": "Apoyo propuestas DecidimVLC (2015-2023)",
+      "role": "decidim",
+      "format": "CSV",
+      "url": "https://opendata.vlci.valencia.es/dataset/4ccedafd-4055-4cef-aaed-91390b00a131/resource/87a0dbdf-bc65-469e-8552-c75d333e6372/download/apoyo-propuestas-decidimvlc.csv",
+      "filename": "decidim.csv"
+    },
+    {
+      "id": "barris-barrios",
+      "title": "Barris (polígonos, 88 barrios)",
+      "role": "geometry-barrios",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/224/query?where=1=1&outFields=*&f=geojson",
+      "filename": "barrios.geojson"
+    },
+    {
+      "id": "districtes-distritos",
+      "title": "Districtes (polígonos, 19 distritos — unidad principal de análisis)",
+      "role": "geometry-distritos",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/225/query?where=1=1&outFields=*&f=geojson",
+      "filename": "distritos.geojson"
+    },
+    {
+      "id": "illa-de-cases-cadastrals-amb-dades-de-poblacio",
+      "title": "Manzanas catastrales con datos de población (0-14, 15-65, 66+)",
+      "role": "demografia",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/apps/OpenData/UrbanismoEInfraestructuras/MANZANAS.json",
+      "filename": "poblacion_manzanas.geojson"
+    },
+    {
+      "id": "vulnerabilidad-por-barrios",
+      "title": "Vulnerabilidad por barrios 2021",
+      "role": "realidad-vulnerabilidad",
+      "format": "GeoJSON",
+      "url": "https://opendata.vlci.valencia.es/dataset/ca18278b-d040-4274-b9c7-c1a9daae54b9/resource/fd2ca0dc-5344-4aad-8934-2077a0bb120d/download/vulnerabilidad-por-barrios.geojson",
+      "filename": "vulnerabilidad.geojson"
+    },
+    {
+      "id": "estacions-de-soroll-estaciones-de-ruido",
+      "title": "Estaciones de ruido",
+      "role": "realidad-ruido",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/160/query?where=1=1&outFields=*&f=geojson",
+      "filename": "estaciones_ruido.geojson"
+    },
+    {
+      "id": "zones-zas-zonas-zas",
+      "title": "Zonas Acústicamente Saturadas (ZAS)",
+      "role": "realidad-ruido",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/5/query?where=1=1&outFields=*&f=geojson",
+      "filename": "zones_zas.geojson"
+    },
+    {
+      "id": "espais-verds-espacios-verdes",
+      "title": "Espacios verdes",
+      "role": "realidad-verde",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/8/query?where=1=1&outFields=*&f=geojson",
+      "filename": "espacios_verdes.geojson"
+    },
+    {
+      "id": "equipamients-municipals-equipamientos-municipales",
+      "title": "Equipamientos municipales",
+      "role": "realidad-equipamientos",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/1/query?where=1=1&outFields=*&f=geojson",
+      "filename": "equipamientos.geojson"
+    },
+    {
+      "id": "centros-educativos-en-valencia",
+      "title": "Centros educativos",
+      "role": "realidad-educacion",
+      "format": "GeoJSON",
+      "url": "https://opendata.vlci.valencia.es/dataset/11436f0c-082b-4e5b-9659-005f5b528bde/resource/938e34b7-bb7d-4b0c-8176-3602d47ebd6a/download/centros-educativos-en-valencia.geojson",
+      "filename": "centros_educativos.geojson"
+    },
+    {
+      "id": "itinerarios-ciclistas-itineraris-ciclistes",
+      "title": "Itinerarios ciclistas (carril bici)",
+      "role": "realidad-bici",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/189/query?where=1=1&outFields=*&f=geojson",
+      "filename": "itinerarios_ciclistas.geojson"
+    },
+    {
+      "id": "aparcaments-bicicletes-aparcamientos-bicicletas",
+      "title": "Aparcamientos bicicletas",
+      "role": "realidad-bici",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/206/query?where=1=1&outFields=*&f=geojson",
+      "filename": "aparcabicis.geojson"
+    },
+    {
+      "id": "parkings",
+      "title": "Parkings",
+      "role": "realidad-parking",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/194/query?where=1=1&outFields=*&f=geojson",
+      "filename": "parkings.geojson"
+    },
+    {
+      "id": "majors-mayores",
+      "title": "Recursos para mayores",
+      "role": "realidad-mayores",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/24/query?where=1=1&outFields=*&f=geojson",
+      "filename": "mayores.geojson"
+    },
+    {
+      "id": "joventut-juventud",
+      "title": "Recursos para juventud",
+      "role": "realidad-juventud",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/23/query?where=1=1&outFields=*&f=geojson",
+      "filename": "juventud.geojson"
+    },
+    {
+      "id": "falles-fallas",
+      "title": "Fallas",
+      "role": "realidad-cultura",
+      "format": "GeoJSON",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Turismo/MapServer/215/query?where=1=1&outFields=*&f=geojson",
+      "filename": "fallas.geojson"
+    },
+    {
+      "id": "hourly-air-quality-data-since-2016",
+      "title": "Calidad del aire por horas 2016-2021",
+      "role": "realidad-aire",
+      "format": "CSV",
+      "url": "https://opendata.vlci.valencia.es/dataset/b5c2656c-6c1c-413d-a56e-549e52220502/resource/4be7248b-9597-4017-89af-82a9b6e2382f/download/rvvcca.-datos-horarios-valencia-2016-2021-curt-cas.csv",
+      "filename": "calidad_aire.csv"
+    }
+  ]
+}
