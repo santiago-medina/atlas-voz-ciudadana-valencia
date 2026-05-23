@@ -1,0 +1,18 @@
+{
+  "n_propuestas_analizadas": 3221,
+  "n_distritos": 19,
+  "n_temas": 38,
+  "poblacion_total": 807396,
+  "top_temas_por_apoyos": {
+    "Carriles bici y movilidad ciclista": 12226,
+    "Parques y plazas": 6536,
+    "Aceras y movilidad peatonal": 6425,
+    "Solares y suelo disponible": 6176,
+    "Pedanías y barrios periféricos": 5998,
+    "Instalaciones deportivas": 5875,
+    "Pipicanes y zonas caninas": 3711,
+    "Aparcamiento para vehículos": 3028,
+    "Convivencia y mobiliario urbano": 2968,
+    "Recogida de residuos": 2962
+  }
+}

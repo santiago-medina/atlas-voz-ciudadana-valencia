@@ -1,0 +1,723 @@
+id_distrito,nombre_distrito,tema,indicador_realidad,valor_realidad,more_is_worse,n_apoyos,n_propuestas,apoyos_per_1000hab,demanda_z,carencia_z,discrepancia,cuadrante
+4,Campanar,Accesibilidad peatonal,ind_global,3.767,True,0,0,0.0,-0.377,2.577,-2.954,Silencioso vulnerable
+13,Algirós,Accesibilidad peatonal,ind_global,3.31,True,0,0,0.0,-0.377,1.058,-1.435,Silencioso vulnerable
+15,Rascanya,Accesibilidad peatonal,ind_global,3.302,True,3,1,0.06,-0.358,1.033,-1.391,Silencioso vulnerable
+16,Benicalap,Accesibilidad peatonal,ind_global,3.153,True,0,0,0.0,-0.377,0.538,-0.915,Silencioso vulnerable
+2,l'Eixample,Accesibilidad peatonal,ind_global,3.103,True,0,0,0.0,-0.377,0.37,-0.747,Silencioso vulnerable
+6,el Pla del Real,Accesibilidad peatonal,ind_global,3.032,True,3,2,0.09,-0.348,0.135,-0.484,Silencioso vulnerable
+3,Extramurs,Accesibilidad peatonal,ind_global,3.003,True,6,1,0.12,-0.339,0.04,-0.378,Silencioso vulnerable
+14,Benimaclet,Accesibilidad peatonal,ind_global,2.995,True,5,1,0.16,-0.326,0.011,-0.337,Silencioso vulnerable
+1,Ciutat Vella,Accesibilidad peatonal,ind_global,2.993,True,4,2,0.16,-0.326,0.005,-0.331,Silencioso vulnerable
+8,Patraix,Accesibilidad peatonal,ind_global,2.907,True,0,0,0.0,-0.377,-0.278,-0.099,Cómodo
+12,Camins al Grau,Accesibilidad peatonal,ind_global,2.851,True,5,1,0.08,-0.351,-0.465,0.113,Cómodo
+10,Quatre Carreres,Accesibilidad peatonal,ind_global,2.957,True,152,2,2.02,0.271,-0.113,0.384,Sobre-demandante
+9,Jesús,Accesibilidad peatonal,ind_global,2.749,True,0,0,0.0,-0.377,-0.805,0.427,Cómodo
+11,Poblats Marítims,Accesibilidad peatonal,ind_global,2.67,True,4,2,0.07,-0.355,-1.068,0.713,Cómodo
+5,la Saïdia,Accesibilidad peatonal,ind_global,2.555,True,0,0,0.0,-0.377,-1.449,1.072,Cómodo
+7,l'Olivereta,Accesibilidad peatonal,ind_global,2.512,True,56,2,1.11,-0.021,-1.591,1.57,Cómodo
+17,Pobles del Nord,Accesibilidad peatonal,ind_global,,True,85,4,13.93,4.092,,,Cómodo
+18,Pobles de l'Oest,Accesibilidad peatonal,ind_global,,True,21,2,1.52,0.111,,,Cómodo
+19,Pobles del Sud,Accesibilidad peatonal,ind_global,,True,61,7,3.01,0.589,,,Cómodo
+4,Campanar,Aceras y movilidad peatonal,ind_global,3.767,True,115,12,3.31,-0.983,2.577,-3.56,Silencioso vulnerable
+15,Rascanya,Aceras y movilidad peatonal,ind_global,3.302,True,75,4,1.45,-1.271,1.033,-2.304,Silencioso vulnerable
+16,Benicalap,Aceras y movilidad peatonal,ind_global,3.153,True,171,8,4.01,-0.874,0.538,-1.413,Silencioso vulnerable
+13,Algirós,Aceras y movilidad peatonal,ind_global,3.31,True,365,22,8.74,-0.142,1.058,-1.2,Silencioso vulnerable
+2,l'Eixample,Aceras y movilidad peatonal,ind_global,3.103,True,359,16,7.95,-0.264,0.37,-0.634,Silencioso vulnerable
+1,Ciutat Vella,Aceras y movilidad peatonal,ind_global,2.993,True,145,10,5.68,-0.616,0.005,-0.621,Silencioso vulnerable
+6,el Pla del Real,Aceras y movilidad peatonal,ind_global,3.032,True,224,10,7.09,-0.398,0.135,-0.533,Silencioso vulnerable
+10,Quatre Carreres,Aceras y movilidad peatonal,ind_global,2.957,True,462,20,6.14,-0.545,-0.113,-0.431,Cómodo
+12,Camins al Grau,Aceras y movilidad peatonal,ind_global,2.851,True,307,14,4.84,-0.746,-0.465,-0.281,Cómodo
+8,Patraix,Aceras y movilidad peatonal,ind_global,2.907,True,396,16,6.66,-0.464,-0.278,-0.186,Cómodo
+11,Poblats Marítims,Aceras y movilidad peatonal,ind_global,2.67,True,190,7,3.19,-1.001,-1.068,0.066,Cómodo
+9,Jesús,Aceras y movilidad peatonal,ind_global,2.749,True,554,15,10.29,0.098,-0.805,0.902,Sobre-demandante
+3,Extramurs,Aceras y movilidad peatonal,ind_global,3.003,True,808,28,15.94,0.972,0.04,0.933,Demanda legítima
+7,l'Olivereta,Aceras y movilidad peatonal,ind_global,2.512,True,277,14,5.48,-0.647,-1.591,0.944,Cómodo
+14,Benimaclet,Aceras y movilidad peatonal,ind_global,2.995,True,541,12,17.42,1.202,0.011,1.19,Demanda legítima
+5,la Saïdia,Aceras y movilidad peatonal,ind_global,2.555,True,639,28,12.73,0.475,-1.449,1.924,Sobre-demandante
+17,Pobles del Nord,Aceras y movilidad peatonal,ind_global,,True,156,9,25.56,2.462,,,Cómodo
+18,Pobles de l'Oest,Aceras y movilidad peatonal,ind_global,,True,237,14,17.12,1.155,,,Cómodo
+19,Pobles del Sud,Aceras y movilidad peatonal,ind_global,,True,404,15,19.91,1.587,,,Cómodo
+5,la Saïdia,Aparcamiento para vehículos,plazas_parking_per_1000hab,7.471,False,15,1,0.3,-1.516,0.355,-1.871,Silencioso vulnerable
+4,Campanar,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,54,5,1.56,-1.015,0.754,-1.769,Silencioso vulnerable
+16,Benicalap,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,102,7,2.39,-0.684,0.754,-1.439,Silencioso vulnerable
+8,Patraix,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,146,9,2.46,-0.657,0.754,-1.411,Silencioso vulnerable
+15,Rascanya,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,182,7,3.51,-0.239,0.754,-0.993,Silencioso vulnerable
+3,Extramurs,Aparcamiento para vehículos,plazas_parking_per_1000hab,7.714,False,134,11,2.64,-0.585,0.342,-0.927,Silencioso vulnerable
+6,el Pla del Real,Aparcamiento para vehículos,plazas_parking_per_1000hab,28.403,False,0,1,0.0,-1.635,-0.763,-0.872,Cómodo
+19,Pobles del Sud,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,81,10,3.99,-0.048,0.754,-0.802,Silencioso vulnerable
+9,Jesús,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,227,6,4.22,0.044,0.754,-0.711,Demanda legítima
+12,Camins al Grau,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,294,8,4.64,0.211,0.754,-0.544,Demanda legítima
+13,Algirós,Aparcamiento para vehículos,plazas_parking_per_1000hab,14.767,False,131,7,3.14,-0.386,-0.035,-0.351,Cómodo
+7,l'Olivereta,Aparcamiento para vehículos,plazas_parking_per_1000hab,9.549,False,209,10,4.13,0.008,0.244,-0.236,Demanda legítima
+11,Poblats Marítims,Aparcamiento para vehículos,plazas_parking_per_1000hab,12.473,False,240,8,4.03,-0.032,0.088,-0.12,Silencioso vulnerable
+10,Quatre Carreres,Aparcamiento para vehículos,plazas_parking_per_1000hab,31.764,False,317,17,4.21,0.04,-0.943,0.983,Sobre-demandante
+17,Pobles del Nord,Aparcamiento para vehículos,plazas_parking_per_1000hab,0.0,False,52,4,8.52,1.754,0.754,1.0,Demanda legítima
+2,l'Eixample,Aparcamiento para vehículos,plazas_parking_per_1000hab,21.382,False,300,15,6.65,1.01,-0.388,1.399,Sobre-demandante
+18,Pobles de l'Oest,Aparcamiento para vehículos,plazas_parking_per_1000hab,40.821,False,82,5,5.92,0.72,-1.427,2.147,Sobre-demandante
+14,Benimaclet,Aparcamiento para vehículos,plazas_parking_per_1000hab,19.413,False,330,9,10.62,2.59,-0.283,2.873,Sobre-demandante
+1,Ciutat Vella,Aparcamiento para vehículos,plazas_parking_per_1000hab,74.454,False,132,3,5.17,0.421,-3.224,3.646,Sobre-demandante
+4,Campanar,Asfalto y pavimentación,ind_global,3.767,True,43,4,1.24,0.024,2.577,-2.553,Demanda legítima
+15,Rascanya,Asfalto y pavimentación,ind_global,3.302,True,33,1,0.64,-0.425,1.033,-1.458,Silencioso vulnerable
+13,Algirós,Asfalto y pavimentación,ind_global,3.31,True,32,1,0.77,-0.328,1.058,-1.386,Silencioso vulnerable
+16,Benicalap,Asfalto y pavimentación,ind_global,3.153,True,11,1,0.26,-0.709,0.538,-1.247,Silencioso vulnerable
+6,el Pla del Real,Asfalto y pavimentación,ind_global,3.032,True,0,0,0.0,-0.903,0.135,-1.039,Silencioso vulnerable
+2,l'Eixample,Asfalto y pavimentación,ind_global,3.103,True,20,2,0.44,-0.574,0.37,-0.944,Silencioso vulnerable
+1,Ciutat Vella,Asfalto y pavimentación,ind_global,2.993,True,0,0,0.0,-0.903,0.005,-0.909,Silencioso vulnerable
+8,Patraix,Asfalto y pavimentación,ind_global,2.907,True,8,1,0.13,-0.806,-0.278,-0.528,Cómodo
+12,Camins al Grau,Asfalto y pavimentación,ind_global,2.851,True,31,1,0.49,-0.537,-0.465,-0.072,Cómodo
+9,Jesús,Asfalto y pavimentación,ind_global,2.749,True,4,1,0.07,-0.851,-0.805,-0.047,Cómodo
+3,Extramurs,Asfalto y pavimentación,ind_global,3.003,True,75,3,1.48,0.204,0.04,0.164,Demanda legítima
+10,Quatre Carreres,Asfalto y pavimentación,ind_global,2.957,True,97,4,1.29,0.061,-0.113,0.175,Sobre-demandante
+11,Poblats Marítims,Asfalto y pavimentación,ind_global,2.67,True,4,1,0.07,-0.851,-1.068,0.217,Cómodo
+14,Benimaclet,Asfalto y pavimentación,ind_global,2.995,True,65,2,2.09,0.66,0.011,0.648,Demanda legítima
+5,la Saïdia,Asfalto y pavimentación,ind_global,2.555,True,72,2,1.43,0.166,-1.449,1.615,Sobre-demandante
+7,l'Olivereta,Asfalto y pavimentación,ind_global,2.512,True,192,4,3.8,1.939,-1.591,3.53,Sobre-demandante
+17,Pobles del Nord,Asfalto y pavimentación,ind_global,,True,6,1,0.98,-0.17,,,Cómodo
+18,Pobles de l'Oest,Asfalto y pavimentación,ind_global,,True,70,2,5.06,2.881,,,Cómodo
+19,Pobles del Sud,Asfalto y pavimentación,ind_global,,True,55,3,2.71,1.124,,,Cómodo
+16,Benicalap,Bibliotecas y ludotecas,equipamientos_per_1000hab,2.112,False,0,0,0.0,-1.105,0.574,-1.68,Silencioso vulnerable
+15,Rascanya,Bibliotecas y ludotecas,equipamientos_per_1000hab,2.487,False,0,1,0.0,-1.105,0.463,-1.568,Silencioso vulnerable
+5,la Saïdia,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.168,False,17,1,0.34,-0.987,0.261,-1.248,Silencioso vulnerable
+6,el Pla del Real,Bibliotecas y ludotecas,equipamientos_per_1000hab,4.365,False,0,0,0.0,-1.105,-0.095,-1.011,Cómodo
+9,Jesús,Bibliotecas y ludotecas,equipamientos_per_1000hab,2.137,False,110,3,2.04,-0.396,0.567,-0.963,Silencioso vulnerable
+3,Extramurs,Bibliotecas y ludotecas,equipamientos_per_1000hab,4.202,False,28,2,0.55,-0.914,-0.046,-0.868,Cómodo
+2,l'Eixample,Bibliotecas y ludotecas,equipamientos_per_1000hab,4.055,False,35,2,0.78,-0.834,-0.003,-0.831,Cómodo
+10,Quatre Carreres,Bibliotecas y ludotecas,equipamientos_per_1000hab,2.458,False,189,6,2.51,-0.232,0.472,-0.704,Silencioso vulnerable
+8,Patraix,Bibliotecas y ludotecas,equipamientos_per_1000hab,2.002,False,201,3,3.38,0.07,0.607,-0.536,Demanda legítima
+7,l'Olivereta,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.124,False,165,2,3.26,0.029,0.274,-0.245,Demanda legítima
+12,Camins al Grau,Bibliotecas y ludotecas,equipamientos_per_1000hab,1.783,False,289,2,4.56,0.481,0.672,-0.191,Demanda legítima
+14,Benimaclet,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.252,False,109,2,3.51,0.116,0.236,-0.12,Demanda legítima
+13,Algirós,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.997,False,126,2,3.02,-0.055,0.015,-0.069,Silencioso vulnerable
+18,Pobles de l'Oest,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.034,False,61,3,4.41,0.429,0.3,0.128,Demanda legítima
+19,Pobles del Sud,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.697,False,83,5,4.09,0.317,0.104,0.214,Demanda legítima
+11,Poblats Marítims,Bibliotecas y ludotecas,equipamientos_per_1000hab,3.816,False,325,6,5.46,0.794,0.068,0.726,Demanda legítima
+17,Pobles del Nord,Bibliotecas y ludotecas,equipamientos_per_1000hab,5.406,False,46,2,7.54,1.518,-0.404,1.922,Sobre-demandante
+4,Campanar,Bibliotecas y ludotecas,equipamientos_per_1000hab,4.005,False,412,4,11.87,3.024,0.012,3.012,Demanda legítima
+1,Ciutat Vella,Bibliotecas y ludotecas,equipamientos_per_1000hab,17.772,False,78,2,3.05,-0.044,-4.076,4.032,Cómodo
+4,Campanar,Bienestar animal,ind_global,3.767,True,76,2,2.19,-0.147,2.577,-2.724,Silencioso vulnerable
+15,Rascanya,Bienestar animal,ind_global,3.302,True,10,1,0.19,-0.753,1.033,-1.786,Silencioso vulnerable
+13,Algirós,Bienestar animal,ind_global,3.31,True,36,1,0.86,-0.55,1.058,-1.608,Silencioso vulnerable
+2,l'Eixample,Bienestar animal,ind_global,3.103,True,58,2,1.29,-0.42,0.37,-0.789,Silencioso vulnerable
+6,el Pla del Real,Bienestar animal,ind_global,3.032,True,35,1,1.11,-0.474,0.135,-0.61,Silencioso vulnerable
+3,Extramurs,Bienestar animal,ind_global,3.003,True,45,1,0.89,-0.541,0.04,-0.581,Silencioso vulnerable
+10,Quatre Carreres,Bienestar animal,ind_global,2.957,True,40,1,0.53,-0.65,-0.113,-0.537,Cómodo
+14,Benimaclet,Bienestar animal,ind_global,2.995,True,55,1,1.77,-0.274,0.011,-0.286,Silencioso vulnerable
+8,Patraix,Bienestar animal,ind_global,2.907,True,66,1,1.11,-0.474,-0.278,-0.196,Cómodo
+12,Camins al Grau,Bienestar animal,ind_global,2.851,True,106,2,1.67,-0.305,-0.465,0.16,Cómodo
+9,Jesús,Bienestar animal,ind_global,2.749,True,51,1,0.95,-0.523,-0.805,0.282,Cómodo
+5,la Saïdia,Bienestar animal,ind_global,2.555,True,0,0,0.0,-0.811,-1.449,0.638,Cómodo
+7,l'Olivereta,Bienestar animal,ind_global,2.512,True,42,1,0.83,-0.559,-1.591,1.032,Cómodo
+1,Ciutat Vella,Bienestar animal,ind_global,2.993,True,156,2,6.11,1.041,0.005,1.036,Demanda legítima
+11,Poblats Marítims,Bienestar animal,ind_global,2.67,True,239,3,4.02,0.408,-1.068,1.475,Sobre-demandante
+16,Benicalap,Bienestar animal,ind_global,3.153,True,498,6,11.69,2.732,0.538,2.194,Demanda legítima
+17,Pobles del Nord,Bienestar animal,ind_global,,True,68,2,11.14,2.566,,,Cómodo
+18,Pobles de l'Oest,Bienestar animal,ind_global,,True,36,1,2.6,-0.023,,,Cómodo
+19,Pobles del Sud,Bienestar animal,ind_global,,True,38,2,1.87,-0.244,,,Cómodo
+15,Rascanya,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,216.5,False,223,12,4.3,-0.692,0.801,-1.493,Silencioso vulnerable
+7,l'Olivereta,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,269.5,False,178,8,3.52,-0.726,0.514,-1.24,Silencioso vulnerable
+1,Ciutat Vella,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,237.7,False,242,8,9.47,-0.464,0.686,-1.15,Silencioso vulnerable
+9,Jesús,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,239.6,False,727,16,13.51,-0.287,0.676,-0.963,Silencioso vulnerable
+8,Patraix,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,246.4,False,836,20,14.06,-0.263,0.639,-0.901,Silencioso vulnerable
+16,Benicalap,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,326.7,False,242,9,5.68,-0.631,0.203,-0.834,Silencioso vulnerable
+5,la Saïdia,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,261.6,False,773,20,15.4,-0.204,0.556,-0.76,Silencioso vulnerable
+14,Benimaclet,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,245.9,False,622,12,20.02,-0.001,0.642,-0.642,Silencioso vulnerable
+18,Pobles de l'Oest,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,304.0,False,182,5,13.15,-0.303,0.326,-0.629,Silencioso vulnerable
+11,Poblats Marítims,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,321.4,False,710,15,11.93,-0.356,0.232,-0.588,Silencioso vulnerable
+12,Camins al Grau,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,287.3,False,1166,28,18.4,-0.072,0.417,-0.489,Silencioso vulnerable
+10,Quatre Carreres,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,386.9,False,609,19,8.09,-0.525,-0.123,-0.402,Cómodo
+3,Extramurs,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,355.4,False,1098,29,21.66,0.072,0.048,0.024,Demanda legítima
+13,Algirós,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,378.6,False,840,25,20.1,0.003,-0.078,0.081,Sobre-demandante
+6,el Pla del Real,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,575.7,False,518,21,16.38,-0.161,-1.147,0.987,Cómodo
+4,Campanar,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,656.9,False,332,15,9.57,-0.46,-1.588,1.128,Cómodo
+2,l'Eixample,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,441.6,False,1696,22,37.58,0.772,-0.42,1.192,Sobre-demandante
+17,Pobles del Nord,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,197.3,False,673,15,110.26,3.967,0.905,3.062,Demanda legítima
+19,Pobles del Sud,Carriles bici y movilidad ciclista,m_carril_bici_per_1000hab,970.2,False,559,16,27.55,0.331,-3.287,3.618,Sobre-demandante
+12,Camins al Grau,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,1.783,False,45,3,0.71,-0.792,0.672,-1.464,Silencioso vulnerable
+10,Quatre Carreres,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,2.458,False,38,3,0.5,-0.838,0.472,-1.31,Silencioso vulnerable
+15,Rascanya,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,2.487,False,59,6,1.14,-0.698,0.463,-1.161,Silencioso vulnerable
+7,l'Olivereta,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.124,False,33,2,0.65,-0.805,0.274,-1.079,Silencioso vulnerable
+2,l'Eixample,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,4.055,False,14,1,0.31,-0.88,-0.003,-0.877,Cómodo
+14,Benimaclet,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.252,False,50,2,1.61,-0.596,0.236,-0.831,Silencioso vulnerable
+6,el Pla del Real,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,4.365,False,6,1,0.19,-0.906,-0.095,-0.811,Cómodo
+5,la Saïdia,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.168,False,106,8,2.11,-0.486,0.261,-0.747,Silencioso vulnerable
+9,Jesús,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,2.137,False,226,6,4.2,-0.029,0.567,-0.596,Silencioso vulnerable
+8,Patraix,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,2.002,False,267,12,4.49,0.034,0.607,-0.573,Demanda legítima
+11,Poblats Marítims,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.816,False,132,6,2.22,-0.462,0.068,-0.53,Silencioso vulnerable
+16,Benicalap,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,2.112,False,226,8,5.3,0.211,0.574,-0.363,Demanda legítima
+3,Extramurs,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,4.202,False,137,6,2.7,-0.357,-0.046,-0.311,Cómodo
+13,Algirós,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.997,False,140,4,3.35,-0.215,0.015,-0.23,Silencioso vulnerable
+17,Pobles del Nord,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,5.406,False,30,3,4.91,0.126,-0.404,0.53,Sobre-demandante
+4,Campanar,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,4.005,False,275,10,7.92,0.784,0.012,0.771,Demanda legítima
+19,Pobles del Sud,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.697,False,224,10,11.04,1.465,0.104,1.362,Demanda legítima
+18,Pobles de l'Oest,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,3.034,False,251,6,18.13,3.015,0.3,2.715,Demanda legítima
+1,Ciutat Vella,Centros cívicos y huertos urbanos,equipamientos_per_1000hab,17.772,False,278,11,10.88,1.431,-4.076,5.506,Sobre-demandante
+16,Benicalap,Centros de salud,ind_equip,3.972,True,0,0,0.0,-1.127,2.096,-3.223,Silencioso vulnerable
+15,Rascanya,Centros de salud,ind_equip,3.32,True,52,3,1.0,-0.576,0.938,-1.513,Silencioso vulnerable
+3,Extramurs,Centros de salud,ind_equip,3.041,True,11,1,0.22,-1.006,0.444,-1.45,Silencioso vulnerable
+11,Poblats Marítims,Centros de salud,ind_equip,2.863,True,46,1,0.77,-0.702,0.128,-0.83,Silencioso vulnerable
+4,Campanar,Centros de salud,ind_equip,3.937,True,147,3,4.24,1.211,2.033,-0.822,Demanda legítima
+14,Benimaclet,Centros de salud,ind_equip,2.536,True,0,0,0.0,-1.127,-0.453,-0.674,Cómodo
+2,l'Eixample,Centros de salud,ind_equip,3.225,True,104,3,2.3,0.141,0.77,-0.628,Demanda legítima
+7,l'Olivereta,Centros de salud,ind_equip,2.715,True,44,2,0.87,-0.647,-0.136,-0.512,Cómodo
+6,el Pla del Real,Centros de salud,ind_equip,2.375,True,0,0,0.0,-1.127,-0.739,-0.388,Cómodo
+10,Quatre Carreres,Centros de salud,ind_equip,2.579,True,74,7,0.98,-0.587,-0.377,-0.209,Cómodo
+13,Algirós,Centros de salud,ind_equip,2.645,True,52,3,1.24,-0.443,-0.26,-0.183,Cómodo
+9,Jesús,Centros de salud,ind_equip,2.258,True,7,2,0.13,-1.055,-0.948,-0.108,Cómodo
+12,Camins al Grau,Centros de salud,ind_equip,2.4,True,94,3,1.48,-0.311,-0.695,0.384,Cómodo
+5,la Saïdia,Centros de salud,ind_equip,2.534,True,176,4,3.51,0.809,-0.456,1.265,Sobre-demandante
+8,Patraix,Centros de salud,ind_equip,2.403,True,291,8,4.9,1.575,-0.69,2.265,Sobre-demandante
+1,Ciutat Vella,Centros de salud,ind_equip,1.859,True,100,3,3.91,1.029,-1.655,2.685,Sobre-demandante
+17,Pobles del Nord,Centros de salud,ind_equip,,True,22,1,3.6,0.858,,,Cómodo
+18,Pobles de l'Oest,Centros de salud,ind_equip,,True,65,1,4.7,1.465,,,Cómodo
+19,Pobles del Sud,Centros de salud,ind_equip,,True,101,2,4.98,1.619,,,Cómodo
+9,Jesús,Centros educativos,centros_educativos_per_1000hab,0.502,False,30,1,0.56,-0.803,1.14,-1.943,Silencioso vulnerable
+15,Rascanya,Centros educativos,centros_educativos_per_1000hab,0.598,False,4,1,0.08,-0.918,0.502,-1.42,Silencioso vulnerable
+12,Camins al Grau,Centros educativos,centros_educativos_per_1000hab,0.6,False,43,2,0.68,-0.775,0.489,-1.264,Silencioso vulnerable
+5,la Saïdia,Centros educativos,centros_educativos_per_1000hab,0.618,False,10,2,0.2,-0.889,0.369,-1.258,Silencioso vulnerable
+10,Quatre Carreres,Centros educativos,centros_educativos_per_1000hab,0.518,False,250,8,3.32,-0.146,1.034,-1.18,Silencioso vulnerable
+11,Poblats Marítims,Centros educativos,centros_educativos_per_1000hab,0.639,False,7,1,0.12,-0.908,0.23,-1.138,Silencioso vulnerable
+14,Benimaclet,Centros educativos,centros_educativos_per_1000hab,0.676,False,35,1,1.13,-0.668,-0.016,-0.651,Cómodo
+6,el Pla del Real,Centros educativos,centros_educativos_per_1000hab,0.727,False,37,2,1.17,-0.658,-0.355,-0.303,Cómodo
+16,Benicalap,Centros educativos,centros_educativos_per_1000hab,0.469,False,370,7,8.68,1.13,1.359,-0.23,Demanda legítima
+1,Ciutat Vella,Centros educativos,centros_educativos_per_1000hab,0.744,False,47,2,1.84,-0.499,-0.468,-0.031,Cómodo
+13,Algirós,Centros educativos,centros_educativos_per_1000hab,0.598,False,251,4,6.01,0.494,0.502,-0.008,Demanda legítima
+7,l'Olivereta,Centros educativos,centros_educativos_per_1000hab,0.652,False,238,9,4.71,0.185,0.143,0.041,Demanda legítima
+8,Patraix,Centros educativos,centros_educativos_per_1000hab,0.437,False,675,8,11.36,1.768,1.572,0.196,Demanda legítima
+3,Extramurs,Centros educativos,centros_educativos_per_1000hab,0.868,False,65,1,1.28,-0.632,-1.292,0.66,Cómodo
+19,Pobles del Sud,Centros educativos,centros_educativos_per_1000hab,0.838,False,67,8,3.3,-0.151,-1.093,0.942,Cómodo
+18,Pobles de l'Oest,Centros educativos,centros_educativos_per_1000hab,0.795,False,81,3,5.85,0.456,-0.807,1.263,Sobre-demandante
+4,Campanar,Centros educativos,centros_educativos_per_1000hab,1.066,False,0,0,0.0,-0.937,-2.608,1.671,Cómodo
+17,Pobles del Nord,Centros educativos,centros_educativos_per_1000hab,0.655,False,82,3,13.43,2.26,0.123,2.137,Demanda legítima
+2,l'Eixample,Centros educativos,centros_educativos_per_1000hab,0.798,False,498,8,11.03,1.689,-0.827,2.516,Sobre-demandante
+15,Rascanya,Convivencia y mobiliario urbano,ind_global,3.302,True,98,5,1.89,-0.729,1.033,-1.761,Silencioso vulnerable
+16,Benicalap,Convivencia y mobiliario urbano,ind_global,3.153,True,88,7,2.07,-0.675,0.538,-1.213,Silencioso vulnerable
+1,Ciutat Vella,Convivencia y mobiliario urbano,ind_global,2.993,True,8,3,0.31,-1.197,0.005,-1.202,Silencioso vulnerable
+4,Campanar,Convivencia y mobiliario urbano,ind_global,3.767,True,319,18,9.19,1.434,2.577,-1.143,Demanda legítima
+13,Algirós,Convivencia y mobiliario urbano,ind_global,3.31,True,234,6,5.6,0.371,1.058,-0.688,Demanda legítima
+8,Patraix,Convivencia y mobiliario urbano,ind_global,2.907,True,115,6,1.93,-0.717,-0.278,-0.438,Cómodo
+2,l'Eixample,Convivencia y mobiliario urbano,ind_global,3.103,True,192,7,4.25,-0.029,0.37,-0.399,Silencioso vulnerable
+6,el Pla del Real,Convivencia y mobiliario urbano,ind_global,3.032,True,111,8,3.51,-0.249,0.135,-0.384,Silencioso vulnerable
+14,Benimaclet,Convivencia y mobiliario urbano,ind_global,2.995,True,99,1,3.19,-0.343,0.011,-0.355,Silencioso vulnerable
+9,Jesús,Convivencia y mobiliario urbano,ind_global,2.749,True,61,2,1.13,-0.954,-0.805,-0.149,Cómodo
+10,Quatre Carreres,Convivencia y mobiliario urbano,ind_global,2.957,True,390,15,5.18,0.246,-0.113,0.36,Sobre-demandante
+3,Extramurs,Convivencia y mobiliario urbano,ind_global,3.003,True,293,12,5.78,0.424,0.04,0.384,Demanda legítima
+11,Poblats Marítims,Convivencia y mobiliario urbano,ind_global,2.67,True,140,7,2.35,-0.592,-1.068,0.476,Cómodo
+12,Camins al Grau,Convivencia y mobiliario urbano,ind_global,2.851,True,281,6,4.43,0.024,-0.465,0.489,Sobre-demandante
+5,la Saïdia,Convivencia y mobiliario urbano,ind_global,2.555,True,85,4,1.69,-0.788,-1.449,0.661,Cómodo
+7,l'Olivereta,Convivencia y mobiliario urbano,ind_global,2.512,True,116,8,2.29,-0.61,-1.591,0.981,Cómodo
+17,Pobles del Nord,Convivencia y mobiliario urbano,ind_global,,True,87,6,14.25,2.933,,,Cómodo
+18,Pobles de l'Oest,Convivencia y mobiliario urbano,ind_global,,True,53,4,3.83,-0.154,,,Cómodo
+19,Pobles del Sud,Convivencia y mobiliario urbano,ind_global,,True,198,12,9.76,1.603,,,Cómodo
+12,Camins al Grau,Equipamientos culturales,equipamientos_per_1000hab,1.783,False,0,0,0.0,-0.691,0.672,-1.363,Silencioso vulnerable
+8,Patraix,Equipamientos culturales,equipamientos_per_1000hab,2.002,False,0,0,0.0,-0.691,0.607,-1.298,Silencioso vulnerable
+9,Jesús,Equipamientos culturales,equipamientos_per_1000hab,2.137,False,0,0,0.0,-0.691,0.567,-1.258,Silencioso vulnerable
+15,Rascanya,Equipamientos culturales,equipamientos_per_1000hab,2.487,False,1,1,0.02,-0.685,0.463,-1.148,Silencioso vulnerable
+10,Quatre Carreres,Equipamientos culturales,equipamientos_per_1000hab,2.458,False,9,2,0.12,-0.655,0.472,-1.126,Silencioso vulnerable
+7,l'Olivereta,Equipamientos culturales,equipamientos_per_1000hab,3.124,False,0,0,0.0,-0.691,0.274,-0.965,Silencioso vulnerable
+13,Algirós,Equipamientos culturales,equipamientos_per_1000hab,3.997,False,0,0,0.0,-0.691,0.015,-0.706,Silencioso vulnerable
+2,l'Eixample,Equipamientos culturales,equipamientos_per_1000hab,4.055,False,0,0,0.0,-0.691,-0.003,-0.689,Cómodo
+19,Pobles del Sud,Equipamientos culturales,equipamientos_per_1000hab,3.697,False,18,1,0.89,-0.421,0.104,-0.524,Silencioso vulnerable
+6,el Pla del Real,Equipamientos culturales,equipamientos_per_1000hab,4.365,False,19,2,0.6,-0.509,-0.095,-0.414,Cómodo
+4,Campanar,Equipamientos culturales,equipamientos_per_1000hab,4.005,False,36,1,1.04,-0.375,0.012,-0.387,Silencioso vulnerable
+11,Poblats Marítims,Equipamientos culturales,equipamientos_per_1000hab,3.816,False,75,3,1.26,-0.308,0.068,-0.377,Silencioso vulnerable
+16,Benicalap,Equipamientos culturales,equipamientos_per_1000hab,2.112,False,125,3,2.93,0.199,0.574,-0.375,Demanda legítima
+3,Extramurs,Equipamientos culturales,equipamientos_per_1000hab,4.202,False,108,2,2.13,-0.044,-0.046,0.002,Cómodo
+5,la Saïdia,Equipamientos culturales,equipamientos_per_1000hab,3.168,False,158,3,3.15,0.266,0.261,0.005,Demanda legítima
+14,Benimaclet,Equipamientos culturales,equipamientos_per_1000hab,3.252,False,227,3,7.31,1.53,0.236,1.294,Demanda legítima
+18,Pobles de l'Oest,Equipamientos culturales,equipamientos_per_1000hab,3.034,False,152,5,10.98,2.645,0.3,2.344,Demanda legítima
+17,Pobles del Nord,Equipamientos culturales,equipamientos_per_1000hab,5.406,False,59,3,9.67,2.247,-0.404,2.651,Sobre-demandante
+1,Ciutat Vella,Equipamientos culturales,equipamientos_per_1000hab,17.772,False,80,3,3.13,0.26,-4.076,4.336,Sobre-demandante
+12,Camins al Grau,Equipamientos específicos,equipamientos_per_1000hab,1.783,False,0,0,0.0,-0.443,0.672,-1.115,Silencioso vulnerable
+8,Patraix,Equipamientos específicos,equipamientos_per_1000hab,2.002,False,2,1,0.03,-0.434,0.607,-1.041,Silencioso vulnerable
+16,Benicalap,Equipamientos específicos,equipamientos_per_1000hab,2.112,False,0,0,0.0,-0.443,0.574,-1.017,Silencioso vulnerable
+9,Jesús,Equipamientos específicos,equipamientos_per_1000hab,2.137,False,0,0,0.0,-0.443,0.567,-1.01,Silencioso vulnerable
+10,Quatre Carreres,Equipamientos específicos,equipamientos_per_1000hab,2.458,False,0,0,0.0,-0.443,0.472,-0.915,Silencioso vulnerable
+15,Rascanya,Equipamientos específicos,equipamientos_per_1000hab,2.487,False,3,1,0.06,-0.425,0.463,-0.887,Silencioso vulnerable
+5,la Saïdia,Equipamientos específicos,equipamientos_per_1000hab,3.168,False,11,1,0.22,-0.375,0.261,-0.635,Silencioso vulnerable
+7,l'Olivereta,Equipamientos específicos,equipamientos_per_1000hab,3.124,False,25,2,0.49,-0.291,0.274,-0.565,Silencioso vulnerable
+11,Poblats Marítims,Equipamientos específicos,equipamientos_per_1000hab,3.816,False,0,0,0.0,-0.443,0.068,-0.511,Silencioso vulnerable
+13,Algirós,Equipamientos específicos,equipamientos_per_1000hab,3.997,False,0,0,0.0,-0.443,0.015,-0.458,Silencioso vulnerable
+4,Campanar,Equipamientos específicos,equipamientos_per_1000hab,4.005,False,0,0,0.0,-0.443,0.012,-0.455,Silencioso vulnerable
+14,Benimaclet,Equipamientos específicos,equipamientos_per_1000hab,3.252,False,24,3,0.77,-0.204,0.236,-0.44,Silencioso vulnerable
+3,Extramurs,Equipamientos específicos,equipamientos_per_1000hab,4.202,False,0,0,0.0,-0.443,-0.046,-0.397,Cómodo
+6,el Pla del Real,Equipamientos específicos,equipamientos_per_1000hab,4.365,False,0,0,0.0,-0.443,-0.095,-0.348,Cómodo
+2,l'Eixample,Equipamientos específicos,equipamientos_per_1000hab,4.055,False,23,4,0.51,-0.285,-0.003,-0.282,Cómodo
+18,Pobles de l'Oest,Equipamientos específicos,equipamientos_per_1000hab,3.034,False,66,2,4.77,1.04,0.3,0.74,Demanda legítima
+17,Pobles del Nord,Equipamientos específicos,equipamientos_per_1000hab,5.406,False,46,3,7.54,1.901,-0.404,2.305,Sobre-demandante
+19,Pobles del Sud,Equipamientos específicos,equipamientos_per_1000hab,3.697,False,252,5,12.42,3.419,0.104,3.315,Demanda legítima
+1,Ciutat Vella,Equipamientos específicos,equipamientos_per_1000hab,17.772,False,7,1,0.27,-0.359,-4.076,3.717,Cómodo
+12,Camins al Grau,Fuentes y aseos públicos,equipamientos_per_1000hab,1.783,False,41,2,0.65,-0.622,0.672,-1.294,Silencioso vulnerable
+9,Jesús,Fuentes y aseos públicos,equipamientos_per_1000hab,2.137,False,38,2,0.71,-0.603,0.567,-1.17,Silencioso vulnerable
+15,Rascanya,Fuentes y aseos públicos,equipamientos_per_1000hab,2.487,False,32,1,0.62,-0.632,0.463,-1.095,Silencioso vulnerable
+16,Benicalap,Fuentes y aseos públicos,equipamientos_per_1000hab,2.112,False,45,2,1.06,-0.491,0.574,-1.065,Silencioso vulnerable
+7,l'Olivereta,Fuentes y aseos públicos,equipamientos_per_1000hab,3.124,False,54,1,1.07,-0.488,0.274,-0.762,Silencioso vulnerable
+3,Extramurs,Fuentes y aseos públicos,equipamientos_per_1000hab,4.202,False,10,2,0.2,-0.766,-0.046,-0.72,Cómodo
+8,Patraix,Fuentes y aseos públicos,equipamientos_per_1000hab,2.002,False,135,6,2.27,-0.104,0.607,-0.711,Silencioso vulnerable
+11,Poblats Marítims,Fuentes y aseos públicos,equipamientos_per_1000hab,3.816,False,48,3,0.81,-0.571,0.068,-0.639,Silencioso vulnerable
+5,la Saïdia,Fuentes y aseos públicos,equipamientos_per_1000hab,3.168,False,79,2,1.57,-0.328,0.261,-0.588,Silencioso vulnerable
+2,l'Eixample,Fuentes y aseos públicos,equipamientos_per_1000hab,4.055,False,35,3,0.78,-0.581,-0.003,-0.578,Cómodo
+6,el Pla del Real,Fuentes y aseos públicos,equipamientos_per_1000hab,4.365,False,35,2,1.11,-0.475,-0.095,-0.38,Cómodo
+14,Benimaclet,Fuentes y aseos públicos,equipamientos_per_1000hab,3.252,False,70,2,2.25,-0.11,0.236,-0.346,Silencioso vulnerable
+13,Algirós,Fuentes y aseos públicos,equipamientos_per_1000hab,3.997,False,84,2,2.01,-0.187,0.015,-0.201,Silencioso vulnerable
+10,Quatre Carreres,Fuentes y aseos públicos,equipamientos_per_1000hab,2.458,False,260,6,3.45,0.274,0.472,-0.197,Demanda legítima
+4,Campanar,Fuentes y aseos públicos,equipamientos_per_1000hab,4.005,False,79,4,2.28,-0.1,0.012,-0.113,Silencioso vulnerable
+18,Pobles de l'Oest,Fuentes y aseos públicos,equipamientos_per_1000hab,3.034,False,54,3,3.9,0.418,0.3,0.118,Demanda legítima
+19,Pobles del Sud,Fuentes y aseos públicos,equipamientos_per_1000hab,3.697,False,84,4,4.14,0.495,0.104,0.391,Demanda legítima
+17,Pobles del Nord,Fuentes y aseos públicos,equipamientos_per_1000hab,5.406,False,87,4,14.25,3.732,-0.404,4.136,Sobre-demandante
+1,Ciutat Vella,Fuentes y aseos públicos,equipamientos_per_1000hab,17.772,False,157,4,6.15,1.139,-4.076,5.215,Sobre-demandante
+4,Campanar,Iluminación pública,ind_global,3.767,True,62,5,1.79,-0.392,2.577,-2.969,Silencioso vulnerable
+15,Rascanya,Iluminación pública,ind_global,3.302,True,80,3,1.54,-0.47,1.033,-1.503,Silencioso vulnerable
+13,Algirós,Iluminación pública,ind_global,3.31,True,109,6,2.61,-0.134,1.058,-1.192,Silencioso vulnerable
+2,l'Eixample,Iluminación pública,ind_global,3.103,True,67,5,1.48,-0.489,0.37,-0.859,Silencioso vulnerable
+3,Extramurs,Iluminación pública,ind_global,3.003,True,33,4,0.65,-0.75,0.04,-0.79,Silencioso vulnerable
+6,el Pla del Real,Iluminación pública,ind_global,3.032,True,60,7,1.9,-0.357,0.135,-0.493,Silencioso vulnerable
+14,Benimaclet,Iluminación pública,ind_global,2.995,True,50,2,1.61,-0.448,0.011,-0.46,Silencioso vulnerable
+1,Ciutat Vella,Iluminación pública,ind_global,2.993,True,48,4,1.88,-0.363,0.005,-0.369,Silencioso vulnerable
+8,Patraix,Iluminación pública,ind_global,2.907,True,74,6,1.24,-0.565,-0.278,-0.287,Cómodo
+10,Quatre Carreres,Iluminación pública,ind_global,2.957,True,174,8,2.31,-0.228,-0.113,-0.115,Cómodo
+16,Benicalap,Iluminación pública,ind_global,3.153,True,189,7,4.44,0.442,0.538,-0.096,Demanda legítima
+12,Camins al Grau,Iluminación pública,ind_global,2.851,True,83,5,1.31,-0.543,-0.465,-0.078,Cómodo
+9,Jesús,Iluminación pública,ind_global,2.749,True,70,5,1.3,-0.546,-0.805,0.259,Cómodo
+11,Poblats Marítims,Iluminación pública,ind_global,2.67,True,149,6,2.5,-0.168,-1.068,0.899,Cómodo
+7,l'Olivereta,Iluminación pública,ind_global,2.512,True,128,6,2.53,-0.159,-1.591,1.432,Cómodo
+5,la Saïdia,Iluminación pública,ind_global,2.555,True,215,13,4.28,0.392,-1.449,1.84,Sobre-demandante
+17,Pobles del Nord,Iluminación pública,ind_global,,True,77,8,12.61,3.012,,,Cómodo
+18,Pobles de l'Oest,Iluminación pública,ind_global,,True,9,2,0.65,-0.75,,,Cómodo
+19,Pobles del Sud,Iluminación pública,ind_global,,True,224,8,11.04,2.518,,,Cómodo
+9,Jesús,Instalaciones deportivas,equipamientos_per_1000hab,2.137,False,123,3,2.29,-1.014,0.567,-1.581,Silencioso vulnerable
+7,l'Olivereta,Instalaciones deportivas,equipamientos_per_1000hab,3.124,False,30,1,0.59,-1.295,0.274,-1.569,Silencioso vulnerable
+3,Extramurs,Instalaciones deportivas,equipamientos_per_1000hab,4.202,False,94,2,1.85,-1.087,-0.046,-1.04,Cómodo
+12,Camins al Grau,Instalaciones deportivas,equipamientos_per_1000hab,1.783,False,407,5,6.42,-0.329,0.672,-1.001,Silencioso vulnerable
+8,Patraix,Instalaciones deportivas,equipamientos_per_1000hab,2.002,False,395,6,6.65,-0.291,0.607,-0.898,Silencioso vulnerable
+2,l'Eixample,Instalaciones deportivas,equipamientos_per_1000hab,4.055,False,160,2,3.55,-0.805,-0.003,-0.802,Cómodo
+5,la Saïdia,Instalaciones deportivas,equipamientos_per_1000hab,3.168,False,269,3,5.36,-0.505,0.261,-0.766,Silencioso vulnerable
+15,Rascanya,Instalaciones deportivas,equipamientos_per_1000hab,2.487,False,419,9,8.08,-0.054,0.463,-0.517,Silencioso vulnerable
+14,Benimaclet,Instalaciones deportivas,equipamientos_per_1000hab,3.252,False,230,6,7.4,-0.167,0.236,-0.403,Silencioso vulnerable
+13,Algirós,Instalaciones deportivas,equipamientos_per_1000hab,3.997,False,256,4,6.13,-0.377,0.015,-0.392,Silencioso vulnerable
+4,Campanar,Instalaciones deportivas,equipamientos_per_1000hab,4.005,False,249,6,7.17,-0.205,0.012,-0.217,Silencioso vulnerable
+10,Quatre Carreres,Instalaciones deportivas,equipamientos_per_1000hab,2.458,False,840,14,11.16,0.456,0.472,-0.016,Demanda legítima
+16,Benicalap,Instalaciones deportivas,equipamientos_per_1000hab,2.112,False,581,13,13.64,0.867,0.574,0.293,Demanda legítima
+6,el Pla del Real,Instalaciones deportivas,equipamientos_per_1000hab,4.365,False,311,4,9.84,0.237,-0.095,0.332,Sobre-demandante
+11,Poblats Marítims,Instalaciones deportivas,equipamientos_per_1000hab,3.816,False,736,14,12.37,0.656,0.068,0.588,Demanda legítima
+18,Pobles de l'Oest,Instalaciones deportivas,equipamientos_per_1000hab,3.034,False,196,9,14.16,0.953,0.3,0.653,Demanda legítima
+19,Pobles del Sud,Instalaciones deportivas,equipamientos_per_1000hab,3.697,False,452,16,22.28,2.299,0.104,2.195,Demanda legítima
+17,Pobles del Nord,Instalaciones deportivas,equipamientos_per_1000hab,5.406,False,127,6,20.81,2.055,-0.404,2.459,Sobre-demandante
+1,Ciutat Vella,Instalaciones deportivas,equipamientos_per_1000hab,17.772,False,0,0,0.0,-1.393,-4.076,2.683,Cómodo
+14,Benimaclet,Jardines y arbolado,m2_verde_per_hab,2.71,False,3,1,0.1,-0.941,1.224,-2.165,Silencioso vulnerable
+9,Jesús,Jardines y arbolado,m2_verde_per_hab,3.25,False,41,3,0.76,-0.783,1.075,-1.859,Silencioso vulnerable
+15,Rascanya,Jardines y arbolado,m2_verde_per_hab,3.31,False,50,2,0.96,-0.736,1.059,-1.794,Silencioso vulnerable
+2,l'Eixample,Jardines y arbolado,m2_verde_per_hab,5.02,False,0,0,0.0,-0.965,0.587,-1.552,Silencioso vulnerable
+8,Patraix,Jardines y arbolado,m2_verde_per_hab,3.83,False,141,9,2.37,-0.399,0.915,-1.314,Silencioso vulnerable
+16,Benicalap,Jardines y arbolado,m2_verde_per_hab,6.05,False,52,2,1.22,-0.673,0.303,-0.977,Silencioso vulnerable
+7,l'Olivereta,Jardines y arbolado,m2_verde_per_hab,5.36,False,116,4,2.29,-0.418,0.494,-0.911,Silencioso vulnerable
+11,Poblats Marítims,Jardines y arbolado,m2_verde_per_hab,7.33,False,75,4,1.26,-0.664,-0.049,-0.614,Cómodo
+13,Algirós,Jardines y arbolado,m2_verde_per_hab,6.4,False,104,3,2.49,-0.37,0.207,-0.577,Silencioso vulnerable
+3,Extramurs,Jardines y arbolado,m2_verde_per_hab,3.05,False,426,15,8.4,1.043,1.13,-0.088,Demanda legítima
+18,Pobles de l'Oest,Jardines y arbolado,m2_verde_per_hab,9.82,False,25,2,1.81,-0.532,-0.736,0.203,Cómodo
+12,Camins al Grau,Jardines y arbolado,m2_verde_per_hab,5.64,False,462,8,7.29,0.777,0.416,0.361,Demanda legítima
+19,Pobles del Sud,Jardines y arbolado,m2_verde_per_hab,10.8,False,28,2,1.38,-0.635,-1.006,0.371,Cómodo
+5,la Saïdia,Jardines y arbolado,m2_verde_per_hab,8.86,False,192,9,3.83,-0.05,-0.471,0.422,Cómodo
+10,Quatre Carreres,Jardines y arbolado,m2_verde_per_hab,11.74,False,200,5,2.66,-0.329,-1.265,0.936,Cómodo
+6,el Pla del Real,Jardines y arbolado,m2_verde_per_hab,10.17,False,240,6,7.59,0.849,-0.832,1.681,Sobre-demandante
+17,Pobles del Nord,Jardines y arbolado,m2_verde_per_hab,7.44,False,86,7,14.09,2.402,-0.08,2.482,Sobre-demandante
+1,Ciutat Vella,Jardines y arbolado,m2_verde_per_hab,7.59,False,358,8,14.01,2.383,-0.121,2.504,Sobre-demandante
+4,Campanar,Jardines y arbolado,m2_verde_per_hab,17.49,False,146,5,4.21,0.041,-2.85,2.891,Sobre-demandante
+4,Campanar,Litoral y puerto,ind_global,3.767,True,0,0,0.0,-0.389,2.577,-2.967,Silencioso vulnerable
+13,Algirós,Litoral y puerto,ind_global,3.31,True,0,0,0.0,-0.389,1.058,-1.447,Silencioso vulnerable
+15,Rascanya,Litoral y puerto,ind_global,3.302,True,0,0,0.0,-0.389,1.033,-1.422,Silencioso vulnerable
+16,Benicalap,Litoral y puerto,ind_global,3.153,True,0,0,0.0,-0.389,0.538,-0.927,Silencioso vulnerable
+2,l'Eixample,Litoral y puerto,ind_global,3.103,True,0,1,0.0,-0.389,0.37,-0.759,Silencioso vulnerable
+6,el Pla del Real,Litoral y puerto,ind_global,3.032,True,0,0,0.0,-0.389,0.135,-0.525,Silencioso vulnerable
+3,Extramurs,Litoral y puerto,ind_global,3.003,True,0,0,0.0,-0.389,0.04,-0.429,Silencioso vulnerable
+14,Benimaclet,Litoral y puerto,ind_global,2.995,True,0,0,0.0,-0.389,0.011,-0.401,Silencioso vulnerable
+1,Ciutat Vella,Litoral y puerto,ind_global,2.993,True,0,0,0.0,-0.389,0.005,-0.394,Silencioso vulnerable
+10,Quatre Carreres,Litoral y puerto,ind_global,2.957,True,51,2,0.68,-0.149,-0.113,-0.036,Cómodo
+8,Patraix,Litoral y puerto,ind_global,2.907,True,30,3,0.5,-0.213,-0.278,0.066,Cómodo
+9,Jesús,Litoral y puerto,ind_global,2.749,True,0,0,0.0,-0.389,-0.805,0.415,Cómodo
+12,Camins al Grau,Litoral y puerto,ind_global,2.851,True,135,5,2.13,0.363,-0.465,0.828,Sobre-demandante
+7,l'Olivereta,Litoral y puerto,ind_global,2.512,True,0,0,0.0,-0.389,-1.591,1.202,Cómodo
+5,la Saïdia,Litoral y puerto,ind_global,2.555,True,228,7,4.54,1.215,-1.449,2.664,Sobre-demandante
+11,Poblats Marítims,Litoral y puerto,ind_global,2.67,True,725,12,12.19,3.918,-1.068,4.986,Sobre-demandante
+17,Pobles del Nord,Litoral y puerto,ind_global,,True,0,0,0.0,-0.389,,,Cómodo
+18,Pobles de l'Oest,Litoral y puerto,ind_global,,True,0,0,0.0,-0.389,,,Cómodo
+19,Pobles del Sud,Litoral y puerto,ind_global,,True,18,1,0.89,-0.075,,,Cómodo
+16,Benicalap,Mobiliario urbano deportivo,equipamientos_per_1000hab,2.112,False,0,0,0.0,-0.673,0.574,-1.247,Silencioso vulnerable
+9,Jesús,Mobiliario urbano deportivo,equipamientos_per_1000hab,2.137,False,0,0,0.0,-0.673,0.567,-1.239,Silencioso vulnerable
+15,Rascanya,Mobiliario urbano deportivo,equipamientos_per_1000hab,2.487,False,0,0,0.0,-0.673,0.463,-1.135,Silencioso vulnerable
+7,l'Olivereta,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.124,False,0,0,0.0,-0.673,0.274,-0.946,Silencioso vulnerable
+5,la Saïdia,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.168,False,0,0,0.0,-0.673,0.261,-0.933,Silencioso vulnerable
+19,Pobles del Sud,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.697,False,0,0,0.0,-0.673,0.104,-0.776,Silencioso vulnerable
+3,Extramurs,Mobiliario urbano deportivo,equipamientos_per_1000hab,4.202,False,0,0,0.0,-0.673,-0.046,-0.626,Cómodo
+13,Algirós,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.997,False,5,1,0.12,-0.595,0.015,-0.609,Silencioso vulnerable
+6,el Pla del Real,Mobiliario urbano deportivo,equipamientos_per_1000hab,4.365,False,0,0,0.0,-0.673,-0.095,-0.578,Cómodo
+11,Poblats Marítims,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.816,False,34,1,0.57,-0.303,0.068,-0.371,Silencioso vulnerable
+2,l'Eixample,Mobiliario urbano deportivo,equipamientos_per_1000hab,4.055,False,22,1,0.49,-0.355,-0.003,-0.352,Cómodo
+17,Pobles del Nord,Mobiliario urbano deportivo,equipamientos_per_1000hab,5.406,False,0,0,0.0,-0.673,-0.404,-0.269,Cómodo
+14,Benimaclet,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.252,False,35,1,1.13,0.061,0.236,-0.175,Demanda legítima
+4,Campanar,Mobiliario urbano deportivo,equipamientos_per_1000hab,4.005,False,41,2,1.18,0.093,0.012,0.081,Demanda legítima
+12,Camins al Grau,Mobiliario urbano deportivo,equipamientos_per_1000hab,1.783,False,159,3,2.51,0.956,0.672,0.284,Demanda legítima
+8,Patraix,Mobiliario urbano deportivo,equipamientos_per_1000hab,2.002,False,192,1,3.23,1.424,0.607,0.817,Demanda legítima
+10,Quatre Carreres,Mobiliario urbano deportivo,equipamientos_per_1000hab,2.458,False,280,7,3.72,1.742,0.472,1.27,Demanda legítima
+18,Pobles de l'Oest,Mobiliario urbano deportivo,equipamientos_per_1000hab,3.034,False,76,2,5.49,2.89,0.3,2.59,Demanda legítima
+1,Ciutat Vella,Mobiliario urbano deportivo,equipamientos_per_1000hab,17.772,False,32,1,1.25,0.139,-4.076,4.215,Sobre-demandante
+4,Campanar,Pacificación del tráfico,ind_global,3.767,True,0,0,0.0,-0.822,2.577,-3.4,Silencioso vulnerable
+15,Rascanya,Pacificación del tráfico,ind_global,3.302,True,55,3,1.06,-0.585,1.033,-1.617,Silencioso vulnerable
+13,Algirós,Pacificación del tráfico,ind_global,3.31,True,95,6,2.27,-0.313,1.058,-1.371,Silencioso vulnerable
+2,l'Eixample,Pacificación del tráfico,ind_global,3.103,True,22,5,0.49,-0.712,0.37,-1.082,Silencioso vulnerable
+6,el Pla del Real,Pacificación del tráfico,ind_global,3.032,True,0,1,0.0,-0.822,0.135,-0.958,Silencioso vulnerable
+3,Extramurs,Pacificación del tráfico,ind_global,3.003,True,141,6,2.78,-0.199,0.04,-0.238,Silencioso vulnerable
+14,Benimaclet,Pacificación del tráfico,ind_global,2.995,True,104,2,3.35,-0.071,0.011,-0.082,Silencioso vulnerable
+12,Camins al Grau,Pacificación del tráfico,ind_global,2.851,True,116,4,1.83,-0.412,-0.465,0.053,Cómodo
+10,Quatre Carreres,Pacificación del tráfico,ind_global,2.957,True,257,5,3.41,-0.057,-0.113,0.056,Cómodo
+8,Patraix,Pacificación del tráfico,ind_global,2.907,True,210,4,3.53,-0.03,-0.278,0.248,Cómodo
+16,Benicalap,Pacificación del tráfico,ind_global,3.153,True,332,5,7.79,0.926,0.538,0.388,Demanda legítima
+11,Poblats Marítims,Pacificación del tráfico,ind_global,2.67,True,82,4,1.38,-0.513,-1.068,0.555,Cómodo
+5,la Saïdia,Pacificación del tráfico,ind_global,2.555,True,37,1,0.74,-0.656,-1.449,0.792,Cómodo
+9,Jesús,Pacificación del tráfico,ind_global,2.749,True,197,4,3.66,-0.001,-0.805,0.803,Cómodo
+1,Ciutat Vella,Pacificación del tráfico,ind_global,2.993,True,261,8,10.22,1.471,0.005,1.466,Demanda legítima
+7,l'Olivereta,Pacificación del tráfico,ind_global,2.512,True,202,6,3.99,0.073,-1.591,1.664,Sobre-demandante
+17,Pobles del Nord,Pacificación del tráfico,ind_global,,True,117,8,19.17,3.48,,,Cómodo
+18,Pobles de l'Oest,Pacificación del tráfico,ind_global,,True,1,4,0.07,-0.807,,,Cómodo
+19,Pobles del Sud,Pacificación del tráfico,ind_global,,True,79,4,3.89,0.051,,,Cómodo
+4,Campanar,Paneles informativos,ind_global,3.767,True,0,0,0.0,-0.386,2.577,-2.963,Silencioso vulnerable
+13,Algirós,Paneles informativos,ind_global,3.31,True,0,1,0.0,-0.386,1.058,-1.444,Silencioso vulnerable
+15,Rascanya,Paneles informativos,ind_global,3.302,True,0,0,0.0,-0.386,1.033,-1.419,Silencioso vulnerable
+2,l'Eixample,Paneles informativos,ind_global,3.103,True,18,3,0.4,-0.309,0.37,-0.679,Silencioso vulnerable
+1,Ciutat Vella,Paneles informativos,ind_global,2.993,True,0,0,0.0,-0.386,0.005,-0.391,Silencioso vulnerable
+16,Benicalap,Paneles informativos,ind_global,3.153,True,122,5,2.86,0.163,0.538,-0.375,Demanda legítima
+6,el Pla del Real,Paneles informativos,ind_global,3.032,True,34,1,1.08,-0.178,0.135,-0.314,Silencioso vulnerable
+3,Extramurs,Paneles informativos,ind_global,3.003,True,39,2,0.77,-0.238,0.04,-0.278,Silencioso vulnerable
+14,Benimaclet,Paneles informativos,ind_global,2.995,True,45,3,1.45,-0.107,0.011,-0.119,Silencioso vulnerable
+8,Patraix,Paneles informativos,ind_global,2.907,True,0,0,0.0,-0.386,-0.278,-0.108,Cómodo
+10,Quatre Carreres,Paneles informativos,ind_global,2.957,True,65,2,0.86,-0.221,-0.113,-0.107,Cómodo
+12,Camins al Grau,Paneles informativos,ind_global,2.851,True,0,0,0.0,-0.386,-0.465,0.079,Cómodo
+9,Jesús,Paneles informativos,ind_global,2.749,True,0,1,0.0,-0.386,-0.805,0.419,Cómodo
+11,Poblats Marítims,Paneles informativos,ind_global,2.67,True,48,3,0.81,-0.23,-1.068,0.838,Cómodo
+5,la Saïdia,Paneles informativos,ind_global,2.555,True,24,2,0.48,-0.294,-1.449,1.155,Cómodo
+7,l'Olivereta,Paneles informativos,ind_global,2.512,True,44,1,0.87,-0.219,-1.591,1.372,Cómodo
+17,Pobles del Nord,Paneles informativos,ind_global,,True,145,2,23.75,4.176,,,Cómodo
+18,Pobles de l'Oest,Paneles informativos,ind_global,,True,22,2,1.59,-0.08,,,Cómodo
+19,Pobles del Sud,Paneles informativos,ind_global,,True,66,5,3.25,0.238,,,Cómodo
+12,Camins al Grau,Parques infantiles,jardines_per_1000hab,0.726,False,0,2,0.0,-1.409,0.682,-2.092,Silencioso vulnerable
+2,l'Eixample,Parques infantiles,jardines_per_1000hab,0.399,False,66,4,1.46,-0.857,1.164,-2.021,Silencioso vulnerable
+15,Rascanya,Parques infantiles,jardines_per_1000hab,0.848,False,29,1,0.56,-1.197,0.502,-1.7,Silencioso vulnerable
+9,Jesús,Parques infantiles,jardines_per_1000hab,0.762,False,61,3,1.13,-0.982,0.629,-1.611,Silencioso vulnerable
+7,l'Olivereta,Parques infantiles,jardines_per_1000hab,0.83,False,93,3,1.84,-0.713,0.529,-1.242,Silencioso vulnerable
+10,Quatre Carreres,Parques infantiles,jardines_per_1000hab,1.103,False,81,4,1.08,-1.001,0.126,-1.127,Silencioso vulnerable
+11,Poblats Marítims,Parques infantiles,jardines_per_1000hab,1.21,False,43,2,0.72,-1.137,-0.031,-1.105,Cómodo
+8,Patraix,Parques infantiles,jardines_per_1000hab,0.656,False,273,11,4.59,0.328,0.785,-0.457,Demanda legítima
+16,Benicalap,Parques infantiles,jardines_per_1000hab,1.197,False,118,4,2.77,-0.361,-0.012,-0.349,Cómodo
+18,Pobles de l'Oest,Parques infantiles,jardines_per_1000hab,1.228,False,40,3,2.89,-0.315,-0.058,-0.257,Cómodo
+6,el Pla del Real,Parques infantiles,jardines_per_1000hab,1.075,False,121,5,3.83,0.04,0.168,-0.127,Demanda legítima
+14,Benimaclet,Parques infantiles,jardines_per_1000hab,0.869,False,145,4,4.67,0.358,0.471,-0.113,Demanda legítima
+5,la Saïdia,Parques infantiles,jardines_per_1000hab,0.737,False,292,4,5.82,0.794,0.666,0.128,Demanda legítima
+13,Algirós,Parques infantiles,jardines_per_1000hab,1.197,False,198,9,4.74,0.385,-0.012,0.397,Sobre-demandante
+3,Extramurs,Parques infantiles,jardines_per_1000hab,0.651,False,413,8,8.15,1.676,0.793,0.883,Demanda legítima
+19,Pobles del Sud,Parques infantiles,jardines_per_1000hab,2.07,False,84,5,4.14,0.158,-1.299,1.457,Sobre-demandante
+4,Campanar,Parques infantiles,jardines_per_1000hab,1.786,False,200,7,5.76,0.771,-0.881,1.652,Sobre-demandante
+1,Ciutat Vella,Parques infantiles,jardines_per_1000hab,1.801,False,181,5,7.09,1.275,-0.903,2.177,Sobre-demandante
+17,Pobles del Nord,Parques infantiles,jardines_per_1000hab,3.44,False,58,4,9.5,2.187,-3.319,5.506,Sobre-demandante
+3,Extramurs,Parques y plazas,m2_verde_per_hab,3.05,False,199,8,3.93,-0.685,1.13,-1.816,Silencioso vulnerable
+14,Benimaclet,Parques y plazas,m2_verde_per_hab,2.71,False,158,7,5.09,-0.581,1.224,-1.805,Silencioso vulnerable
+15,Rascanya,Parques y plazas,m2_verde_per_hab,3.31,False,265,12,5.11,-0.579,1.059,-1.637,Silencioso vulnerable
+12,Camins al Grau,Parques y plazas,m2_verde_per_hab,5.64,False,225,9,3.55,-0.72,0.416,-1.136,Silencioso vulnerable
+9,Jesús,Parques y plazas,m2_verde_per_hab,3.25,False,603,14,11.2,-0.029,1.075,-1.104,Silencioso vulnerable
+13,Algirós,Parques y plazas,m2_verde_per_hab,6.4,False,114,5,2.73,-0.794,0.207,-1.001,Silencioso vulnerable
+7,l'Olivereta,Parques y plazas,m2_verde_per_hab,5.36,False,361,16,7.14,-0.396,0.494,-0.889,Silencioso vulnerable
+16,Benicalap,Parques y plazas,m2_verde_per_hab,6.05,False,218,9,5.12,-0.578,0.303,-0.881,Silencioso vulnerable
+8,Patraix,Parques y plazas,m2_verde_per_hab,3.83,False,727,20,12.23,0.064,0.915,-0.852,Demanda legítima
+2,l'Eixample,Parques y plazas,m2_verde_per_hab,5.02,False,445,14,9.86,-0.15,0.587,-0.737,Silencioso vulnerable
+11,Poblats Marítims,Parques y plazas,m2_verde_per_hab,7.33,False,212,11,3.56,-0.719,-0.049,-0.669,Cómodo
+5,la Saïdia,Parques y plazas,m2_verde_per_hab,8.86,False,115,5,2.29,-0.833,-0.471,-0.362,Cómodo
+6,el Pla del Real,Parques y plazas,m2_verde_per_hab,10.17,False,141,6,4.46,-0.638,-0.832,0.195,Cómodo
+10,Quatre Carreres,Parques y plazas,m2_verde_per_hab,11.74,False,511,21,6.79,-0.427,-1.265,0.838,Cómodo
+1,Ciutat Vella,Parques y plazas,m2_verde_per_hab,7.59,False,645,14,25.25,1.239,-0.121,1.36,Sobre-demandante
+19,Pobles del Sud,Parques y plazas,m2_verde_per_hab,10.8,False,471,22,23.22,1.055,-1.006,2.061,Sobre-demandante
+18,Pobles de l'Oest,Parques y plazas,m2_verde_per_hab,9.82,False,430,14,31.07,1.764,-0.736,2.5,Sobre-demandante
+4,Campanar,Parques y plazas,m2_verde_per_hab,17.49,False,427,10,12.3,0.07,-2.85,2.92,Sobre-demandante
+17,Pobles del Nord,Parques y plazas,m2_verde_per_hab,7.44,False,269,14,44.07,2.937,-0.08,3.017,Sobre-demandante
+4,Campanar,Pedanías y barrios periféricos,ind_global,3.767,True,232,10,6.68,-0.24,2.577,-2.818,Silencioso vulnerable
+15,Rascanya,Pedanías y barrios periféricos,ind_global,3.302,True,268,7,5.17,-0.4,1.033,-1.433,Silencioso vulnerable
+6,el Pla del Real,Pedanías y barrios periféricos,ind_global,3.032,True,12,3,0.38,-0.908,0.135,-1.043,Silencioso vulnerable
+13,Algirós,Pedanías y barrios periféricos,ind_global,3.31,True,403,16,9.65,0.074,1.058,-0.984,Demanda legítima
+16,Benicalap,Pedanías y barrios periféricos,ind_global,3.153,True,331,11,7.77,-0.125,0.538,-0.663,Silencioso vulnerable
+14,Benimaclet,Pedanías y barrios periféricos,ind_global,2.995,True,105,8,3.38,-0.59,0.011,-0.601,Silencioso vulnerable
+2,l'Eixample,Pedanías y barrios periféricos,ind_global,3.103,True,370,15,8.2,-0.079,0.37,-0.449,Silencioso vulnerable
+12,Camins al Grau,Pedanías y barrios periféricos,ind_global,2.851,True,135,4,2.13,-0.723,-0.465,-0.258,Cómodo
+8,Patraix,Pedanías y barrios periféricos,ind_global,2.907,True,300,19,5.05,-0.413,-0.278,-0.135,Cómodo
+10,Quatre Carreres,Pedanías y barrios periféricos,ind_global,2.957,True,630,24,8.37,-0.061,-0.113,0.052,Cómodo
+3,Extramurs,Pedanías y barrios periféricos,ind_global,3.003,True,565,24,11.15,0.233,0.04,0.194,Demanda legítima
+11,Poblats Marítims,Pedanías y barrios periféricos,ind_global,2.67,True,80,6,1.34,-0.806,-1.068,0.262,Cómodo
+9,Jesús,Pedanías y barrios periféricos,ind_global,2.749,True,501,10,9.31,0.038,-0.805,0.843,Sobre-demandante
+5,la Saïdia,Pedanías y barrios periféricos,ind_global,2.555,True,212,10,4.22,-0.501,-1.449,0.948,Cómodo
+1,Ciutat Vella,Pedanías y barrios periféricos,ind_global,2.993,True,500,15,19.57,1.126,0.005,1.121,Demanda legítima
+7,l'Olivereta,Pedanías y barrios periféricos,ind_global,2.512,True,291,11,5.75,-0.339,-1.591,1.252,Cómodo
+17,Pobles del Nord,Pedanías y barrios periféricos,ind_global,,True,65,2,10.65,0.18,,,Cómodo
+18,Pobles de l'Oest,Pedanías y barrios periféricos,ind_global,,True,89,7,6.43,-0.267,,,Cómodo
+19,Pobles del Sud,Pedanías y barrios periféricos,ind_global,,True,909,27,44.81,3.8,,,Cómodo
+9,Jesús,Pipicanes y zonas caninas,m2_verde_per_hab,3.25,False,138,9,2.56,-0.72,1.075,-1.795,Silencioso vulnerable
+8,Patraix,Pipicanes y zonas caninas,m2_verde_per_hab,3.83,False,197,9,3.31,-0.561,0.915,-1.476,Silencioso vulnerable
+12,Camins al Grau,Pipicanes y zonas caninas,m2_verde_per_hab,5.64,False,64,8,1.01,-1.05,0.416,-1.466,Silencioso vulnerable
+7,l'Olivereta,Pipicanes y zonas caninas,m2_verde_per_hab,5.36,False,75,5,1.48,-0.95,0.494,-1.443,Silencioso vulnerable
+3,Extramurs,Pipicanes y zonas caninas,m2_verde_per_hab,3.05,False,264,10,5.21,-0.157,1.13,-1.287,Silencioso vulnerable
+14,Benimaclet,Pipicanes y zonas caninas,m2_verde_per_hab,2.71,False,193,8,6.21,0.056,1.224,-1.168,Demanda legítima
+15,Rascanya,Pipicanes y zonas caninas,m2_verde_per_hab,3.31,False,330,14,6.36,0.088,1.059,-0.971,Demanda legítima
+2,l'Eixample,Pipicanes y zonas caninas,m2_verde_per_hab,5.02,False,261,8,5.78,-0.035,0.587,-0.623,Silencioso vulnerable
+1,Ciutat Vella,Pipicanes y zonas caninas,m2_verde_per_hab,7.59,False,76,5,2.98,-0.631,-0.121,-0.51,Cómodo
+5,la Saïdia,Pipicanes y zonas caninas,m2_verde_per_hab,8.86,False,116,8,2.31,-0.773,-0.471,-0.302,Cómodo
+11,Poblats Marítims,Pipicanes y zonas caninas,m2_verde_per_hab,7.33,False,267,11,4.49,-0.31,-0.049,-0.26,Cómodo
+6,el Pla del Real,Pipicanes y zonas caninas,m2_verde_per_hab,10.17,False,53,5,1.68,-0.907,-0.832,-0.075,Cómodo
+16,Benicalap,Pipicanes y zonas caninas,m2_verde_per_hab,6.05,False,318,13,7.46,0.322,0.303,0.018,Demanda legítima
+13,Algirós,Pipicanes y zonas caninas,m2_verde_per_hab,6.4,False,293,12,7.01,0.226,0.207,0.019,Demanda legítima
+10,Quatre Carreres,Pipicanes y zonas caninas,m2_verde_per_hab,11.74,False,328,14,4.36,-0.337,-1.265,0.928,Cómodo
+4,Campanar,Pipicanes y zonas caninas,m2_verde_per_hab,17.49,False,108,9,3.11,-0.603,-2.85,2.247,Cómodo
+17,Pobles del Nord,Pipicanes y zonas caninas,m2_verde_per_hab,7.44,False,105,9,17.2,2.393,-0.08,2.472,Sobre-demandante
+18,Pobles de l'Oest,Pipicanes y zonas caninas,m2_verde_per_hab,9.82,False,200,5,14.45,1.808,-0.736,2.544,Sobre-demandante
+19,Pobles del Sud,Pipicanes y zonas caninas,m2_verde_per_hab,10.8,False,325,15,16.02,2.142,-1.006,3.148,Sobre-demandante
+4,Campanar,Puentes y vías peatonales,ind_global,3.767,True,0,1,0.0,-0.471,2.577,-3.048,Silencioso vulnerable
+13,Algirós,Puentes y vías peatonales,ind_global,3.31,True,0,0,0.0,-0.471,1.058,-1.529,Silencioso vulnerable
+15,Rascanya,Puentes y vías peatonales,ind_global,3.302,True,0,0,0.0,-0.471,1.033,-1.504,Silencioso vulnerable
+16,Benicalap,Puentes y vías peatonales,ind_global,3.153,True,0,0,0.0,-0.471,0.538,-1.009,Silencioso vulnerable
+2,l'Eixample,Puentes y vías peatonales,ind_global,3.103,True,3,1,0.07,-0.431,0.37,-0.8,Silencioso vulnerable
+3,Extramurs,Puentes y vías peatonales,ind_global,3.003,True,0,0,0.0,-0.471,0.04,-0.51,Silencioso vulnerable
+14,Benimaclet,Puentes y vías peatonales,ind_global,2.995,True,0,0,0.0,-0.471,0.011,-0.482,Silencioso vulnerable
+10,Quatre Carreres,Puentes y vías peatonales,ind_global,2.957,True,7,3,0.09,-0.419,-0.113,-0.306,Cómodo
+8,Patraix,Puentes y vías peatonales,ind_global,2.907,True,0,0,0.0,-0.471,-0.278,-0.192,Cómodo
+12,Camins al Grau,Puentes y vías peatonales,ind_global,2.851,True,0,0,0.0,-0.471,-0.465,-0.006,Cómodo
+1,Ciutat Vella,Puentes y vías peatonales,ind_global,2.993,True,34,2,1.33,0.291,0.005,0.286,Demanda legítima
+9,Jesús,Puentes y vías peatonales,ind_global,2.749,True,11,1,0.2,-0.356,-0.805,0.448,Cómodo
+11,Poblats Marítims,Puentes y vías peatonales,ind_global,2.67,True,0,0,0.0,-0.471,-1.068,0.597,Cómodo
+7,l'Olivereta,Puentes y vías peatonales,ind_global,2.512,True,0,0,0.0,-0.471,-1.591,1.12,Cómodo
+6,el Pla del Real,Puentes y vías peatonales,ind_global,3.032,True,119,3,3.76,1.682,0.135,1.546,Demanda legítima
+5,la Saïdia,Puentes y vías peatonales,ind_global,2.555,True,318,8,6.34,3.159,-1.449,4.607,Sobre-demandante
+17,Pobles del Nord,Puentes y vías peatonales,ind_global,,True,0,0,0.0,-0.471,,,Cómodo
+18,Pobles de l'Oest,Puentes y vías peatonales,ind_global,,True,53,1,3.83,1.722,,,Cómodo
+19,Pobles del Sud,Puentes y vías peatonales,ind_global,,True,0,0,0.0,-0.471,,,Cómodo
+4,Campanar,Recogida de residuos,ind_global,3.767,True,0,0,0.0,-0.954,2.577,-3.531,Silencioso vulnerable
+13,Algirós,Recogida de residuos,ind_global,3.31,True,12,3,0.29,-0.899,1.058,-1.957,Silencioso vulnerable
+15,Rascanya,Recogida de residuos,ind_global,3.302,True,130,4,2.51,-0.479,1.033,-1.512,Silencioso vulnerable
+16,Benicalap,Recogida de residuos,ind_global,3.153,True,109,5,2.56,-0.47,0.538,-1.008,Silencioso vulnerable
+14,Benimaclet,Recogida de residuos,ind_global,2.995,True,28,3,0.9,-0.784,0.011,-0.795,Silencioso vulnerable
+2,l'Eixample,Recogida de residuos,ind_global,3.103,True,144,7,3.19,-0.351,0.37,-0.72,Silencioso vulnerable
+12,Camins al Grau,Recogida de residuos,ind_global,2.851,True,73,5,1.15,-0.737,-0.465,-0.272,Cómodo
+10,Quatre Carreres,Recogida de residuos,ind_global,2.957,True,259,11,3.44,-0.303,-0.113,-0.19,Cómodo
+8,Patraix,Recogida de residuos,ind_global,2.907,True,181,10,3.05,-0.377,-0.278,-0.099,Cómodo
+6,el Pla del Real,Recogida de residuos,ind_global,3.032,True,166,7,5.25,0.039,0.135,-0.096,Demanda legítima
+9,Jesús,Recogida de residuos,ind_global,2.749,True,26,4,0.48,-0.863,-0.805,-0.059,Cómodo
+11,Poblats Marítims,Recogida de residuos,ind_global,2.67,True,152,6,2.56,-0.47,-1.068,0.598,Cómodo
+3,Extramurs,Recogida de residuos,ind_global,3.003,True,535,11,10.56,1.044,0.04,1.004,Demanda legítima
+7,l'Olivereta,Recogida de residuos,ind_global,2.512,True,140,6,2.77,-0.43,-1.591,1.161,Cómodo
+1,Ciutat Vella,Recogida de residuos,ind_global,2.993,True,300,9,11.74,1.267,0.005,1.262,Demanda legítima
+5,la Saïdia,Recogida de residuos,ind_global,2.555,True,276,5,5.5,0.086,-1.449,1.535,Sobre-demandante
+17,Pobles del Nord,Recogida de residuos,ind_global,,True,134,7,21.95,3.198,,,Cómodo
+18,Pobles de l'Oest,Recogida de residuos,ind_global,,True,143,3,10.33,1.0,,,Cómodo
+19,Pobles del Sud,Recogida de residuos,ind_global,,True,154,8,7.59,0.482,,,Cómodo
+4,Campanar,Reducción de velocidad y zonas 30,ind_global,3.767,True,35,2,1.01,0.322,2.577,-2.255,Demanda legítima
+15,Rascanya,Reducción de velocidad y zonas 30,ind_global,3.302,True,3,1,0.06,-0.384,1.033,-1.417,Silencioso vulnerable
+13,Algirós,Reducción de velocidad y zonas 30,ind_global,3.31,True,18,1,0.43,-0.109,1.058,-1.167,Silencioso vulnerable
+16,Benicalap,Reducción de velocidad y zonas 30,ind_global,3.153,True,0,0,0.0,-0.429,0.538,-0.967,Silencioso vulnerable
+2,l'Eixample,Reducción de velocidad y zonas 30,ind_global,3.103,True,0,0,0.0,-0.429,0.37,-0.799,Silencioso vulnerable
+6,el Pla del Real,Reducción de velocidad y zonas 30,ind_global,3.032,True,0,0,0.0,-0.429,0.135,-0.565,Silencioso vulnerable
+1,Ciutat Vella,Reducción de velocidad y zonas 30,ind_global,2.993,True,0,0,0.0,-0.429,0.005,-0.434,Silencioso vulnerable
+14,Benimaclet,Reducción de velocidad y zonas 30,ind_global,2.995,True,1,1,0.03,-0.407,0.011,-0.418,Silencioso vulnerable
+10,Quatre Carreres,Reducción de velocidad y zonas 30,ind_global,2.957,True,9,3,0.12,-0.34,-0.113,-0.227,Cómodo
+3,Extramurs,Reducción de velocidad y zonas 30,ind_global,3.003,True,17,2,0.34,-0.176,0.04,-0.216,Silencioso vulnerable
+8,Patraix,Reducción de velocidad y zonas 30,ind_global,2.907,True,0,0,0.0,-0.429,-0.278,-0.151,Cómodo
+12,Camins al Grau,Reducción de velocidad y zonas 30,ind_global,2.851,True,0,0,0.0,-0.429,-0.465,0.036,Cómodo
+9,Jesús,Reducción de velocidad y zonas 30,ind_global,2.749,True,0,0,0.0,-0.429,-0.805,0.375,Cómodo
+11,Poblats Marítims,Reducción de velocidad y zonas 30,ind_global,2.67,True,8,2,0.13,-0.332,-1.068,0.735,Cómodo
+5,la Saïdia,Reducción de velocidad y zonas 30,ind_global,2.555,True,0,0,0.0,-0.429,-1.449,1.02,Cómodo
+7,l'Olivereta,Reducción de velocidad y zonas 30,ind_global,2.512,True,0,0,0.0,-0.429,-1.591,1.162,Cómodo
+17,Pobles del Nord,Reducción de velocidad y zonas 30,ind_global,,True,35,2,5.73,3.833,,,Cómodo
+18,Pobles de l'Oest,Reducción de velocidad y zonas 30,ind_global,,True,9,2,0.65,0.054,,,Cómodo
+19,Pobles del Sud,Reducción de velocidad y zonas 30,ind_global,,True,50,4,2.46,1.401,,,Cómodo
+13,Algirós,Reducción del ruido,n_zonas_zas,2.0,True,81,2,1.94,0.386,3.175,-2.789,Demanda legítima
+6,el Pla del Real,Reducción del ruido,n_zonas_zas,1.0,True,23,2,0.73,-0.407,1.347,-1.754,Silencioso vulnerable
+3,Extramurs,Reducción del ruido,n_zonas_zas,1.0,True,39,3,0.77,-0.381,1.347,-1.728,Silencioso vulnerable
+1,Ciutat Vella,Reducción del ruido,n_zonas_zas,1.0,True,59,2,2.31,0.628,1.347,-0.719,Demanda legítima
+7,l'Olivereta,Reducción del ruido,n_zonas_zas,0.0,True,0,0,0.0,-0.885,-0.481,-0.404,Cómodo
+17,Pobles del Nord,Reducción del ruido,n_zonas_zas,0.0,True,0,0,0.0,-0.885,-0.481,-0.404,Cómodo
+4,Campanar,Reducción del ruido,n_zonas_zas,0.0,True,4,1,0.12,-0.807,-0.481,-0.326,Cómodo
+11,Poblats Marítims,Reducción del ruido,n_zonas_zas,0.0,True,9,1,0.15,-0.787,-0.481,-0.306,Cómodo
+9,Jesús,Reducción del ruido,n_zonas_zas,0.0,True,12,1,0.22,-0.741,-0.481,-0.26,Cómodo
+16,Benicalap,Reducción del ruido,n_zonas_zas,0.0,True,24,1,0.56,-0.518,-0.481,-0.037,Cómodo
+12,Camins al Grau,Reducción del ruido,n_zonas_zas,0.0,True,40,1,0.63,-0.473,-0.481,0.009,Cómodo
+15,Rascanya,Reducción del ruido,n_zonas_zas,0.0,True,49,2,0.94,-0.269,-0.481,0.212,Cómodo
+5,la Saïdia,Reducción del ruido,n_zonas_zas,0.0,True,49,2,0.98,-0.243,-0.481,0.238,Cómodo
+10,Quatre Carreres,Reducción del ruido,n_zonas_zas,0.0,True,107,5,1.42,0.045,-0.481,0.526,Sobre-demandante
+19,Pobles del Sud,Reducción del ruido,n_zonas_zas,0.0,True,38,3,1.87,0.34,-0.481,0.821,Sobre-demandante
+18,Pobles de l'Oest,Reducción del ruido,n_zonas_zas,0.0,True,27,2,1.95,0.393,-0.481,0.874,Sobre-demandante
+8,Patraix,Reducción del ruido,n_zonas_zas,0.0,True,122,2,2.05,0.458,-0.481,0.939,Sobre-demandante
+14,Benimaclet,Reducción del ruido,n_zonas_zas,0.0,True,65,2,2.09,0.484,-0.481,0.965,Sobre-demandante
+2,l'Eixample,Reducción del ruido,n_zonas_zas,0.0,True,313,7,6.94,3.663,-0.481,4.144,Sobre-demandante
+4,Campanar,Rehabilitación de mercados,ind_global,3.767,True,0,0,0.0,-0.811,2.577,-3.388,Silencioso vulnerable
+15,Rascanya,Rehabilitación de mercados,ind_global,3.302,True,0,0,0.0,-0.811,1.033,-1.844,Silencioso vulnerable
+13,Algirós,Rehabilitación de mercados,ind_global,3.31,True,33,1,0.79,-0.611,1.058,-1.669,Silencioso vulnerable
+16,Benicalap,Rehabilitación de mercados,ind_global,3.153,True,24,1,0.56,-0.669,0.538,-1.207,Silencioso vulnerable
+6,el Pla del Real,Rehabilitación de mercados,ind_global,3.032,True,33,2,1.04,-0.547,0.135,-0.683,Silencioso vulnerable
+1,Ciutat Vella,Rehabilitación de mercados,ind_global,2.993,True,17,2,0.67,-0.641,0.005,-0.646,Silencioso vulnerable
+2,l'Eixample,Rehabilitación de mercados,ind_global,3.103,True,105,7,2.33,-0.22,0.37,-0.59,Silencioso vulnerable
+12,Camins al Grau,Rehabilitación de mercados,ind_global,2.851,True,0,0,0.0,-0.811,-0.465,-0.346,Cómodo
+8,Patraix,Rehabilitación de mercados,ind_global,2.907,True,66,3,1.11,-0.529,-0.278,-0.251,Cómodo
+10,Quatre Carreres,Rehabilitación de mercados,ind_global,2.957,True,214,2,2.84,-0.091,-0.113,0.023,Cómodo
+3,Extramurs,Rehabilitación de mercados,ind_global,3.003,True,246,9,4.85,0.419,0.04,0.379,Demanda legítima
+9,Jesús,Rehabilitación de mercados,ind_global,2.749,True,103,3,1.91,-0.327,-0.805,0.478,Cómodo
+11,Poblats Marítims,Rehabilitación de mercados,ind_global,2.67,True,103,4,1.73,-0.372,-1.068,0.696,Cómodo
+7,l'Olivereta,Rehabilitación de mercados,ind_global,2.512,True,30,1,0.59,-0.661,-1.591,0.93,Cómodo
+14,Benimaclet,Rehabilitación de mercados,ind_global,2.995,True,297,4,9.56,1.614,0.011,1.603,Demanda legítima
+5,la Saïdia,Rehabilitación de mercados,ind_global,2.555,True,428,10,8.53,1.353,-1.449,2.801,Sobre-demandante
+17,Pobles del Nord,Rehabilitación de mercados,ind_global,,True,76,2,12.45,2.347,,,Cómodo
+18,Pobles de l'Oest,Rehabilitación de mercados,ind_global,,True,153,4,11.05,1.992,,,Cómodo
+19,Pobles del Sud,Rehabilitación de mercados,ind_global,,True,15,1,0.74,-0.623,,,Cómodo
+15,Rascanya,Rehabilitación del patrimonio,ind_global,3.302,True,0,0,0.0,-0.867,1.033,-1.9,Silencioso vulnerable
+13,Algirós,Rehabilitación del patrimonio,ind_global,3.31,True,10,1,0.24,-0.76,1.058,-1.819,Silencioso vulnerable
+2,l'Eixample,Rehabilitación del patrimonio,ind_global,3.103,True,0,0,0.0,-0.867,0.37,-1.237,Silencioso vulnerable
+16,Benicalap,Rehabilitación del patrimonio,ind_global,3.153,True,16,1,0.38,-0.698,0.538,-1.236,Silencioso vulnerable
+10,Quatre Carreres,Rehabilitación del patrimonio,ind_global,2.957,True,0,0,0.0,-0.867,-0.113,-0.754,Cómodo
+6,el Pla del Real,Rehabilitación del patrimonio,ind_global,3.032,True,35,1,1.11,-0.373,0.135,-0.509,Silencioso vulnerable
+3,Extramurs,Rehabilitación del patrimonio,ind_global,3.003,True,52,2,1.03,-0.409,0.04,-0.449,Silencioso vulnerable
+14,Benimaclet,Rehabilitación del patrimonio,ind_global,2.995,True,31,2,1.0,-0.422,0.011,-0.433,Silencioso vulnerable
+4,Campanar,Rehabilitación del patrimonio,ind_global,3.767,True,240,2,6.91,2.208,2.577,-0.369,Demanda legítima
+1,Ciutat Vella,Rehabilitación del patrimonio,ind_global,2.993,True,37,1,1.45,-0.222,0.005,-0.227,Silencioso vulnerable
+12,Camins al Grau,Rehabilitación del patrimonio,ind_global,2.851,True,40,1,0.63,-0.587,-0.465,-0.122,Cómodo
+9,Jesús,Rehabilitación del patrimonio,ind_global,2.749,True,0,1,0.0,-0.867,-0.805,-0.063,Cómodo
+11,Poblats Marítims,Rehabilitación del patrimonio,ind_global,2.67,True,37,1,0.62,-0.591,-1.068,0.477,Cómodo
+8,Patraix,Rehabilitación del patrimonio,ind_global,2.907,True,230,2,3.87,0.855,-0.278,1.133,Sobre-demandante
+5,la Saïdia,Rehabilitación del patrimonio,ind_global,2.555,True,99,3,1.97,0.01,-1.449,1.458,Sobre-demandante
+7,l'Olivereta,Rehabilitación del patrimonio,ind_global,2.512,True,310,6,6.13,1.861,-1.591,3.452,Sobre-demandante
+17,Pobles del Nord,Rehabilitación del patrimonio,ind_global,,True,34,3,5.57,1.612,,,Cómodo
+18,Pobles de l'Oest,Rehabilitación del patrimonio,ind_global,,True,15,1,1.08,-0.386,,,Cómodo
+19,Pobles del Sud,Rehabilitación del patrimonio,ind_global,,True,102,4,5.03,1.371,,,Cómodo
+4,Campanar,Repavimentación de calzadas,ind_global,3.767,True,8,2,0.23,-0.473,2.577,-3.05,Silencioso vulnerable
+15,Rascanya,Repavimentación de calzadas,ind_global,3.302,True,0,0,0.0,-0.723,1.033,-1.756,Silencioso vulnerable
+14,Benimaclet,Repavimentación de calzadas,ind_global,2.995,True,0,0,0.0,-0.723,0.011,-0.734,Silencioso vulnerable
+10,Quatre Carreres,Repavimentación de calzadas,ind_global,2.957,True,0,0,0.0,-0.723,-0.113,-0.61,Cómodo
+6,el Pla del Real,Repavimentación de calzadas,ind_global,3.032,True,9,1,0.28,-0.418,0.135,-0.554,Silencioso vulnerable
+1,Ciutat Vella,Repavimentación de calzadas,ind_global,2.993,True,12,1,0.47,-0.211,0.005,-0.217,Silencioso vulnerable
+12,Camins al Grau,Repavimentación de calzadas,ind_global,2.851,True,4,1,0.06,-0.658,-0.465,-0.193,Cómodo
+8,Patraix,Repavimentación de calzadas,ind_global,2.907,True,15,3,0.25,-0.451,-0.278,-0.173,Cómodo
+3,Extramurs,Repavimentación de calzadas,ind_global,3.003,True,45,2,0.89,0.246,0.04,0.206,Demanda legítima
+2,l'Eixample,Repavimentación de calzadas,ind_global,3.103,True,56,3,1.24,0.627,0.37,0.257,Demanda legítima
+9,Jesús,Repavimentación de calzadas,ind_global,2.749,True,10,2,0.19,-0.516,-0.805,0.288,Cómodo
+11,Poblats Marítims,Repavimentación de calzadas,ind_global,2.67,True,0,0,0.0,-0.723,-1.068,0.345,Cómodo
+16,Benicalap,Repavimentación de calzadas,ind_global,3.153,True,75,1,1.76,1.193,0.538,0.655,Demanda legítima
+7,l'Olivereta,Repavimentación de calzadas,ind_global,2.512,True,0,0,0.0,-0.723,-1.591,0.868,Cómodo
+5,la Saïdia,Repavimentación de calzadas,ind_global,2.555,True,10,1,0.2,-0.505,-1.449,0.943,Cómodo
+13,Algirós,Repavimentación de calzadas,ind_global,3.31,True,160,4,3.83,3.447,1.058,2.388,Demanda legítima
+17,Pobles del Nord,Repavimentación de calzadas,ind_global,,True,8,3,1.31,0.703,,,Cómodo
+18,Pobles de l'Oest,Repavimentación de calzadas,ind_global,,True,8,6,0.58,-0.092,,,Cómodo
+19,Pobles del Sud,Repavimentación de calzadas,ind_global,,True,27,5,1.33,0.725,,,Cómodo
+4,Campanar,Reurbanización de calles,ind_global,3.767,True,4,1,0.12,-0.672,2.577,-3.249,Silencioso vulnerable
+13,Algirós,Reurbanización de calles,ind_global,3.31,True,0,0,0.0,-0.719,1.058,-1.777,Silencioso vulnerable
+15,Rascanya,Reurbanización de calles,ind_global,3.302,True,0,0,0.0,-0.719,1.033,-1.752,Silencioso vulnerable
+6,el Pla del Real,Reurbanización de calles,ind_global,3.032,True,0,0,0.0,-0.719,0.135,-0.854,Silencioso vulnerable
+16,Benicalap,Reurbanización de calles,ind_global,3.153,True,45,3,1.06,-0.301,0.538,-0.839,Silencioso vulnerable
+10,Quatre Carreres,Reurbanización de calles,ind_global,2.957,True,8,1,0.11,-0.675,-0.113,-0.562,Cómodo
+2,l'Eixample,Reurbanización de calles,ind_global,3.103,True,70,4,1.55,-0.107,0.37,-0.477,Silencioso vulnerable
+1,Ciutat Vella,Reurbanización de calles,ind_global,2.993,True,31,2,1.21,-0.241,0.005,-0.246,Silencioso vulnerable
+8,Patraix,Reurbanización de calles,ind_global,2.907,True,68,3,1.14,-0.269,-0.278,0.009,Cómodo
+14,Benimaclet,Reurbanización de calles,ind_global,2.995,True,62,4,2.0,0.07,0.011,0.059,Demanda legítima
+12,Camins al Grau,Reurbanización de calles,ind_global,2.851,True,52,4,0.82,-0.395,-0.465,0.069,Cómodo
+11,Poblats Marítims,Reurbanización de calles,ind_global,2.67,True,40,2,0.67,-0.454,-1.068,0.613,Cómodo
+9,Jesús,Reurbanización de calles,ind_global,2.749,True,122,5,2.27,0.177,-0.805,0.981,Sobre-demandante
+3,Extramurs,Reurbanización de calles,ind_global,3.003,True,271,7,5.35,1.392,0.04,1.353,Demanda legítima
+7,l'Olivereta,Reurbanización de calles,ind_global,2.512,True,68,1,1.34,-0.19,-1.591,1.401,Cómodo
+5,la Saïdia,Reurbanización de calles,ind_global,2.555,True,141,6,2.81,0.39,-1.449,1.839,Sobre-demandante
+17,Pobles del Nord,Reurbanización de calles,ind_global,,True,68,3,11.14,3.677,,,Cómodo
+18,Pobles de l'Oest,Reurbanización de calles,ind_global,,True,9,1,0.65,-0.462,,,Cómodo
+19,Pobles del Sud,Reurbanización de calles,ind_global,,True,48,3,2.37,0.216,,,Cómodo
+4,Campanar,Río Turia y litoral,ind_global,3.767,True,108,3,3.11,0.556,2.577,-2.021,Demanda legítima
+13,Algirós,Río Turia y litoral,ind_global,3.31,True,0,0,0.0,-0.561,1.058,-1.619,Silencioso vulnerable
+15,Rascanya,Río Turia y litoral,ind_global,3.302,True,0,0,0.0,-0.561,1.033,-1.594,Silencioso vulnerable
+16,Benicalap,Río Turia y litoral,ind_global,3.153,True,7,1,0.16,-0.504,0.538,-1.042,Silencioso vulnerable
+14,Benimaclet,Río Turia y litoral,ind_global,2.995,True,0,0,0.0,-0.561,0.011,-0.573,Silencioso vulnerable
+1,Ciutat Vella,Río Turia y litoral,ind_global,2.993,True,0,0,0.0,-0.561,0.005,-0.566,Silencioso vulnerable
+3,Extramurs,Río Turia y litoral,ind_global,3.003,True,5,1,0.1,-0.525,0.04,-0.565,Silencioso vulnerable
+2,l'Eixample,Río Turia y litoral,ind_global,3.103,True,75,1,1.66,0.035,0.37,-0.334,Demanda legítima
+10,Quatre Carreres,Río Turia y litoral,ind_global,2.957,True,47,2,0.62,-0.338,-0.113,-0.225,Cómodo
+8,Patraix,Río Turia y litoral,ind_global,2.907,True,20,1,0.34,-0.439,-0.278,-0.161,Cómodo
+12,Camins al Grau,Río Turia y litoral,ind_global,2.851,True,22,2,0.35,-0.435,-0.465,0.029,Cómodo
+6,el Pla del Real,Río Turia y litoral,ind_global,3.032,True,86,5,2.72,0.416,0.135,0.281,Demanda legítima
+9,Jesús,Río Turia y litoral,ind_global,2.749,True,6,1,0.11,-0.522,-0.805,0.283,Cómodo
+11,Poblats Marítims,Río Turia y litoral,ind_global,2.67,True,147,8,2.47,0.326,-1.068,1.394,Sobre-demandante
+5,la Saïdia,Río Turia y litoral,ind_global,2.555,True,117,4,2.33,0.276,-1.449,1.725,Sobre-demandante
+7,l'Olivereta,Río Turia y litoral,ind_global,2.512,True,176,4,3.48,0.689,-1.591,2.28,Sobre-demandante
+17,Pobles del Nord,Río Turia y litoral,ind_global,,True,0,0,0.0,-0.561,,,Cómodo
+18,Pobles de l'Oest,Río Turia y litoral,ind_global,,True,0,0,0.0,-0.561,,,Cómodo
+19,Pobles del Sud,Río Turia y litoral,ind_global,,True,248,12,12.22,3.83,,,Cómodo
+4,Campanar,Seguridad ciudadana,ind_global,3.767,True,0,0,0.0,-0.602,2.577,-3.179,Silencioso vulnerable
+13,Algirós,Seguridad ciudadana,ind_global,3.31,True,0,0,0.0,-0.602,1.058,-1.66,Silencioso vulnerable
+16,Benicalap,Seguridad ciudadana,ind_global,3.153,True,45,5,1.06,-0.363,0.538,-0.901,Silencioso vulnerable
+6,el Pla del Real,Seguridad ciudadana,ind_global,3.032,True,2,1,0.06,-0.588,0.135,-0.724,Silencioso vulnerable
+2,l'Eixample,Seguridad ciudadana,ind_global,3.103,True,58,2,1.29,-0.311,0.37,-0.68,Silencioso vulnerable
+3,Extramurs,Seguridad ciudadana,ind_global,3.003,True,9,1,0.18,-0.561,0.04,-0.601,Silencioso vulnerable
+8,Patraix,Seguridad ciudadana,ind_global,2.907,True,0,0,0.0,-0.602,-0.278,-0.324,Cómodo
+1,Ciutat Vella,Seguridad ciudadana,ind_global,2.993,True,36,1,1.41,-0.283,0.005,-0.289,Silencioso vulnerable
+15,Rascanya,Seguridad ciudadana,ind_global,3.302,True,367,5,7.08,0.997,1.033,-0.036,Demanda legítima
+14,Benimaclet,Seguridad ciudadana,ind_global,2.995,True,86,4,2.77,0.024,0.011,0.012,Demanda legítima
+10,Quatre Carreres,Seguridad ciudadana,ind_global,2.957,True,226,9,3.0,0.075,-0.113,0.189,Sobre-demandante
+9,Jesús,Seguridad ciudadana,ind_global,2.749,True,0,0,0.0,-0.602,-0.805,0.203,Cómodo
+11,Poblats Marítims,Seguridad ciudadana,ind_global,2.67,True,40,1,0.67,-0.451,-1.068,0.617,Cómodo
+12,Camins al Grau,Seguridad ciudadana,ind_global,2.851,True,217,5,3.42,0.17,-0.465,0.635,Sobre-demandante
+5,la Saïdia,Seguridad ciudadana,ind_global,2.555,True,13,2,0.26,-0.543,-1.449,0.906,Cómodo
+7,l'Olivereta,Seguridad ciudadana,ind_global,2.512,True,55,3,1.09,-0.356,-1.591,1.235,Cómodo
+17,Pobles del Nord,Seguridad ciudadana,ind_global,,True,37,2,6.06,0.766,,,Cómodo
+18,Pobles de l'Oest,Seguridad ciudadana,ind_global,,True,269,4,19.44,3.787,,,Cómodo
+19,Pobles del Sud,Seguridad ciudadana,ind_global,,True,58,3,2.86,0.044,,,Cómodo
+13,Algirós,Solares y suelo disponible,ind_global,3.31,True,2,2,0.05,-1.453,1.058,-2.511,Silencioso vulnerable
+4,Campanar,Solares y suelo disponible,ind_global,3.767,True,484,14,13.94,0.99,2.577,-1.588,Demanda legítima
+3,Extramurs,Solares y suelo disponible,ind_global,3.003,True,61,2,1.2,-1.251,0.04,-1.291,Silencioso vulnerable
+2,l'Eixample,Solares y suelo disponible,ind_global,3.103,True,171,5,3.79,-0.795,0.37,-1.165,Silencioso vulnerable
+15,Rascanya,Solares y suelo disponible,ind_global,3.302,True,394,10,7.6,-0.125,1.033,-1.158,Silencioso vulnerable
+14,Benimaclet,Solares y suelo disponible,ind_global,2.995,True,150,4,4.83,-0.613,0.011,-0.624,Silencioso vulnerable
+12,Camins al Grau,Solares y suelo disponible,ind_global,2.851,True,274,11,4.32,-0.702,-0.465,-0.238,Cómodo
+10,Quatre Carreres,Solares y suelo disponible,ind_global,2.957,True,513,15,6.82,-0.263,-0.113,-0.149,Cómodo
+8,Patraix,Solares y suelo disponible,ind_global,2.907,True,506,15,8.51,0.035,-0.278,0.313,Sobre-demandante
+11,Poblats Marítims,Solares y suelo disponible,ind_global,2.67,True,300,9,5.04,-0.576,-1.068,0.492,Cómodo
+16,Benicalap,Solares y suelo disponible,ind_global,3.153,True,656,18,15.4,1.246,0.538,0.708,Demanda legítima
+1,Ciutat Vella,Solares y suelo disponible,ind_global,2.993,True,324,10,12.68,0.768,0.005,0.763,Demanda legítima
+6,el Pla del Real,Solares y suelo disponible,ind_global,3.032,True,438,6,13.85,0.974,0.135,0.838,Demanda legítima
+7,l'Olivereta,Solares y suelo disponible,ind_global,2.512,True,339,8,6.7,-0.284,-1.591,1.307,Cómodo
+9,Jesús,Solares y suelo disponible,ind_global,2.749,True,701,8,13.03,0.83,-0.805,1.634,Sobre-demandante
+5,la Saïdia,Solares y suelo disponible,ind_global,2.555,True,482,14,9.6,0.226,-1.449,1.675,Sobre-demandante
+17,Pobles del Nord,Solares y suelo disponible,ind_global,,True,39,2,6.39,-0.338,,,Cómodo
+18,Pobles de l'Oest,Solares y suelo disponible,ind_global,,True,320,6,23.12,2.604,,,Cómodo
+19,Pobles del Sud,Solares y suelo disponible,ind_global,,True,22,3,1.08,-1.272,,,Cómodo
+4,Campanar,Transporte público (EMT),ind_global,3.767,True,40,2,1.15,0.082,2.577,-2.496,Demanda legítima
+13,Algirós,Transporte público (EMT),ind_global,3.31,True,0,0,0.0,-0.615,1.058,-1.674,Silencioso vulnerable
+15,Rascanya,Transporte público (EMT),ind_global,3.302,True,0,0,0.0,-0.615,1.033,-1.648,Silencioso vulnerable
+2,l'Eixample,Transporte público (EMT),ind_global,3.103,True,10,1,0.22,-0.482,0.37,-0.852,Silencioso vulnerable
+6,el Pla del Real,Transporte público (EMT),ind_global,3.032,True,0,0,0.0,-0.615,0.135,-0.751,Silencioso vulnerable
+1,Ciutat Vella,Transporte público (EMT),ind_global,2.993,True,0,0,0.0,-0.615,0.005,-0.62,Silencioso vulnerable
+10,Quatre Carreres,Transporte público (EMT),ind_global,2.957,True,0,0,0.0,-0.615,-0.113,-0.502,Cómodo
+3,Extramurs,Transporte público (EMT),ind_global,3.003,True,24,1,0.47,-0.33,0.04,-0.37,Silencioso vulnerable
+14,Benimaclet,Transporte público (EMT),ind_global,2.995,True,14,2,0.45,-0.343,0.011,-0.354,Silencioso vulnerable
+8,Patraix,Transporte público (EMT),ind_global,2.907,True,47,3,0.79,-0.137,-0.278,0.142,Cómodo
+9,Jesús,Transporte público (EMT),ind_global,2.749,True,0,0,0.0,-0.615,-0.805,0.189,Cómodo
+12,Camins al Grau,Transporte público (EMT),ind_global,2.851,True,50,1,0.79,-0.137,-0.465,0.328,Cómodo
+11,Poblats Marítims,Transporte público (EMT),ind_global,2.67,True,0,0,0.0,-0.615,-1.068,0.452,Cómodo
+5,la Saïdia,Transporte público (EMT),ind_global,2.555,True,0,0,0.0,-0.615,-1.449,0.833,Cómodo
+7,l'Olivereta,Transporte público (EMT),ind_global,2.512,True,0,0,0.0,-0.615,-1.591,0.976,Cómodo
+16,Benicalap,Transporte público (EMT),ind_global,3.153,True,191,5,4.48,2.1,0.538,1.562,Demanda legítima
+17,Pobles del Nord,Transporte público (EMT),ind_global,,True,35,2,5.73,2.858,,,Cómodo
+18,Pobles de l'Oest,Transporte público (EMT),ind_global,,True,23,1,1.66,0.391,,,Cómodo
+19,Pobles del Sud,Transporte público (EMT),ind_global,,True,72,2,3.55,1.536,,,Cómodo
+9,Jesús,Zonas verdes,m2_verde_per_hab,3.25,False,0,0,0.0,-0.546,1.075,-1.621,Silencioso vulnerable
+15,Rascanya,Zonas verdes,m2_verde_per_hab,3.31,False,0,0,0.0,-0.546,1.059,-1.604,Silencioso vulnerable
+8,Patraix,Zonas verdes,m2_verde_per_hab,3.83,False,0,0,0.0,-0.546,0.915,-1.461,Silencioso vulnerable
+3,Extramurs,Zonas verdes,m2_verde_per_hab,3.05,False,55,1,1.09,-0.025,1.13,-1.155,Silencioso vulnerable
+2,l'Eixample,Zonas verdes,m2_verde_per_hab,5.02,False,0,0,0.0,-0.546,0.587,-1.133,Silencioso vulnerable
+7,l'Olivereta,Zonas verdes,m2_verde_per_hab,5.36,False,0,0,0.0,-0.546,0.494,-1.039,Silencioso vulnerable
+16,Benicalap,Zonas verdes,m2_verde_per_hab,6.05,False,0,0,0.0,-0.546,0.303,-0.849,Silencioso vulnerable
+14,Benimaclet,Zonas verdes,m2_verde_per_hab,2.71,False,60,3,1.93,0.376,1.224,-0.848,Demanda legítima
+12,Camins al Grau,Zonas verdes,m2_verde_per_hab,5.64,False,38,2,0.6,-0.259,0.416,-0.675,Silencioso vulnerable
+13,Algirós,Zonas verdes,m2_verde_per_hab,6.4,False,11,1,0.26,-0.421,0.207,-0.628,Silencioso vulnerable
+5,la Saïdia,Zonas verdes,m2_verde_per_hab,8.86,False,0,0,0.0,-0.546,-0.471,-0.074,Cómodo
+18,Pobles de l'Oest,Zonas verdes,m2_verde_per_hab,9.82,False,0,0,0.0,-0.546,-0.736,0.19,Cómodo
+6,el Pla del Real,Zonas verdes,m2_verde_per_hab,10.17,False,0,0,0.0,-0.546,-0.832,0.287,Cómodo
+11,Poblats Marítims,Zonas verdes,m2_verde_per_hab,7.33,False,99,1,1.66,0.247,-0.049,0.297,Sobre-demandante
+19,Pobles del Sud,Zonas verdes,m2_verde_per_hab,10.8,False,16,1,0.79,-0.168,-1.006,0.838,Cómodo
+1,Ciutat Vella,Zonas verdes,m2_verde_per_hab,7.59,False,71,1,2.78,0.782,-0.121,0.903,Sobre-demandante
+10,Quatre Carreres,Zonas verdes,m2_verde_per_hab,11.74,False,242,6,3.21,0.988,-1.265,2.253,Sobre-demandante
+4,Campanar,Zonas verdes,m2_verde_per_hab,17.49,False,13,1,0.37,-0.369,-2.85,2.481,Cómodo
+17,Pobles del Nord,Zonas verdes,m2_verde_per_hab,7.44,False,55,1,9.01,3.758,-0.08,3.838,Sobre-demandante
