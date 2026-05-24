@@ -9,6 +9,8 @@ import {
   FICHAS,
   CUADRANTE_COLOR,
   CUADRANTE_DESCRIPCION,
+  CUADRANTE_LABEL_PUBLICO,
+  CUADRANTE_ACCION,
   Cuadrante,
 } from '@/lib/data';
 
@@ -17,8 +19,15 @@ import HallazgosSection from '@/components/HallazgosSection';
 import TimelineEdiciones from '@/components/TimelineEdiciones';
 
 export default function Home() {
-  const [selectedTema, setSelectedTema] = useState<string | null>(null);
+  // Tema precargado: "Pacificación del tráfico" — es uno de los hallazgos
+  // más rotundos (Campanar / Pla del Real con velocidad alta y demanda baja).
+  const DEFAULT_TEMA = TEMAS.find((t) => t.nombre === 'Pacificación del tráfico' && MATRIZ[t.nombre])?.nombre
+    ?? TEMAS.find((t) => MATRIZ[t.nombre])?.nombre
+    ?? null;
+  const [selectedTema, setSelectedTema] = useState<string | null>(DEFAULT_TEMA);
   const [selectedDistrito, setSelectedDistrito] = useState<number | null>(null);
+  const pctSilencio = ((RESUMEN.cuadrante_counts?.['Silencioso vulnerable'] ?? 0)
+    / Object.values(RESUMEN.cuadrante_counts ?? {}).reduce((a, b) => a + b, 0) * 100);
 
   const ficha = selectedDistrito ? FICHAS[String(selectedDistrito)] : null;
   const fmt = (n: number) => n.toLocaleString('es-ES');
@@ -47,7 +56,57 @@ export default function Home() {
           responder a una pregunta: <em>¿la voz ciudadana refleja las carencias observables en los
           datos municipales de cada distrito?</em>
         </p>
+        <p
+          style={{
+            fontSize: '1.05rem',
+            lineHeight: 1.5,
+            color: 'var(--color-accent)',
+            fontStyle: 'italic',
+            maxWidth: 760,
+            margin: '1rem 0 0',
+            fontFamily: 'var(--font-serif)',
+          }}
+        >
+          El mayor riesgo de Decidim no es que unos barrios pidan demasiado, sino que otros, con
+          necesidades documentadas, no lleguen a pedir nada.
+        </p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-muted)', marginTop: '0.6rem', maxWidth: 760 }}>
+          La octava edición de DecidimVLC (2025-2026) está en curso. Los hallazgos de este atlas
+          llegan a tiempo para informar su mecanismo de reequilibrio territorial.
+        </p>
       </header>
+
+      <section
+        style={{
+          margin: '1.5rem 0 2rem',
+          background: '#fff',
+          border: '2px solid var(--color-accent)',
+          borderRadius: 8,
+          padding: '1.2rem 1.4rem',
+        }}
+      >
+        <div
+          style={{
+            fontSize: '0.78rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.12em',
+            color: 'var(--color-accent)',
+            fontWeight: 700,
+            marginBottom: '0.3rem',
+          }}
+        >
+          Hallazgo central
+        </div>
+        <p style={{ fontSize: '1.25rem', lineHeight: 1.4, margin: 0, fontFamily: 'var(--font-serif)' }}>
+          De {Object.values(RESUMEN.cuadrante_counts ?? {}).reduce((a, b) => a + b, 0)} pares
+          (distrito × tema) analizables con indicador municipal específico,{' '}
+          <strong style={{ color: 'var(--color-accent)' }}>
+            el {pctSilencio.toFixed(0)}% muestra un patrón de "silencio sobre carencia observable":
+          </strong>{' '}
+          el distrito tiene una carencia por encima de la media de la ciudad pero su demanda
+          relativa en Decidim queda por debajo. Es el cuadrante más frecuente.
+        </p>
+      </section>
 
       <section style={{ marginBottom: '2rem' }}>
         <div
@@ -111,19 +170,19 @@ export default function Home() {
           <strong style={{ display: 'block', marginBottom: '0.3rem' }}>
             Cómo leer este mapa
           </strong>
+          <p style={{ margin: '0 0 0.4rem' }}>
+            <strong>En resumen:</strong> comparamos si un distrito pide más o menos que la media de
+            la ciudad, y si sus datos urbanos están mejor o peor que la media. El cruce de las dos
+            comparaciones genera cuatro cuadrantes.
+          </p>
           <ul style={{ margin: 0, paddingLeft: '1.2rem' }}>
             <li>
               <strong>Demanda</strong> = apoyos ciudadanos por 1.000 habitantes en ese tema (z-score
               respecto a la media de los 19 distritos).
             </li>
             <li>
-              <strong>Carencia</strong> = indicador municipal específico del tema (ej. m² verde/hab,
-              metros de carril bici/hab). Cuando no existe indicador directo se usa el índice de
-              vulnerabilidad global como proxy territorial.
-            </li>
-            <li>
-              Cada distrito se clasifica en un cuadrante según si su demanda y su carencia están por
-              encima o por debajo de la media de la ciudad.
+              <strong>Carencia</strong> = indicador municipal específico del tema (m² verde/hab,
+              metros de carril bici/hab, velocidad media de calles, paradas EMT/hab, etc.).
             </li>
           </ul>
         </div>
@@ -184,7 +243,7 @@ export default function Home() {
           <aside style={{ minHeight: 200 }}>
             <h3 style={{ fontSize: '1rem', marginTop: 0, marginBottom: '0.6rem' }}>Leyenda</h3>
             {(Object.keys(CUADRANTE_COLOR) as Cuadrante[]).map((c) => (
-              <div key={c} style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.6rem' }}>
+              <div key={c} style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.7rem' }}>
                 <span
                   style={{
                     width: 14,
@@ -196,9 +255,12 @@ export default function Home() {
                   }}
                 />
                 <div>
-                  <strong style={{ fontSize: '0.9rem' }}>{c}</strong>
-                  <p style={{ margin: '0.15rem 0 0', fontSize: '0.8rem', color: 'var(--color-muted)', lineHeight: 1.4 }}>
+                  <strong style={{ fontSize: '0.9rem' }}>{CUADRANTE_LABEL_PUBLICO[c]}</strong>
+                  <p style={{ margin: '0.15rem 0 0.1rem', fontSize: '0.78rem', color: 'var(--color-muted)', lineHeight: 1.4 }}>
                     {CUADRANTE_DESCRIPCION[c]}
+                  </p>
+                  <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--color-ink)', fontStyle: 'italic' }}>
+                    → {CUADRANTE_ACCION[c]}
                   </p>
                 </div>
               </div>

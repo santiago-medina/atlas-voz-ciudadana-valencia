@@ -19,12 +19,29 @@ export const CUADRANTE_COLOR: Record<Cuadrante, string> = {
   Cómodo: '#3a8c4d',
 };
 
+export const CUADRANTE_LABEL_PUBLICO: Record<Cuadrante, string> = {
+  'Demanda legítima': 'Demanda alineada con carencia',
+  'Sobre-demandante': 'Demanda por encima del indicador',
+  'Silencioso vulnerable': 'Silencio sobre carencia observable',
+  Cómodo: 'Sin carencia ni demanda destacadas',
+};
+
 export const CUADRANTE_DESCRIPCION: Record<Cuadrante, string> = {
-  'Demanda legítima': 'Carencia alta + demanda alta: la voz ciudadana coincide con la realidad medible.',
-  'Sobre-demandante': 'Carencia baja + demanda alta: el distrito pide más de lo que los datos sugieren necesitar.',
+  'Demanda legítima':
+    'Carencia alta + demanda alta: la voz ciudadana coincide con la realidad medible.',
+  'Sobre-demandante':
+    'Carencia baja + demanda alta: la demanda relativa queda por encima de lo que el indicador objetivo sugiere.',
   'Silencioso vulnerable':
-    'Carencia alta + demanda baja: el distrito sufre el problema pero no lo expresa en Decidim.',
-  Cómodo: 'Carencia baja + demanda baja: ni hay problema ni se reclama.',
+    'Carencia alta + demanda baja: existe la carencia pero no llega a expresarse como demanda en Decidim.',
+  Cómodo:
+    'Carencia baja + demanda baja: ni hay problema observable ni se reclama.',
+};
+
+export const CUADRANTE_ACCION: Record<Cuadrante, string> = {
+  'Demanda legítima': 'Priorizar / estudiar viabilidad técnica',
+  'Sobre-demandante': 'Comunicar datos y criterios de selección',
+  'Silencioso vulnerable': 'Outreach presencial y validación vecinal',
+  Cómodo: 'Mantener seguimiento ordinario',
 };
 
 export interface Tema {
