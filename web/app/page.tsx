@@ -41,10 +41,11 @@ export default function Home() {
           Atlas de la Voz Ciudadana de València
         </h1>
         <p style={{ fontSize: '1.1rem', lineHeight: 1.55, color: 'var(--color-ink)', maxWidth: 760 }}>
-          Cruzamos las <strong>{fmt(RESUMEN.n_propuestas_total)} propuestas</strong> presentadas en{' '}
-          <strong>{RESUMEN.n_ediciones} ediciones</strong> de Decidim VLC ({RESUMEN.periodo}) con{' '}
-          <strong>once datasets municipales</strong> del Portal de Datos Abiertos para responder a una
-          pregunta: <em>¿la voz ciudadana refleja las carencias reales de cada distrito?</em>
+          Cruzamos las <strong>{fmt(RESUMEN.n_propuestas_total)} propuestas</strong> con título legible
+          presentadas en <strong>{RESUMEN.n_ediciones} ediciones</strong> de Decidim VLC ({RESUMEN.periodo})
+          con <strong>once datasets de realidad urbana</strong> del Portal de Datos Abiertos para
+          responder a una pregunta: <em>¿la voz ciudadana refleja las carencias observables en los
+          datos municipales de cada distrito?</em>
         </p>
       </header>
 
@@ -95,10 +96,43 @@ export default function Home() {
 
       <section style={{ marginBottom: '2rem' }}>
         <h2 style={{ fontSize: '1.4rem', marginBottom: '0.6rem' }}>Mapa de discrepancia</h2>
-        <p style={{ color: 'var(--color-muted)', fontSize: '0.95rem', marginTop: 0 }}>
-          Selecciona un tema para ver el cuadrante de cada distrito. Cada cuadrante cruza el nivel de
-          demanda ciudadana (apoyos por habitante) con la carencia real medida en los datasets municipales.
+
+        <div
+          style={{
+            background: '#faf7f0',
+            border: '1px solid var(--color-rule)',
+            borderRadius: 6,
+            padding: '0.9rem 1.1rem',
+            margin: '0.6rem 0 1rem',
+            fontSize: '0.88rem',
+            lineHeight: 1.55,
+          }}
+        >
+          <strong style={{ display: 'block', marginBottom: '0.3rem' }}>
+            Cómo leer este mapa
+          </strong>
+          <ul style={{ margin: 0, paddingLeft: '1.2rem' }}>
+            <li>
+              <strong>Demanda</strong> = apoyos ciudadanos por 1.000 habitantes en ese tema (z-score
+              respecto a la media de los 19 distritos).
+            </li>
+            <li>
+              <strong>Carencia</strong> = indicador municipal específico del tema (ej. m² verde/hab,
+              metros de carril bici/hab). Cuando no existe indicador directo se usa el índice de
+              vulnerabilidad global como proxy territorial.
+            </li>
+            <li>
+              Cada distrito se clasifica en un cuadrante según si su demanda y su carencia están por
+              encima o por debajo de la media de la ciudad.
+            </li>
+          </ul>
+        </div>
+
+        <p style={{ color: 'var(--color-muted)', fontSize: '0.92rem' }}>
+          Elige un tema y descubre qué distritos piden mucho, cuáles tienen carencias observables sin
+          demanda explícita, y dónde la voz ciudadana coincide con la realidad medible.
         </p>
+
         <div style={{ marginBottom: '0.8rem' }}>
           <select
             value={selectedTema ?? ''}
@@ -119,6 +153,23 @@ export default function Home() {
               </option>
             ))}
           </select>
+          {selectedTema && MATRIZ[selectedTema] && (
+            <div
+              style={{
+                marginTop: '0.5rem',
+                fontSize: '0.82rem',
+                color: 'var(--color-muted)',
+                fontStyle: 'italic',
+              }}
+            >
+              Indicador de carencia: <code style={{ background: '#f4f1ea', padding: '1px 6px', borderRadius: 3, fontSize: '0.85em' }}>
+                {Object.values(MATRIZ[selectedTema])[0]?.indicador_realidad ?? 'n/a'}
+              </code>
+              {Object.values(MATRIZ[selectedTema])[0]?.indicador_realidad === 'ind_global'
+                ? ' (proxy: índice de vulnerabilidad global 2021)'
+                : ''}
+            </div>
+          )}
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start' }}>
@@ -209,6 +260,71 @@ export default function Home() {
 
       <TimelineEdiciones />
       <HallazgosSection />
+
+      <section style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.6rem', borderBottom: '1px solid var(--color-rule)', paddingBottom: '0.4rem' }}>
+          Recomendaciones operativas
+        </h2>
+        <p style={{ color: 'var(--color-muted)', maxWidth: 720 }}>
+          Cinco propuestas concretas que se desprenden del análisis y que pueden incorporarse a la
+          octava edición de DecidimVLC (2025-2026, en curso) o a su seguimiento posterior.
+        </p>
+        <ol style={{ lineHeight: 1.6, fontSize: '0.95rem', maxWidth: 760 }}>
+          <li>
+            <strong>Outreach focalizado en distritos con silencios persistentes</strong> — campañas
+            presenciales en Campanar, Algirós, Rascanya, l'Olivereta y Benicalap, en colaboración con
+            asociaciones vecinales y mercados municipales.
+          </li>
+          <li>
+            <strong>Informe público anual sobre demandas persistentes</strong> — para cada par
+            (distrito × tema) con 4+ ediciones consecutivas sin selección, publicar el estado actual:
+            aceptada, rechazada por viabilidad, reprogramada o pendiente.
+          </li>
+          <li>
+            <strong>Revisar la categoría "Toda la ciudad"</strong> — el 22,6% de las propuestas se
+            etiquetan así y quedan fuera del mecanismo de reequilibrio territorial. Reducir esa
+            categoría o ponderarla explícitamente mejora la representatividad por distrito.
+          </li>
+          <li>
+            <strong>Ponderar apoyos por indicadores de vulnerabilidad</strong> — para que el peso
+            relativo de cada apoyo sea mayor en distritos con menor capacidad organizativa
+            histórica.
+          </li>
+          <li>
+            <strong>Validar los silencios con asociaciones vecinales</strong> — antes de actuar
+            sobre un patrón de "silencioso vulnerable", contrastar con representantes del distrito.
+            La ausencia de demanda puede deberse a desconocimiento, desconfianza, brecha digital o
+            saturación previa.
+          </li>
+        </ol>
+      </section>
+
+      <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.4rem', borderBottom: '1px solid var(--color-rule)', paddingBottom: '0.4rem' }}>
+          Límites del Atlas
+        </h2>
+        <ul style={{ lineHeight: 1.6, fontSize: '0.9rem', maxWidth: 760, color: 'var(--color-ink)' }}>
+          <li>
+            <strong>No mide la necesidad urbana en su totalidad.</strong> Mide la discrepancia entre
+            la demanda en Decidim y un conjunto concreto de indicadores municipales abiertos. Carencias
+            en salud, atención a mayores, seguridad subjetiva o bienestar quedan parcialmente fuera.
+          </li>
+          <li>
+            <strong>Decidim no es una muestra representativa de la población.</strong> Quien participa
+            está en general más organizado y conectado. "Demanda baja" no equivale necesariamente a
+            "ausencia de necesidad".
+          </li>
+          <li>
+            <strong>Algunos temas usan vulnerabilidad global como proxy</strong> de carencia
+            territorial. Es una aproximación razonable pero no equivalente a una métrica específica
+            por tema.
+          </li>
+          <li>
+            <strong>La unidad de análisis es el distrito</strong> (19 unidades). Distritos
+            heterogéneos pueden tener bolsas de silencio internas que el agregado distrital esconde.
+          </li>
+        </ul>
+      </section>
 
       <footer style={{ borderTop: '1px solid var(--color-rule)', paddingTop: '1rem', color: 'var(--color-muted)', fontSize: '0.85rem' }}>
         Datos: Portal de Datos Abiertos del Ayuntamiento de València (opendata.vlci.valencia.es) ·{' '}

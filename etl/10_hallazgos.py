@@ -72,54 +72,61 @@ def main() -> None:
     ]
     hallazgos.append({
         "id": "H03",
-        "titulo": "Campanar: máxima vulnerabilidad, mínima voz",
+        "titulo": "Campanar: alta vulnerabilidad y baja demanda relativa",
         "cifra": f"{camp['ind_global']:.2f} / {len(silencios_camp)}",
         "texto": (
-            f"Campanar registra el índice de vulnerabilidad más alto de la ciudad "
+            f"Campanar registra el índice de vulnerabilidad más alto de los 19 distritos "
             f"({camp['ind_global']:.2f}, escala 0-10) según el dataset municipal de 2021. "
-            f"Pese a ello, aparece como 'silencioso vulnerable' en {len(silencios_camp)} temas "
-            "distintos: aceras y movilidad peatonal, recogida de residuos, pacificación del "
-            "tráfico, rehabilitación de mercados, reurbanización de calles, seguridad ciudadana, "
-            "iluminación pública, repavimentación, puentes peatonales y litoral. "
-            "Pide muy poco para la situación que vive."
+            f"En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en "
+            f"{len(silencios_camp)} de los 38 temas analizados, incluyendo aceras y movilidad "
+            "peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de "
+            "mercados, reurbanización de calles, seguridad e iluminación. Su demanda relativa "
+            "en Decidim queda por debajo de lo que sugieren los indicadores objetivos."
         ),
         "fuente": "matriz_realidad.csv + indice_discrepancia.csv",
     })
 
-    # ----- H4: Carril bici, demanda emergente y más zombi ------------------
+    # ----- H4: Carril bici, demanda emergente y persistente sin ejecución ----
     bici_evol = next(t for t in evol["emergentes_top10"] if "bici" in t["tema"].lower())
     bici_zombi = [z for z in evol["demandas_zombi"] if "bici" in z["tema"].lower()]
     apoyos_bici_zombi = sum(z["apoyos"] for z in bici_zombi)
     hallazgos.append({
         "id": "H04",
-        "titulo": "El carril bici: la demanda que más crece y más se ignora",
-        "cifra": f"+{bici_evol['crecimiento']} / 0 ejecuciones",
+        "titulo": "Carril bici: demanda emergente con brecha de selección",
+        "cifra": f"+{bici_evol['crecimiento']} propuestas / 0 ejecuciones en repetidas",
         "texto": (
-            f"Los carriles bici son la demanda que más ha crecido entre 2015 y 2023: "
+            f"Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: "
             f"de {bici_evol['ed1']} propuestas en la 1ª edición a {bici_evol['ed7']} en la 7ª "
-            f"(+{bici_evol['crecimiento']}). Sin embargo, {len(bici_zombi)} pares (distrito, edición) "
-            f"piden carril bici de forma persistente ({apoyos_bici_zombi:,} apoyos acumulados) "
-            f"sin que se haya seleccionado ninguno. El caso más sangrante: Extramurs, con "
-            f"29 propuestas y 1.098 apoyos en 4 ediciones consecutivas."
-        ).replace(",", "."),
+            f"(+{bici_evol['crecimiento']}). En paralelo, {len(bici_zombi)} pares "
+            f"(distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna "
+            f"haya sido seleccionada — {apoyos_bici_zombi:,} apoyos en total. ".replace(",", ".") +
+            "El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin "
+            "selección en 4 ediciones. La demanda emergente y la baja tasa de selección "
+            "abren una brecha que conviene comunicar de forma explícita a la ciudadanía."
+        ),
         "fuente": "evolucion.json · emergentes_top10 + demandas_zombi",
     })
 
-    # ----- H5: Pobles del Nord, el efecto megáfono -----------------------
+    # ----- H5: Pobles del Nord, efecto de escala en distritos pequeños ----
     pn = realidad[realidad["nombre_distrito"] == "Pobles del Nord"].iloc[0]
     decidim_pn = decidim_real[decidim_real["nombre_distrito"] == "Pobles del Nord"]
     apoyos_per_capita_pn = decidim_pn["Numero_Apoyos"].sum() / pn["poblacion"] * 1000
-    media_apoyos = decidim_real[decidim_real["id_distrito"].between(1, 19)].groupby("id_distrito")["Numero_Apoyos"].sum().mean() / poblacion["poblacion"].mean() * 1000
+    # Media correcta: apoyos/hab promediado sobre los 19 distritos
+    apoyos_por_distrito = decidim_real[decidim_real["id_distrito"].between(1, 19)].groupby("id_distrito")["Numero_Apoyos"].sum()
+    pop_dict = dict(zip(poblacion["id_distrito"], poblacion["poblacion"]))
+    media_apoyos = sum(apoyos_por_distrito[i] / pop_dict[i] * 1000 for i in apoyos_por_distrito.index) / len(apoyos_por_distrito)
+    ratio = apoyos_per_capita_pn / media_apoyos
     hallazgos.append({
         "id": "H05",
-        "titulo": "Pobles del Nord: la voz desproporcionada de los pequeños",
+        "titulo": "Pobles del Nord: el peso relativo de los distritos pequeños",
         "cifra": f"{apoyos_per_capita_pn:.0f} apoyos/1.000 hab",
         "texto": (
-            f"Con solo {pn['poblacion']:,} habitantes, Pobles del Nord ha generado "
-            f"{int(decidim_pn['Numero_Apoyos'].sum()):,} apoyos en propuestas: "
-            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes, casi el doble que la "
-            f"media de Valencia ({media_apoyos:.0f}). En distritos pequeños, una minoría "
-            "organizada puede dominar el proceso participativo en términos relativos."
+            f"Con solo {pn['poblacion']:,} habitantes, Pobles del Nord acumula "
+            f"{int(decidim_pn['Numero_Apoyos'].sum()):,} apoyos en propuestas, equivalentes a "
+            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes — {ratio:.1f} veces la media "
+            f"de la ciudad ({media_apoyos:.0f}). En distritos pequeños, una organización "
+            "vecinal activa puede amplificar el peso relativo del distrito en el proceso "
+            "participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio."
         ).replace(",", "."),
         "fuente": "decidim_tagged.csv + poblacion_distritos.csv",
     })
@@ -144,16 +151,18 @@ def main() -> None:
     # ----- H7: Desigualdad de espacios verdes ------------------------------
     top_v = realidad.nlargest(1, "m2_verde_per_hab").iloc[0]
     bot_v = realidad.nsmallest(1, "m2_verde_per_hab").iloc[0]
+    n_below_9 = int((realidad["m2_verde_per_hab"] < 9).sum())
     hallazgos.append({
         "id": "H07",
-        "titulo": "Verde: 6 veces más en el extremo alto que en el bajo",
+        "titulo": "Verde: hasta 6 veces más en el extremo alto que en el bajo",
         "cifra": f"{top_v['m2_verde_per_hab']:.1f} vs {bot_v['m2_verde_per_hab']:.1f} m²/hab",
         "texto": (
             f"Campanar lidera con {top_v['m2_verde_per_hab']:.1f} m² de zona verde por habitante. "
             f"En el extremo opuesto, Benimaclet ofrece {bot_v['m2_verde_per_hab']:.1f} m²/hab. "
-            "La OMS recomienda 9 m²/hab como mínimo: 5 distritos están por debajo. "
-            "Sin embargo, ninguno de esos 5 distritos está en el top de demanda en el tema "
-            "'Zonas verdes' en Decidim."
+            f"Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, "
+            f"{n_below_9} distritos quedan por debajo. Ninguno de ellos figura en el top de "
+            "demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la "
+            "carencia observable no se traduce automáticamente en demanda explícita."
         ),
         "fuente": "matriz_realidad.csv · m2_verde_per_hab",
     })
@@ -182,18 +191,19 @@ def main() -> None:
     apoyos_zombi = sum(z["apoyos"] for z in zombis)
     hallazgos.append({
         "id": "H09",
-        "titulo": "28 demandas se repiten desde hace 4+ ediciones sin ser ejecutadas",
-        "cifra": f"{len(zombis)} · {apoyos_zombi:,} apoyos".replace(",", "."),
+        "titulo": "28 demandas persistentes no han sido seleccionadas en 4+ ediciones",
+        "cifra": f"{len(zombis)} pares · {apoyos_zombi:,} apoyos".replace(",", "."),
         "texto": (
             f"{len(zombis)} pares (distrito, tema) han sido objeto de propuestas en al menos "
-            f"4 de las 7 ediciones sin que se seleccionara ninguna. Acumulan "
-            f"{apoyos_zombi:,} apoyos. ".replace(",", ".") +
-            "El top: " +
+            f"4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan "
+            f"{apoyos_zombi:,} apoyos ciudadanos. ".replace(",", ".") +
+            "Los tres pares con más apoyos acumulados son: " +
             ", ".join(
                 f"{z['nombre_distrito']} ({z['tema'].lower()})"
                 for z in sorted(zombis, key=lambda x: -x["apoyos"])[:3]
             ) +
-            ". Cada propuesta zombi es un voto ciudadano que el sistema ignora durante años."
+            ". Cada demanda persistente sin selección representa una desconexión entre "
+            "expresión ciudadana y ejecución que conviene comunicar de forma explícita."
         ),
         "fuente": "evolucion.json · demandas_zombi",
     })

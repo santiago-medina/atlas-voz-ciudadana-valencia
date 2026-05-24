@@ -23,31 +23,31 @@ En la 1ª edición se seleccionó el 100.0% de las propuestas; en la 7ª solo el
 *Fuente: evolucion.json · tasa_seleccion por edición*
 
 
-## H03 · Campanar: máxima vulnerabilidad, mínima voz
+## H03 · Campanar: alta vulnerabilidad y baja demanda relativa
 
 **3.77 / 19**
 
-Campanar registra el índice de vulnerabilidad más alto de la ciudad (3.77, escala 0-10) según el dataset municipal de 2021. Pese a ello, aparece como 'silencioso vulnerable' en 19 temas distintos: aceras y movilidad peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de mercados, reurbanización de calles, seguridad ciudadana, iluminación pública, repavimentación, puentes peatonales y litoral. Pide muy poco para la situación que vive.
+Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3.77, escala 0-10) según el dataset municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en 19 de los 38 temas analizados, incluyendo aceras y movilidad peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de mercados, reurbanización de calles, seguridad e iluminación. Su demanda relativa en Decidim queda por debajo de lo que sugieren los indicadores objetivos.
 
 
 *Fuente: matriz_realidad.csv + indice_discrepancia.csv*
 
 
-## H04 · El carril bici: la demanda que más crece y más se ignora
+## H04 · Carril bici: demanda emergente con brecha de selección
 
-**+103 / 0 ejecuciones**
+**+103 propuestas / 0 ejecuciones en repetidas**
 
-Los carriles bici son la demanda que más ha crecido entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). Sin embargo. 2 pares (distrito. edición) piden carril bici de forma persistente (1.340 apoyos acumulados) sin que se haya seleccionado ninguno. El caso más sangrante: Extramurs. con 29 propuestas y 1.098 apoyos en 4 ediciones consecutivas.
+Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo. 2 pares (distrito. tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada — 1.340 apoyos en total. El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.
 
 
 *Fuente: evolucion.json · emergentes_top10 + demandas_zombi*
 
 
-## H05 · Pobles del Nord: la voz desproporcionada de los pequeños
+## H05 · Pobles del Nord: el peso relativo de los distritos pequeños
 
 **503 apoyos/1.000 hab**
 
-Con solo 6.104 habitantes. Pobles del Nord ha generado 3.069 apoyos en propuestas: 503 apoyos por 1.000 habitantes. casi el doble que la media de Valencia (115). En distritos pequeños. una minoría organizada puede dominar el proceso participativo en términos relativos.
+Con solo 6.104 habitantes. Pobles del Nord acumula 3.069 apoyos en propuestas. equivalentes a 503 apoyos por 1.000 habitantes — 3.4 veces la media de la ciudad (147). En distritos pequeños. una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo. lo que conviene considerar al diseñar mecanismos de reequilibrio.
 
 
 *Fuente: decidim_tagged.csv + poblacion_distritos.csv*
@@ -63,11 +63,11 @@ Con solo 6.104 habitantes. Pobles del Nord ha generado 3.069 apoyos en propuesta
 *Fuente: decidim_tagged.csv · count(id_distrito == 0)*
 
 
-## H07 · Verde: 6 veces más en el extremo alto que en el bajo
+## H07 · Verde: hasta 6 veces más en el extremo alto que en el bajo
 
 **17.5 vs 2.7 m²/hab**
 
-Campanar lidera con 17.5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2.7 m²/hab. La OMS recomienda 9 m²/hab como mínimo: 5 distritos están por debajo. Sin embargo, ninguno de esos 5 distritos está en el top de demanda en el tema 'Zonas verdes' en Decidim.
+Campanar lidera con 17.5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2.7 m²/hab. Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia observable no se traduce automáticamente en demanda explícita.
 
 
 *Fuente: matriz_realidad.csv · m2_verde_per_hab*
@@ -83,11 +83,11 @@ Cruzando los 38 temas con los 19 distritos obtenemos 722 pares posibles. En 280 
 *Fuente: indice_discrepancia.csv · value_counts(cuadrante)*
 
 
-## H09 · 28 demandas se repiten desde hace 4+ ediciones sin ser ejecutadas
+## H09 · 28 demandas persistentes no han sido seleccionadas en 4+ ediciones
 
-**28 · 8.121 apoyos**
+**28 pares · 8.121 apoyos**
 
-28 pares (distrito. tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que se seleccionara ninguna. Acumulan 8.121 apoyos. El top: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada propuesta zombi es un voto ciudadano que el sistema ignora durante años.
+28 pares (distrito. tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Los tres pares con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada demanda persistente sin selección representa una desconexión entre expresión ciudadana y ejecución que conviene comunicar de forma explícita.
 
 
 *Fuente: evolucion.json · demandas_zombi*

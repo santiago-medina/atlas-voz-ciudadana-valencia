@@ -13,33 +13,39 @@ linkcolor: "{HTML}{B03A2E}"
 
 ## Resumen ejecutivo
 
-Entre 2015 y 2023, **9.131 personas** generaron **5.795 propuestas** y **180.000 apoyos**
-en las siete ediciones de los presupuestos participativos DecidimVLC. Ese caudal
-de información ha sido publicado por el Ayuntamiento de València como dataset
+Entre 2015 y 2023, vecinas y vecinos de València generaron **5.795 propuestas
+brutas** (5.285 con título legible, 4.043 asignadas a un distrito concreto, 1.195
+bajo "Toda la ciudad") y aproximadamente **180.000 apoyos** en las siete
+ediciones de los presupuestos participativos DecidimVLC. Ese caudal de
+información ha sido publicado por el Ayuntamiento de València como dataset
 abierto, pero hasta hoy no se había cruzado con el resto del portal para
 contestar a una pregunta sencilla y políticamente relevante:
 
-> **¿La voz ciudadana refleja las carencias reales de cada distrito?**
+> **¿La voz ciudadana refleja las carencias observables en los datos
+> municipales para cada distrito?**
 
-Este Atlas responde con datos. Sus principales conclusiones:
+Este Atlas responde con un cruce sistemático entre Decidim y once datasets de
+realidad urbana. Sus principales conclusiones:
 
-1. La participación se ha **duplicado** entre la 1ª y la 7ª edición, pero la
-   **tasa de ejecución** ha caído al 9,6%. Más voz, menos respuesta.
+1. La participación se ha **duplicado** entre la 1ª y la 7ª edición, mientras
+   la **tasa de selección** ha caído al 9,6%. Más voz, mayor brecha de
+   ejecución.
 2. **El 39% de los pares (distrito × tema) analizados muestra un patrón de
-   "silencio vulnerable"**: el distrito tiene una carencia objetiva por encima
-   de la media pero su demanda en Decidim está por debajo. Es la situación
-   más frecuente.
-3. **28 demandas son "zombi"**: combinaciones (distrito × tema) que se repiten
-   en al menos cuatro ediciones consecutivas sin que se haya seleccionado
-   ninguna. El caso más sangrante: Extramurs reclama carriles bici desde 2015
-   con 1.098 apoyos acumulados, 0 ejecuciones.
-4. Los **carriles bici** son la demanda que más crece (+103 propuestas entre
-   2015 y 2023) y, a la vez, la más desatendida.
-5. **Campanar concentra la mayor vulnerabilidad oficial de la ciudad** (índice
-   3,77 sobre 10) pero aparece como "silencioso vulnerable" en diez temas
-   distintos. La voz que más debería oírse es la que menos se oye.
+   "silencio vulnerable"**: el distrito presenta una carencia observable por
+   encima de la media de la ciudad pero su demanda en Decidim queda por
+   debajo. Es la situación más frecuente.
+3. **28 pares (distrito × tema) repiten propuestas en 4 o más ediciones
+   consecutivas sin que ninguna haya sido seleccionada**. Top por apoyos
+   acumulados: Extramurs en carriles bici (1.098 apoyos, 0 ejecuciones).
+4. Los **carriles bici** son la demanda con mayor crecimiento entre 2015 y
+   2023 (+103 propuestas) y la categoría con más casos de demanda
+   persistente sin selección.
+5. **Campanar registra el índice de vulnerabilidad más alto de los 19
+   distritos** (3,77 sobre 10) y aparece como "silencioso vulnerable" en
+   **19 de los 38 temas analizados**: el distrito que más carencia objetiva
+   acumula es el que menos demanda relativa expresa.
 6. La **8ª edición de DecidimVLC**, abierta en mayo de 2026 con un mecanismo
-   nuevo de reequilibrio territorial, debería tener en cuenta estos hallazgos
+   nuevo de reequilibrio territorial, puede beneficiarse de estos hallazgos
    para corregir patrones acumulados desde hace casi una década.
 
 El proyecto entrega tres piezas: una **web interactiva**
@@ -91,26 +97,28 @@ acústicamente saturadas, etc. Eso es lo que hace este Atlas.
 ### 2.1 Fuentes de datos
 
 Toda la información proviene del **Portal de Datos Abiertos del Ayuntamiento de
-València** (`opendata.vlci.valencia.es`). El proyecto consume **17 datasets**:
+València** (`opendata.vlci.valencia.es`). El pipeline consume **17 datasets**
+en total: una fuente principal (Decidim), dos de geometría territorial (distritos
+y barrios), un complemento demográfico, y **once datasets de "realidad urbana"**
+que se cruzan con la demanda ciudadana:
 
-| Dataset | Rol en el análisis |
-|---|---|
-| `apoyo-propuestas-decidimvlc` | Fuente principal — 5.795 propuestas con apoyos, edición, ámbito, presupuesto y selección. |
-| `districtes-distritos` | 19 distritos administrativos (polígonos). Unidad de análisis. |
-| `barris-barrios` | 88 barrios (sub-vista). |
-| `vulnerabilidad-por-barrios` | Índices oficiales 2021 de vulnerabilidad equipamental, demográfica, económica y global. |
-| `equipamients-municipals` | 2.915 equipamientos municipales con ubicación. |
-| `espais-verds` | 807 jardines, parques y zonas verdes (m²). |
-| `itinerarios-ciclistas` | Red de carriles bici (longitud por tramo). |
-| `aparcaments-bicicletes` | 4.297 plazas de aparcamiento para bicis. |
-| `parkings` | Parkings públicos (plazas). |
-| `centros-educativos` | 534 colegios e institutos. |
-| `mayores`, `joventut` | Recursos para personas mayores y juventud. |
-| `estacions-de-soroll`, `zones-zas` | Mediciones de ruido y zonas saturadas. |
-| `falles-fallas` | 351 fallas (intensidad cultural). |
-
-Adicionalmente se incorpora la **población por distrito** según el padrón
-municipal 2022 (807.396 habitantes totales).
+| Tipo | Dataset | Rol en el análisis |
+|---|---|---|
+| Principal | `apoyo-propuestas-decidimvlc` | 5.795 propuestas con apoyos, edición, ámbito, presupuesto y selección. |
+| Geometría | `districtes-distritos` | 19 distritos administrativos. Unidad de análisis. |
+| Geometría | `barris-barrios` | 88 barrios (sub-vista). |
+| Demografía | Padrón municipal 2022 | 807.396 habitantes para normalizar per cápita. |
+| Realidad 1 | `vulnerabilidad-por-barrios` | Índices oficiales 2021 (equipamental, demográfico, económico, global). |
+| Realidad 2 | `equipamients-municipals` | 2.915 equipamientos municipales con ubicación. |
+| Realidad 3 | `espais-verds` | 807 jardines, parques y zonas verdes (m²). |
+| Realidad 4 | `itinerarios-ciclistas` | Red de carriles bici (longitud por tramo). |
+| Realidad 5 | `aparcaments-bicicletes` | 4.297 plazas de aparcamiento para bicis. |
+| Realidad 6 | `parkings` | Parkings públicos (plazas). |
+| Realidad 7 | `centros-educativos` | 534 colegios e institutos. |
+| Realidad 8 | `majors-mayores` | Recursos para personas mayores. |
+| Realidad 9 | `joventut-juventud` | Recursos para juventud. |
+| Realidad 10 | `estacions-de-soroll` + `zones-zas` | Mediciones de ruido y zonas acústicamente saturadas. |
+| Realidad 11 | `falles-fallas` | 351 fallas (intensidad cultural). |
 
 ### 2.2 Pipeline
 
@@ -168,9 +176,52 @@ La combinación genera cuatro cuadrantes:
 | **Mucha demanda** | **Sobre-demandante** | **Demanda legítima** |
 | **Poca demanda** | **Cómodo** | **Silencioso vulnerable** |
 
-El cuadrante interesante es **Silencioso vulnerable**: los distritos donde un
-problema existe pero no se nombra en Decidim. Son los que requieren acción
-proactiva — no llegará por sí sola desde el proceso participativo.
+El cuadrante interesante es **Silencioso vulnerable**: los distritos donde
+existe una carencia observable por encima de la media pero no aparece en
+Decidim. Son los candidatos a acción proactiva del Ayuntamiento porque no
+llegarán por sí solos a través del proceso participativo.
+
+### 2.4 Indicadores de carencia por tema
+
+No todos los 38 temas tienen un indicador municipal directo. Cuando existe se
+usa el más específico (`m2_verde_per_hab` para parques y zonas verdes,
+`m_carril_bici_per_1000hab` para movilidad ciclista, `equipamientos_per_1000hab`
+para temas culturales, etc.). Cuando no existe un indicador directo —por
+ejemplo para "Aceras y movilidad peatonal" o "Recogida de residuos"— se usa el
+**índice de vulnerabilidad global del barrio (2021)** como proxy territorial.
+
+Esta elección está documentada en `etl/07_indice_discrepancia.py` y es
+auditable: cualquiera puede sustituir el mapeo y recalcular los cuadrantes.
+
+### 2.5 Limitaciones metodológicas
+
+El proyecto se publica con sus límites explícitos:
+
+- **El Atlas no mide la necesidad urbana en su totalidad.** Mide la
+  discrepancia entre la demanda expresada en Decidim y un conjunto concreto de
+  indicadores municipales abiertos. Carencias en salud, atención a mayores,
+  seguridad subjetiva o bienestar emocional están parcial o totalmente fuera
+  del alcance de los datasets disponibles.
+- **Decidim no es una muestra representativa de la población.** Quien
+  participa lo hace voluntariamente y tiende a estar más organizado y
+  conectado. Por tanto, "demanda baja" no equivale necesariamente a "ausencia
+  de necesidad".
+- **Algunos temas usan vulnerabilidad global como proxy.** Es una aproximación
+  razonable, pero no equivale a un indicador específico por tema. El
+  cuadrante de un par (distrito, tema) que usa el proxy debe leerse como
+  "señal de coherencia general", no como métrica directa de carencia.
+- **La unidad de análisis es el distrito (19 unidades).** Distritos
+  heterogéneos como Quatre Carreres o l'Eixample pueden tener bolsas de
+  silencio internas que el agregado distrital esconde. La próxima iteración
+  prevista cruzará a nivel sección censal.
+- **El padrón municipal usado es de 2022.** Las cifras per cápita pueden
+  variar ligeramente para ediciones de 2015-2019. El efecto sobre los
+  cuadrantes es marginal.
+
+Estas limitaciones no invalidan los hallazgos: los más fuertes —Campanar,
+demandas persistentes sin selección, peso de "Toda la ciudad"— son robustos a
+cambios razonables de metodología. Pero conviene tenerlas presentes al usar
+el Atlas para diseño de política.
 
 \pagebreak
 

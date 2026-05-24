@@ -1,9 +1,11 @@
 # Atlas de la Voz Ciudadana de València
 
-> ¿La voz ciudadana refleja las carencias reales de cada distrito?
+> ¿La voz ciudadana refleja las carencias observables en los datos municipales
+> de cada distrito?
 >
-> El Atlas cruza las **5.285 propuestas** vecinales presentadas a Decidim VLC
-> entre 2015 y 2023 con **once datasets municipales** del Portal de Datos
+> El Atlas cruza las **5.795 propuestas** vecinales registradas en Decidim VLC
+> entre 2015 y 2023 (5.285 con título legible, 4.043 asignadas a distrito,
+> 1.195 globales) con **once datasets de realidad urbana** del Portal de Datos
 > Abiertos para responder a esta pregunta.
 
 **Proyecto presentado a los Premios de Proyectos de Datos Abiertos y Periodismo de Datos del Ayuntamiento de València · Edición 2026.**
@@ -31,14 +33,14 @@ participativo.
 
 ## Tres hallazgos para abrir boca
 
-1. **Campanar**, máxima vulnerabilidad oficial (índice 3,77) → aparece como
-   silencioso vulnerable en **10 temas distintos**.
-2. **28 demandas zombi**: combinaciones (distrito × tema) que se repiten 4+
-   ediciones sin que se haya seleccionado ninguna. El caso top: Extramurs,
-   carriles bici, 1.098 apoyos acumulados, 0 ejecuciones.
+1. **Campanar**, el distrito con mayor vulnerabilidad oficial (índice 3,77) →
+   aparece como silencioso vulnerable en **19 de los 38 temas analizados**.
+2. **28 pares (distrito × tema) repiten propuestas en 4+ ediciones
+   consecutivas sin ninguna selección**. Caso destacado: Extramurs, carriles
+   bici, 1.098 apoyos acumulados, 0 ejecuciones.
 3. **El embudo presupuestario**: por cada euro que el Ayuntamiento ejecutó,
-   la ciudadanía pidió 4. Casi el 80 % de la inversión solicitada no se ha
-   convertido en proyecto.
+   la ciudadanía solicitó cuatro. Casi el 80% de la inversión propuesta no
+   se ha convertido en proyecto seleccionado.
 
 Los **13 hallazgos** completos están en [`docs/03_hallazgos.md`](docs/03_hallazgos.md)
 y en el [informe técnico](informe/informe.pdf).

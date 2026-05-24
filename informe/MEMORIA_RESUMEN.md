@@ -26,28 +26,31 @@ fontsize: 11pt
 ## Resumen del proyecto (300 palabras)
 
 El **Atlas de la Voz Ciudadana de València** cruza por primera vez las **5.795
-propuestas vecinales** registradas en las siete ediciones publicadas de
+propuestas brutas** registradas en las siete ediciones publicadas de
 DecidimVLC (2015-2023) con los datasets municipales del Portal de Datos
 Abiertos, para responder a una pregunta políticamente relevante: **¿la voz
-ciudadana refleja las carencias reales de cada distrito?**
+ciudadana refleja las carencias observables en los datos municipales para
+cada distrito?**
 
-A través de embeddings semánticos sobre los títulos de propuestas, las 5.285
-con título legible se agrupan en 38 temas (carriles bici, aceras, parques
-infantiles, recogida de residuos…). Esa Matriz de Demanda se contrasta con
-una Matriz de Realidad construida a partir de **once datasets municipales**:
-vulnerabilidad oficial por barrios, espacios verdes (m²/hab), longitud de
-carril bici, equipamientos municipales, centros educativos, recursos para
-mayores y juventud, estaciones de ruido, zonas acústicamente saturadas,
-parkings, aparcamientos bici y fallas. La normalización por habitante usa el
-padrón municipal 2022.
+A través de embeddings semánticos sobre los títulos de propuestas, las **5.285
+con título legible** se agrupan en 38 temas (carriles bici, aceras, parques
+infantiles, recogida de residuos…). De ellas, **4.043 están asignadas a un
+distrito concreto** y **1.195 figuran bajo "Toda la ciudad"**. La Matriz de
+Demanda resultante se contrasta con una Matriz de Realidad construida a partir
+de **once datasets municipales de "realidad urbana"** (vulnerabilidad oficial,
+espacios verdes m²/hab, carril bici, equipamientos, centros educativos,
+recursos para mayores y juventud, ruido y ZAS, parkings, aparcabicis y fallas).
+La normalización por habitante usa el padrón municipal 2022.
 
 El cruce arroja un índice de discrepancia que clasifica cada par (distrito,
 tema) en cuatro cuadrantes: **demanda legítima**, **sobre-demandante**,
 **silencioso vulnerable** y **cómodo**. El cuadrante más numeroso es el de los
-**silenciosos vulnerables (39%)**: distritos con carencia objetiva por encima
-de la media pero demanda en Decidim por debajo. **Campanar** concentra el
-patrón en diez temas; **Extramurs** acumula 1.098 apoyos en cuatro ediciones
-pidiendo carriles bici sin haber visto ejecutar ninguno.
+**silenciosos vulnerables (39%)**: distritos con carencia observable por encima
+de la media pero demanda en Decidim por debajo. **Campanar** (índice de
+vulnerabilidad 3,77, el más alto de la ciudad) aparece como silencioso
+vulnerable en **19 de los 38 temas analizados**; **Extramurs** acumula 1.098
+apoyos en cuatro ediciones pidiendo carriles bici sin haber visto ejecutar
+ninguno.
 
 El proyecto entrega: (1) una **web interactiva** con mapa coroplético, fichas
 por distrito y timeline 2015-2023; (2) un **informe técnico** en formato
@@ -136,13 +139,13 @@ Stack técnico:
 |---|---|
 | Propuestas analizadas | **5.795** (7 ediciones, 9 años) |
 | Apoyos ciudadanos | **180.000+** |
-| Tasa de selección global | **9,8%** |
+| Tasa de selección global | **11,4%** |
 | Distritos cubiertos | **19** |
 | Temas detectados | **38** |
-| Pares (distrito × tema) | **722** |
-| Cuadrante "silencioso vulnerable" | **39% de los pares** |
-| Demandas zombi (≥4 ediciones, 0 selección) | **28** |
-| Distrito con más patrones de silencio | **Campanar** (vulnerabilidad 3,77) |
+| Pares (distrito × tema) analizados | **722** |
+| Cuadrante "silencioso vulnerable" | **39% de los pares (280/722)** |
+| Demandas persistentes (≥4 ediciones, 0 selección) | **28** |
+| Distrito con más patrones de silencio | **Campanar** (19 temas; vulnerabilidad 3,77) |
 
 Los 13 hallazgos completos están en el informe técnico adjunto y en
 `docs/03_hallazgos.md` del repositorio.
