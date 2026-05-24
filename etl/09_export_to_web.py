@@ -159,22 +159,33 @@ def main() -> None:
         json.dumps(_clean(fichas), ensure_ascii=False), encoding="utf-8"
     )
 
-    # 6. Resumen para portada
-    n_total = int(temas["n_propuestas"].sum())
-    n_apoyos_total = int(temas["n_apoyos"].sum())
-    n_seleccionadas_total = int(temas["n_seleccionadas"].sum())
+    # 6. Resumen para portada — todos los números desde numeros.json para
+    #    garantizar consistencia con informe y memoria
+    numeros_path = PROC / "numeros.json"
+    nums = json.loads(numeros_path.read_text(encoding="utf-8")) if numeros_path.exists() else {}
+
     cuadrante_counts = idx["cuadrante"].value_counts().to_dict()
     resumen = {
-        "n_propuestas_total": n_total,
-        "n_apoyos_total": n_apoyos_total,
-        "n_seleccionadas_total": n_seleccionadas_total,
-        "n_distritos": 19,
-        "n_temas": len(temas_payload),
-        "n_ediciones": 7,
-        "periodo": "2015-2023",
-        "tasa_seleccion_global": round(n_seleccionadas_total / n_total, 3) if n_total else 0,
+        # Nombrado legacy (usado por la web) → valores oficiales de numeros.json
+        "n_propuestas_total": int(nums.get("N_PROPUESTAS_LEGIBLES", 0)),
+        "n_propuestas_brutas": int(nums.get("N_PROPUESTAS_BRUTAS", 0)),
+        "n_propuestas_legibles": int(nums.get("N_PROPUESTAS_LEGIBLES", 0)),
+        "n_propuestas_distrito": int(nums.get("N_PROPUESTAS_DISTRITO", 0)),
+        "n_propuestas_global": int(nums.get("N_PROPUESTAS_GLOBAL", 0)),
+        "n_apoyos_total": int(nums.get("N_APOYOS_TOTAL", 0)),
+        "n_seleccionadas_total": int(nums.get("N_SELECCIONADAS", 0)),
+        "n_distritos": int(nums.get("N_DISTRITOS", 19)),
+        "n_temas": int(nums.get("N_TEMAS_DETECTADOS", 38)),
+        "n_temas_con_indicador": int(nums.get("N_TEMAS_CON_INDICADOR", 23)),
+        "n_temas_sin_indicador": int(nums.get("N_TEMAS_SIN_INDICADOR", 15)),
+        "n_ediciones": int(nums.get("N_EDICIONES", 7)),
+        "periodo": nums.get("EDICIONES_PERIODO", "2015-2023"),
+        "tasa_seleccion_global": float(nums.get("PCT_TASA_SELECCION", 0)) / 100,
         "cuadrante_counts": {k: int(v) for k, v in cuadrante_counts.items()},
-        "presupuesto_total_solicitado_eur": int(demanda["presupuesto_solicitado"].sum()),
+        "presupuesto_total_solicitado_eur": int(nums.get("PRESUP_SOLICITADO", 0)),
+        "presupuesto_seleccionado_eur": int(nums.get("PRESUP_SELECCIONADO", 0)),
+        "n_datasets_realidad": int(nums.get("N_DATASETS_REALIDAD", 22)),
+        "pct_silencio": float(nums.get("PCT_SILENCIO", 0)),
     }
     (OUT / "resumen.json").write_text(
         json.dumps(_clean(resumen), ensure_ascii=False, indent=2), encoding="utf-8"
@@ -185,6 +196,14 @@ def main() -> None:
     if hallazgos_path.exists():
         (OUT / "hallazgos.json").write_text(
             hallazgos_path.read_text(encoding="utf-8"), encoding="utf-8"
+        )
+
+    # 8. Numeros (single source of truth — la web lo importa para evitar
+    # cifras a mano en JSX). Genera numeros.json si está disponible.
+    numeros_path = PROC / "numeros.json"
+    if numeros_path.exists():
+        (OUT / "numeros.json").write_text(
+            numeros_path.read_text(encoding="utf-8"), encoding="utf-8"
         )
 
     # Report sizes

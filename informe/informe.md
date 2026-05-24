@@ -1,6 +1,6 @@
 ---
 title: "Atlas de la Voz Ciudadana de València"
-subtitle: "Análisis cruzado entre las propuestas de Decidim VLC y los datasets municipales (2015-2023)"
+subtitle: "Análisis cruzado entre las propuestas de Decidim VLC y los datasets municipales ({{EDICIONES_PERIODO}})"
 author: "Santiago Medina"
 date: "Mayo de 2026"
 lang: es
@@ -13,55 +13,63 @@ linkcolor: "{HTML}{B03A2E}"
 
 ## Resumen ejecutivo
 
-Entre 2015 y 2023, vecinas y vecinos de València generaron **5.795 propuestas
-brutas** (5.285 con título legible, 4.043 asignadas a un distrito concreto, 1.195
-bajo "Toda la ciudad") y aproximadamente **180.000 apoyos** en las siete
-ediciones de los presupuestos participativos DecidimVLC. Ese caudal de
-información ha sido publicado por el Ayuntamiento de València como dataset
-abierto, pero hasta hoy no se había cruzado con el resto del portal para
-contestar a una pregunta sencilla y políticamente relevante:
+Entre 2015 y 2023, vecinas y vecinos de València generaron **{{N_PROPUESTAS_BRUTAS|int}}
+propuestas brutas** ({{N_PROPUESTAS_LEGIBLES|int}} con título legible,
+{{N_PROPUESTAS_DISTRITO|int}} asignadas a un distrito concreto,
+{{N_PROPUESTAS_GLOBAL|int}} bajo "Toda la ciudad") y **{{N_APOYOS_TOTAL|int}}
+apoyos** en las siete ediciones de los presupuestos participativos DecidimVLC.
+Ese caudal de información ha sido publicado por el Ayuntamiento de València
+como dataset abierto, pero hasta hoy no se había cruzado con el resto del
+portal para contestar a una pregunta sencilla y políticamente relevante:
 
 > **¿La voz ciudadana refleja las carencias observables en los datos
 > municipales para cada distrito?**
 
-Este Atlas responde con un cruce sistemático entre Decidim y **22 datasets de
-realidad urbana**. Cada uno de los 38 temas detectados se intenta cruzar con
-un indicador municipal específico (carril bici per cápita, velocidad media de
+Este Atlas responde con un cruce sistemático entre Decidim y **{{N_DATASETS_REALIDAD|raw}} datasets
+de realidad urbana**. Cada uno de los {{N_TEMAS_DETECTADOS|raw}} temas detectados se intenta cruzar
+con un indicador municipal específico (carril bici per cápita, velocidad media de
 calles, contenedores per cápita, m² verde/hab, paradas EMT, etc.). Cuando no
 existe un indicador directo, el tema se mantiene en la matriz de demanda pero
 **no entra en el índice de discrepancia**: preferimos cobertura honesta a una
-proxy genérica repetida 21 veces. Resultado: 23 de los 38 temas tienen un
-cuadrante medible, 437 pares (distrito × tema) analizables.
+proxy genérica repetida {{N_TEMAS_SIN_INDICADOR|raw}} veces. Resultado:
+**{{N_TEMAS_CON_INDICADOR|raw}} de los {{N_TEMAS_DETECTADOS|raw}} temas** tienen un cuadrante medible,
+**{{N_PARES_TOTAL|raw}} pares (distrito × tema) analizables**.
 
 Principales conclusiones:
 
-1. La participación se ha **duplicado** entre la 1ª y la 7ª edición, mientras
-   la **tasa de selección** global queda en el 11,4%. Más voz, mayor brecha
-   de ejecución.
-2. **El 45% de los pares (distrito × tema) con cruce honesto muestra un
-   patrón de "silencio vulnerable"**: el distrito presenta una carencia
-   observable por encima de la media de la ciudad pero su demanda en Decidim
-   queda por debajo. Es la situación más frecuente.
-3. **28 pares (distrito × tema) repiten propuestas en 4 o más ediciones
-   consecutivas sin que ninguna haya sido seleccionada**. Top por apoyos
-   acumulados: Extramurs en carriles bici (1.098 apoyos, 0 ejecuciones).
+1. La participación ha crecido un **{{PCT_CRECIMIENTO_PROPUESTAS|pct0}}** entre la
+   1ª edición ({{N_PROPUESTAS_ED1|raw}} propuestas) y la 7ª ({{N_PROPUESTAS_ED7|int}}
+   propuestas), mientras la **tasa de selección global** queda en el
+   **{{PCT_TASA_SELECCION|pct}}**. Más voz, mayor brecha de ejecución.
+
+2. **El {{PCT_SILENCIO|pct0}} de los pares (distrito × tema) con cruce honesto
+   muestra un patrón de "silencio sobre carencia observable"**:
+   {{N_PARES_SILENCIO|raw}} de {{N_PARES_TOTAL|raw}} pares. El distrito presenta una
+   carencia observable por encima de la media de la ciudad pero su demanda
+   en Decidim queda por debajo. Es la situación más frecuente.
+
+3. **{{N_DEMANDAS_ZOMBI|raw}} pares (distrito × tema) repiten propuestas en 4 o más
+   ediciones consecutivas sin que ninguna haya sido seleccionada**, acumulando
+   {{APOYOS_ZOMBI|int}} apoyos. Top por apoyos acumulados: Extramurs en carriles
+   bici ({{EXTRAMURS_BICI_APOYOS|raw}} apoyos en {{EXTRAMURS_BICI_EDICIONES|raw}} ediciones,
+   0 ejecuciones).
+
 4. Los **carriles bici** son la demanda con mayor crecimiento entre 2015 y
-   2023 (+103 propuestas) y la categoría con más casos de demanda
-   persistente sin selección.
-5. **Campanar registra el índice de vulnerabilidad más alto de los 19
-   distritos** (3,77 sobre 10) y aparece como "silencioso vulnerable" en
-   **6 de los 23 temas con indicador específico**, entre ellos: pacificación
-   del tráfico (velocidad media de sus calles 38,3 km/h, 2ª más alta de la
+   2023 (+{{BICI_CRECIMIENTO|raw}} propuestas, de {{BICI_ED1|raw}} a {{BICI_ED7|raw}}) y
+   la categoría con más casos de demanda persistente sin selección.
+
+5. **{{DISTRITO_VUL_MAX}} registra el índice de vulnerabilidad más alto
+   de los {{N_DISTRITOS|raw}} distritos** ({{N_VUL_MAX|float2}} sobre 10) y aparece como
+   "silencioso vulnerable" en **{{N_CAMPANAR_SILENCIOS|raw}} de los
+   {{N_TEMAS_CON_INDICADOR|raw}} temas con indicador específico**, entre ellos:
+   pacificación del tráfico (velocidad media de sus calles
+   {{VEL_CAMPANAR|float}} km/h, la #{{CAMPANAR_VEL_RANK|raw}} más alta de la
    ciudad), recogida de residuos, equipamientos culturales, instalaciones
    deportivas, aparcamiento y equipamientos específicos.
+
 6. La **8ª edición de DecidimVLC**, abierta en mayo de 2026 con un mecanismo
    nuevo de reequilibrio territorial, puede beneficiarse de estos hallazgos
    para corregir patrones acumulados desde hace casi una década.
-
-El proyecto entrega tres piezas: una **web interactiva**
-(`atlas-voz-ciudadana-valencia`), este **informe** y un **repositorio público en
-GitHub** con todo el código y los datos transformados. Todos los hallazgos son
-reproducibles ejecutando el pipeline ETL en menos de cinco minutos.
 
 \pagebreak
 
@@ -109,80 +117,71 @@ acústicamente saturadas, etc. Eso es lo que hace este Atlas.
 Toda la información proviene del **Portal de Datos Abiertos del Ayuntamiento de
 València** (`opendata.vlci.valencia.es`). El pipeline consume en total una
 fuente principal (Decidim), dos de geometría territorial (distritos y barrios),
-un complemento demográfico (padrón 2022) y **22 datasets de "realidad urbana"**
+un complemento demográfico (padrón 2022) y **{{N_DATASETS_REALIDAD|raw}} datasets de "realidad urbana"**
 que alimentan los indicadores específicos del cruce con la demanda ciudadana:
 
 | Tipo | Dataset | Rol en el análisis |
 |---|---|---|
-| Principal | `apoyo-propuestas-decidimvlc` | 5.795 propuestas con apoyos, edición, ámbito, presupuesto y selección. |
-| Geometría | `districtes-distritos` | 19 distritos administrativos. Unidad de análisis. |
+| Principal | `apoyo-propuestas-decidimvlc` | {{N_PROPUESTAS_BRUTAS|int}} propuestas con apoyos, edición, ámbito, presupuesto y selección. |
+| Geometría | `districtes-distritos` | {{N_DISTRITOS|raw}} distritos administrativos. Unidad de análisis. |
 | Geometría | `barris-barrios` | 88 barrios (sub-vista). |
-| Demografía | Padrón municipal 2022 | 807.396 habitantes para normalizar per cápita. |
+| Demografía | Padrón municipal 2022 | {{POBLACION_TOTAL|int}} habitantes para normalizar per cápita. |
 | Realidad | `vulnerabilidad-por-barrios` | Índices oficiales 2021 (equipamental, demográfico, económico, global). |
-| Realidad | `equipamients-municipals` | 2.915 equipamientos municipales con ubicación. |
-| Realidad | `espais-verds` | 807 jardines, parques y zonas verdes (m²). |
+| Realidad | `equipamients-municipals` | {{N_EQUIPAMIENTOS|int}} equipamientos municipales con ubicación. |
+| Realidad | `espais-verds` | {{N_ESPACIOS_VERDES|int}} jardines, parques y zonas verdes (m²). |
 | Realidad | `itinerarios-ciclistas` | Red de carriles bici (longitud por tramo). |
-| Realidad | `aparcaments-bicicletes` | 4.297 plazas de aparcamiento para bicis. |
-| Realidad | `parkings` | Parkings públicos (plazas). |
-| Realidad | `centros-educativos` | 534 colegios e institutos. |
+| Realidad | `aparcaments-bicicletes` | {{N_APARCABICIS_PLAZAS|int}} plazas de aparcamiento para bicis. |
+| Realidad | `parkings` | Parkings públicos ({{N_PARKING_PLAZAS|int}} plazas). |
+| Realidad | `centros-educativos` | {{N_CENTROS_EDUCATIVOS|int}} colegios e institutos. |
 | Realidad | `majors-mayores`, `joventut-juventud` | Recursos para personas mayores y juventud. |
 | Realidad | `estacions-de-soroll` + `zones-zas` | Mediciones de ruido y zonas acústicamente saturadas. |
-| Realidad | `falles-fallas` | 351 fallas (intensidad cultural). |
-| Realidad | `velocitat-carrers` | Velocidad oficial en 12.872 tramos de calle. |
-| Realidad | `contenidors-residus-solids` | 20.615 contenedores de residuos. |
-| Realidad | `catalogo-urbano` | 957 BIC/BRL/CH (patrimonio protegido). |
-| Realidad | `emt` | 1.126 paradas de bus EMT. |
-| Realidad | `fonts-daigua-publica` | 832 fuentes de agua pública. |
-| Realidad | `pipicans` | 433 zonas caninas. |
-| Realidad | `zones-jocs-infantils` | 493 zonas de juego infantil. |
-| Realidad | `panells-informatius` + `mupis-ocoval` | Paneles informativos y mupis en vía pública. |
-| Realidad | `zones-dactivitats` | 578 zonas de actividades (espacios públicos para uso vecinal). |
+| Realidad | `falles-fallas` | {{N_FALLAS|int}} fallas (intensidad cultural). |
+| Realidad | `velocitat-carrers` | Velocidad oficial en {{N_TRAMOS_CALLES|int}} tramos de calle. |
+| Realidad | `contenidors-residus-solids` | {{N_CONTENEDORES|int}} contenedores de residuos. |
+| Realidad | `catalogo-urbano` | {{N_BIC|int}} BIC/BRL/CH (patrimonio protegido). |
+| Realidad | `emt` | {{N_PARADAS_EMT|int}} paradas de bus EMT. |
+| Realidad | `fonts-daigua-publica` | {{N_FUENTES_AGUA|int}} fuentes de agua pública. |
+| Realidad | `pipicans` | {{N_PIPICANS|int}} zonas caninas. |
+| Realidad | `zones-jocs-infantils` | {{N_JUEGOS_INFANTILES|int}} zonas de juego infantil. |
+| Realidad | `panells-informatius` + `mupis-ocoval` | {{N_PANELES|int}} paneles y mupis en vía pública. |
+| Realidad | `zones-dactivitats` | Zonas de actividades (espacios públicos para uso vecinal). |
 
 ### 2.2 Pipeline
 
-El análisis se construye en diez scripts Python autocontenidos. La cadena
+El análisis se construye en once scripts Python autocontenidos. La cadena
 completa va desde la descarga reproducible hasta los JSON estáticos que sirven
 la web:
 
 ```
-01_download.py            → bajada de los 17 datasets (≈70 MB)
-02_load_and_normalize.py  → 19 distritos (dissolve sobre 22 polígonos),
-                            resolución de 5.795 → 4.553 propuestas en
-                            distrito + 1.195 globales (99,2% asignado)
-03_topic_modeling.py      → embeddings multilingües (5.285 títulos
-                            limpios) + UMAP + HDBSCAN → 50 clusters
-04_label_and_merge_topics → mapeo manual → 38 temas legibles
-05_matriz_demanda.py      → Matriz Demanda (19 × 38), apoyos
-                            por 1.000 hab.
-06_matriz_realidad.py     → 29 indicadores por distrito (verde m²/hab,
-                            carril bici km/1.000 hab, vulnerabilidad
-                            oficial, equipamientos, etc.)
+01_download.py            → bajada de los {{N_DATASETS_TOTALES|raw}} datasets del manifiesto
+02_load_and_normalize.py  → {{N_DISTRITOS|raw}} distritos (dissolve), resolución de
+                            {{N_PROPUESTAS_BRUTAS|raw}} → {{N_PROPUESTAS_DISTRITO|raw}}
+                            propuestas en distrito + {{N_PROPUESTAS_GLOBAL|raw}} globales
+03_topic_modeling.py      → embeddings multilingües sobre {{N_PROPUESTAS_LEGIBLES|raw}}
+                            títulos limpios + UMAP + HDBSCAN → 50 clusters
+04_label_and_merge_topics → mapeo manual → {{N_TEMAS_DETECTADOS|raw}} temas legibles
+05_matriz_demanda.py      → Matriz Demanda (distrito × tema), apoyos por
+                            1.000 habitantes
+06_matriz_realidad.py     → indicadores por distrito desde {{N_DATASETS_REALIDAD|raw}} datasets
 07_indice_discrepancia.py → z-score(demanda) - z-score(carencia)
-                            → 4 cuadrantes
+                            → 4 cuadrantes en {{N_TEMAS_CON_INDICADOR|raw}} temas
 08_evolucion.py           → análisis longitudinal de 7 ediciones,
                             propuestas zombi, temas emergentes
 09_export_to_web.py       → JSON estáticos (<260 KB total)
-10_hallazgos.py           → 13 cifras verificables para el informe
+10_hallazgos.py           → 13 hallazgos verificables
+11_numeros.py             → 80+ números clave a numeros.json
+                            (single source of truth para informe/web)
 ```
 
-Todo el código es libre (licencia MIT) y reproducible:
-
-```
-git clone https://github.com/santiago-medina/atlas-voz-ciudadana-valencia
-cd atlas-voz-ciudadana-valencia
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python etl/01_download.py
-python etl/02_load_and_normalize.py
-# … hasta 10_hallazgos.py
-```
+Todo el código es libre (licencia MIT) y reproducible desde el repositorio
+público.
 
 ### 2.3 Concepto: los cuatro cuadrantes
 
 Para cada par (distrito × tema) calculamos:
 
 - **Demanda Z**: z-score del nº de apoyos por 1.000 habitantes en ese tema
-  dentro de ese distrito, comparado con la media de los 19 distritos.
+  dentro de ese distrito, comparado con la media de los {{N_DISTRITOS|raw}} distritos.
 - **Carencia Z**: z-score del indicador de realidad correspondiente al tema,
   invirtiendo el signo cuando "más es mejor" (ej. más m² de verde = menos
   carencia).
@@ -201,15 +200,15 @@ llegarán por sí solos a través del proceso participativo.
 
 ### 2.4 Indicadores de carencia por tema
 
-De los 38 temas detectados, **23 cuentan con un indicador municipal directo**
-que permite calcular el cuadrante de discrepancia. Cada tema se mapea contra
-una variable concreta del portal:
+De los {{N_TEMAS_DETECTADOS|raw}} temas detectados, **{{N_TEMAS_CON_INDICADOR|raw}} cuentan
+con un indicador municipal directo** que permite calcular el cuadrante de
+discrepancia. Cada tema se mapea contra una variable concreta del portal:
 
 | Tema | Indicador específico |
 |---|---|
 | Carriles bici y movilidad ciclista | `m_carril_bici_per_1000hab` |
 | Aparcamiento para vehículos | `plazas_parking_per_1000hab` |
-| Pacificación del tráfico / Reducción de velocidad | `velocidad_media_kmh` (12.872 tramos) |
+| Pacificación del tráfico / Reducción de velocidad | `velocidad_media_kmh` ({{N_TRAMOS_CALLES|int}} tramos) |
 | Transporte público (EMT) | `paradas_emt_per_1000hab` |
 | Parques y plazas, Jardines, Zonas verdes | `m2_verde_per_hab` |
 | Parques infantiles | `juegos_infantiles_per_1000hab` |
@@ -218,21 +217,21 @@ una variable concreta del portal:
 | Centros de salud | `ind_equip` (vulnerabilidad equipamental) |
 | Bibliotecas, equipamientos culturales, instalaciones deportivas, mobiliario, fuentes/aseos, equipamientos específicos | `equipamientos_per_1000hab` |
 | Fuentes y aseos públicos | `fuentes_agua_per_1000hab` |
-| Recogida de residuos | `contenedores_residuos_per_1000hab` (20.615 contenedores) |
+| Recogida de residuos | `contenedores_residuos_per_1000hab` ({{N_CONTENEDORES|int}} contenedores) |
 | Paneles informativos | `paneles_total_per_1000hab` |
-| Rehabilitación del patrimonio | `bic_per_1000hab` (957 BIC/BRL/CH) |
+| Rehabilitación del patrimonio | `bic_per_1000hab` ({{N_BIC|int}} BIC/BRL/CH) |
 | Reducción del ruido | `n_zonas_zas` (zonas acústicamente saturadas) |
 
-**Los 15 temas restantes quedan fuera del índice de discrepancia.** Son temas
-como aceras y movilidad peatonal, iluminación pública, seguridad ciudadana,
-reurbanización de calles o rehabilitación de mercados, para los que el portal
-no publica un indicador objetivo de carencia. En una versión anterior del
-Atlas estos temas se cruzaban contra el índice de vulnerabilidad global,
-pero esa proxy aplicada 15 veces producía cuadrantes artificialmente
-repetidos (el mismo z-score atribuido a temas muy distintos). Eliminarlos
-gana rigor sin perder cobertura: estos temas siguen apareciendo en las fichas
-de distrito y en la matriz de demanda, simplemente no se les asigna cuadrante
-de discrepancia.
+**Los {{N_TEMAS_SIN_INDICADOR|raw}} temas restantes quedan fuera del índice de
+discrepancia.** Son temas como aceras y movilidad peatonal, iluminación
+pública, seguridad ciudadana, reurbanización de calles o rehabilitación de
+mercados, para los que el portal no publica un indicador objetivo de carencia.
+En una versión anterior del Atlas estos temas se cruzaban contra el índice de
+vulnerabilidad global, pero esa proxy aplicada {{N_TEMAS_SIN_INDICADOR|raw}} veces
+producía cuadrantes artificialmente repetidos (el mismo z-score atribuido a
+temas muy distintos). Eliminarlos gana rigor sin perder cobertura: estos temas
+siguen apareciendo en las fichas de distrito y en la matriz de demanda,
+simplemente no se les asigna cuadrante de discrepancia.
 
 Esta elección está documentada en `etl/07_indice_discrepancia.py` y es
 auditable: cualquiera puede ampliar o sustituir el mapeo y recalcular los
@@ -251,11 +250,11 @@ El proyecto se publica con sus límites explícitos:
   participa lo hace voluntariamente y tiende a estar más organizado y
   conectado. Por tanto, "demanda baja" no equivale necesariamente a "ausencia
   de necesidad".
-- **Algunos temas usan vulnerabilidad global como proxy.** Es una aproximación
-  razonable, pero no equivale a un indicador específico por tema. El
-  cuadrante de un par (distrito, tema) que usa el proxy debe leerse como
-  "señal de coherencia general", no como métrica directa de carencia.
-- **La unidad de análisis es el distrito (19 unidades).** Distritos
+- **Algunos temas usan vulnerabilidad equipamental como proxy.** Para "centros
+  de salud" no existe un dataset de cobertura sanitaria por distrito, por lo
+  que se usa el subíndice `ind_equip` de vulnerabilidad equipamental. Es una
+  aproximación razonable, pero no equivalente a una métrica sanitaria directa.
+- **La unidad de análisis es el distrito ({{N_DISTRITOS|raw}} unidades).** Distritos
   heterogéneos como Quatre Carreres o l'Eixample pueden tener bolsas de
   silencio internas que el agregado distrital esconde. La próxima iteración
   prevista cruzará a nivel sección censal.
@@ -287,25 +286,26 @@ revelan tres dinámicas que la 8ª edición (2025-2026, en curso) puede corregir
 
 ### R1 · Activar la voz silenciosa donde más se necesita
 
-Los **51 pares (distrito × tema) con vulnerabilidad alta y demanda baja**
-identificados por este Atlas dibujan un mapa de prioridades para campañas
+Los {{N_PARES_SILENCIO|raw}} pares (distrito × tema) con vulnerabilidad alta y demanda
+baja identificados por este Atlas dibujan un mapa de prioridades para campañas
 focalizadas: salas en centros culturales de Campanar, presencia en mercados de
 Algirós y Rascanya, conexión con asociaciones vecinales de l'Olivereta. La voz
 silenciosa no nace sola, hay que ir a buscarla.
 
 ### R2 · Acortar el embudo de las "demandas zombi"
 
-28 combinaciones de distrito × tema con cuatro o más ediciones de demanda y
-cero ejecuciones constituyen un problema reputacional. Sin entrar en por qué
-no se ejecutaron (puede haber razones técnicas o presupuestarias legítimas),
-**la ciudadanía merece una respuesta razonada y pública sobre cada caso**.
-Sin esa respuesta, el sistema acumula frustración.
+{{N_DEMANDAS_ZOMBI|raw}} combinaciones de distrito × tema con cuatro o más ediciones
+de demanda y cero ejecuciones constituyen un problema reputacional. Sin entrar
+en por qué no se ejecutaron (puede haber razones técnicas o presupuestarias
+legítimas), **la ciudadanía merece una respuesta razonada y pública sobre cada
+caso**. Sin esa respuesta, el sistema acumula frustración.
 
 ### R3 · Reducir el peso de "Toda la ciudad"
 
-El 20,6% de las propuestas históricas se etiquetaron como "Toda la ciudad",
-lo que las hace invisibles al mecanismo de reequilibrio territorial de la 8ª
-edición. Forzar a quien propone a asignar un distrito —o crear una categoría
+El {{PCT_PROPUESTAS_GLOBAL|pct}} de las propuestas históricas se etiquetaron como
+"Toda la ciudad" ({{N_PROPUESTAS_GLOBAL|int}} de {{N_PROPUESTAS_BRUTAS|int}}), lo que
+las hace invisibles al mecanismo de reequilibrio territorial de la 8ª edición.
+Forzar a quien propone a asignar un distrito —o crear una categoría
 "propuestas transversales" con cuotas explícitas— ayudaría a que el
 reequilibrio funcione realmente.
 

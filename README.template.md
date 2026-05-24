@@ -3,10 +3,10 @@
 > ¿La voz ciudadana refleja las carencias observables en los datos municipales
 > de cada distrito?
 >
-> El Atlas cruza las **5.795 propuestas** vecinales registradas en
-> Decidim VLC entre 2015 y 2023 (5.285 con título legible,
-> 3.221 asignadas a distrito, 1.195 globales)
-> con **25 datasets de realidad urbana** del Portal de Datos
+> El Atlas cruza las **{{N_PROPUESTAS_BRUTAS|int}} propuestas** vecinales registradas en
+> Decidim VLC entre 2015 y 2023 ({{N_PROPUESTAS_LEGIBLES|int}} con título legible,
+> {{N_PROPUESTAS_DISTRITO|int}} asignadas a distrito, {{N_PROPUESTAS_GLOBAL|int}} globales)
+> con **{{N_DATASETS_REALIDAD|raw}} datasets de realidad urbana** del Portal de Datos
 > Abiertos para responder a esta pregunta.
 
 **Proyecto presentado a los Premios de Proyectos de Datos Abiertos y Periodismo de Datos del Ayuntamiento de València · Edición 2026.**
@@ -33,27 +33,27 @@ Cada par (distrito × tema) se sitúa en uno de cuatro cuadrantes:
 
 El cuadrante interesante es el de los **silenciosos vulnerables**: distritos
 con carencia objetiva por encima de la media pero demanda en Decidim por
-debajo. Es el cuadrante más numeroso (46% de los
-437 pares analizados) y el que requiere acción proactiva: no
+debajo. Es el cuadrante más numeroso ({{PCT_SILENCIO|pct0}} de los
+{{N_PARES_TOTAL|raw}} pares analizados) y el que requiere acción proactiva: no
 llegará por sí solo a través del proceso participativo.
 
 ## Tres hallazgos para abrir boca
 
-1. **Campanar**, el distrito con mayor vulnerabilidad oficial
-   (índice 3,77) → aparece como silencioso vulnerable en
-   **6 de los 23 temas con
+1. **{{DISTRITO_VUL_MAX}}**, el distrito con mayor vulnerabilidad oficial
+   (índice {{N_VUL_MAX|float2}}) → aparece como silencioso vulnerable en
+   **{{N_CAMPANAR_SILENCIOS|raw}} de los {{N_TEMAS_CON_INDICADOR|raw}} temas con
    indicador municipal específico**, incluido el más rotundo: su velocidad
-   media en calles es 38,3 km/h (la #2
+   media en calles es {{VEL_CAMPANAR|float}} km/h (la #{{CAMPANAR_VEL_RANK|raw}}
    más alta de la ciudad) y, sin embargo, no figura en el top de demanda de
    "pacificación del tráfico".
-2. **28 pares (distrito × tema) repiten propuestas en
+2. **{{N_DEMANDAS_ZOMBI|raw}} pares (distrito × tema) repiten propuestas en
    4+ ediciones consecutivas sin ninguna selección**. Caso destacado:
-   Extramurs, carriles bici, 1.098 apoyos acumulados,
+   Extramurs, carriles bici, {{EXTRAMURS_BICI_APOYOS|int}} apoyos acumulados,
    0 ejecuciones.
 3. **El embudo presupuestario**: la ciudadanía solicitó
-   234 M €; se seleccionaron
-   58 M €. Por cada euro ejecutado se pidieron
-   4,0 €, y el 75% de la inversión
+   {{PRESUP_SOLICITADO_MEUR|float0}} M €; se seleccionaron
+   {{PRESUP_SELECCIONADO_MEUR|float0}} M €. Por cada euro ejecutado se pidieron
+   {{PRESUP_RATIO|float}} €, y el {{PCT_PRESUP_NO_SELECCIONADO|pct0}} de la inversión
    propuesta no se ha convertido en proyecto seleccionado.
 
 Los **13 hallazgos** completos están en [`docs/03_hallazgos.md`](docs/03_hallazgos.md)
@@ -63,23 +63,23 @@ y en el [informe técnico](informe/informe.pdf).
 
 Todos del [Portal de Datos Abiertos del Ayuntamiento de València](https://opendata.vlci.valencia.es/):
 
-- `apoyo-propuestas-decidimvlc` (fuente principal — 5.795 propuestas)
+- `apoyo-propuestas-decidimvlc` (fuente principal — {{N_PROPUESTAS_BRUTAS|int}} propuestas)
 - `districtes-distritos` + `barris-barrios` (geometrías)
 - `vulnerabilidad-por-barrios` (índices oficiales 2021)
-- `equipamients-municipals` (2.840), `espais-verds` (805),
-  `itinerarios-ciclistas`, `aparcaments-bicicletes` (23.558 plazas),
-  `parkings` (9.932 plazas)
-- `velocitat-carrers` (12.872 tramos), `contenidors-residus-solids`
-  (20.612 contenedores), `emt` (1.092 paradas)
-- `catalogo-urbano` (929 BIC/BRL/CH), `fonts-daigua-publica`
-  (826 fuentes), `pipicans` (433),
-  `zones-jocs-infantils` (493), `panells-informatius` + `mupis-ocoval`
-- `centros-educativos` (520), `majors-mayores`, `joventut-juventud`
+- `equipamients-municipals` ({{N_EQUIPAMIENTOS|int}}), `espais-verds` ({{N_ESPACIOS_VERDES|int}}),
+  `itinerarios-ciclistas`, `aparcaments-bicicletes` ({{N_APARCABICIS_PLAZAS|int}} plazas),
+  `parkings` ({{N_PARKING_PLAZAS|int}} plazas)
+- `velocitat-carrers` ({{N_TRAMOS_CALLES|int}} tramos), `contenidors-residus-solids`
+  ({{N_CONTENEDORES|int}} contenedores), `emt` ({{N_PARADAS_EMT|int}} paradas)
+- `catalogo-urbano` ({{N_BIC|int}} BIC/BRL/CH), `fonts-daigua-publica`
+  ({{N_FUENTES_AGUA|int}} fuentes), `pipicans` ({{N_PIPICANS|int}}),
+  `zones-jocs-infantils` ({{N_JUEGOS_INFANTILES|int}}), `panells-informatius` + `mupis-ocoval`
+- `centros-educativos` ({{N_CENTROS_EDUCATIVOS|int}}), `majors-mayores`, `joventut-juventud`
 - `estacions-de-soroll`, `zones-zas`
-- `falles-fallas` (349)
+- `falles-fallas` ({{N_FALLAS|int}})
 
 Manifest completo en [`data/raw/MANIFEST.json`](data/raw/MANIFEST.json).
-Adicionalmente se usa el **padrón municipal 2022** (807.396
+Adicionalmente se usa el **padrón municipal 2022** ({{POBLACION_TOTAL|int}}
 habitantes) para normalizar todos los indicadores per cápita.
 
 ## Estructura del repo
@@ -155,7 +155,7 @@ cd web && npm install && npm run build
 
 | Criterio | Cómo lo cubre |
 |---|---|
-| **Innovación** | Cruce inédito Decidim + 25 datasets municipales · topic modeling automático · índice de discrepancia z-score con indicadores específicos por tema |
+| **Innovación** | Cruce inédito Decidim + {{N_DATASETS_REALIDAD|raw}} datasets municipales · topic modeling automático · índice de discrepancia z-score con indicadores específicos por tema |
 | **Impacto social** | Identifica los silenciosos vulnerables → recomendaciones directas para la 8ª edición en curso |
 | **Viabilidad** | Producto desplegado en Pages · pipeline reproducible en <5 min · sin dependencias propietarias |
 | **Colaboración** | Código y datos abiertos (MIT) · diseñado para que asociaciones, prensa o investigación puedan extenderlo |

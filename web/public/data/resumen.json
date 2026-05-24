@@ -1,17 +1,26 @@
 {
   "n_propuestas_total": 5285,
+  "n_propuestas_brutas": 5795,
+  "n_propuestas_legibles": 5285,
+  "n_propuestas_distrito": 3221,
+  "n_propuestas_global": 1195,
   "n_apoyos_total": 179584,
   "n_seleccionadas_total": 601,
   "n_distritos": 19,
   "n_temas": 38,
+  "n_temas_con_indicador": 23,
+  "n_temas_sin_indicador": 15,
   "n_ediciones": 7,
   "periodo": "2015-2023",
-  "tasa_seleccion_global": 0.114,
+  "tasa_seleccion_global": 0.10371009490940467,
   "cuadrante_counts": {
     "Silencioso vulnerable": 199,
     "Cómodo": 96,
     "Demanda legítima": 76,
     "Sobre-demandante": 66
   },
-  "presupuesto_total_solicitado_eur": 116465480
+  "presupuesto_total_solicitado_eur": 233638239,
+  "presupuesto_seleccionado_eur": 58439041,
+  "n_datasets_realidad": 25,
+  "pct_silencio": 45.53775743707094
 }
