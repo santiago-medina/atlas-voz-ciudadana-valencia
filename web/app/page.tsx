@@ -43,7 +43,7 @@ export default function Home() {
         <p style={{ fontSize: '1.1rem', lineHeight: 1.55, color: 'var(--color-ink)', maxWidth: 760 }}>
           Cruzamos las <strong>{fmt(RESUMEN.n_propuestas_total)} propuestas</strong> con título legible
           presentadas en <strong>{RESUMEN.n_ediciones} ediciones</strong> de Decidim VLC ({RESUMEN.periodo})
-          con <strong>once datasets de realidad urbana</strong> del Portal de Datos Abiertos para
+          con <strong>22 datasets de realidad urbana</strong> del Portal de Datos Abiertos para
           responder a una pregunta: <em>¿la voz ciudadana refleja las carencias observables en los
           datos municipales de cada distrito?</em>
         </p>
@@ -147,12 +147,19 @@ export default function Home() {
             }}
           >
             <option value="">— Elige un tema —</option>
-            {TEMAS.map((t) => (
+            {TEMAS.filter((t) => MATRIZ[t.nombre]).map((t) => (
               <option key={t.id} value={t.nombre}>
                 {t.nombre} ({fmt(t.n_apoyos)} apoyos)
               </option>
             ))}
           </select>
+          <div style={{ marginTop: '0.4rem', fontSize: '0.78rem', color: 'var(--color-muted)' }}>
+            Mostrando los <strong>{TEMAS.filter((t) => MATRIZ[t.nombre]).length} de {TEMAS.length} temas</strong>
+            {' '}con un indicador municipal específico que permite calcular cuadrante. Los{' '}
+            {TEMAS.length - TEMAS.filter((t) => MATRIZ[t.nombre]).length} temas sin indicador directo
+            (aceras, iluminación, seguridad ciudadana, etc.) se muestran en las fichas de distrito
+            pero quedan fuera del índice de discrepancia.
+          </div>
           {selectedTema && MATRIZ[selectedTema] && (
             <div
               style={{

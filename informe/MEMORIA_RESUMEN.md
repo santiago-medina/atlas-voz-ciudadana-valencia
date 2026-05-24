@@ -37,20 +37,29 @@ con título legible** se agrupan en 38 temas (carriles bici, aceras, parques
 infantiles, recogida de residuos…). De ellas, **4.043 están asignadas a un
 distrito concreto** y **1.195 figuran bajo "Toda la ciudad"**. La Matriz de
 Demanda resultante se contrasta con una Matriz de Realidad construida a partir
-de **once datasets municipales de "realidad urbana"** (vulnerabilidad oficial,
-espacios verdes m²/hab, carril bici, equipamientos, centros educativos,
-recursos para mayores y juventud, ruido y ZAS, parkings, aparcabicis y fallas).
+de **22 datasets municipales de "realidad urbana"** (vulnerabilidad oficial,
+espacios verdes m²/hab, carril bici, velocidad media de calles, paradas EMT,
+contenedores de residuos, patrimonio BIC, equipamientos, centros educativos,
+recursos para mayores y juventud, ruido y ZAS, parkings, aparcabicis, fuentes
+de agua, pipicanes, juegos infantiles, paneles informativos, fallas y otros).
 La normalización por habitante usa el padrón municipal 2022.
+
+De los 38 temas detectados, **23 disponen de un indicador municipal específico**
+y entran en el índice de discrepancia. Los 15 temas sin indicador directo (p.
+ej. iluminación pública, seguridad ciudadana, aceras y movilidad peatonal) se
+mantienen en la matriz de demanda pero quedan fuera del cuadrante: preferimos
+cobertura honesta antes que usar una proxy genérica repetida.
 
 El cruce arroja un índice de discrepancia que clasifica cada par (distrito,
 tema) en cuatro cuadrantes: **demanda legítima**, **sobre-demandante**,
 **silencioso vulnerable** y **cómodo**. El cuadrante más numeroso es el de los
-**silenciosos vulnerables (39%)**: distritos con carencia observable por encima
+**silenciosos vulnerables (45%)**: distritos con carencia observable por encima
 de la media pero demanda en Decidim por debajo. **Campanar** (índice de
 vulnerabilidad 3,77, el más alto de la ciudad) aparece como silencioso
-vulnerable en **19 de los 38 temas analizados**; **Extramurs** acumula 1.098
-apoyos en cuatro ediciones pidiendo carriles bici sin haber visto ejecutar
-ninguno.
+vulnerable en **6 de los 23 temas con cruce honesto**, incluida pacificación
+del tráfico (velocidad media 38,3 km/h, la segunda más alta de la ciudad).
+**Extramurs** acumula 1.098 apoyos en cuatro ediciones pidiendo carriles bici
+sin haber visto ejecutar ninguno.
 
 El proyecto entrega: (1) una **web interactiva** con mapa coroplético, fichas
 por distrito y timeline 2015-2023; (2) un **informe técnico** en formato
@@ -113,7 +122,7 @@ README del repositorio):
                           → 50 clusters
 04_label_and_merge_topics Mapeo manual a 38 temas legibles
 05_matriz_demanda.py      Matriz Demanda normalizada per cápita
-06_matriz_realidad.py     29 indicadores por distrito desde 11 datasets
+06_matriz_realidad.py     45 indicadores por distrito desde 22 datasets
 07_indice_discrepancia.py Z-score demanda - z-score carencia
                           → 4 cuadrantes
 08_evolucion.py           Análisis longitudinal 7 ediciones
@@ -141,11 +150,11 @@ Stack técnico:
 | Apoyos ciudadanos | **180.000+** |
 | Tasa de selección global | **11,4%** |
 | Distritos cubiertos | **19** |
-| Temas detectados | **38** |
-| Pares (distrito × tema) analizados | **722** |
-| Cuadrante "silencioso vulnerable" | **39% de los pares (280/722)** |
+| Temas detectados | **38** (23 con cruce honesto) |
+| Pares (distrito × tema) analizables | **437** (23 × 19) |
+| Cuadrante "silencioso vulnerable" | **45% de los pares (199/437)** |
 | Demandas persistentes (≥4 ediciones, 0 selección) | **28** |
-| Distrito con más patrones de silencio | **Campanar** (19 temas; vulnerabilidad 3,77) |
+| Distrito con más patrones de silencio | **Campanar** (6 temas; vulnerabilidad 3,77) |
 
 Los 13 hallazgos completos están en el informe técnico adjunto y en
 `docs/03_hallazgos.md` del repositorio.
@@ -156,7 +165,7 @@ Los 13 hallazgos completos están en el informe técnico adjunto y en
 
 | Criterio (25 pts) | Cómo lo cubre el proyecto |
 |---|---|
-| **Innovación** | Cruce inédito en València de Decidim + 11 datasets municipales con topic modeling automático y matriz de discrepancia z-score. |
+| **Innovación** | Cruce inédito en València de Decidim + 22 datasets municipales con topic modeling automático, indicadores específicos por tema y matriz de discrepancia z-score. |
 | **Impacto social** | Identifica los "silenciosos vulnerables" — los distritos donde el proceso participativo falla y hay que actuar de oficio. Recomendaciones directas a la 8ª edición. |
 | **Viabilidad** | Producto desplegado y accesible en GitHub Pages con coste cero. Pipeline reproducible en <5 minutos. Sin dependencias propietarias. |
 | **Colaboración** | Código y datos abiertos (MIT). Diseñado para que cualquier asociación vecinal, periodista o investigador/a pueda extender el análisis. |

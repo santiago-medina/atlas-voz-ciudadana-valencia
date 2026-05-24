@@ -38,25 +38,34 @@ ROOT = Path(__file__).resolve().parent.parent
 PROC = ROOT / "data" / "processed"
 
 
-# Mapeo de tema → indicador(es) de carencia.
-# Si el indicador es "más es mejor" usar "less_is_worse=True" (default).
-# Si el indicador es "más es peor" (ej. vulnerabilidad), usar "more_is_worse=True".
+# Mapeo de tema → indicador específico de carencia.
+#
+# Cambio metodológico (mayo 2026): se eliminan del análisis cruzado los temas
+# que solo podían enchufarse al índice global de vulnerabilidad como proxy
+# genérico. Mantener únicamente los temas con un indicador municipal directo
+# garantiza que cada cuadrante refleja un cruce real entre demanda y carencia,
+# no la repetición del mismo z-score 21 veces.
+#
+# Para cada entrada:
+#   - col: columna del DataFrame de realidad.
+#   - more_is_worse: True si más valor del indicador = más carencia
+#     (p. ej. velocidad media alta = más necesidad de pacificación).
 TEMA_TO_INDICADORES: dict[str, dict] = {
+    # Movilidad
     "Carriles bici y movilidad ciclista": {"col": "m_carril_bici_per_1000hab", "more_is_worse": False},
-    "Aceras y movilidad peatonal":        {"col": "ind_global",                "more_is_worse": True},
-    "Reurbanización de calles":           {"col": "ind_global",                "more_is_worse": True},
-    "Asfalto y pavimentación":            {"col": "ind_global",                "more_is_worse": True},
-    "Repavimentación de calzadas":        {"col": "ind_global",                "more_is_worse": True},
-    "Accesibilidad peatonal":             {"col": "ind_global",                "more_is_worse": True},
-    "Aparcamiento para vehículos":        {"col": "plazas_parking_per_1000hab","more_is_worse": False},
-    "Pacificación del tráfico":           {"col": "ind_global",                "more_is_worse": True},
-    "Reducción de velocidad y zonas 30":  {"col": "ind_global",                "more_is_worse": True},
-    "Transporte público (EMT)":           {"col": "ind_global",                "more_is_worse": True},
+    "Aparcamiento para vehículos":        {"col": "plazas_parking_per_1000hab", "more_is_worse": False},
+    "Pacificación del tráfico":           {"col": "velocidad_media_kmh",        "more_is_worse": True},
+    "Reducción de velocidad y zonas 30":  {"col": "velocidad_media_kmh",        "more_is_worse": True},
+    "Transporte público (EMT)":           {"col": "paradas_emt_per_1000hab",   "more_is_worse": False},
+
+    # Verde
     "Parques y plazas":                   {"col": "m2_verde_per_hab",          "more_is_worse": False},
-    "Parques infantiles":                 {"col": "jardines_per_1000hab",      "more_is_worse": False},
     "Jardines y arbolado":                {"col": "m2_verde_per_hab",          "more_is_worse": False},
     "Zonas verdes":                       {"col": "m2_verde_per_hab",          "more_is_worse": False},
-    "Pipicanes y zonas caninas":          {"col": "m2_verde_per_hab",          "more_is_worse": False},
+    "Parques infantiles":                 {"col": "juegos_infantiles_per_1000hab", "more_is_worse": False},
+    "Pipicanes y zonas caninas":          {"col": "pipicans_per_1000hab",      "more_is_worse": False},
+
+    # Equipamientos y servicios concretos
     "Centros educativos":                 {"col": "centros_educativos_per_1000hab", "more_is_worse": False},
     "Centros de salud":                   {"col": "ind_equip",                 "more_is_worse": True},
     "Bibliotecas y ludotecas":            {"col": "equipamientos_per_1000hab", "more_is_worse": False},
@@ -65,21 +74,38 @@ TEMA_TO_INDICADORES: dict[str, dict] = {
     "Instalaciones deportivas":           {"col": "equipamientos_per_1000hab", "more_is_worse": False},
     "Mobiliario urbano deportivo":        {"col": "equipamientos_per_1000hab", "more_is_worse": False},
     "Equipamientos específicos":          {"col": "equipamientos_per_1000hab", "more_is_worse": False},
-    "Seguridad ciudadana":                {"col": "ind_global",                "more_is_worse": True},
-    "Iluminación pública":                {"col": "ind_global",                "more_is_worse": True},
-    "Recogida de residuos":               {"col": "ind_global",                "more_is_worse": True},
-    "Fuentes y aseos públicos":           {"col": "equipamientos_per_1000hab", "more_is_worse": False},
-    "Paneles informativos":               {"col": "ind_global",                "more_is_worse": True},
+    "Fuentes y aseos públicos":           {"col": "fuentes_agua_per_1000hab",  "more_is_worse": False},
+
+    # Servicios urbanos con indicador propio
+    "Recogida de residuos":               {"col": "contenedores_residuos_per_1000hab", "more_is_worse": False},
+    "Paneles informativos":               {"col": "paneles_total_per_1000hab", "more_is_worse": False},
+    "Rehabilitación del patrimonio":     {"col": "bic_per_1000hab",           "more_is_worse": False},
+
+    # Medio ambiente
     "Reducción del ruido":                {"col": "n_zonas_zas",               "more_is_worse": True},
-    "Río Turia y litoral":                {"col": "ind_global",                "more_is_worse": True},
-    "Litoral y puerto":                   {"col": "ind_global",                "more_is_worse": True},
-    "Rehabilitación del patrimonio":     {"col": "ind_global",                "more_is_worse": True},
-    "Rehabilitación de mercados":         {"col": "ind_global",                "more_is_worse": True},
-    "Puentes y vías peatonales":         {"col": "ind_global",                "more_is_worse": True},
-    "Bienestar animal":                   {"col": "ind_global",                "more_is_worse": True},
-    "Convivencia y mobiliario urbano":   {"col": "ind_global",                "more_is_worse": True},
-    "Pedanías y barrios periféricos":    {"col": "ind_global",                "more_is_worse": True},
-    "Solares y suelo disponible":         {"col": "ind_global",                "more_is_worse": True},
+
+    # ----- ELIMINADOS del análisis cruzado (sin indicador municipal directo)
+    # Los siguientes temas se siguen mostrando en la matriz de demanda y en
+    # las fichas de distrito, pero quedan FUERA del índice de discrepancia
+    # porque no había forma honesta de medir su carencia con los datasets
+    # disponibles. Mantenerlos con vulnerabilidad global como proxy producía
+    # un cuadrante artificial repetido.
+    #
+    #   Aceras y movilidad peatonal
+    #   Reurbanización de calles
+    #   Asfalto y pavimentación
+    #   Repavimentación de calzadas
+    #   Accesibilidad peatonal
+    #   Seguridad ciudadana
+    #   Iluminación pública
+    #   Río Turia y litoral
+    #   Litoral y puerto
+    #   Rehabilitación de mercados
+    #   Puentes y vías peatonales
+    #   Bienestar animal
+    #   Convivencia y mobiliario urbano
+    #   Pedanías y barrios periféricos
+    #   Solares y suelo disponible
 }
 
 

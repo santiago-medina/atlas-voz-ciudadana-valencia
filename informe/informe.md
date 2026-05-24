@@ -24,16 +24,24 @@ contestar a una pregunta sencilla y políticamente relevante:
 > **¿La voz ciudadana refleja las carencias observables en los datos
 > municipales para cada distrito?**
 
-Este Atlas responde con un cruce sistemático entre Decidim y once datasets de
-realidad urbana. Sus principales conclusiones:
+Este Atlas responde con un cruce sistemático entre Decidim y **22 datasets de
+realidad urbana**. Cada uno de los 38 temas detectados se intenta cruzar con
+un indicador municipal específico (carril bici per cápita, velocidad media de
+calles, contenedores per cápita, m² verde/hab, paradas EMT, etc.). Cuando no
+existe un indicador directo, el tema se mantiene en la matriz de demanda pero
+**no entra en el índice de discrepancia**: preferimos cobertura honesta a una
+proxy genérica repetida 21 veces. Resultado: 23 de los 38 temas tienen un
+cuadrante medible, 437 pares (distrito × tema) analizables.
+
+Principales conclusiones:
 
 1. La participación se ha **duplicado** entre la 1ª y la 7ª edición, mientras
-   la **tasa de selección** ha caído al 9,6%. Más voz, mayor brecha de
-   ejecución.
-2. **El 39% de los pares (distrito × tema) analizados muestra un patrón de
-   "silencio vulnerable"**: el distrito presenta una carencia observable por
-   encima de la media de la ciudad pero su demanda en Decidim queda por
-   debajo. Es la situación más frecuente.
+   la **tasa de selección** global queda en el 11,4%. Más voz, mayor brecha
+   de ejecución.
+2. **El 45% de los pares (distrito × tema) con cruce honesto muestra un
+   patrón de "silencio vulnerable"**: el distrito presenta una carencia
+   observable por encima de la media de la ciudad pero su demanda en Decidim
+   queda por debajo. Es la situación más frecuente.
 3. **28 pares (distrito × tema) repiten propuestas en 4 o más ediciones
    consecutivas sin que ninguna haya sido seleccionada**. Top por apoyos
    acumulados: Extramurs en carriles bici (1.098 apoyos, 0 ejecuciones).
@@ -42,8 +50,10 @@ realidad urbana. Sus principales conclusiones:
    persistente sin selección.
 5. **Campanar registra el índice de vulnerabilidad más alto de los 19
    distritos** (3,77 sobre 10) y aparece como "silencioso vulnerable" en
-   **19 de los 38 temas analizados**: el distrito que más carencia objetiva
-   acumula es el que menos demanda relativa expresa.
+   **6 de los 23 temas con indicador específico**, entre ellos: pacificación
+   del tráfico (velocidad media de sus calles 38,3 km/h, 2ª más alta de la
+   ciudad), recogida de residuos, equipamientos culturales, instalaciones
+   deportivas, aparcamiento y equipamientos específicos.
 6. La **8ª edición de DecidimVLC**, abierta en mayo de 2026 con un mecanismo
    nuevo de reequilibrio territorial, puede beneficiarse de estos hallazgos
    para corregir patrones acumulados desde hace casi una década.
@@ -97,10 +107,10 @@ acústicamente saturadas, etc. Eso es lo que hace este Atlas.
 ### 2.1 Fuentes de datos
 
 Toda la información proviene del **Portal de Datos Abiertos del Ayuntamiento de
-València** (`opendata.vlci.valencia.es`). El pipeline consume **17 datasets**
-en total: una fuente principal (Decidim), dos de geometría territorial (distritos
-y barrios), un complemento demográfico, y **once datasets de "realidad urbana"**
-que se cruzan con la demanda ciudadana:
+València** (`opendata.vlci.valencia.es`). El pipeline consume en total una
+fuente principal (Decidim), dos de geometría territorial (distritos y barrios),
+un complemento demográfico (padrón 2022) y **22 datasets de "realidad urbana"**
+que alimentan los indicadores específicos del cruce con la demanda ciudadana:
 
 | Tipo | Dataset | Rol en el análisis |
 |---|---|---|
@@ -108,17 +118,25 @@ que se cruzan con la demanda ciudadana:
 | Geometría | `districtes-distritos` | 19 distritos administrativos. Unidad de análisis. |
 | Geometría | `barris-barrios` | 88 barrios (sub-vista). |
 | Demografía | Padrón municipal 2022 | 807.396 habitantes para normalizar per cápita. |
-| Realidad 1 | `vulnerabilidad-por-barrios` | Índices oficiales 2021 (equipamental, demográfico, económico, global). |
-| Realidad 2 | `equipamients-municipals` | 2.915 equipamientos municipales con ubicación. |
-| Realidad 3 | `espais-verds` | 807 jardines, parques y zonas verdes (m²). |
-| Realidad 4 | `itinerarios-ciclistas` | Red de carriles bici (longitud por tramo). |
-| Realidad 5 | `aparcaments-bicicletes` | 4.297 plazas de aparcamiento para bicis. |
-| Realidad 6 | `parkings` | Parkings públicos (plazas). |
-| Realidad 7 | `centros-educativos` | 534 colegios e institutos. |
-| Realidad 8 | `majors-mayores` | Recursos para personas mayores. |
-| Realidad 9 | `joventut-juventud` | Recursos para juventud. |
-| Realidad 10 | `estacions-de-soroll` + `zones-zas` | Mediciones de ruido y zonas acústicamente saturadas. |
-| Realidad 11 | `falles-fallas` | 351 fallas (intensidad cultural). |
+| Realidad | `vulnerabilidad-por-barrios` | Índices oficiales 2021 (equipamental, demográfico, económico, global). |
+| Realidad | `equipamients-municipals` | 2.915 equipamientos municipales con ubicación. |
+| Realidad | `espais-verds` | 807 jardines, parques y zonas verdes (m²). |
+| Realidad | `itinerarios-ciclistas` | Red de carriles bici (longitud por tramo). |
+| Realidad | `aparcaments-bicicletes` | 4.297 plazas de aparcamiento para bicis. |
+| Realidad | `parkings` | Parkings públicos (plazas). |
+| Realidad | `centros-educativos` | 534 colegios e institutos. |
+| Realidad | `majors-mayores`, `joventut-juventud` | Recursos para personas mayores y juventud. |
+| Realidad | `estacions-de-soroll` + `zones-zas` | Mediciones de ruido y zonas acústicamente saturadas. |
+| Realidad | `falles-fallas` | 351 fallas (intensidad cultural). |
+| Realidad | `velocitat-carrers` | Velocidad oficial en 12.872 tramos de calle. |
+| Realidad | `contenidors-residus-solids` | 20.615 contenedores de residuos. |
+| Realidad | `catalogo-urbano` | 957 BIC/BRL/CH (patrimonio protegido). |
+| Realidad | `emt` | 1.126 paradas de bus EMT. |
+| Realidad | `fonts-daigua-publica` | 832 fuentes de agua pública. |
+| Realidad | `pipicans` | 433 zonas caninas. |
+| Realidad | `zones-jocs-infantils` | 493 zonas de juego infantil. |
+| Realidad | `panells-informatius` + `mupis-ocoval` | Paneles informativos y mupis en vía pública. |
+| Realidad | `zones-dactivitats` | 578 zonas de actividades (espacios públicos para uso vecinal). |
 
 ### 2.2 Pipeline
 
@@ -183,15 +201,42 @@ llegarán por sí solos a través del proceso participativo.
 
 ### 2.4 Indicadores de carencia por tema
 
-No todos los 38 temas tienen un indicador municipal directo. Cuando existe se
-usa el más específico (`m2_verde_per_hab` para parques y zonas verdes,
-`m_carril_bici_per_1000hab` para movilidad ciclista, `equipamientos_per_1000hab`
-para temas culturales, etc.). Cuando no existe un indicador directo —por
-ejemplo para "Aceras y movilidad peatonal" o "Recogida de residuos"— se usa el
-**índice de vulnerabilidad global del barrio (2021)** como proxy territorial.
+De los 38 temas detectados, **23 cuentan con un indicador municipal directo**
+que permite calcular el cuadrante de discrepancia. Cada tema se mapea contra
+una variable concreta del portal:
+
+| Tema | Indicador específico |
+|---|---|
+| Carriles bici y movilidad ciclista | `m_carril_bici_per_1000hab` |
+| Aparcamiento para vehículos | `plazas_parking_per_1000hab` |
+| Pacificación del tráfico / Reducción de velocidad | `velocidad_media_kmh` (12.872 tramos) |
+| Transporte público (EMT) | `paradas_emt_per_1000hab` |
+| Parques y plazas, Jardines, Zonas verdes | `m2_verde_per_hab` |
+| Parques infantiles | `juegos_infantiles_per_1000hab` |
+| Pipicanes y zonas caninas | `pipicans_per_1000hab` |
+| Centros educativos | `centros_educativos_per_1000hab` |
+| Centros de salud | `ind_equip` (vulnerabilidad equipamental) |
+| Bibliotecas, equipamientos culturales, instalaciones deportivas, mobiliario, fuentes/aseos, equipamientos específicos | `equipamientos_per_1000hab` |
+| Fuentes y aseos públicos | `fuentes_agua_per_1000hab` |
+| Recogida de residuos | `contenedores_residuos_per_1000hab` (20.615 contenedores) |
+| Paneles informativos | `paneles_total_per_1000hab` |
+| Rehabilitación del patrimonio | `bic_per_1000hab` (957 BIC/BRL/CH) |
+| Reducción del ruido | `n_zonas_zas` (zonas acústicamente saturadas) |
+
+**Los 15 temas restantes quedan fuera del índice de discrepancia.** Son temas
+como aceras y movilidad peatonal, iluminación pública, seguridad ciudadana,
+reurbanización de calles o rehabilitación de mercados, para los que el portal
+no publica un indicador objetivo de carencia. En una versión anterior del
+Atlas estos temas se cruzaban contra el índice de vulnerabilidad global,
+pero esa proxy aplicada 15 veces producía cuadrantes artificialmente
+repetidos (el mismo z-score atribuido a temas muy distintos). Eliminarlos
+gana rigor sin perder cobertura: estos temas siguen apareciendo en las fichas
+de distrito y en la matriz de demanda, simplemente no se les asigna cuadrante
+de discrepancia.
 
 Esta elección está documentada en `etl/07_indice_discrepancia.py` y es
-auditable: cualquiera puede sustituir el mapeo y recalcular los cuadrantes.
+auditable: cualquiera puede ampliar o sustituir el mapeo y recalcular los
+cuadrantes.
 
 ### 2.5 Limitaciones metodológicas
 

@@ -5,7 +5,7 @@
 >
 > El Atlas cruza las **5.795 propuestas** vecinales registradas en Decidim VLC
 > entre 2015 y 2023 (5.285 con título legible, 4.043 asignadas a distrito,
-> 1.195 globales) con **once datasets de realidad urbana** del Portal de Datos
+> 1.195 globales) con **22 datasets de realidad urbana** del Portal de Datos
 > Abiertos para responder a esta pregunta.
 
 **Proyecto presentado a los Premios de Proyectos de Datos Abiertos y Periodismo de Datos del Ayuntamiento de València · Edición 2026.**
@@ -27,14 +27,17 @@ Cada par (distrito × tema) se sitúa en uno de cuatro cuadrantes:
 
 El cuadrante interesante es el de los **silenciosos vulnerables**: distritos
 con carencia objetiva por encima de la media pero demanda en Decidim por
-debajo. Es el cuadrante más numeroso (39% de los 722 pares analizados) y el
+debajo. Es el cuadrante más numeroso (45% de los 437 pares analizados) y el
 que requiere acción proactiva: no llegará por sí solo a través del proceso
 participativo.
 
 ## Tres hallazgos para abrir boca
 
 1. **Campanar**, el distrito con mayor vulnerabilidad oficial (índice 3,77) →
-   aparece como silencioso vulnerable en **19 de los 38 temas analizados**.
+   aparece como silencioso vulnerable en **6 temas con indicador municipal
+   específico**, incluido el más rotundo: su velocidad media en calles es la
+   2ª más alta de la ciudad y, sin embargo, no figura en el top de demanda de
+   "pacificación del tráfico".
 2. **28 pares (distrito × tema) repiten propuestas en 4+ ediciones
    consecutivas sin ninguna selección**. Caso destacado: Extramurs, carriles
    bici, 1.098 apoyos acumulados, 0 ejecuciones.
@@ -131,7 +134,7 @@ cd web && npm install && npm run build
 
 | Criterio | Cómo lo cubre |
 |---|---|
-| **Innovación** | Cruce inédito Decidim + 11 datasets · topic modeling automático · índice de discrepancia z-score |
+| **Innovación** | Cruce inédito Decidim + 22 datasets municipales · topic modeling automático · índice de discrepancia z-score con indicadores específicos por tema |
 | **Impacto social** | Identifica los silenciosos vulnerables → recomendaciones directas para la 8ª edición en curso |
 | **Viabilidad** | Producto desplegado en Pages · pipeline reproducible en <5 min · sin dependencias propietarias |
 | **Colaboración** | Código y datos abiertos (MIT) · diseñado para que asociaciones, prensa o investigación puedan extenderlo |

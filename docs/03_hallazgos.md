@@ -25,9 +25,9 @@ En la 1ª edición se seleccionó el 100.0% de las propuestas; en la 7ª solo el
 
 ## H03 · Campanar: alta vulnerabilidad y baja demanda relativa
 
-**3.77 / 19**
+**3.77 / 6**
 
-Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3.77, escala 0-10) según el dataset municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en 19 de los 38 temas analizados, incluyendo aceras y movilidad peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de mercados, reurbanización de calles, seguridad e iluminación. Su demanda relativa en Decidim queda por debajo de lo que sugieren los indicadores objetivos.
+Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3.77, escala 0-10) según el dataset municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en 6 de los 23 temas con indicador municipal específico, entre ellos: aparcamiento para vehículos, equipamientos culturales, equipamientos específicos, instalaciones deportivas y otros. Concretamente, la velocidad media de sus calles (38,3 km/h) es la segunda más alta de la ciudad y sin embargo el distrito no figura en el top de demanda en el tema 'pacificación del tráfico'.
 
 
 *Fuente: matriz_realidad.csv + indice_discrepancia.csv*
@@ -75,9 +75,9 @@ Campanar lidera con 17.5 m² de zona verde por habitante. En el extremo opuesto,
 
 ## H08 · El silencio vulnerable es la situación más frecuente
 
-**280 de 722 pares (39%)**
+**199 de 437 pares (46%)**
 
-Cruzando los 38 temas con los 19 distritos obtenemos 722 pares posibles. En 280 (39%) detectamos un patrón de 'silencio vulnerable': el distrito tiene una carencia objetiva por encima de la media de la ciudad pero su demanda en Decidim está por debajo. Es el cuadrante más numeroso. por delante del 'cómodo' (256). 'demanda legítima' (104) y 'sobre-demandante' (82).
+Cruzando los 23 temas que tienen un indicador municipal específico con los 19 distritos obtenemos 437 pares analizables. En 199 (46%) detectamos un patrón de 'silencio vulnerable': el distrito tiene una carencia observable por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. Es el cuadrante más numeroso. por delante de 'cómodo' (96). 'demanda legítima' (76) y 'sobre-demandante' (66).
 
 
 *Fuente: indice_discrepancia.csv · value_counts(cuadrante)*
@@ -93,14 +93,14 @@ Cruzando los 38 temas con los 19 distritos obtenemos 722 pares posibles. En 280 
 *Fuente: evolucion.json · demandas_zombi*
 
 
-## H10 · Las prioridades de Valencia caben en 38 categorías
+## H10 · 38 temas detectados, 23 con cruce honesto contra datos municipales
 
-**38 temas detectados**
+**38 temas / 23 cruzables**
 
-Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). Identificar estas categorías hace posible analizar la demanda al margen del ruido lingüístico (castellano/valenciano, abreviaturas, faltas).
+Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De los 38, **23** tienen un indicador municipal específico que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global como proxy genérico repetido.
 
 
-*Fuente: decidim_tagged.csv + topics.csv*
+*Fuente: decidim_tagged.csv + topics.csv + indice_discrepancia.csv*
 
 
 ## H11 · Por cada euro ejecutado, la ciudadanía ha pedido 4
@@ -115,7 +115,7 @@ El conjunto de propuestas de las 7 ediciones suma 233.6 millones de euros en inv
 
 ## H12 · Pobles de l'Oest, ejemplo de demanda alineada con la carencia
 
-**7 temas con demanda legítima**
+**8 temas con demanda legítima**
 
 En Pobles de l'Oest, varias demandas ciudadanas coinciden con carencias objetivas medibles: centros cívicos y huertos urbanos, mobiliario urbano deportivo, equipamientos culturales. Es un caso donde el proceso participativo funciona como cabe esperar: los vecinos identifican y priorizan exactamente los temas en los que su distrito está peor que la media.
 

@@ -16,7 +16,12 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 
 # Datasets observed at exactly 2000 features → likely truncated.
-TARGETS = ["equipamientos.geojson", "aparcabicis.geojson"]
+TARGETS = [
+    "equipamientos.geojson",
+    "aparcabicis.geojson",
+    "velocidad_calles.geojson",
+    "contenedores_residuos.geojson",
+]
 PAGE = 1000  # Conservative below the typical 2000 maxRecordCount.
 
 

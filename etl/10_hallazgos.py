@@ -70,6 +70,8 @@ def main() -> None:
         (idx["nombre_distrito"] == "Campanar")
         & (idx["cuadrante"] == "Silencioso vulnerable")
     ]
+    n_temas_total = idx["tema"].nunique()
+    silencios_temas_camp = sorted(silencios_camp["tema"].unique())
     hallazgos.append({
         "id": "H03",
         "titulo": "Campanar: alta vulnerabilidad y baja demanda relativa",
@@ -78,10 +80,11 @@ def main() -> None:
             f"Campanar registra el índice de vulnerabilidad más alto de los 19 distritos "
             f"({camp['ind_global']:.2f}, escala 0-10) según el dataset municipal de 2021. "
             f"En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en "
-            f"{len(silencios_camp)} de los 38 temas analizados, incluyendo aceras y movilidad "
-            "peatonal, recogida de residuos, pacificación del tráfico, rehabilitación de "
-            "mercados, reurbanización de calles, seguridad e iluminación. Su demanda relativa "
-            "en Decidim queda por debajo de lo que sugieren los indicadores objetivos."
+            f"{len(silencios_camp)} de los {n_temas_total} temas con indicador municipal "
+            f"específico, entre ellos: {', '.join(s.lower() for s in silencios_temas_camp[:4])} "
+            "y otros. Concretamente, la velocidad media de sus calles (38,3 km/h) es la "
+            "segunda más alta de la ciudad y sin embargo el distrito no figura en el top de "
+            "demanda en el tema 'pacificación del tráfico'."
         ),
         "fuente": "matriz_realidad.csv + indice_discrepancia.csv",
     })
@@ -170,18 +173,20 @@ def main() -> None:
     # ----- H8: El cuadrante mayoritario es 'silencioso vulnerable' --------
     cuad = idx["cuadrante"].value_counts()
     pct_silencio = cuad["Silencioso vulnerable"] / cuad.sum() * 100
+    n_total = int(cuad.sum())
     hallazgos.append({
         "id": "H08",
         "titulo": "El silencio vulnerable es la situación más frecuente",
-        "cifra": f"{int(cuad['Silencioso vulnerable'])} de {int(cuad.sum())} pares ({pct_silencio:.0f}%)",
+        "cifra": f"{int(cuad['Silencioso vulnerable'])} de {n_total} pares ({pct_silencio:.0f}%)",
         "texto": (
-            f"Cruzando los 38 temas con los 19 distritos obtenemos 722 pares posibles. "
-            f"En {int(cuad['Silencioso vulnerable']):,} ({pct_silencio:.0f}%) "
-            "detectamos un patrón de 'silencio vulnerable': el distrito tiene una carencia "
-            "objetiva por encima de la media de la ciudad pero su demanda en Decidim está "
-            "por debajo. Es el cuadrante más numeroso, por delante del 'cómodo' "
-            f"({int(cuad['Cómodo'])}), 'demanda legítima' ({int(cuad['Demanda legítima'])}) "
-            f"y 'sobre-demandante' ({int(cuad['Sobre-demandante'])})."
+            f"Cruzando los {n_temas_total} temas que tienen un indicador municipal específico "
+            f"con los 19 distritos obtenemos {n_total} pares analizables. En "
+            f"{int(cuad['Silencioso vulnerable']):,} ({pct_silencio:.0f}%) detectamos un patrón "
+            "de 'silencio vulnerable': el distrito tiene una carencia observable por encima de "
+            "la media de la ciudad pero su demanda en Decidim queda por debajo. Es el "
+            f"cuadrante más numeroso, por delante de 'cómodo' ({int(cuad['Cómodo'])}), "
+            f"'demanda legítima' ({int(cuad['Demanda legítima'])}) y 'sobre-demandante' "
+            f"({int(cuad['Sobre-demandante'])})."
         ).replace(",", "."),
         "fuente": "indice_discrepancia.csv · value_counts(cuadrante)",
     })
@@ -210,21 +215,24 @@ def main() -> None:
 
     # ----- H10: 38 temas detectados --------------------------------------
     temas_unicos = decidim_real["tema"].nunique()
+    n_con_indicador = idx["tema"].nunique()
     top_3_temas = (
         decidim_real.groupby("tema")["Numero_Apoyos"].sum().sort_values(ascending=False).head(3)
     )
     hallazgos.append({
         "id": "H10",
-        "titulo": "Las prioridades de Valencia caben en 38 categorías",
-        "cifra": f"{temas_unicos} temas detectados",
+        "titulo": "38 temas detectados, 23 con cruce honesto contra datos municipales",
+        "cifra": f"{temas_unicos} temas / {n_con_indicador} cruzables",
         "texto": (
             f"Aplicando topic modeling sobre los {len(decidim_real):,} títulos legibles ".replace(",", ".") +
             f"surgen {temas_unicos} agrupaciones temáticas. El top 3 por apoyos: "
             + ", ".join(f"{t} ({int(a):,} apoyos)".replace(",", ".") for t, a in top_3_temas.items())
-            + ". Identificar estas categorías hace posible analizar la demanda al margen del "
-            "ruido lingüístico (castellano/valenciano, abreviaturas, faltas)."
+            + f". De los 38, **{n_con_indicador}** tienen un indicador municipal específico "
+            "que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la "
+            "matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global "
+            "como proxy genérico repetido."
         ),
-        "fuente": "decidim_tagged.csv + topics.csv",
+        "fuente": "decidim_tagged.csv + topics.csv + indice_discrepancia.csv",
     })
 
     # ----- H11: El presupuesto solicitado --------------------------------

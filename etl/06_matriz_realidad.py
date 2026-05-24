@@ -173,6 +173,53 @@ def main() -> None:
     fa = gpd.read_file(RAW / "fallas.geojson")
     base["n_fallas"] = base["id_distrito"].map(count_per_distrito(fa, distritos)).fillna(0).astype(int)
 
+    # ---- Indicadores específicos añadidos en la fase de cruce honesto -----
+    print("→ Velocidad media de calles (km/h)")
+    vc = gpd.read_file(RAW / "velocidad_calles.geojson").to_crs(4326)
+    vc["velocidad"] = pd.to_numeric(vc["velocidad"], errors="coerce")
+    # Para cada calle, asignar al distrito que contiene su punto medio
+    vc_pts = vc.copy()
+    vc_pts["geometry"] = vc.geometry.representative_point()
+    vc_join = gpd.sjoin(vc_pts, distritos[["id_distrito", "geometry"]], how="left", predicate="within")
+    vel_media = vc_join.dropna(subset=["id_distrito", "velocidad"]).groupby("id_distrito")["velocidad"].mean().round(2)
+    base["velocidad_media_kmh"] = base["id_distrito"].map(vel_media).fillna(0)
+
+    print("→ Paneles informativos + Mupis")
+    pi = gpd.read_file(RAW / "paneles_informativos.geojson")
+    mp = gpd.read_file(RAW / "mupis.geojson")
+    base["n_paneles_total"] = (
+        base["id_distrito"].map(count_per_distrito(pi, distritos)).fillna(0).astype(int)
+        + base["id_distrito"].map(count_per_distrito(mp, distritos)).fillna(0).astype(int)
+    )
+
+    print("→ Contenedores de residuos")
+    cr = gpd.read_file(RAW / "contenedores_residuos.geojson")
+    base["n_contenedores_residuos"] = base["id_distrito"].map(count_per_distrito(cr, distritos)).fillna(0).astype(int)
+
+    print("→ Patrimonio urbano (BIC/BRL/CH)")
+    pu = gpd.read_file(RAW / "patrimonio_urbano.geojson")
+    base["n_bic"] = base["id_distrito"].map(count_per_distrito(pu, distritos)).fillna(0).astype(int)
+
+    print("→ Paradas EMT")
+    emt = gpd.read_file(RAW / "emt_paradas.geojson")
+    base["n_paradas_emt"] = base["id_distrito"].map(count_per_distrito(emt, distritos)).fillna(0).astype(int)
+
+    print("→ Fuentes de agua pública")
+    fu = gpd.read_file(RAW / "fuentes_agua.geojson")
+    base["n_fuentes_agua"] = base["id_distrito"].map(count_per_distrito(fu, distritos)).fillna(0).astype(int)
+
+    print("→ Pipicanes")
+    pp = gpd.read_file(RAW / "pipicans.geojson")
+    base["n_pipicans"] = base["id_distrito"].map(count_per_distrito(pp, distritos)).fillna(0).astype(int)
+
+    print("→ Juegos infantiles")
+    ji = gpd.read_file(RAW / "juegos_infantiles.geojson")
+    base["n_juegos_infantiles"] = base["id_distrito"].map(count_per_distrito(ji, distritos)).fillna(0).astype(int)
+
+    print("→ Zonas de actividades")
+    za = gpd.read_file(RAW / "zonas_actividades.geojson")
+    base["n_zonas_actividades"] = base["id_distrito"].map(count_per_distrito(za, distritos)).fillna(0).astype(int)
+
     print("→ Vulnerabilidad (índice por barrio agregado por área)")
     vul = vulnerabilidad_por_distrito(distritos)
     base = base.merge(vul, on="id_distrito", how="left")
@@ -188,6 +235,14 @@ def main() -> None:
         ("n_plazas_parking", 1000),
         ("n_plazas_aparcabici", 1000),
         ("n_fallas", 1000),
+        ("n_paneles_total", 1000),
+        ("n_contenedores_residuos", 1000),
+        ("n_bic", 1000),
+        ("n_paradas_emt", 1000),
+        ("n_fuentes_agua", 1000),
+        ("n_pipicans", 1000),
+        ("n_juegos_infantiles", 1000),
+        ("n_zonas_actividades", 1000),
     ]:
         base[f"{col[2:]}_per_1000hab"] = (base[col] / base["poblacion"] * denom).round(3)
     base["m2_verde_per_hab"] = (base["m2_espacios_verdes"] / base["poblacion"]).round(2)

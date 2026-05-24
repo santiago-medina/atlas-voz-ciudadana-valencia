@@ -8,10 +8,10 @@
   "periodo": "2015-2023",
   "tasa_seleccion_global": 0.114,
   "cuadrante_counts": {
-    "Silencioso vulnerable": 280,
-    "Cómodo": 256,
-    "Demanda legítima": 104,
-    "Sobre-demandante": 82
+    "Silencioso vulnerable": 199,
+    "Cómodo": 96,
+    "Demanda legítima": 76,
+    "Sobre-demandante": 66
   },
   "presupuesto_total_solicitado_eur": 116465480
 }
