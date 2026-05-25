@@ -433,44 +433,98 @@ export default function Home() {
       )}
 
       <TimelineEdiciones />
+
+      <section style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.6rem', borderBottom: '1px solid var(--color-rule)', paddingBottom: '0.4rem' }}>
+          Tres ideas para llevarse
+        </h2>
+        <p style={{ color: 'var(--color-muted)', maxWidth: 720, marginTop: '0.4rem' }}>
+          Si solo hay tiempo para tres conclusiones del Atlas, estas son las que recomendamos
+          retener:
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: '1rem', marginTop: '1rem' }}>
+          <div style={{ background: 'white', border: '1px solid var(--color-rule)', borderTop: '4px solid #5e3c8c', padding: '1rem 1.1rem', borderRadius: 4 }}>
+            <div style={{ fontSize: '0.72rem', color: '#5e3c8c', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
+              1 · El patrón dominante
+            </div>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>
+              El cuadrante más frecuente no es "demanda excesiva": es{' '}
+              <strong>silencio sobre carencia observable</strong>. {pctSilencio.toFixed(0)}% de los
+              pares analizables. La participación tiene sesgos territoriales detectables.
+            </p>
+          </div>
+          <div style={{ background: 'white', border: '1px solid var(--color-rule)', borderTop: '4px solid var(--color-accent)', padding: '1rem 1.1rem', borderRadius: 4 }}>
+            <div style={{ fontSize: '0.72rem', color: 'var(--color-accent)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
+              2 · Las demandas que esperan
+            </div>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>
+              <strong>28 pares (distrito × tema) repiten propuestas en 4 o más ediciones
+              consecutivas</strong> sin ninguna selección. Acumulan más de 8.000 apoyos
+              ciudadanos. El sistema necesita responder explícitamente sobre cada caso.
+            </p>
+          </div>
+          <div style={{ background: 'white', border: '1px solid var(--color-rule)', borderTop: '4px solid #d4a017', padding: '1rem 1.1rem', borderRadius: 4 }}>
+            <div style={{ fontSize: '0.72rem', color: '#a17d10', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
+              3 · El comodín territorial
+            </div>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>
+              <strong>El 22,6% de propuestas no se asignan a ningún distrito</strong>{' '}
+              ("Toda la ciudad"). Quedan fuera del mecanismo de reequilibrio territorial de la
+              8ª edición — un punto ciego que vale la pena revisar.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <HallazgosSection />
 
       <section style={{ marginTop: '3rem', marginBottom: '2rem' }}>
         <h2 style={{ fontSize: '1.6rem', borderBottom: '1px solid var(--color-rule)', paddingBottom: '0.4rem' }}>
-          Recomendaciones operativas
+          Tres recomendaciones prioritarias para la 8ª edición
         </h2>
         <p style={{ color: 'var(--color-muted)', maxWidth: 720 }}>
-          Cinco propuestas concretas que se desprenden del análisis y que pueden incorporarse a la
-          octava edición de DecidimVLC (2025-2026, en curso) o a su seguimiento posterior.
+          La 8ª edición de DecidimVLC (2025-2026, en curso) puede incorporar tres medidas
+          directamente derivadas del análisis. Dos recomendaciones adicionales se detallan a
+          continuación como complementarias.
         </p>
-        <ol style={{ lineHeight: 1.6, fontSize: '0.95rem', maxWidth: 760 }}>
+        <ol style={{ lineHeight: 1.6, fontSize: '0.95rem', maxWidth: 760, marginTop: '1rem' }}>
           <li>
             <strong>Outreach focalizado en distritos con silencios persistentes</strong> — campañas
             presenciales en Campanar, Algirós, Rascanya, l'Olivereta y Benicalap, en colaboración con
-            asociaciones vecinales y mercados municipales.
+            asociaciones vecinales y mercados municipales. Es la acción que más impacto tendrá sobre
+            el cuadrante dominante de "silencio sobre carencia observable".
           </li>
           <li>
             <strong>Informe público anual sobre demandas persistentes</strong> — para cada par
-            (distrito × tema) con 4+ ediciones consecutivas sin selección, publicar el estado actual:
-            aceptada, rechazada por viabilidad, reprogramada o pendiente.
+            (distrito × tema) con 4+ ediciones consecutivas sin selección, publicar el estado
+            administrativo: aceptada, rechazada por viabilidad técnica, reprogramada o pendiente.
+            Cierra el embudo de frustración acumulada.
           </li>
           <li>
             <strong>Revisar la categoría "Toda la ciudad"</strong> — el 22,6% de las propuestas se
-            etiquetan así y quedan fuera del mecanismo de reequilibrio territorial. Reducir esa
-            categoría o ponderarla explícitamente mejora la representatividad por distrito.
-          </li>
-          <li>
-            <strong>Ponderar apoyos por indicadores de vulnerabilidad</strong> — para que el peso
-            relativo de cada apoyo sea mayor en distritos con menor capacidad organizativa
-            histórica.
-          </li>
-          <li>
-            <strong>Validar los silencios con asociaciones vecinales</strong> — antes de actuar
-            sobre un patrón de "silencioso vulnerable", contrastar con representantes del distrito.
-            La ausencia de demanda puede deberse a desconocimiento, desconfianza, brecha digital o
-            saturación previa.
+            etiquetan así y quedan fuera del mecanismo de reequilibrio territorial. Pedir
+            territorialización o impacto territorial estimado mejora la representatividad por
+            distrito.
           </li>
         </ol>
+        <details style={{ marginTop: '1.4rem', fontSize: '0.92rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-muted)', fontWeight: 600 }}>
+            Ver dos recomendaciones complementarias
+          </summary>
+          <ol start={4} style={{ lineHeight: 1.6, paddingLeft: '1.2rem', marginTop: '0.6rem' }}>
+            <li>
+              <strong>Ponderar apoyos por indicadores de vulnerabilidad</strong> — para que el peso
+              relativo de cada apoyo sea mayor en distritos con menor capacidad organizativa
+              histórica.
+            </li>
+            <li>
+              <strong>Validar los silencios con asociaciones vecinales</strong> — antes de actuar
+              sobre un patrón de "silencioso vulnerable", contrastar con representantes del distrito.
+              La ausencia de demanda puede deberse a desconocimiento, desconfianza, brecha digital o
+              saturación previa.
+            </li>
+          </ol>
+        </details>
       </section>
 
       <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
@@ -498,6 +552,34 @@ export default function Home() {
             heterogéneos pueden tener bolsas de silencio internas que el agregado distrital esconde.
           </li>
         </ul>
+      </section>
+
+      <section
+        style={{
+          marginTop: '3rem',
+          marginBottom: '2rem',
+          padding: '2rem 1.5rem',
+          background: '#1a1a1a',
+          color: '#faf7f0',
+          borderRadius: 8,
+          textAlign: 'center',
+        }}
+      >
+        <p
+          style={{
+            fontSize: '1.4rem',
+            lineHeight: 1.4,
+            margin: 0,
+            fontFamily: 'var(--font-serif)',
+            maxWidth: 720,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            fontStyle: 'italic',
+          }}
+        >
+          El reto no es escuchar más propuestas, sino escuchar mejor dónde la necesidad no consigue
+          hacerse oír.
+        </p>
       </section>
 
       <footer style={{ borderTop: '1px solid var(--color-rule)', paddingTop: '1rem', color: 'var(--color-muted)', fontSize: '0.85rem' }}>
