@@ -29,3 +29,42 @@ a { color: var(--color-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 hr { border: 0; border-top: 1px solid var(--color-rule); margin: 2rem 0; }
+
+/* ---------- Responsive grids ---------- */
+/* Mapa + leyenda lateral: 2:1 en desktop, columna única en móvil */
+.grid-mapa {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* "Qué significa / Qué no significa" 2 columnas en desktop, 1 en móvil */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Ficha de distrito: 3 columnas en desktop */
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .grid-mapa,
+  .grid-2col,
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+  /* En móvil, los KPIs se compactan */
+  body { font-size: 15px; }
+  h1 { font-size: 2rem !important; line-height: 1.1 !important; }
+  h2 { font-size: 1.3rem !important; }
+}
+
+@media (max-width: 480px) {
+  main { padding: 1.5rem 1rem !important; }
+}

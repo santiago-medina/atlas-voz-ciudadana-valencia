@@ -260,6 +260,7 @@ export default function Home() {
         </div>
 
         <div
+          className="grid-2col"
           style={{
             background: '#fff',
             border: '1px dashed var(--color-muted)',
@@ -268,9 +269,6 @@ export default function Home() {
             margin: '0 0 1rem',
             fontSize: '0.85rem',
             lineHeight: 1.5,
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '1rem',
           }}
         >
           <div>
@@ -346,7 +344,7 @@ export default function Home() {
           )}
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start' }}>
+        <div className="grid-mapa">
           <AtlasMap selectedTema={selectedTema} matriz={MATRIZ} onSelectDistrito={setSelectedDistrito} />
           <aside style={{ minHeight: 200 }}>
             <h3 style={{ fontSize: '1rem', marginTop: 0, marginBottom: '0.6rem' }}>Leyenda</h3>
@@ -391,7 +389,7 @@ export default function Home() {
               </>
             )}
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1.2rem' }}>
+          <div className="grid-3col">
             <div>
               <h4 style={{ margin: '0 0 0.5rem' }}>Lo más pedido</h4>
               <ol style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.5 }}>
