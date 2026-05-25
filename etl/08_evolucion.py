@@ -19,6 +19,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 PROC = ROOT / "data" / "processed"
+RAW = ROOT / "data" / "raw"
 
 
 EDICION_PERIODO = {
@@ -38,13 +39,20 @@ def main() -> None:
 
     real = df[df["tema"] != "Sin clasificar"].copy()
 
-    # By edition
+    # Para 'por_edicion' la fuente correcta es el RAW (incluyendo NA en título)
+    # porque en la 1ª edición sólo se publicó título de las propuestas
+    # seleccionadas; filtrar por título legible distorsiona la tasa de
+    # selección al 100% artificialmente.
+    raw = pd.read_csv(ROOT / "data" / "raw" / "decidim.csv", sep=";", encoding="utf-8-sig")
+    raw["sel"] = raw["Seleccionada"] == "SI"
+    raw["ap"] = pd.to_numeric(raw["Numero_Apoyos"], errors="coerce").fillna(0).astype(int)
+
     por_edicion = (
-        real.groupby("Edicion")
+        raw.groupby("Edicion")
         .agg(
-            propuestas=("Titulo", "count"),
-            apoyos=("Numero_Apoyos", "sum"),
-            seleccionadas=("Seleccionada_bool", "sum"),
+            propuestas=("Edicion", "count"),
+            apoyos=("ap", "sum"),
+            seleccionadas=("sel", "sum"),
         )
         .reset_index()
     )

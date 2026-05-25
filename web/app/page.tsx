@@ -111,12 +111,29 @@ export default function Home() {
           <strong style={{ color: 'var(--color-accent)' }}>no llega a expresarse como demanda</strong>{' '}
           ciudadana.
         </p>
-        <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', margin: 0, lineHeight: 1.5 }}>
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', margin: '0 0 0.8rem', lineHeight: 1.5 }}>
           De {Object.values(RESUMEN.cuadrante_counts ?? {}).reduce((a, b) => a + b, 0)} pares
           (distrito × tema) analizables con indicador municipal específico,{' '}
           {pctSilencio.toFixed(0)}% caen en el cuadrante "silencio sobre carencia observable":
           el distrito tiene una carencia por encima de la media de la ciudad pero su demanda
           relativa en Decidim queda por debajo. Es el cuadrante más frecuente.
+        </p>
+        <p
+          style={{
+            fontSize: '0.85rem',
+            color: 'var(--color-ink)',
+            margin: 0,
+            padding: '0.6rem 0.8rem',
+            background: '#faf7f0',
+            borderRadius: 4,
+            borderLeft: '3px solid var(--color-accent)',
+          }}
+        >
+          <strong>Qué permite hacer este atlas:</strong> identificar dónde Decidim necesita salir
+          a buscar voz ciudadana, dónde el Ayuntamiento debe explicar mejor sus decisiones, y
+          dónde la demanda vecinal coincide con carencias objetivas. El mecanismo de
+          reequilibrio territorial de la 8ª edición (en curso) puede beneficiarse directamente
+          de estos resultados.
         </p>
       </section>
 

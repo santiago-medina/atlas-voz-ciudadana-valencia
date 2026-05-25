@@ -2,58 +2,58 @@
   "por_edicion": [
     {
       "Edicion": 1,
-      "propuestas": 86,
+      "propuestas": 619,
       "apoyos": 0,
-      "seleccionadas": 86,
-      "tasa_seleccion": 1.0,
+      "seleccionadas": 109,
+      "tasa_seleccion": 0.176,
       "periodo": "2015-2016"
     },
     {
       "Edicion": 2,
-      "propuestas": 479,
-      "apoyos": 13162,
-      "seleccionadas": 58,
-      "tasa_seleccion": 0.121,
+      "propuestas": 591,
+      "apoyos": 15728,
+      "seleccionadas": 71,
+      "tasa_seleccion": 0.12,
       "periodo": "2016-2017"
     },
     {
       "Edicion": 3,
-      "propuestas": 460,
-      "apoyos": 26456,
+      "propuestas": 562,
+      "apoyos": 29891,
       "seleccionadas": 11,
-      "tasa_seleccion": 0.024,
+      "tasa_seleccion": 0.02,
       "periodo": "2017-2018"
     },
     {
       "Edicion": 4,
-      "propuestas": 426,
-      "apoyos": 11915,
-      "seleccionadas": 79,
-      "tasa_seleccion": 0.185,
+      "propuestas": 540,
+      "apoyos": 14131,
+      "seleccionadas": 104,
+      "tasa_seleccion": 0.193,
       "periodo": "2018-2019"
     },
     {
       "Edicion": 5,
-      "propuestas": 513,
-      "apoyos": 28169,
-      "seleccionadas": 19,
-      "tasa_seleccion": 0.037,
+      "propuestas": 632,
+      "apoyos": 33775,
+      "seleccionadas": 21,
+      "tasa_seleccion": 0.033,
       "periodo": "2019-2020"
     },
     {
       "Edicion": 6,
-      "propuestas": 1019,
-      "apoyos": 40383,
-      "seleccionadas": 116,
-      "tasa_seleccion": 0.114,
+      "propuestas": 1284,
+      "apoyos": 50578,
+      "seleccionadas": 139,
+      "tasa_seleccion": 0.108,
       "periodo": "2020-2022"
     },
     {
       "Edicion": 7,
-      "propuestas": 1246,
-      "apoyos": 28467,
-      "seleccionadas": 120,
-      "tasa_seleccion": 0.096,
+      "propuestas": 1567,
+      "apoyos": 35481,
+      "seleccionadas": 146,
+      "tasa_seleccion": 0.093,
       "periodo": "2022-2023"
     }
   ],

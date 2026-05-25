@@ -17,6 +17,19 @@ PROC = ROOT / "data" / "processed"
 DOCS = ROOT / "docs"
 
 
+def es(n: int | float, decimals: int = 0) -> str:
+    """Formato español de números: 1.098 (miles) y 1.098,5 (decimales).
+
+    Usado en lugar de .replace(',', '.') sobre textos completos porque
+    ese replace rompe puntuación legítima ('En paralelo, X' → 'En paralelo. X').
+    """
+    if isinstance(n, float) and decimals > 0:
+        s = f"{n:,.{decimals}f}"
+    else:
+        s = f"{int(n):,d}"
+    return s.replace(",", "X").replace(".", ",").replace("X", ".")
+
+
 def main() -> None:
     decidim = pd.read_csv(PROC / "decidim_tagged.csv")
     decidim["Numero_Apoyos"] = pd.to_numeric(decidim["Numero_Apoyos"], errors="coerce").fillna(0).astype(int)
@@ -35,33 +48,37 @@ def main() -> None:
     pe = pd.DataFrame(evol["por_edicion"])
     e1, e7 = pe.iloc[0], pe.iloc[-1]
     e2 = pe.iloc[1]
+    crecimiento = int(e7["propuestas"] - e1["propuestas"])
     hallazgos.append({
         "id": "H01",
-        "titulo": "La participación se ha duplicado en una década",
-        "cifra": f"{int(e7['propuestas'] - e1['propuestas']):+,}".replace(",", "."),
+        "titulo": f"La participación ha crecido un {((e7['propuestas']/e1['propuestas'])-1)*100:.0f} % en una década",
+        "cifra": f"{'+' if crecimiento >= 0 else ''}{es(crecimiento)}",
         "texto": (
-            f"En la 1ª edición (2015-2016) se presentaron {int(e1['propuestas']):,} propuestas; "
-            f"en la 7ª (2022-2023) fueron {int(e7['propuestas']):,}, "
-            f"un crecimiento del {((e7['propuestas']/e1['propuestas'])-1)*100:.0f}%. "
+            f"En la 1ª edición (2015-2016) se presentaron {es(int(e1['propuestas']))} propuestas; "
+            f"en la 7ª (2022-2023) fueron {es(int(e7['propuestas']))}, "
+            f"un crecimiento del {((e7['propuestas']/e1['propuestas'])-1)*100:.0f} %. "
             f"Los apoyos ciudadanos (registrados a partir de la 2ª edición) "
-            f"pasaron de {int(e2['apoyos']):,} a {int(e7['apoyos']):,}. "
+            f"pasaron de {es(int(e2['apoyos']))} a {es(int(e7['apoyos']))}. "
             "DecidimVLC ha consolidado un canal real de expresión ciudadana."
-        ).replace(",", "."),
-        "fuente": "decidim_tagged.csv · agregación por Edicion",
+        ),
+        "fuente": "decidim raw · agregación por Edicion (incluye propuestas sin título legible)",
     })
 
-    # ----- H2: Pero la tasa de selección cae ------------------------------
+    # ----- H2: La tasa de selección cae con el crecimiento -----------------
+    tasa_e1 = f"{e1['tasa_seleccion']*100:.1f}".replace(".", ",")
+    tasa_e7 = f"{e7['tasa_seleccion']*100:.1f}".replace(".", ",")
     hallazgos.append({
         "id": "H02",
-        "titulo": "Más propuestas, menos ejecución",
-        "cifra": f"{e7['tasa_seleccion']*100:.1f}%",
+        "titulo": "Más propuestas, mayor distancia con la capacidad presupuestaria",
+        "cifra": f"{tasa_e1} % → {tasa_e7} %",
         "texto": (
-            f"En la 1ª edición se seleccionó el {e1['tasa_seleccion']*100:.1f}% de las propuestas; "
-            f"en la 7ª solo el {e7['tasa_seleccion']*100:.1f}%. "
-            "El proceso ha ganado masa crítica pero ha perdido capacidad de convertir "
-            "demanda en proyecto ejecutado, lo que genera frustración acumulada."
+            f"En la 1ª edición se seleccionó el {tasa_e1} % de las propuestas; "
+            f"en la 7ª solo el {tasa_e7} %. La tasa de selección cae al "
+            "crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y "
+            "capacidad presupuestaria municipal — no necesariamente una pérdida de capacidad, "
+            "sino una mayor competencia entre propuestas por un presupuesto limitado."
         ),
-        "fuente": "evolucion.json · tasa_seleccion por edición",
+        "fuente": "evolucion.json · tasa_seleccion por edición (raw, dataset completo)",
     })
 
     # ----- H3: Campanar, el silencioso vulnerable arquetípico --------------
@@ -72,17 +89,19 @@ def main() -> None:
     ]
     n_temas_total = idx["tema"].nunique()
     silencios_temas_camp = sorted(silencios_camp["tema"].unique())
+    vel_camp = float(camp["velocidad_media_kmh"])
     hallazgos.append({
         "id": "H03",
         "titulo": "Campanar: alta vulnerabilidad y baja demanda relativa",
-        "cifra": f"{camp['ind_global']:.2f} / {len(silencios_camp)}",
+        "cifra": f"{camp['ind_global']:.2f}".replace(".", ",") + f" / {len(silencios_camp)}",
         "texto": (
             f"Campanar registra el índice de vulnerabilidad más alto de los 19 distritos "
-            f"({camp['ind_global']:.2f}, escala 0-10) según el dataset municipal de 2021. "
-            f"En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en "
-            f"{len(silencios_camp)} de los {n_temas_total} temas con indicador municipal "
-            f"específico, entre ellos: {', '.join(s.lower() for s in silencios_temas_camp[:4])} "
-            "y otros. Concretamente, la velocidad media de sus calles (38,3 km/h) es la "
+            f"({str(round(camp['ind_global'],2)).replace('.',',')}, escala 0-10) según el dataset "
+            f"municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso "
+            f"vulnerable' en {len(silencios_camp)} de los {n_temas_total} temas con indicador "
+            f"municipal específico, entre ellos: "
+            f"{', '.join(s.lower() for s in silencios_temas_camp[:4])} y otros. La velocidad "
+            f"media de sus calles ({str(round(vel_camp,1)).replace('.',',')} km/h) es la "
             "segunda más alta de la ciudad y sin embargo el distrito no figura en el top de "
             "demanda en el tema 'pacificación del tráfico'."
         ),
@@ -102,8 +121,8 @@ def main() -> None:
             f"de {bici_evol['ed1']} propuestas en la 1ª edición a {bici_evol['ed7']} en la 7ª "
             f"(+{bici_evol['crecimiento']}). En paralelo, {len(bici_zombi)} pares "
             f"(distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna "
-            f"haya sido seleccionada — {apoyos_bici_zombi:,} apoyos en total. ".replace(",", ".") +
-            "El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin "
+            f"haya sido seleccionada — {es(apoyos_bici_zombi)} apoyos en total. "
+            f"El caso de mayor volumen: Extramurs, con 29 propuestas y {es(1098)} apoyos sin "
             "selección en 4 ediciones. La demanda emergente y la baja tasa de selección "
             "abren una brecha que conviene comunicar de forma explícita a la ciudadanía."
         ),
@@ -124,13 +143,13 @@ def main() -> None:
         "titulo": "Pobles del Nord: el peso relativo de los distritos pequeños",
         "cifra": f"{apoyos_per_capita_pn:.0f} apoyos/1.000 hab",
         "texto": (
-            f"Con solo {pn['poblacion']:,} habitantes, Pobles del Nord acumula "
-            f"{int(decidim_pn['Numero_Apoyos'].sum()):,} apoyos en propuestas, equivalentes a "
-            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes — {ratio:.1f} veces la media "
+            f"Con solo {es(int(pn['poblacion']))} habitantes, Pobles del Nord acumula "
+            f"{es(int(decidim_pn['Numero_Apoyos'].sum()))} apoyos en propuestas, equivalentes a "
+            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes — {str(round(ratio,1)).replace('.',',')} veces la media "
             f"de la ciudad ({media_apoyos:.0f}). En distritos pequeños, una organización "
             "vecinal activa puede amplificar el peso relativo del distrito en el proceso "
             "participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio."
-        ).replace(",", "."),
+        ),
         "fuente": "decidim_tagged.csv + poblacion_distritos.csv",
     })
 
@@ -140,14 +159,14 @@ def main() -> None:
     hallazgos.append({
         "id": "H06",
         "titulo": "Una de cada cinco propuestas no se ata a ningún barrio",
-        "cifra": f"{global_pct:.1f}%",
+        "cifra": f"{global_pct:.1f}%".replace(".", ","),
         "texto": (
-            f"{global_n:,} propuestas ({global_pct:.1f}% del total) se presentaron bajo "
+            f"{es(global_n)} propuestas ({str(round(global_pct,1)).replace('.',',')} % del total) se presentaron bajo "
             "la etiqueta 'Toda la ciudad'. Es un volumen enorme que dificulta el reequilibrio "
             "territorial: las propuestas globales no se pueden asignar a un distrito concreto "
             "para medir si están atendiendo a un barrio vulnerable o reforzando privilegios. "
             "La nueva edición 2025-2026 podría revisar este criterio."
-        ).replace(",", "."),
+        ),
         "fuente": "decidim_tagged.csv · count(id_distrito == 0)",
     })
 
@@ -158,10 +177,10 @@ def main() -> None:
     hallazgos.append({
         "id": "H07",
         "titulo": "Verde: hasta 6 veces más en el extremo alto que en el bajo",
-        "cifra": f"{top_v['m2_verde_per_hab']:.1f} vs {bot_v['m2_verde_per_hab']:.1f} m²/hab",
+        "cifra": (f"{top_v['m2_verde_per_hab']:.1f} vs {bot_v['m2_verde_per_hab']:.1f} m²/hab").replace(".", ","),
         "texto": (
-            f"Campanar lidera con {top_v['m2_verde_per_hab']:.1f} m² de zona verde por habitante. "
-            f"En el extremo opuesto, Benimaclet ofrece {bot_v['m2_verde_per_hab']:.1f} m²/hab. "
+            f"{top_v['nombre_distrito']} lidera con {str(round(top_v['m2_verde_per_hab'],1)).replace('.',',')} m² de zona verde por habitante. "
+            f"En el extremo opuesto, {bot_v['nombre_distrito']} ofrece {str(round(bot_v['m2_verde_per_hab'],1)).replace('.',',')} m²/hab. "
             f"Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, "
             f"{n_below_9} distritos quedan por debajo. Ninguno de ellos figura en el top de "
             "demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la "
@@ -176,18 +195,18 @@ def main() -> None:
     n_total = int(cuad.sum())
     hallazgos.append({
         "id": "H08",
-        "titulo": "El silencio vulnerable es la situación más frecuente",
-        "cifra": f"{int(cuad['Silencioso vulnerable'])} de {n_total} pares ({pct_silencio:.0f}%)",
+        "titulo": "El silencio sobre carencia observable es la situación más frecuente",
+        "cifra": f"{int(cuad['Silencioso vulnerable'])} de {n_total} pares ({pct_silencio:.0f} %)",
         "texto": (
             f"Cruzando los {n_temas_total} temas que tienen un indicador municipal específico "
             f"con los 19 distritos obtenemos {n_total} pares analizables. En "
-            f"{int(cuad['Silencioso vulnerable']):,} ({pct_silencio:.0f}%) detectamos un patrón "
-            "de 'silencio vulnerable': el distrito tiene una carencia observable por encima de "
-            "la media de la ciudad pero su demanda en Decidim queda por debajo. Es el "
-            f"cuadrante más numeroso, por delante de 'cómodo' ({int(cuad['Cómodo'])}), "
+            f"{es(int(cuad['Silencioso vulnerable']))} ({pct_silencio:.0f} %) detectamos un patrón "
+            "de 'silencio sobre carencia observable': el distrito tiene una carencia observable "
+            "por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. "
+            f"Es el cuadrante más numeroso, por delante de 'cómodo' ({int(cuad['Cómodo'])}), "
             f"'demanda legítima' ({int(cuad['Demanda legítima'])}) y 'sobre-demandante' "
             f"({int(cuad['Sobre-demandante'])})."
-        ).replace(",", "."),
+        ),
         "fuente": "indice_discrepancia.csv · value_counts(cuadrante)",
     })
 
@@ -196,12 +215,12 @@ def main() -> None:
     apoyos_zombi = sum(z["apoyos"] for z in zombis)
     hallazgos.append({
         "id": "H09",
-        "titulo": "28 demandas persistentes no han sido seleccionadas en 4+ ediciones",
-        "cifra": f"{len(zombis)} pares · {apoyos_zombi:,} apoyos".replace(",", "."),
+        "titulo": f"{len(zombis)} demandas persistentes no han sido seleccionadas en 4+ ediciones",
+        "cifra": f"{len(zombis)} pares · {es(apoyos_zombi)} apoyos",
         "texto": (
             f"{len(zombis)} pares (distrito, tema) han sido objeto de propuestas en al menos "
             f"4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan "
-            f"{apoyos_zombi:,} apoyos ciudadanos. ".replace(",", ".") +
+            f"{es(apoyos_zombi)} apoyos ciudadanos. "
             "Los tres pares con más apoyos acumulados son: " +
             ", ".join(
                 f"{z['nombre_distrito']} ({z['tema'].lower()})"
@@ -221,13 +240,13 @@ def main() -> None:
     )
     hallazgos.append({
         "id": "H10",
-        "titulo": "38 temas detectados, 23 con cruce honesto contra datos municipales",
+        "titulo": f"{temas_unicos} temas detectados, {n_con_indicador} con cruce honesto contra datos municipales",
         "cifra": f"{temas_unicos} temas / {n_con_indicador} cruzables",
         "texto": (
-            f"Aplicando topic modeling sobre los {len(decidim_real):,} títulos legibles ".replace(",", ".") +
+            f"Aplicando topic modeling sobre los {es(len(decidim_real))} títulos legibles "
             f"surgen {temas_unicos} agrupaciones temáticas. El top 3 por apoyos: "
-            + ", ".join(f"{t} ({int(a):,} apoyos)".replace(",", ".") for t, a in top_3_temas.items())
-            + f". De los 38, **{n_con_indicador}** tienen un indicador municipal específico "
+            + ", ".join(f"{t} ({es(int(a))} apoyos)" for t, a in top_3_temas.items())
+            + f". De los {temas_unicos}, {n_con_indicador} tienen un indicador municipal específico "
             "que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la "
             "matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global "
             "como proxy genérico repetido."
@@ -242,15 +261,15 @@ def main() -> None:
     presup_seleccionado = raw[raw["Seleccionada"] == "SI"]["presupuesto"].sum()
     hallazgos.append({
         "id": "H11",
-        "titulo": "Por cada euro ejecutado, la ciudadanía ha pedido 4",
-        "cifra": f"{presup_total/1e6:.1f} M€ vs {presup_seleccionado/1e6:.1f} M€",
+        "titulo": "Por cada euro ejecutado, la ciudadanía ha pedido cuatro",
+        "cifra": f"{str(round(presup_total/1e6,1)).replace('.',',')} M€ vs {str(round(presup_seleccionado/1e6,1)).replace('.',',')} M€",
         "texto": (
-            f"El conjunto de propuestas de las 7 ediciones suma {presup_total/1e6:.1f} millones de euros "
-            f"en inversión solicitada. De ese volumen, {presup_seleccionado/1e6:.1f} M€ pertenecen a "
+            f"El conjunto de propuestas de las 7 ediciones suma {str(round(presup_total/1e6,1)).replace('.',',')} millones de euros "
+            f"en inversión solicitada. De ese volumen, {str(round(presup_seleccionado/1e6,1)).replace('.',',')} M€ pertenecen a "
             "propuestas finalmente seleccionadas, un "
-            f"{presup_seleccionado/presup_total*100:.0f}%. "
-            "El embudo presupuestario es severo, y debería usarse como criterio explícito al "
-            "comunicar resultados a la ciudadanía."
+            f"{presup_seleccionado/presup_total*100:.0f} %. "
+            "El embudo presupuestario es severo, y debería comunicarse de forma explícita "
+            "a la ciudadanía como criterio de gestión."
         ),
         "fuente": "decidim.csv · Presupuesto_euros agregado",
     })

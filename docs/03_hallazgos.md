@@ -5,29 +5,29 @@
 
 ## H01 · La participación se ha duplicado en una década
 
-**+1.160**
+**+948**
 
-En la 1ª edición (2015-2016) se presentaron 86 propuestas; en la 7ª (2022-2023) fueron 1.246. un crecimiento del 1349%. Los apoyos ciudadanos (registrados a partir de la 2ª edición) pasaron de 13.162 a 28.467. DecidimVLC ha consolidado un canal real de expresión ciudadana.
-
-
-*Fuente: decidim_tagged.csv · agregación por Edicion*
+En la 1ª edición (2015-2016) se presentaron 619 propuestas; en la 7ª (2022-2023) fueron 1.567, un crecimiento del 153 %. Los apoyos ciudadanos (registrados a partir de la 2ª edición) pasaron de 15.728 a 35.481. DecidimVLC ha consolidado un canal real de expresión ciudadana.
 
 
-## H02 · Más propuestas, menos ejecución
-
-**9.6%**
-
-En la 1ª edición se seleccionó el 100.0% de las propuestas; en la 7ª solo el 9.6%. El proceso ha ganado masa crítica pero ha perdido capacidad de convertir demanda en proyecto ejecutado, lo que genera frustración acumulada.
+*Fuente: decidim raw · agregación por Edicion (incluye propuestas sin título legible)*
 
 
-*Fuente: evolucion.json · tasa_seleccion por edición*
+## H02 · Más propuestas, mayor distancia con la capacidad presupuestaria
+
+**17,6 % → 9,3 %**
+
+En la 1ª edición se seleccionó el 17,6 % de las propuestas; en la 7ª solo el 9,3 %. La tasa de selección cae al crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y capacidad presupuestaria municipal — no necesariamente una pérdida de capacidad, sino una mayor competencia entre propuestas por un presupuesto limitado.
+
+
+*Fuente: evolucion.json · tasa_seleccion por edición (raw, dataset completo)*
 
 
 ## H03 · Campanar: alta vulnerabilidad y baja demanda relativa
 
-**3.77 / 6**
+**3,77 / 6**
 
-Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3.77, escala 0-10) según el dataset municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en 6 de los 23 temas con indicador municipal específico, entre ellos: aparcamiento para vehículos, equipamientos culturales, equipamientos específicos, instalaciones deportivas y otros. Concretamente, la velocidad media de sus calles (38,3 km/h) es la segunda más alta de la ciudad y sin embargo el distrito no figura en el top de demanda en el tema 'pacificación del tráfico'.
+Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3,77, escala 0-10) según el dataset municipal de 2021. En el cruce con Decidim aparece en el cuadrante 'silencioso vulnerable' en 6 de los 23 temas con indicador municipal específico, entre ellos: aparcamiento para vehículos, equipamientos culturales, equipamientos específicos, instalaciones deportivas y otros. La velocidad media de sus calles (38,3 km/h) es la segunda más alta de la ciudad y sin embargo el distrito no figura en el top de demanda en el tema 'pacificación del tráfico'.
 
 
 *Fuente: matriz_realidad.csv + indice_discrepancia.csv*
@@ -37,7 +37,7 @@ Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3.
 
 **+103 propuestas / 0 ejecuciones en repetidas**
 
-Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo. 2 pares (distrito. tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada — 1.340 apoyos en total. El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.
+Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo, 2 pares (distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada — 1.340 apoyos en total. El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.
 
 
 *Fuente: evolucion.json · emergentes_top10 + demandas_zombi*
@@ -47,7 +47,7 @@ Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 pro
 
 **503 apoyos/1.000 hab**
 
-Con solo 6.104 habitantes. Pobles del Nord acumula 3.069 apoyos en propuestas. equivalentes a 503 apoyos por 1.000 habitantes — 3.4 veces la media de la ciudad (147). En distritos pequeños. una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo. lo que conviene considerar al diseñar mecanismos de reequilibrio.
+Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes — 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.
 
 
 *Fuente: decidim_tagged.csv + poblacion_distritos.csv*
@@ -55,9 +55,9 @@ Con solo 6.104 habitantes. Pobles del Nord acumula 3.069 apoyos en propuestas. e
 
 ## H06 · Una de cada cinco propuestas no se ata a ningún barrio
 
-**22.6%**
+**22,6%**
 
-1.195 propuestas (22.6% del total) se presentaron bajo la etiqueta 'Toda la ciudad'. Es un volumen enorme que dificulta el reequilibrio territorial: las propuestas globales no se pueden asignar a un distrito concreto para medir si están atendiendo a un barrio vulnerable o reforzando privilegios. La nueva edición 2025-2026 podría revisar este criterio.
+1.195 propuestas (22,6 % del total) se presentaron bajo la etiqueta 'Toda la ciudad'. Es un volumen enorme que dificulta el reequilibrio territorial: las propuestas globales no se pueden asignar a un distrito concreto para medir si están atendiendo a un barrio vulnerable o reforzando privilegios. La nueva edición 2025-2026 podría revisar este criterio.
 
 
 *Fuente: decidim_tagged.csv · count(id_distrito == 0)*
@@ -65,19 +65,19 @@ Con solo 6.104 habitantes. Pobles del Nord acumula 3.069 apoyos en propuestas. e
 
 ## H07 · Verde: hasta 6 veces más en el extremo alto que en el bajo
 
-**17.5 vs 2.7 m²/hab**
+**17,5 vs 2,7 m²/hab**
 
-Campanar lidera con 17.5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2.7 m²/hab. Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia observable no se traduce automáticamente en demanda explícita.
+Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia observable no se traduce automáticamente en demanda explícita.
 
 
 *Fuente: matriz_realidad.csv · m2_verde_per_hab*
 
 
-## H08 · El silencio vulnerable es la situación más frecuente
+## H08 · El silencio sobre carencia observable es la situación más frecuente
 
-**199 de 437 pares (46%)**
+**199 de 437 pares (46 %)**
 
-Cruzando los 23 temas que tienen un indicador municipal específico con los 19 distritos obtenemos 437 pares analizables. En 199 (46%) detectamos un patrón de 'silencio vulnerable': el distrito tiene una carencia observable por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. Es el cuadrante más numeroso. por delante de 'cómodo' (96). 'demanda legítima' (76) y 'sobre-demandante' (66).
+Cruzando los 23 temas que tienen un indicador municipal específico con los 19 distritos obtenemos 437 pares analizables. En 199 (46 %) detectamos un patrón de 'silencio sobre carencia observable': el distrito tiene una carencia observable por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. Es el cuadrante más numeroso, por delante de 'cómodo' (96), 'demanda legítima' (76) y 'sobre-demandante' (66).
 
 
 *Fuente: indice_discrepancia.csv · value_counts(cuadrante)*
@@ -87,7 +87,7 @@ Cruzando los 23 temas que tienen un indicador municipal específico con los 19 d
 
 **28 pares · 8.121 apoyos**
 
-28 pares (distrito. tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Los tres pares con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada demanda persistente sin selección representa una desconexión entre expresión ciudadana y ejecución que conviene comunicar de forma explícita.
+28 pares (distrito, tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Los tres pares con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada demanda persistente sin selección representa una desconexión entre expresión ciudadana y ejecución que conviene comunicar de forma explícita.
 
 
 *Fuente: evolucion.json · demandas_zombi*
@@ -97,17 +97,17 @@ Cruzando los 23 temas que tienen un indicador municipal específico con los 19 d
 
 **38 temas / 23 cruzables**
 
-Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De los 38, **23** tienen un indicador municipal específico que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global como proxy genérico repetido.
+Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De los 38, 23 tienen un indicador municipal específico que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global como proxy genérico repetido.
 
 
 *Fuente: decidim_tagged.csv + topics.csv + indice_discrepancia.csv*
 
 
-## H11 · Por cada euro ejecutado, la ciudadanía ha pedido 4
+## H11 · Por cada euro ejecutado, la ciudadanía ha pedido cuatro
 
-**233.6 M€ vs 58.4 M€**
+**233,6 M€ vs 58,4 M€**
 
-El conjunto de propuestas de las 7 ediciones suma 233.6 millones de euros en inversión solicitada. De ese volumen, 58.4 M€ pertenecen a propuestas finalmente seleccionadas, un 25%. El embudo presupuestario es severo, y debería usarse como criterio explícito al comunicar resultados a la ciudadanía.
+El conjunto de propuestas de las 7 ediciones suma 233,6 millones de euros en inversión solicitada. De ese volumen, 58,4 M€ pertenecen a propuestas finalmente seleccionadas, un 25 %. El embudo presupuestario es severo, y debería comunicarse de forma explícita a la ciudadanía como criterio de gestión.
 
 
 *Fuente: decidim.csv · Presupuesto_euros agregado*
