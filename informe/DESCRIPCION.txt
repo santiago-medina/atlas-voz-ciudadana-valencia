@@ -1,0 +1,89 @@
+ATLAS DE LA VOZ CIUDADANA DE VALÈNCIA
+Análisis cruzado entre las propuestas de Decidim VLC y los datasets municipales (2015-2023)
+
+==========================================================================
+DESCRIPCIÓN BREVE (≈ 500 caracteres, para campos cortos)
+==========================================================================
+
+El Atlas de la Voz Ciudadana de València cruza las 5.795 propuestas
+vecinales de las siete ediciones publicadas de DecidimVLC (2015-2023) con
+22 datasets del Portal de Datos Abiertos del Ayuntamiento para responder
+a una pregunta política: ¿la voz ciudadana refleja las carencias
+observables en los datos municipales de cada distrito? Hallazgo central:
+el 46 % de los pares (distrito × tema) analizables presenta un patrón de
+"silencio sobre carencia observable", el cuadrante más frecuente.
+
+==========================================================================
+DESCRIPCIÓN MEDIA (≈ 1.500 caracteres)
+==========================================================================
+
+El Atlas de la Voz Ciudadana de València cruza por primera vez las 5.795
+propuestas vecinales presentadas a DecidimVLC entre 2015 y 2023 con 22
+datasets de "realidad urbana" del Portal de Datos Abiertos del
+Ayuntamiento, para responder a una pregunta políticamente relevante:
+¿la voz ciudadana refleja las carencias observables en los datos
+municipales de cada distrito?
+
+Mediante embeddings semánticos, las 5.285 propuestas con título legible
+se agrupan en 38 temas. La Matriz de Demanda resultante se contrasta con
+una Matriz de Realidad construida sobre indicadores específicos
+(m² verde por habitante, metros de carril bici, velocidad media de
+calles, paradas EMT, contenedores de residuos, vulnerabilidad oficial,
+patrimonio protegido, fuentes de agua, etc.). El cruce produce un índice
+de discrepancia que clasifica cada par (distrito × tema) en uno de
+cuatro cuadrantes: demanda alineada, demanda por encima del indicador,
+silencio sobre carencia observable, o sin carencia ni demanda
+destacadas.
+
+Hallazgo central: el 46 % de los pares analizables (199 de 437) caen en
+el cuadrante de "silencio sobre carencia observable" — el distrito tiene
+una carencia objetiva por encima de la media pero su demanda relativa en
+Decidim queda por debajo. Es el cuadrante más frecuente.
+
+El proyecto entrega: una web interactiva
+(santiago-medina.github.io/atlas-voz-ciudadana-valencia), un informe
+técnico tipo periodismo de datos, una memoria resumen, y un repositorio
+público con licencia MIT donde todo el pipeline ETL es reproducible en
+menos de cinco minutos. Todas las cifras se generan automáticamente
+desde el script etl/11_numeros.py — ninguna se escribe a mano.
+
+==========================================================================
+OBJETIVOS
+==========================================================================
+
+1. Operativo: convertir los 5.795 registros de DecidimVLC en una matriz
+   accionable de demanda ciudadana por distrito y tema.
+2. Analítico: medir la coincidencia entre la voz ciudadana y las
+   carencias objetivas medibles en datasets municipales.
+3. Comunicativo: ofrecer al Ayuntamiento, asociaciones vecinales y
+   ciudadanía una herramienta visual para interpretar el proceso
+   participativo más allá del ránking de propuestas.
+4. Reproducible: liberar código y metodología para verificar todas las
+   cifras y actualizar el análisis cuando se publique la 8ª edición.
+
+==========================================================================
+ENLACES
+==========================================================================
+
+Web del proyecto: https://santiago-medina.github.io/atlas-voz-ciudadana-valencia/
+Repositorio:      https://github.com/santiago-medina/atlas-voz-ciudadana-valencia
+Licencia:         MIT (código) · datos sujetos a la licencia del Portal de Datos Abiertos del Ayuntamiento
+
+==========================================================================
+DATASETS UTILIZADOS DEL PORTAL DE DATOS ABIERTOS
+==========================================================================
+
+Fuente principal:
+  apoyo-propuestas-decidimvlc
+
+Geometría y demografía:
+  districtes-distritos, barris-barrios, Padrón Municipal 2022
+
+Datasets de realidad urbana (22):
+  vulnerabilidad-por-barrios, equipamients-municipals, espais-verds,
+  itinerarios-ciclistas, aparcaments-bicicletes, parkings,
+  centros-educativos, majors-mayores, joventut-juventud,
+  estacions-de-soroll, zones-zas, falles-fallas, velocitat-carrers,
+  contenidors-residus-solids, catalogo-urbano (patrimonio), emt,
+  fonts-daigua-publica, pipicans, zones-jocs-infantils,
+  panells-informatius, mupis-ocoval, zones-dactivitats
