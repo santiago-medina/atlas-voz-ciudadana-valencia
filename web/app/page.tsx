@@ -82,7 +82,7 @@ export default function Home() {
           background: '#fff',
           border: '2px solid var(--color-accent)',
           borderRadius: 8,
-          padding: '1.2rem 1.4rem',
+          padding: '1.4rem 1.6rem',
         }}
       >
         <div
@@ -92,20 +92,72 @@ export default function Home() {
             letterSpacing: '0.12em',
             color: 'var(--color-accent)',
             fontWeight: 700,
-            marginBottom: '0.3rem',
+            marginBottom: '0.4rem',
           }}
         >
           Hallazgo central
         </div>
-        <p style={{ fontSize: '1.25rem', lineHeight: 1.4, margin: 0, fontFamily: 'var(--font-serif)' }}>
+        <p
+          style={{
+            fontSize: '1.5rem',
+            lineHeight: 1.3,
+            margin: '0 0 0.6rem',
+            fontFamily: 'var(--font-serif)',
+            color: 'var(--color-ink)',
+          }}
+        >
+          Casi <strong style={{ color: 'var(--color-accent)' }}>1 de cada 2</strong> necesidades
+          urbanas observables{' '}
+          <strong style={{ color: 'var(--color-accent)' }}>no llega a expresarse como demanda</strong>{' '}
+          ciudadana.
+        </p>
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', margin: 0, lineHeight: 1.5 }}>
           De {Object.values(RESUMEN.cuadrante_counts ?? {}).reduce((a, b) => a + b, 0)} pares
           (distrito × tema) analizables con indicador municipal específico,{' '}
-          <strong style={{ color: 'var(--color-accent)' }}>
-            el {pctSilencio.toFixed(0)}% muestra un patrón de "silencio sobre carencia observable":
-          </strong>{' '}
+          {pctSilencio.toFixed(0)}% caen en el cuadrante "silencio sobre carencia observable":
           el distrito tiene una carencia por encima de la media de la ciudad pero su demanda
           relativa en Decidim queda por debajo. Es el cuadrante más frecuente.
         </p>
+      </section>
+
+      <section
+        style={{
+          margin: '1.5rem 0 2rem',
+          background: '#f8f6f1',
+          border: '1px solid var(--color-rule)',
+          borderRadius: 8,
+          padding: '1.2rem 1.4rem',
+        }}
+      >
+        <h3 style={{ margin: '0 0 0.8rem', fontSize: '1.1rem' }}>Cómo funciona el atlas, en 90 segundos</h3>
+        <ol
+          style={{
+            margin: 0,
+            paddingLeft: '1.2rem',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '0.8rem 1.4rem',
+            lineHeight: 1.45,
+            fontSize: '0.92rem',
+          }}
+        >
+          <li>
+            <strong>{fmt(RESUMEN.n_propuestas_total ?? 0)} propuestas</strong> de Decidim → clasificación
+            temática automática con embeddings multilingües
+          </li>
+          <li>
+            <strong>Apoyos normalizados</strong> por población del padrón 2022 → demanda relativa
+            por distrito
+          </li>
+          <li>
+            <strong>{(RESUMEN as any).n_datasets_realidad ?? 25} datasets municipales</strong> → indicadores
+            territoriales específicos por tema (carril bici, m² verde, velocidad de calles…)
+          </li>
+          <li>
+            <strong>Comparación contra la media de la ciudad</strong> → cuatro cuadrantes que
+            sintetizan la coincidencia entre demanda y carencia
+          </li>
+        </ol>
       </section>
 
       <section style={{ marginBottom: '2rem' }}>
@@ -185,6 +237,42 @@ export default function Home() {
               metros de carril bici/hab, velocidad media de calles, paradas EMT/hab, etc.).
             </li>
           </ul>
+        </div>
+
+        <div
+          style={{
+            background: '#fff',
+            border: '1px dashed var(--color-muted)',
+            borderRadius: 6,
+            padding: '0.9rem 1.1rem',
+            margin: '0 0 1rem',
+            fontSize: '0.85rem',
+            lineHeight: 1.5,
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '1rem',
+          }}
+        >
+          <div>
+            <strong style={{ color: 'var(--color-accent)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              ✓ Qué significa este mapa
+            </strong>
+            <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1rem' }}>
+              <li>Detecta posibles desajustes entre necesidad observable e intensidad de demanda expresada.</li>
+              <li>Compara distritos contra la media de la ciudad usando indicadores municipales públicos.</li>
+              <li>Identifica patrones territoriales útiles para diseño de política participativa.</li>
+            </ul>
+          </div>
+          <div>
+            <strong style={{ color: 'var(--color-muted)', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              ✗ Qué no significa
+            </strong>
+            <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1rem' }}>
+              <li>No prueba causalidad ni mide las preferencias reales del vecindario.</li>
+              <li>No agota la necesidad urbana: solo lo que hay datasets disponibles para medir.</li>
+              <li>"Demanda baja" no equivale a "ausencia de necesidad" (Decidim no es muestra representativa).</li>
+            </ul>
+          </div>
         </div>
 
         <p style={{ color: 'var(--color-muted)', fontSize: '0.92rem' }}>
