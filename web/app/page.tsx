@@ -52,7 +52,7 @@ export default function Home() {
         <p style={{ fontSize: '1.1rem', lineHeight: 1.55, color: 'var(--color-ink)', maxWidth: 760 }}>
           Cruzamos las <strong>{fmt(RESUMEN.n_propuestas_total)} propuestas</strong> con título legible
           presentadas en <strong>{RESUMEN.n_ediciones} ediciones</strong> de Decidim VLC ({RESUMEN.periodo})
-          con <strong>22 datasets de realidad urbana</strong> del Portal de Datos Abiertos para
+          con <strong>{(RESUMEN as any).n_datasets_realidad ?? 25} datasets de realidad urbana</strong> del Portal de Datos Abiertos para
           responder a una pregunta: <em>¿la voz ciudadana refleja las carencias observables en los
           datos municipales de cada distrito?</em>
         </p>
