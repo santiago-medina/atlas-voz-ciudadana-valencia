@@ -82,6 +82,12 @@ Manifest completo en [`data/raw/MANIFEST.json`](data/raw/MANIFEST.json).
 Adicionalmente se usa el **padrón municipal 2022** (807.396
 habitantes) para normalizar todos los indicadores per cápita.
 
+**Trazabilidad completa de cómo se usa cada dataset (qué columna genera, qué
+indicador alimenta, qué temas se cruzan con él) en
+[`docs/DATASETS_USO.md`](docs/DATASETS_USO.md).** El documento se genera
+automáticamente con `python etl/12_trazabilidad.py` y verifica la coherencia
+entre lo declarado en MANIFEST, lo documentado y el código real.
+
 ## Estructura del repo
 
 ```

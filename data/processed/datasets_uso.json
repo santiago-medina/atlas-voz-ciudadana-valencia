@@ -1,0 +1,402 @@
+[
+  {
+    "filename": "decidim.csv",
+    "id": "apoyo-propuestas-decidimvlc",
+    "titulo": "Apoyo propuestas DecidimVLC (2015-2023)",
+    "role": "decidim",
+    "url": "https://opendata.vlci.valencia.es/dataset/4ccedafd-4055-4cef-aaed-91390b00a131/resource/87a0dbdf-bc65-469e-8552-c75d333e6372/download/apoyo-propuestas-decidimvlc.csv",
+    "columnas_generadas": [
+      "(propuestas, apoyos, seleccionadas, edicion, distrito, presupuesto)"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Fuente principal — alimenta la Matriz de Demanda. No es un indicador de carencia."
+  },
+  {
+    "filename": "distritos.geojson",
+    "id": "districtes-distritos",
+    "titulo": "Districtes (polígonos, 19 distritos — unidad principal de análisis)",
+    "role": "geometry-distritos",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/225/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "id_distrito",
+      "nombre_distrito",
+      "geometry"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Geometría base — 19 distritos como unidad de análisis (dissolve aplicado)."
+  },
+  {
+    "filename": "barrios.geojson",
+    "id": "barris-barrios",
+    "titulo": "Barris (polígonos, 88 barrios)",
+    "role": "geometry-barrios",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/224/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "id_barrio",
+      "nombre_barrio",
+      "geometry"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Geometría auxiliar — 88 barrios para sub-vista futura."
+  },
+  {
+    "filename": "poblacion_manzanas.geojson",
+    "id": "illa-de-cases-cadastrals-amb-dades-de-poblacio",
+    "titulo": "Manzanas catastrales con datos de población (0-14, 15-65, 66+)",
+    "role": "demografia",
+    "url": "https://geoportal.valencia.es/apps/OpenData/UrbanismoEInfraestructuras/MANZANAS.json",
+    "columnas_generadas": [],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Descargado pero descartado: el GeoJSON del portal no trae población. Se usa el Padrón 2022 transcrito como dataset derivado."
+  },
+  {
+    "filename": "vulnerabilidad.geojson",
+    "id": "vulnerabilidad-por-barrios",
+    "titulo": "Vulnerabilidad por barrios 2021",
+    "role": "realidad-vulnerabilidad",
+    "url": "https://opendata.vlci.valencia.es/dataset/ca18278b-d040-4274-b9c7-c1a9daae54b9/resource/fd2ca0dc-5344-4aad-8934-2077a0bb120d/download/vulnerabilidad-por-barrios.geojson",
+    "columnas_generadas": [
+      "ind_equip",
+      "ind_dem",
+      "ind_econom",
+      "ind_global"
+    ],
+    "indicador_en_cruce": "ind_equip",
+    "temas_que_usan_ese_indicador": [
+      "Centros de salud"
+    ],
+    "uso": "Cruce: ind_equip alimenta el tema 'Centros de salud' (no hay dataset municipal directo de cobertura sanitaria)."
+  },
+  {
+    "filename": "espacios_verdes.geojson",
+    "id": "espais-verds-espacios-verdes",
+    "titulo": "Espacios verdes",
+    "role": "realidad-verde",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/8/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "m2_espacios_verdes",
+      "n_jardines",
+      "m2_verde_per_hab"
+    ],
+    "indicador_en_cruce": "m2_verde_per_hab",
+    "temas_que_usan_ese_indicador": [
+      "Jardines y arbolado",
+      "Parques y plazas",
+      "Zonas verdes"
+    ],
+    "uso": "Cruce: m2_verde_per_hab alimenta los temas 'Parques y plazas', 'Jardines y arbolado' y 'Zonas verdes'."
+  },
+  {
+    "filename": "equipamientos.geojson",
+    "id": "equipamients-municipals-equipamientos-municipales",
+    "titulo": "Equipamientos municipales",
+    "role": "realidad-equipamientos",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/1/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_equipamientos",
+      "equipamientos_per_1000hab"
+    ],
+    "indicador_en_cruce": "equipamientos_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Bibliotecas y ludotecas",
+      "Centros cívicos y huertos urbanos",
+      "Equipamientos culturales",
+      "Equipamientos específicos",
+      "Instalaciones deportivas",
+      "Mobiliario urbano deportivo"
+    ],
+    "uso": "Cruce: equipamientos_per_1000hab alimenta varios temas culturales/sociales (bibliotecas, equipamientos culturales, centros cívicos, instalaciones deportivas, mobiliario deportivo, equipamientos específicos)."
+  },
+  {
+    "filename": "centros_educativos.geojson",
+    "id": "centros-educativos-en-valencia",
+    "titulo": "Centros educativos",
+    "role": "realidad-educacion",
+    "url": "https://opendata.vlci.valencia.es/dataset/11436f0c-082b-4e5b-9659-005f5b528bde/resource/938e34b7-bb7d-4b0c-8176-3602d47ebd6a/download/centros-educativos-en-valencia.geojson",
+    "columnas_generadas": [
+      "n_centros_educativos",
+      "centros_educativos_per_1000hab"
+    ],
+    "indicador_en_cruce": "centros_educativos_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Centros educativos"
+    ],
+    "uso": "Cruce: centros_educativos_per_1000hab alimenta el tema 'Centros educativos'."
+  },
+  {
+    "filename": "itinerarios_ciclistas.geojson",
+    "id": "itinerarios-ciclistas-itineraris-ciclistes",
+    "titulo": "Itinerarios ciclistas (carril bici)",
+    "role": "realidad-bici",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/189/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "m_carril_bici",
+      "m_carril_bici_per_1000hab"
+    ],
+    "indicador_en_cruce": "m_carril_bici_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Carriles bici y movilidad ciclista"
+    ],
+    "uso": "Cruce: m_carril_bici_per_1000hab alimenta el tema 'Carriles bici y movilidad ciclista'."
+  },
+  {
+    "filename": "parkings.geojson",
+    "id": "parkings",
+    "titulo": "Parkings",
+    "role": "realidad-parking",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/194/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_plazas_parking",
+      "plazas_parking_per_1000hab"
+    ],
+    "indicador_en_cruce": "plazas_parking_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Aparcamiento para vehículos"
+    ],
+    "uso": "Cruce: plazas_parking_per_1000hab alimenta el tema 'Aparcamiento para vehículos'."
+  },
+  {
+    "filename": "velocidad_calles.geojson",
+    "id": "velocitat-carrers",
+    "titulo": "Velocidad de calles",
+    "role": "realidad-trafico",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/223/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "velocidad_media_kmh"
+    ],
+    "indicador_en_cruce": "velocidad_media_kmh",
+    "temas_que_usan_ese_indicador": [
+      "Pacificación del tráfico",
+      "Reducción de velocidad y zonas 30"
+    ],
+    "uso": "Cruce: velocidad_media_kmh alimenta los temas 'Pacificación del tráfico' y 'Reducción de velocidad y zonas 30'."
+  },
+  {
+    "filename": "emt_paradas.geojson",
+    "id": "emt",
+    "titulo": "Red de autobuses EMT (paradas)",
+    "role": "realidad-transporte",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/226/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_paradas_emt",
+      "paradas_emt_per_1000hab"
+    ],
+    "indicador_en_cruce": "paradas_emt_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Transporte público (EMT)"
+    ],
+    "uso": "Cruce: paradas_emt_per_1000hab alimenta el tema 'Transporte público (EMT)'."
+  },
+  {
+    "filename": "contenedores_residuos.geojson",
+    "id": "contenidors-residus-solids",
+    "titulo": "Contenedores de residuos sólidos",
+    "role": "realidad-residuos",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/0/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_contenedores_residuos",
+      "contenedores_residuos_per_1000hab"
+    ],
+    "indicador_en_cruce": "contenedores_residuos_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Recogida de residuos"
+    ],
+    "uso": "Cruce: contenedores_residuos_per_1000hab alimenta el tema 'Recogida de residuos'."
+  },
+  {
+    "filename": "paneles_informativos.geojson",
+    "id": "panells-informatius",
+    "titulo": "Paneles informativos en vía pública",
+    "role": "realidad-informacion",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/187/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_paneles_total (suma con mupis)"
+    ],
+    "indicador_en_cruce": "paneles_total_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Paneles informativos"
+    ],
+    "uso": "Cruce: combinado con mupis.geojson genera paneles_total_per_1000hab, indicador del tema 'Paneles informativos'."
+  },
+  {
+    "filename": "mupis.geojson",
+    "id": "mupis-ocoval",
+    "titulo": "Mupis OCOVAL",
+    "role": "realidad-informacion",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/3/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_paneles_total (suma con paneles_informativos)"
+    ],
+    "indicador_en_cruce": "paneles_total_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Paneles informativos"
+    ],
+    "uso": "Cruce: combinado con paneles_informativos.geojson genera paneles_total_per_1000hab."
+  },
+  {
+    "filename": "patrimonio_urbano.geojson",
+    "id": "catalogo-urbano",
+    "titulo": "Catálogo estructural urbano (BIC, BRL, BC, CH, NHT)",
+    "role": "realidad-patrimonio",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/322/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_bic",
+      "bic_per_1000hab"
+    ],
+    "indicador_en_cruce": "bic_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Rehabilitación del patrimonio"
+    ],
+    "uso": "Cruce: bic_per_1000hab alimenta el tema 'Rehabilitación del patrimonio'."
+  },
+  {
+    "filename": "fuentes_agua.geojson",
+    "id": "fonts-daigua-publica",
+    "titulo": "Fuentes de agua pública",
+    "role": "realidad-fuentes",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/158/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_fuentes_agua",
+      "fuentes_agua_per_1000hab"
+    ],
+    "indicador_en_cruce": "fuentes_agua_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Fuentes y aseos públicos"
+    ],
+    "uso": "Cruce: fuentes_agua_per_1000hab alimenta el tema 'Fuentes y aseos públicos'."
+  },
+  {
+    "filename": "pipicans.geojson",
+    "id": "pipicans-zona-socialitzacio-canina",
+    "titulo": "Pipicanes y zonas de socialización canina",
+    "role": "realidad-canina",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/163/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_pipicans",
+      "pipicans_per_1000hab"
+    ],
+    "indicador_en_cruce": "pipicans_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Pipicanes y zonas caninas"
+    ],
+    "uso": "Cruce: pipicans_per_1000hab alimenta el tema 'Pipicanes y zonas caninas'."
+  },
+  {
+    "filename": "juegos_infantiles.geojson",
+    "id": "zones-jocs-infantils",
+    "titulo": "Zonas de juegos infantiles",
+    "role": "realidad-juegos",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/166/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_juegos_infantiles",
+      "juegos_infantiles_per_1000hab"
+    ],
+    "indicador_en_cruce": "juegos_infantiles_per_1000hab",
+    "temas_que_usan_ese_indicador": [
+      "Parques infantiles"
+    ],
+    "uso": "Cruce: juegos_infantiles_per_1000hab alimenta el tema 'Parques infantiles'."
+  },
+  {
+    "filename": "zones_zas.geojson",
+    "id": "zones-zas-zonas-zas",
+    "titulo": "Zonas Acústicamente Saturadas (ZAS)",
+    "role": "realidad-ruido",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/5/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_zonas_zas"
+    ],
+    "indicador_en_cruce": "n_zonas_zas",
+    "temas_que_usan_ese_indicador": [
+      "Reducción del ruido"
+    ],
+    "uso": "Cruce: n_zonas_zas alimenta el tema 'Reducción del ruido'."
+  },
+  {
+    "filename": "estaciones_ruido.geojson",
+    "id": "estacions-de-soroll-estaciones-de-ruido",
+    "titulo": "Estaciones de ruido",
+    "role": "realidad-ruido",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/160/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_estaciones_ruido"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: solo 4 estaciones físicas, demasiado pocas para indicador. Se cuenta en fichas de distrito."
+  },
+  {
+    "filename": "aparcabicis.geojson",
+    "id": "aparcaments-bicicletes-aparcamientos-bicicletas",
+    "titulo": "Aparcamientos bicicletas",
+    "role": "realidad-bici",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Trafico/MapServer/206/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_plazas_aparcabici",
+      "plazas_aparcabici_per_1000hab"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: las plazas de aparcabicis aparecen como dato secundario en fichas de distrito. El tema relacionado ('Carriles bici') cruza con m_carril_bici_per_1000hab, indicador más relevante."
+  },
+  {
+    "filename": "mayores.geojson",
+    "id": "majors-mayores",
+    "titulo": "Recursos para mayores",
+    "role": "realidad-mayores",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/24/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_recursos_mayores",
+      "recursos_mayores_per_1000hab"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: no existe tema Decidim específico de 'recursos para mayores'. Se cuenta en fichas como información complementaria."
+  },
+  {
+    "filename": "juventud.geojson",
+    "id": "joventut-juventud",
+    "titulo": "Recursos para juventud",
+    "role": "realidad-juventud",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/SociedadBienestar/MapServer/23/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_recursos_juventud",
+      "recursos_juventud_per_1000hab"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: análogo a 'mayores'. Aparece en fichas de distrito."
+  },
+  {
+    "filename": "fallas.geojson",
+    "id": "falles-fallas",
+    "titulo": "Fallas",
+    "role": "realidad-cultura",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Turismo/MapServer/215/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_fallas",
+      "fallas_per_1000hab"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: 351 fallas geolocalizadas. Información cultural complementaria en fichas de distrito."
+  },
+  {
+    "filename": "zonas_actividades.geojson",
+    "id": "zones-dactivitats",
+    "titulo": "Zonas de actividades",
+    "role": "realidad-actividades",
+    "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Turismo/MapServer/206/query?where=1=1&outFields=*&f=geojson",
+    "columnas_generadas": [
+      "n_zonas_actividades",
+      "zonas_actividades_per_1000hab"
+    ],
+    "indicador_en_cruce": null,
+    "temas_que_usan_ese_indicador": [],
+    "uso": "Contexto: contado por distrito pero no se usa como indicador específico de carencia."
+  }
+]

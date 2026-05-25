@@ -237,6 +237,13 @@ Esta elección está documentada en `etl/07_indice_discrepancia.py` y es
 auditable: cualquiera puede ampliar o sustituir el mapeo y recalcular los
 cuadrantes.
 
+La **tabla completa de trazabilidad** (qué dataset alimenta qué indicador y
+qué tema usa ese indicador) está en `docs/DATASETS_USO.md` del repositorio,
+generada automáticamente por `etl/12_trazabilidad.py`. Este script verifica
+en cada ejecución que no haya desajustes entre lo declarado en MANIFEST,
+lo documentado y el código real, y falla con error explícito si los
+encuentra.
+
 ### 2.5 Limitaciones metodológicas
 
 El proyecto se publica con sus límites explícitos:
