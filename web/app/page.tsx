@@ -30,7 +30,10 @@ export default function Home() {
     / Object.values(RESUMEN.cuadrante_counts ?? {}).reduce((a, b) => a + b, 0) * 100);
 
   const ficha = selectedDistrito ? FICHAS[String(selectedDistrito)] : null;
-  const fmt = (n: number) => n.toLocaleString('es-ES');
+  // toLocaleString('es-ES') no agrupa números de 4 dígitos (5285) por defecto.
+  // Forzamos separador de miles siempre para consistencia editorial: 5.285.
+  const fmt = (n: number) =>
+    new Intl.NumberFormat('es-ES', { useGrouping: 'always' as any }).format(n);
 
   return (
     <main style={{ maxWidth: 1180, margin: '0 auto', padding: '2.5rem 1.5rem' }}>
@@ -465,12 +468,14 @@ export default function Home() {
           </div>
           <div style={{ background: 'white', border: '1px solid var(--color-rule)', borderTop: '4px solid #d4a017', padding: '1rem 1.1rem', borderRadius: 4 }}>
             <div style={{ fontSize: '0.72rem', color: '#a17d10', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
-              3 · El comodín territorial
+              3 · El embudo presupuestario
             </div>
             <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.5 }}>
-              <strong>El 22,6% de propuestas no se asignan a ningún distrito</strong>{' '}
-              ("Toda la ciudad"). Quedan fuera del mecanismo de reequilibrio territorial de la
-              8ª edición — un punto ciego que vale la pena revisar.
+              Por cada euro finalmente ejecutado, la ciudadanía pidió{' '}
+              <strong>cuatro</strong>: {fmt(Math.round((RESUMEN as any).presupuesto_total_solicitado_eur / 1_000_000))} M €
+              solicitados frente a {fmt(Math.round((RESUMEN as any).presupuesto_seleccionado_eur / 1_000_000))} M €
+              seleccionados. La distancia entre expectativa ciudadana y capacidad presupuestaria
+              debería comunicarse explícitamente.
             </p>
           </div>
         </div>
