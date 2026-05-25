@@ -6,7 +6,7 @@
 > El Atlas cruza las **5.795 propuestas** vecinales registradas en
 > Decidim VLC entre 2015 y 2023 (5.285 con título legible,
 > 3.221 asignadas a distrito, 1.195 globales)
-> con **25 datasets de realidad urbana** del Portal de Datos
+> con **22 datasets de realidad urbana** del Portal de Datos
 > Abiertos para responder a esta pregunta.
 
 **Proyecto presentado a los Premios de Proyectos de Datos Abiertos y Periodismo de Datos del Ayuntamiento de València · Edición 2026.**
@@ -155,7 +155,7 @@ cd web && npm install && npm run build
 
 | Criterio | Cómo lo cubre |
 |---|---|
-| **Innovación** | Cruce inédito Decidim + 25 datasets municipales · topic modeling automático · índice de discrepancia z-score con indicadores específicos por tema |
+| **Innovación** | Cruce inédito Decidim + 22 datasets municipales · topic modeling automático · índice de discrepancia z-score con indicadores específicos por tema |
 | **Impacto social** | Identifica los silenciosos vulnerables → recomendaciones directas para la 8ª edición en curso |
 | **Viabilidad** | Producto desplegado en Pages · pipeline reproducible en <5 min · sin dependencias propietarias |
 | **Colaboración** | Código y datos abiertos (MIT) · diseñado para que asociaciones, prensa o investigación puedan extenderlo |

@@ -132,22 +132,6 @@
       "filename": "fallas.geojson"
     },
     {
-      "id": "hourly-air-quality-data-since-2016",
-      "title": "Calidad del aire por horas 2016-2021",
-      "role": "realidad-aire",
-      "format": "CSV",
-      "url": "https://opendata.vlci.valencia.es/dataset/b5c2656c-6c1c-413d-a56e-549e52220502/resource/4be7248b-9597-4017-89af-82a9b6e2382f/download/rvvcca.-datos-horarios-valencia-2016-2021-curt-cas.csv",
-      "filename": "calidad_aire.csv"
-    },
-    {
-      "id": "zones-mobilitat-reduida",
-      "title": "Zonas de movilidad reducida (PMR)",
-      "role": "realidad-accesibilidad",
-      "format": "GeoJSON",
-      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Turismo/MapServer/222/query?where=1=1&outFields=*&f=geojson",
-      "filename": "zones_pmr.geojson"
-    },
-    {
       "id": "velocitat-carrers",
       "title": "Velocidad de calles",
       "role": "realidad-trafico",
@@ -194,14 +178,6 @@
       "format": "GeoJSON",
       "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/3/query?where=1=1&outFields=*&f=geojson",
       "filename": "mupis.geojson"
-    },
-    {
-      "id": "servicios-e-instalaciones",
-      "title": "Mobiliario urbano",
-      "role": "realidad-mobiliario",
-      "format": "GeoJSON",
-      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/323/query?where=1=1&outFields=*&f=geojson",
-      "filename": "mobiliario_urbano.geojson"
     },
     {
       "id": "fonts-daigua-publica",

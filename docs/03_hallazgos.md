@@ -3,7 +3,7 @@
 *Versión derivada automáticamente desde `etl/10_hallazgos.py`. Cada cifra es reproducible ejecutando el pipeline ETL.*
 
 
-## H01 · La participación se ha duplicado en una década
+## H01 · La participación ha crecido un 153 % en una década
 
 **+948**
 

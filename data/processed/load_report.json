@@ -443,8 +443,8 @@
       ]
     },
     "aparcabicis": {
-      "features": 4297,
-      "assigned": 4294,
+      "features": 4296,
+      "assigned": 4293,
       "unassigned": 3,
       "per_distrito": [
         {
@@ -470,7 +470,7 @@
         {
           "id_distrito": 5.0,
           "nombre_distrito": "la Saïdia",
-          "count": 269
+          "count": 268
         },
         {
           "id_distrito": 6.0,
