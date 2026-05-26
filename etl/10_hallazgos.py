@@ -170,24 +170,27 @@ def main() -> None:
         "fuente": "decidim_tagged.csv · count(id_distrito == 0)",
     })
 
-    # ----- H7: Desigualdad de espacios verdes ------------------------------
+    # ----- H7: Desigualdad de espacios verdes (sin umbral externo) ---------
     top_v = realidad.nlargest(1, "m2_verde_per_hab").iloc[0]
     bot_v = realidad.nsmallest(1, "m2_verde_per_hab").iloc[0]
-    n_below_9 = int((realidad["m2_verde_per_hab"] < 9).sum())
+    mediana_verde = float(realidad["m2_verde_per_hab"].median())
+    ratio_extremos = top_v["m2_verde_per_hab"] / bot_v["m2_verde_per_hab"] if bot_v["m2_verde_per_hab"] > 0 else 0
+    n_bajo_mediana = int((realidad["m2_verde_per_hab"] < mediana_verde).sum())
     hallazgos.append({
         "id": "H07",
-        "titulo": "Verde: hasta 6 veces más en el extremo alto que en el bajo",
+        "titulo": f"Verde: el distrito mejor servido tiene {ratio_extremos:.0f} veces más m² por habitante que el peor",
         "cifra": (f"{top_v['m2_verde_per_hab']:.1f} vs {bot_v['m2_verde_per_hab']:.1f} m²/hab").replace(".", ","),
         "texto": (
             f"{top_v['nombre_distrito']} lidera con {str(round(top_v['m2_verde_per_hab'],1)).replace('.',',')} m² de zona verde por habitante. "
-            f"En el extremo opuesto, {bot_v['nombre_distrito']} ofrece {str(round(bot_v['m2_verde_per_hab'],1)).replace('.',',')} m²/hab. "
-            f"Si tomamos como referencia los 9 m² por habitante que la Agencia Europea de Medio "
-            f"Ambiente utiliza como mínimo recomendado, {n_below_9} distritos quedan por debajo. "
-            "Ninguno de ellos figura en el top de demanda del tema 'Zonas verdes' dentro de "
+            f"En el extremo opuesto, {bot_v['nombre_distrito']} ofrece {str(round(bot_v['m2_verde_per_hab'],1)).replace('.',',')} m²/hab, "
+            f"unas {ratio_extremos:.0f} veces menos. La mediana de la ciudad se sitúa en "
+            f"{str(round(mediana_verde,1)).replace('.',',')} m²/hab, con {n_bajo_mediana} de los "
+            f"19 distritos por debajo de esa cifra. Ninguno de los distritos con menos verde "
+            "por habitante figura en el top de demanda del tema 'Zonas verdes' dentro de "
             "Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en "
             "demanda expresada."
         ),
-        "fuente": "matriz_realidad.csv · m2_verde_per_hab · referencia: European Environment Agency, 9 m²/hab",
+        "fuente": "matriz_realidad.csv · m2_verde_per_hab (comparación interna a la ciudad, sin umbral externo)",
     })
 
     # ----- H8: El cuadrante mayoritario es 'silencioso vulnerable' --------

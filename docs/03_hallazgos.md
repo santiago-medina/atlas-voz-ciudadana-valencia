@@ -63,14 +63,14 @@ Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, e
 *Fuente: decidim_tagged.csv · count(id_distrito == 0)*
 
 
-## H07 · Verde: hasta 6 veces más en el extremo alto que en el bajo
+## H07 · Verde: el distrito mejor servido tiene 6 veces más m² por habitante que el peor
 
 **17,5 vs 2,7 m²/hab**
 
-Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Si tomamos como referencia los 9 m² por habitante que la Agencia Europea de Medio Ambiente utiliza como mínimo recomendado, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.
+Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab, unas 6 veces menos. La mediana de la ciudad se sitúa en 6,4 m²/hab, con 9 de los 19 distritos por debajo de esa cifra. Ninguno de los distritos con menos verde por habitante figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.
 
 
-*Fuente: matriz_realidad.csv · m2_verde_per_hab · referencia: European Environment Agency, 9 m²/hab*
+*Fuente: matriz_realidad.csv · m2_verde_per_hab (comparación interna a la ciudad, sin umbral externo)*
 
 
 ## H08 · El silencio sobre carencia observable es la situación más frecuente
