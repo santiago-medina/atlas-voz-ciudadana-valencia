@@ -19,7 +19,7 @@ import HallazgosSection from '@/components/HallazgosSection';
 import TimelineEdiciones from '@/components/TimelineEdiciones';
 
 export default function Home() {
-  // Tema precargado: "Pacificación del tráfico" — es uno de los hallazgos
+  // Tema precargado: "Pacificación del tráfico", uno de los hallazgos
   // más rotundos (Campanar / Pla del Real con velocidad alta y demanda baja).
   const DEFAULT_TEMA = TEMAS.find((t) => t.nombre === 'Pacificación del tráfico' && MATRIZ[t.nombre])?.nombre
     ?? TEMAS.find((t) => MATRIZ[t.nombre])?.nombre
@@ -311,7 +311,7 @@ export default function Home() {
               minWidth: 360,
             }}
           >
-            <option value="">— Elige un tema —</option>
+            <option value="">Elige un tema…</option>
             {TEMAS.filter((t) => MATRIZ[t.nombre]).map((t) => (
               <option key={t.id} value={t.nombre}>
                 {t.nombre} ({fmt(t.n_apoyos)} apoyos)
@@ -337,8 +337,8 @@ export default function Home() {
               Indicador de carencia: <code style={{ background: '#f4f1ea', padding: '1px 6px', borderRadius: 3, fontSize: '0.85em' }}>
                 {Object.values(MATRIZ[selectedTema])[0]?.indicador_realidad ?? 'n/a'}
               </code>
-              {Object.values(MATRIZ[selectedTema])[0]?.indicador_realidad === 'ind_global'
-                ? ' (proxy: índice de vulnerabilidad global 2021)'
+              {Object.values(MATRIZ[selectedTema])[0]?.indicador_realidad === 'ind_equip'
+                ? ' (subíndice de vulnerabilidad equipamental, dataset municipal 2021)'
                 : ''}
             </div>
           )}
@@ -492,22 +492,24 @@ export default function Home() {
         </p>
         <ol style={{ lineHeight: 1.6, fontSize: '0.95rem', maxWidth: 760, marginTop: '1rem' }}>
           <li>
-            <strong>Outreach focalizado en distritos con silencios persistentes</strong> — campañas
-            presenciales en Campanar, Algirós, Rascanya, l'Olivereta y Benicalap, en colaboración con
-            asociaciones vecinales y mercados municipales. Es la acción que más impacto tendrá sobre
-            el cuadrante dominante de "silencio sobre carencia observable".
+            <strong>Ir a buscar la voz vecinal en los distritos más silenciosos</strong>. Organizar
+            sesiones presenciales en Campanar, Algirós, Rascanya, l'Olivereta y Benicalap, en
+            colaboración con asociaciones vecinales y mercados municipales. Es la acción con más
+            impacto sobre el cuadrante más frecuente, el de "silencio sobre carencia observable".
           </li>
           <li>
-            <strong>Informe público anual sobre demandas persistentes</strong> — para cada par
-            (distrito × tema) con 4+ ediciones consecutivas sin selección, publicar el estado
-            administrativo: aceptada, rechazada por viabilidad técnica, reprogramada o pendiente.
-            Cierra el embudo de frustración acumulada.
+            <strong>Publicar cada año el estado de las propuestas que se repiten</strong>. Para
+            cada combinación de distrito y tema que ha presentado propuestas en 4 o más ediciones
+            sin ser seleccionada nunca, indicar qué decisión técnica se ha tomado: aceptada y
+            pendiente de ejecución, rechazada por motivos concretos, aplazada o aún en estudio.
+            Una respuesta explícita evita que los vecinos sientan que sus propuestas se han
+            quedado sin contestar.
           </li>
           <li>
-            <strong>Revisar la categoría "Toda la ciudad"</strong> — el 22,6% de las propuestas se
-            etiquetan así y quedan fuera del mecanismo de reequilibrio territorial. Pedir
-            territorialización o impacto territorial estimado mejora la representatividad por
-            distrito.
+            <strong>Revisar la categoría "Toda la ciudad"</strong>. El 22,6 % de las propuestas se
+            etiquetan así y, al no asignarse a ningún distrito, quedan fuera del mecanismo de
+            reequilibrio territorial. Pedir que cada propuesta indique en qué barrio o distrito
+            tendría más efecto mejora la representatividad por distrito.
           </li>
         </ol>
         <details style={{ marginTop: '1.4rem', fontSize: '0.92rem' }}>
@@ -516,15 +518,15 @@ export default function Home() {
           </summary>
           <ol start={4} style={{ lineHeight: 1.6, paddingLeft: '1.2rem', marginTop: '0.6rem' }}>
             <li>
-              <strong>Ponderar apoyos por indicadores de vulnerabilidad</strong> — para que el peso
-              relativo de cada apoyo sea mayor en distritos con menor capacidad organizativa
-              histórica.
+              <strong>Dar más peso a los apoyos de los distritos más vulnerables</strong> según el
+              índice oficial de vulnerabilidad por barrios, para que la participación de barrios
+              menos organizados pese más en el resultado final.
             </li>
             <li>
-              <strong>Validar los silencios con asociaciones vecinales</strong> — antes de actuar
-              sobre un patrón de "silencioso vulnerable", contrastar con representantes del distrito.
-              La ausencia de demanda puede deberse a desconocimiento, desconfianza, brecha digital o
-              saturación previa.
+              <strong>Contrastar los silencios detectados con las asociaciones vecinales</strong>
+              antes de actuar sobre ellos. La ausencia de demanda puede deberse a desconocimiento,
+              desconfianza, brecha digital o saturación previa, y cada caso pide una respuesta
+              distinta.
             </li>
           </ol>
         </details>
@@ -546,9 +548,10 @@ export default function Home() {
             "ausencia de necesidad".
           </li>
           <li>
-            <strong>Algunos temas usan vulnerabilidad global como proxy</strong> de carencia
-            territorial. Es una aproximación razonable pero no equivalente a una métrica específica
-            por tema.
+            <strong>Para el tema "Centros de salud"</strong> no existe en el portal un dataset
+            que mida directamente la cobertura sanitaria por distrito, así que se utiliza el
+            subíndice de vulnerabilidad equipamental del Ayuntamiento (2021). Es una aproximación
+            razonable, pero no es lo mismo que medir la carencia sanitaria directamente.
           </li>
           <li>
             <strong>La unidad de análisis es el distrito</strong> (19 unidades). Distritos

@@ -17,7 +17,7 @@ En la 1ª edición (2015-2016) se presentaron 619 propuestas; en la 7ª (2022-20
 
 **17,6 % → 9,3 %**
 
-En la 1ª edición se seleccionó el 17,6 % de las propuestas; en la 7ª solo el 9,3 %. La tasa de selección cae al crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y capacidad presupuestaria municipal — no necesariamente una pérdida de capacidad, sino una mayor competencia entre propuestas por un presupuesto limitado.
+En la 1ª edición se seleccionó el 17,6 % de las propuestas; en la 7ª solo el 9,3 %. La tasa de selección cae al crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y capacidad presupuestaria municipal. No es necesariamente una pérdida de capacidad, sino una mayor competencia entre propuestas por un presupuesto limitado.
 
 
 *Fuente: evolucion.json · tasa_seleccion por edición (raw, dataset completo)*
@@ -37,7 +37,7 @@ Campanar registra el índice de vulnerabilidad más alto de los 19 distritos (3,
 
 **+103 propuestas / 0 ejecuciones en repetidas**
 
-Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo, 2 pares (distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada — 1.340 apoyos en total. El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.
+Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo, 2 pares (distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada (1.340 apoyos en total). El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.
 
 
 *Fuente: evolucion.json · emergentes_top10 + demandas_zombi*
@@ -47,7 +47,7 @@ Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 pro
 
 **503 apoyos/1.000 hab**
 
-Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes — 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.
+Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes, 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.
 
 
 *Fuente: decidim_tagged.csv + poblacion_distritos.csv*
@@ -67,10 +67,10 @@ Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, e
 
 **17,5 vs 2,7 m²/hab**
 
-Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia observable no se traduce automáticamente en demanda explícita.
+Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Si tomamos como referencia los 9 m² por habitante que la Agencia Europea de Medio Ambiente utiliza como mínimo recomendado, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.
 
 
-*Fuente: matriz_realidad.csv · m2_verde_per_hab*
+*Fuente: matriz_realidad.csv · m2_verde_per_hab · referencia: European Environment Agency, 9 m²/hab*
 
 
 ## H08 · El silencio sobre carencia observable es la situación más frecuente
@@ -83,21 +83,21 @@ Cruzando los 23 temas que tienen un indicador municipal específico con los 19 d
 *Fuente: indice_discrepancia.csv · value_counts(cuadrante)*
 
 
-## H09 · 28 demandas persistentes no han sido seleccionadas en 4+ ediciones
+## H09 · 28 demandas persistentes no han sido seleccionadas en 4 o más ediciones
 
 **28 pares · 8.121 apoyos**
 
-28 pares (distrito, tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Los tres pares con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada demanda persistente sin selección representa una desconexión entre expresión ciudadana y ejecución que conviene comunicar de forma explícita.
+28 combinaciones de distrito y tema han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Las tres con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada caso representa una propuesta vecinal que se repite edición tras edición sin que el proceso participativo dé una respuesta clara, y conviene que el Ayuntamiento publique el estado de cada una.
 
 
 *Fuente: evolucion.json · demandas_zombi*
 
 
-## H10 · 38 temas detectados, 23 con cruce honesto contra datos municipales
+## H10 · 38 temas detectados, 23 con indicador municipal para cruzar
 
-**38 temas / 23 cruzables**
+**38 temas / 23 con indicador**
 
-Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De los 38, 23 tienen un indicador municipal específico que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global como proxy genérico repetido.
+Para agrupar las 4.229 propuestas con título legible, convertimos cada título en un vector numérico que captura su significado (usando un modelo de inteligencia artificial entrenado en castellano y valenciano), agrupamos las propuestas que dicen cosas parecidas, y revisamos a mano cada grupo para ponerle un nombre legible. Aparecen 38 temas. Los tres con más apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De estos 38 temas, 23 cuentan con un indicador municipal específico que mide su carencia (m² de zona verde por habitante para parques, metros de carril bici para movilidad ciclista, etc.). Los otros 15 temas (aceras, iluminación pública, seguridad, asfaltado…) se mantienen en la matriz de demanda y en las fichas de distrito, pero no entran en el índice de discrepancia porque el portal no publica un dato objetivo que mida directamente esa carencia. Preferimos dejarlos fuera antes que compararlos contra un indicador genérico que no encaja con cada tema.
 
 
 *Fuente: decidim_tagged.csv + topics.csv + indice_discrepancia.csv*
@@ -127,7 +127,7 @@ En Pobles de l'Oest, varias demandas ciudadanas coinciden con carencias objetiva
 
 **146 centros · pocas propuestas**
 
-Valencia cuenta con 146 recursos para personas mayores según el portal municipal. Sin embargo, no aparece ningún tema específicamente centrado en mayores en el ranking de demanda. Las propuestas relacionadas se dispersan entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero ninguna 'voz mayor' se articula explícitamente en Decidim. La 8ª edición podría incorporar incentivos a la participación senior.
+Valencia cuenta con 146 recursos para personas mayores según el portal municipal. Sin embargo, ninguno de los temas detectados en Decidim se centra específicamente en mayores. Las propuestas relacionadas se reparten entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero no aparece como tal una voz que represente las necesidades de las personas mayores. La 8ª edición podría plantear cómo facilitar su participación.
 
 
 *Fuente: matriz_realidad.csv · n_recursos_mayores*

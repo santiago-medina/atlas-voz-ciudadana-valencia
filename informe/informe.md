@@ -225,13 +225,15 @@ discrepancia. Cada tema se mapea contra una variable concreta del portal:
 **Los {{N_TEMAS_SIN_INDICADOR|raw}} temas restantes quedan fuera del índice de
 discrepancia.** Son temas como aceras y movilidad peatonal, iluminación
 pública, seguridad ciudadana, reurbanización de calles o rehabilitación de
-mercados, para los que el portal no publica un indicador objetivo de carencia.
-En una versión anterior del Atlas estos temas se cruzaban contra el índice de
-vulnerabilidad global, pero esa proxy aplicada {{N_TEMAS_SIN_INDICADOR|raw}} veces
-producía cuadrantes artificialmente repetidos (el mismo z-score atribuido a
-temas muy distintos). Eliminarlos gana rigor sin perder cobertura: estos temas
-siguen apareciendo en las fichas de distrito y en la matriz de demanda,
-simplemente no se les asigna cuadrante de discrepancia.
+mercados, para los que el portal no publica un dato objetivo que mida
+directamente esa carencia. En una versión anterior del Atlas estos temas
+se cruzaban contra el índice global de vulnerabilidad por barrios, pero al
+usar el mismo indicador para {{N_TEMAS_SIN_INDICADOR|raw}} temas muy
+distintos se producían cuadrantes que solo reflejaban dónde había más
+vulnerabilidad general, no la carencia específica de cada tema. Eliminarlos
+gana rigor sin perder cobertura: estos temas siguen apareciendo en las
+fichas de distrito y en la matriz de demanda; simplemente no se les asigna
+un cuadrante.
 
 Esta elección está documentada en `etl/07_indice_discrepancia.py` y es
 auditable: cualquiera puede ampliar o sustituir el mapeo y recalcular los
@@ -257,10 +259,12 @@ El proyecto se publica con sus límites explícitos:
   participa lo hace voluntariamente y tiende a estar más organizado y
   conectado. Por tanto, "demanda baja" no equivale necesariamente a "ausencia
   de necesidad".
-- **Algunos temas usan vulnerabilidad equipamental como proxy.** Para "centros
-  de salud" no existe un dataset de cobertura sanitaria por distrito, por lo
-  que se usa el subíndice `ind_equip` de vulnerabilidad equipamental. Es una
-  aproximación razonable, pero no equivalente a una métrica sanitaria directa.
+- **El tema "Centros de salud" usa una aproximación.** El portal de datos
+  abiertos no publica un dataset que mida directamente la cobertura sanitaria
+  por distrito, así que utilizamos el subíndice de vulnerabilidad
+  equipamental por barrios (dato municipal de 2021) como aproximación. Es
+  razonable, pero no es exactamente lo mismo que medir cuántos centros de
+  salud cubren la población de cada distrito.
 - **La unidad de análisis es el distrito ({{N_DISTRITOS|raw}} unidades).** Distritos
   heterogéneos como Quatre Carreres o l'Eixample pueden tener bolsas de
   silencio internas que el agregado distrital esconde. La próxima iteración
@@ -269,10 +273,10 @@ El proyecto se publica con sus límites explícitos:
   variar ligeramente para ediciones de 2015-2019. El efecto sobre los
   cuadrantes es marginal.
 
-Estas limitaciones no invalidan los hallazgos: los más fuertes —Campanar,
-demandas persistentes sin selección, peso de "Toda la ciudad"— son robustos a
-cambios razonables de metodología. Pero conviene tenerlas presentes al usar
-el Atlas para diseño de política.
+Estas limitaciones no invalidan los hallazgos: los más fuertes (Campanar,
+demandas persistentes sin selección, peso de "Toda la ciudad") son robustos
+a cambios razonables de metodología. Pero conviene tenerlas presentes al
+usar el Atlas para diseñar política participativa.
 
 \pagebreak
 
@@ -312,8 +316,8 @@ caso**. Sin esa respuesta, el sistema acumula frustración.
 El {{PCT_PROPUESTAS_GLOBAL|pct}} de las propuestas históricas se etiquetaron como
 "Toda la ciudad" ({{N_PROPUESTAS_GLOBAL|int}} de {{N_PROPUESTAS_BRUTAS|int}}), lo que
 las hace invisibles al mecanismo de reequilibrio territorial de la 8ª edición.
-Forzar a quien propone a asignar un distrito —o crear una categoría
-"propuestas transversales" con cuotas explícitas— ayudaría a que el
+Pedir a quien propone que asigne un distrito (o crear una categoría
+"propuestas transversales" con cuotas explícitas) ayudaría a que el
 reequilibrio funcione realmente.
 
 \pagebreak

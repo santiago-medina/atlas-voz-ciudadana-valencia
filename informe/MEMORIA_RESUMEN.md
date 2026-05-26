@@ -49,10 +49,11 @@ normalización por habitante usa el padrón municipal 2022
 
 De los {{N_TEMAS_DETECTADOS|raw}} temas detectados, **{{N_TEMAS_CON_INDICADOR|raw}}
 disponen de un indicador municipal específico** y entran en el índice de
-discrepancia. Los {{N_TEMAS_SIN_INDICADOR|raw}} temas sin indicador directo (p. ej.
+discrepancia. Los {{N_TEMAS_SIN_INDICADOR|raw}} temas sin indicador directo (por ejemplo
 iluminación pública, seguridad ciudadana, aceras y movilidad peatonal) se
-mantienen en la matriz de demanda pero quedan fuera del cuadrante: preferimos
-cobertura honesta antes que usar una proxy genérica repetida.
+mantienen en la matriz de demanda pero quedan fuera del cuadrante. Hemos
+preferido reducir el alcance del cruce antes que comparar todos esos temas
+contra un mismo indicador genérico, que daría resultados poco fiables.
 
 El cruce arroja un índice de discrepancia que clasifica cada par (distrito,
 tema) en cuatro cuadrantes: **demanda legítima**, **sobre-demandante**,
@@ -177,7 +178,7 @@ Los 13 hallazgos completos están en el informe técnico adjunto y en
 | Criterio (25 pts) | Cómo lo cubre el proyecto |
 |---|---|
 | **Innovación** | Cruce inédito en València de Decidim + {{N_DATASETS_REALIDAD|raw}} datasets municipales con topic modeling automático, indicadores específicos por tema y matriz de discrepancia z-score. |
-| **Impacto social** | Identifica los "silenciosos vulnerables" — los distritos donde el proceso participativo falla y hay que actuar de oficio. Recomendaciones directas a la 8ª edición. |
+| **Impacto social** | Identifica los "silenciosos vulnerables", es decir, los distritos donde el proceso participativo no llega a recoger su voz y conviene actuar de oficio. Recomendaciones directas a la 8ª edición. |
 | **Viabilidad** | Producto desplegado y accesible en GitHub Pages con coste cero. Pipeline reproducible en <5 minutos. Sin dependencias propietarias. |
 | **Colaboración** | Código y datos abiertos (MIT). Diseñado para que cualquier asociación vecinal, periodista o investigador/a pueda extender el análisis. |
 
@@ -194,7 +195,7 @@ web se actualizarán automáticamente con los datos nuevos.
 
 ## Anexos en este expediente
 
-1. `informe.pdf` — Informe técnico completo (≈15 páginas)
-2. `MEMORIA_RESUMEN.pdf` — Este documento
+1. `informe.pdf` (informe técnico completo, unas 15 páginas)
+2. `MEMORIA_RESUMEN.pdf` (este documento)
 3. URL del proyecto, accesible permanentemente
 4. URL del repositorio público de código y datos

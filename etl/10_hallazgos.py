@@ -1,5 +1,5 @@
 """
-10_hallazgos.py — Construye los 12-15 hallazgos clave del Atlas con
+10_hallazgos.py. Construye los 12-15 hallazgos clave del Atlas con
 métricas verificables. Cada hallazgo lleva su número exacto, fuente y
 cómo se ha calculado, listo para citar en el informe.
 
@@ -75,7 +75,7 @@ def main() -> None:
             f"En la 1ª edición se seleccionó el {tasa_e1} % de las propuestas; "
             f"en la 7ª solo el {tasa_e7} %. La tasa de selección cae al "
             "crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y "
-            "capacidad presupuestaria municipal — no necesariamente una pérdida de capacidad, "
+            "capacidad presupuestaria municipal. No es necesariamente una pérdida de capacidad, "
             "sino una mayor competencia entre propuestas por un presupuesto limitado."
         ),
         "fuente": "evolucion.json · tasa_seleccion por edición (raw, dataset completo)",
@@ -121,7 +121,7 @@ def main() -> None:
             f"de {bici_evol['ed1']} propuestas en la 1ª edición a {bici_evol['ed7']} en la 7ª "
             f"(+{bici_evol['crecimiento']}). En paralelo, {len(bici_zombi)} pares "
             f"(distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna "
-            f"haya sido seleccionada — {es(apoyos_bici_zombi)} apoyos en total. "
+            f"haya sido seleccionada ({es(apoyos_bici_zombi)} apoyos en total). "
             f"El caso de mayor volumen: Extramurs, con 29 propuestas y {es(1098)} apoyos sin "
             "selección en 4 ediciones. La demanda emergente y la baja tasa de selección "
             "abren una brecha que conviene comunicar de forma explícita a la ciudadanía."
@@ -145,7 +145,7 @@ def main() -> None:
         "texto": (
             f"Con solo {es(int(pn['poblacion']))} habitantes, Pobles del Nord acumula "
             f"{es(int(decidim_pn['Numero_Apoyos'].sum()))} apoyos en propuestas, equivalentes a "
-            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes — {str(round(ratio,1)).replace('.',',')} veces la media "
+            f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes, {str(round(ratio,1)).replace('.',',')} veces la media "
             f"de la ciudad ({media_apoyos:.0f}). En distritos pequeños, una organización "
             "vecinal activa puede amplificar el peso relativo del distrito en el proceso "
             "participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio."
@@ -181,12 +181,13 @@ def main() -> None:
         "texto": (
             f"{top_v['nombre_distrito']} lidera con {str(round(top_v['m2_verde_per_hab'],1)).replace('.',',')} m² de zona verde por habitante. "
             f"En el extremo opuesto, {bot_v['nombre_distrito']} ofrece {str(round(bot_v['m2_verde_per_hab'],1)).replace('.',',')} m²/hab. "
-            f"Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, "
-            f"{n_below_9} distritos quedan por debajo. Ninguno de ellos figura en el top de "
-            "demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la "
-            "carencia observable no se traduce automáticamente en demanda explícita."
+            f"Si tomamos como referencia los 9 m² por habitante que la Agencia Europea de Medio "
+            f"Ambiente utiliza como mínimo recomendado, {n_below_9} distritos quedan por debajo. "
+            "Ninguno de ellos figura en el top de demanda del tema 'Zonas verdes' dentro de "
+            "Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en "
+            "demanda expresada."
         ),
-        "fuente": "matriz_realidad.csv · m2_verde_per_hab",
+        "fuente": "matriz_realidad.csv · m2_verde_per_hab · referencia: European Environment Agency, 9 m²/hab",
     })
 
     # ----- H8: El cuadrante mayoritario es 'silencioso vulnerable' --------
@@ -215,19 +216,20 @@ def main() -> None:
     apoyos_zombi = sum(z["apoyos"] for z in zombis)
     hallazgos.append({
         "id": "H09",
-        "titulo": f"{len(zombis)} demandas persistentes no han sido seleccionadas en 4+ ediciones",
+        "titulo": f"{len(zombis)} demandas persistentes no han sido seleccionadas en 4 o más ediciones",
         "cifra": f"{len(zombis)} pares · {es(apoyos_zombi)} apoyos",
         "texto": (
-            f"{len(zombis)} pares (distrito, tema) han sido objeto de propuestas en al menos "
-            f"4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan "
+            f"{len(zombis)} combinaciones de distrito y tema han sido objeto de propuestas en al "
+            f"menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan "
             f"{es(apoyos_zombi)} apoyos ciudadanos. "
-            "Los tres pares con más apoyos acumulados son: " +
+            "Las tres con más apoyos acumulados son: " +
             ", ".join(
                 f"{z['nombre_distrito']} ({z['tema'].lower()})"
                 for z in sorted(zombis, key=lambda x: -x["apoyos"])[:3]
             ) +
-            ". Cada demanda persistente sin selección representa una desconexión entre "
-            "expresión ciudadana y ejecución que conviene comunicar de forma explícita."
+            ". Cada caso representa una propuesta vecinal que se repite edición tras edición sin "
+            "que el proceso participativo dé una respuesta clara, y conviene que el Ayuntamiento "
+            "publique el estado de cada una."
         ),
         "fuente": "evolucion.json · demandas_zombi",
     })
@@ -240,16 +242,24 @@ def main() -> None:
     )
     hallazgos.append({
         "id": "H10",
-        "titulo": f"{temas_unicos} temas detectados, {n_con_indicador} con cruce honesto contra datos municipales",
-        "cifra": f"{temas_unicos} temas / {n_con_indicador} cruzables",
+        "titulo": f"{temas_unicos} temas detectados, {n_con_indicador} con indicador municipal para cruzar",
+        "cifra": f"{temas_unicos} temas / {n_con_indicador} con indicador",
         "texto": (
-            f"Aplicando topic modeling sobre los {es(len(decidim_real))} títulos legibles "
-            f"surgen {temas_unicos} agrupaciones temáticas. El top 3 por apoyos: "
+            f"Para agrupar las {es(len(decidim_real))} propuestas con título legible, "
+            "convertimos cada título en un vector numérico que captura su significado "
+            "(usando un modelo de inteligencia artificial entrenado en castellano y "
+            "valenciano), agrupamos las propuestas que dicen cosas parecidas, y revisamos a "
+            f"mano cada grupo para ponerle un nombre legible. Aparecen {temas_unicos} temas. "
+            "Los tres con más apoyos: "
             + ", ".join(f"{t} ({es(int(a))} apoyos)" for t, a in top_3_temas.items())
-            + f". De los {temas_unicos}, {n_con_indicador} tienen un indicador municipal específico "
-            "que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la "
-            "matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global "
-            "como proxy genérico repetido."
+            + f". De estos {temas_unicos} temas, {n_con_indicador} cuentan con un indicador "
+            "municipal específico que mide su carencia (m² de zona verde por habitante para "
+            "parques, metros de carril bici para movilidad ciclista, etc.). Los otros "
+            f"{temas_unicos - n_con_indicador} temas (aceras, iluminación pública, seguridad, "
+            "asfaltado…) se mantienen en la matriz de demanda y en las fichas de distrito, pero "
+            "no entran en el índice de discrepancia porque el portal no publica un dato "
+            "objetivo que mida directamente esa carencia. Preferimos dejarlos fuera antes que "
+            "compararlos contra un indicador genérico que no encaja con cada tema."
         ),
         "fuente": "decidim_tagged.csv + topics.csv + indice_discrepancia.csv",
     })
@@ -293,7 +303,7 @@ def main() -> None:
             "fuente": "indice_discrepancia.csv · cuadrante='Demanda legítima'",
         })
 
-    # ----- H13: La gran ausente — equipamientos para mayores --------------
+    # ----- H13: La gran ausente, equipamientos para mayores --------------
     mayores_demanda = decidim_real[
         decidim_real["tema"].isin(["Equipamientos específicos", "Bibliotecas y ludotecas"])
     ]["Numero_Apoyos"].sum()
@@ -304,11 +314,11 @@ def main() -> None:
         "cifra": f"{int(mayores_total)} centros · pocas propuestas",
         "texto": (
             f"Valencia cuenta con {int(mayores_total)} recursos para personas mayores según "
-            "el portal municipal. Sin embargo, no aparece ningún tema específicamente "
-            "centrado en mayores en el ranking de demanda. Las propuestas relacionadas "
-            "se dispersan entre instalaciones deportivas, accesibilidad y equipamientos "
-            "culturales, pero ninguna 'voz mayor' se articula explícitamente en Decidim. "
-            "La 8ª edición podría incorporar incentivos a la participación senior."
+            "el portal municipal. Sin embargo, ninguno de los temas detectados en Decidim "
+            "se centra específicamente en mayores. Las propuestas relacionadas se reparten "
+            "entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero "
+            "no aparece como tal una voz que represente las necesidades de las personas "
+            "mayores. La 8ª edición podría plantear cómo facilitar su participación."
         ),
         "fuente": "matriz_realidad.csv · n_recursos_mayores",
     })

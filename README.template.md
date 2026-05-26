@@ -63,7 +63,7 @@ y en el [informe técnico](informe/informe.pdf).
 
 Todos del [Portal de Datos Abiertos del Ayuntamiento de València](https://opendata.vlci.valencia.es/):
 
-- `apoyo-propuestas-decidimvlc` (fuente principal — {{N_PROPUESTAS_BRUTAS|int}} propuestas)
+- `apoyo-propuestas-decidimvlc` (fuente principal, {{N_PROPUESTAS_BRUTAS|int}} propuestas)
 - `districtes-distritos` + `barris-barrios` (geometrías)
 - `vulnerabilidad-por-barrios` (índices oficiales 2021)
 - `equipamients-municipals` ({{N_EQUIPAMIENTOS|int}}), `espais-verds` ({{N_ESPACIOS_VERDES|int}}),
@@ -146,7 +146,7 @@ python etl/11_numeros.py        # ← genera numeros.json
 # Informe técnico + memoria + README (todos desde plantilla + numeros.json)
 python informe/build_informe.py
 
-# Web (opcional — GitHub Actions la publica automáticamente)
+# Web (opcional, GitHub Actions la publica automáticamente)
 cd web && npm install && npm run build
 ```
 

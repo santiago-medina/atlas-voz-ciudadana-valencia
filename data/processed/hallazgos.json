@@ -10,7 +10,7 @@
     "id": "H02",
     "titulo": "Más propuestas, mayor distancia con la capacidad presupuestaria",
     "cifra": "17,6 % → 9,3 %",
-    "texto": "En la 1ª edición se seleccionó el 17,6 % de las propuestas; en la 7ª solo el 9,3 %. La tasa de selección cae al crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y capacidad presupuestaria municipal — no necesariamente una pérdida de capacidad, sino una mayor competencia entre propuestas por un presupuesto limitado.",
+    "texto": "En la 1ª edición se seleccionó el 17,6 % de las propuestas; en la 7ª solo el 9,3 %. La tasa de selección cae al crecer la participación, lo que aumenta la distancia entre expectativa ciudadana y capacidad presupuestaria municipal. No es necesariamente una pérdida de capacidad, sino una mayor competencia entre propuestas por un presupuesto limitado.",
     "fuente": "evolucion.json · tasa_seleccion por edición (raw, dataset completo)"
   },
   {
@@ -24,14 +24,14 @@
     "id": "H04",
     "titulo": "Carril bici: demanda emergente con brecha de selección",
     "cifra": "+103 propuestas / 0 ejecuciones en repetidas",
-    "texto": "Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo, 2 pares (distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada — 1.340 apoyos en total. El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.",
+    "texto": "Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 propuestas en la 1ª edición a 114 en la 7ª (+103). En paralelo, 2 pares (distrito, tema) acumulan demanda en 4+ ediciones consecutivas sin que ninguna haya sido seleccionada (1.340 apoyos en total). El caso de mayor volumen: Extramurs, con 29 propuestas y 1.098 apoyos sin selección en 4 ediciones. La demanda emergente y la baja tasa de selección abren una brecha que conviene comunicar de forma explícita a la ciudadanía.",
     "fuente": "evolucion.json · emergentes_top10 + demandas_zombi"
   },
   {
     "id": "H05",
     "titulo": "Pobles del Nord: el peso relativo de los distritos pequeños",
     "cifra": "503 apoyos/1.000 hab",
-    "texto": "Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes — 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.",
+    "texto": "Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes, 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.",
     "fuente": "decidim_tagged.csv + poblacion_distritos.csv"
   },
   {
@@ -45,8 +45,8 @@
     "id": "H07",
     "titulo": "Verde: hasta 6 veces más en el extremo alto que en el bajo",
     "cifra": "17,5 vs 2,7 m²/hab",
-    "texto": "Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Tomando 9 m²/hab como umbral ampliamente citado en literatura urbana, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda en el tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia observable no se traduce automáticamente en demanda explícita.",
-    "fuente": "matriz_realidad.csv · m2_verde_per_hab"
+    "texto": "Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab. Si tomamos como referencia los 9 m² por habitante que la Agencia Europea de Medio Ambiente utiliza como mínimo recomendado, 14 distritos quedan por debajo. Ninguno de ellos figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.",
+    "fuente": "matriz_realidad.csv · m2_verde_per_hab · referencia: European Environment Agency, 9 m²/hab"
   },
   {
     "id": "H08",
@@ -57,16 +57,16 @@
   },
   {
     "id": "H09",
-    "titulo": "28 demandas persistentes no han sido seleccionadas en 4+ ediciones",
+    "titulo": "28 demandas persistentes no han sido seleccionadas en 4 o más ediciones",
     "cifra": "28 pares · 8.121 apoyos",
-    "texto": "28 pares (distrito, tema) han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Los tres pares con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada demanda persistente sin selección representa una desconexión entre expresión ciudadana y ejecución que conviene comunicar de forma explícita.",
+    "texto": "28 combinaciones de distrito y tema han sido objeto de propuestas en al menos 4 de las 7 ediciones sin que ninguna haya sido seleccionada. Acumulan 8.121 apoyos ciudadanos. Las tres con más apoyos acumulados son: Extramurs (carriles bici y movilidad ciclista), Poblats Marítims (litoral y puerto), Quatre Carreres (aceras y movilidad peatonal). Cada caso representa una propuesta vecinal que se repite edición tras edición sin que el proceso participativo dé una respuesta clara, y conviene que el Ayuntamiento publique el estado de cada una.",
     "fuente": "evolucion.json · demandas_zombi"
   },
   {
     "id": "H10",
-    "titulo": "38 temas detectados, 23 con cruce honesto contra datos municipales",
-    "cifra": "38 temas / 23 cruzables",
-    "texto": "Aplicando topic modeling sobre los 4.229 títulos legibles surgen 38 agrupaciones temáticas. El top 3 por apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De los 38, 23 tienen un indicador municipal específico que permite calcular el cuadrante de discrepancia; el resto se muestra solo en la matriz de demanda. Esta separación honesta evita usar la vulnerabilidad global como proxy genérico repetido.",
+    "titulo": "38 temas detectados, 23 con indicador municipal para cruzar",
+    "cifra": "38 temas / 23 con indicador",
+    "texto": "Para agrupar las 4.229 propuestas con título legible, convertimos cada título en un vector numérico que captura su significado (usando un modelo de inteligencia artificial entrenado en castellano y valenciano), agrupamos las propuestas que dicen cosas parecidas, y revisamos a mano cada grupo para ponerle un nombre legible. Aparecen 38 temas. Los tres con más apoyos: Carriles bici y movilidad ciclista (20.799 apoyos), Parques y plazas (10.473 apoyos), Instalaciones deportivas (9.878 apoyos). De estos 38 temas, 23 cuentan con un indicador municipal específico que mide su carencia (m² de zona verde por habitante para parques, metros de carril bici para movilidad ciclista, etc.). Los otros 15 temas (aceras, iluminación pública, seguridad, asfaltado…) se mantienen en la matriz de demanda y en las fichas de distrito, pero no entran en el índice de discrepancia porque el portal no publica un dato objetivo que mida directamente esa carencia. Preferimos dejarlos fuera antes que compararlos contra un indicador genérico que no encaja con cada tema.",
     "fuente": "decidim_tagged.csv + topics.csv + indice_discrepancia.csv"
   },
   {
@@ -87,7 +87,7 @@
     "id": "H13",
     "titulo": "El envejecimiento se queda fuera del debate participativo",
     "cifra": "146 centros · pocas propuestas",
-    "texto": "Valencia cuenta con 146 recursos para personas mayores según el portal municipal. Sin embargo, no aparece ningún tema específicamente centrado en mayores en el ranking de demanda. Las propuestas relacionadas se dispersan entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero ninguna 'voz mayor' se articula explícitamente en Decidim. La 8ª edición podría incorporar incentivos a la participación senior.",
+    "texto": "Valencia cuenta con 146 recursos para personas mayores según el portal municipal. Sin embargo, ninguno de los temas detectados en Decidim se centra específicamente en mayores. Las propuestas relacionadas se reparten entre instalaciones deportivas, accesibilidad y equipamientos culturales, pero no aparece como tal una voz que represente las necesidades de las personas mayores. La 8ª edición podría plantear cómo facilitar su participación.",
     "fuente": "matriz_realidad.csv · n_recursos_mayores"
   }
 ]
