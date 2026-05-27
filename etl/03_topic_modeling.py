@@ -3,8 +3,11 @@
 
 Pasos:
   1. Cargar los títulos limpios.
-  2. Embeddings con un modelo multilingüe (paraphrase-multilingual-MiniLM-L12-v2)
-     que maneja castellano + valenciano sin problema.
+  2. Embeddings semánticos con paraphrase-multilingual-MiniLM-L12-v2
+     de sentence-transformers (modelo MiniLM, 118M parámetros, 50+ idiomas
+     soportados oficialmente, entre ellos castellano (es) y catalán (ca),
+     este último cubre el valenciano como variedad del catalán).
+     Model card: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
   3. Reducción de dimensión con UMAP.
   4. Clustering con HDBSCAN (no necesita fijar k a priori).
   5. Para cada cluster, top palabras representativas vía c-TF-IDF.

@@ -157,7 +157,9 @@ la web:
 02_load_and_normalize.py  → {{N_DISTRITOS|raw}} distritos (dissolve), resolución de
                             {{N_PROPUESTAS_BRUTAS|raw}} → {{N_PROPUESTAS_DISTRITO|raw}}
                             propuestas en distrito + {{N_PROPUESTAS_GLOBAL|raw}} globales
-03_topic_modeling.py      → embeddings multilingües sobre {{N_PROPUESTAS_LEGIBLES|raw}}
+03_topic_modeling.py      → embeddings semánticos (modelo
+                            paraphrase-multilingual-MiniLM-L12-v2 de
+                            sentence-transformers) sobre {{N_PROPUESTAS_LEGIBLES|raw}}
                             títulos limpios + UMAP + HDBSCAN → 50 clusters
 04_label_and_merge_topics → mapeo manual → {{N_TEMAS_DETECTADOS|raw}} temas legibles
 05_matriz_demanda.py      → Matriz Demanda (distrito × tema), apoyos por
@@ -198,7 +200,32 @@ existe una carencia observable por encima de la media pero no aparece en
 Decidim. Son los candidatos a acción proactiva del Ayuntamiento porque no
 llegarán por sí solos a través del proceso participativo.
 
-### 2.4 Indicadores de carencia por tema
+### 2.4 Topic modeling: detalle técnico
+
+El paso 03 del pipeline agrupa los {{N_PROPUESTAS_LEGIBLES|raw}} títulos con texto
+legible en clusters semánticos. Las herramientas concretas:
+
+- **Modelo de embeddings**: `paraphrase-multilingual-MiniLM-L12-v2` de la
+  biblioteca [sentence-transformers](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2).
+  Es un modelo MiniLM (BERT compacto, 118 M parámetros) afinado para producir
+  embeddings semánticos comparables entre 50+ idiomas. Su model card oficial
+  incluye `es` (castellano) y `ca` (catalán) entre los idiomas soportados.
+  El valenciano se trata como variedad del catalán a efectos
+  computacionales (mismo código ISO 639-1) y el modelo lo procesa
+  correctamente sin necesidad de configuración adicional.
+- **Reducción de dimensionalidad**: UMAP con `n_components=10`,
+  `n_neighbors=15`, métrica coseno.
+- **Clustering**: HDBSCAN con `min_cluster_size=25`.
+- **Etiquetado de cada cluster**: revisión manual asistida por la inspección
+  de las palabras más distintivas del cluster (TF-IDF inverso por grupo).
+
+El conjunto produce {{N_TEMAS_DETECTADOS|raw}} temas estables y legibles. Es
+importante señalar que la inteligencia artificial sólo se usa para esta
+agrupación: ninguna afirmación cuantitativa del Atlas viene de un modelo
+generativo; todas las cifras se calculan directamente con Python y Pandas
+sobre los datasets abiertos.
+
+### 2.5 Indicadores de carencia por tema
 
 De los {{N_TEMAS_DETECTADOS|raw}} temas detectados, **{{N_TEMAS_CON_INDICADOR|raw}} cuentan
 con un indicador municipal directo** que permite calcular el cuadrante de
@@ -246,7 +273,7 @@ en cada ejecución que no haya desajustes entre lo declarado en MANIFEST,
 lo documentado y el código real, y falla con error explícito si los
 encuentra.
 
-### 2.5 Limitaciones metodológicas
+### 2.6 Limitaciones metodológicas
 
 El proyecto se publica con sus límites explícitos:
 

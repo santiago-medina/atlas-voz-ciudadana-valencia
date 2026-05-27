@@ -253,9 +253,11 @@ def main() -> None:
         "texto": (
             f"Para agrupar las {es(len(decidim_real))} propuestas con título legible, "
             "convertimos cada título en un vector numérico que captura su significado "
-            "(usando un modelo de inteligencia artificial entrenado en castellano y "
-            "valenciano), agrupamos las propuestas que dicen cosas parecidas, y revisamos a "
-            f"mano cada grupo para ponerle un nombre legible. Aparecen {temas_unicos} temas. "
+            "(con el modelo de embeddings semánticos paraphrase-multilingual-MiniLM-L12-v2 "
+            "de sentence-transformers, que soporta oficialmente castellano y catalán y, por "
+            "extensión, el valenciano como variedad del catalán). Después agrupamos las "
+            "propuestas que dicen cosas parecidas y revisamos a mano cada grupo para ponerle "
+            f"un nombre legible. Aparecen {temas_unicos} temas. "
             "Los tres con más apoyos: "
             + ", ".join(f"{t} ({es(int(a))} apoyos)" for t, a in top_3_temas.items())
             + f". De estos {temas_unicos} temas, {n_con_indicador} cuentan con un indicador "
