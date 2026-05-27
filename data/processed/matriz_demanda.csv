@@ -1,598 +1,598 @@
 id_distrito,nombre_distrito,tema_id,tema,n_propuestas,n_apoyos,n_seleccionadas,presupuesto_solicitado,poblacion,apoyos_per_1000hab,propuestas_per_1000hab,tasa_seleccion
-1,Ciutat Vella,23,Parques y plazas,14,645,2,121082.0,25546,25.25,0.548,0.143
-1,Ciutat Vella,24,Pedanías y barrios periféricos,15,500,1,229000.0,25546,19.57,0.587,0.067
-1,Ciutat Vella,17,Jardines y arbolado,8,358,1,7000.0,25546,14.01,0.313,0.125
-1,Ciutat Vella,37,Solares y suelo disponible,10,324,0,0.0,25546,12.68,0.391,0.0
-1,Ciutat Vella,27,Recogida de residuos,9,300,0,402178.0,25546,11.74,0.352,0.0
-1,Ciutat Vella,8,Centros cívicos y huertos urbanos,11,278,0,157000.0,25546,10.88,0.431,0.0
-1,Ciutat Vella,20,Pacificación del tráfico,8,261,1,148433.0,25546,10.22,0.313,0.125
-1,Ciutat Vella,7,Carriles bici y movilidad ciclista,8,242,0,225000.0,25546,9.47,0.313,0.0
-1,Ciutat Vella,22,Parques infantiles,5,181,1,675423.0,25546,7.09,0.196,0.2
-1,Ciutat Vella,14,Fuentes y aseos públicos,4,157,1,247720.0,25546,6.15,0.157,0.25
-1,Ciutat Vella,6,Bienestar animal,2,156,1,3000.0,25546,6.11,0.078,0.5
-1,Ciutat Vella,2,Aceras y movilidad peatonal,10,145,0,0.0,25546,5.68,0.391,0.0
-1,Ciutat Vella,3,Aparcamiento para vehículos,3,132,2,28000.0,25546,5.17,0.117,0.667
-1,Ciutat Vella,9,Centros de salud,3,100,1,80000.0,25546,3.91,0.117,0.333
-1,Ciutat Vella,12,Equipamientos culturales,3,80,1,75536.0,25546,3.13,0.117,0.333
-1,Ciutat Vella,5,Bibliotecas y ludotecas,2,78,1,15000.0,25546,3.05,0.078,0.5
-1,Ciutat Vella,25,Pipicanes y zonas caninas,5,76,0,0.0,25546,2.98,0.196,0.0
-1,Ciutat Vella,39,Zonas verdes,1,71,0,0.0,25546,2.78,0.039,0.0
-1,Ciutat Vella,29,Reducción del ruido,2,59,1,21096.0,25546,2.31,0.078,0.5
-1,Ciutat Vella,15,Iluminación pública,4,48,1,150000.0,25546,1.88,0.157,0.25
-1,Ciutat Vella,10,Centros educativos,2,47,1,18000.0,25546,1.84,0.078,0.5
-1,Ciutat Vella,31,Rehabilitación del patrimonio,1,37,0,0.0,25546,1.45,0.039,0.0
-1,Ciutat Vella,35,Seguridad ciudadana,1,36,0,0.0,25546,1.41,0.039,0.0
-1,Ciutat Vella,26,Puentes y vías peatonales,2,34,0,0.0,25546,1.33,0.078,0.0
-1,Ciutat Vella,19,Mobiliario urbano deportivo,1,32,1,18000.0,25546,1.25,0.039,1.0
-1,Ciutat Vella,33,Reurbanización de calles,2,31,0,0.0,25546,1.21,0.078,0.0
-1,Ciutat Vella,30,Rehabilitación de mercados,2,17,0,0.0,25546,0.67,0.078,0.0
-1,Ciutat Vella,32,Repavimentación de calzadas,1,12,0,0.0,25546,0.47,0.039,0.0
-1,Ciutat Vella,11,Convivencia y mobiliario urbano,3,8,0,0.0,25546,0.31,0.117,0.0
-1,Ciutat Vella,13,Equipamientos específicos,1,7,0,0.0,25546,0.27,0.039,0.0
-1,Ciutat Vella,1,Accesibilidad peatonal,2,4,0,144000.0,25546,0.16,0.078,0.0
-2,l'Eixample,7,Carriles bici y movilidad ciclista,22,1696,4,1199000.0,45131,37.58,0.487,0.182
-2,l'Eixample,10,Centros educativos,8,498,1,394928.0,45131,11.03,0.177,0.125
-2,l'Eixample,23,Parques y plazas,14,445,4,394408.0,45131,9.86,0.31,0.286
-2,l'Eixample,24,Pedanías y barrios periféricos,15,370,1,383768.0,45131,8.2,0.332,0.067
-2,l'Eixample,2,Aceras y movilidad peatonal,16,359,0,162700.0,45131,7.95,0.355,0.0
-2,l'Eixample,29,Reducción del ruido,7,313,1,245000.0,45131,6.94,0.155,0.143
-2,l'Eixample,3,Aparcamiento para vehículos,15,300,0,65000.0,45131,6.65,0.332,0.0
-2,l'Eixample,25,Pipicanes y zonas caninas,8,261,1,139000.0,45131,5.78,0.177,0.125
-2,l'Eixample,11,Convivencia y mobiliario urbano,7,192,0,0.0,45131,4.25,0.155,0.0
-2,l'Eixample,37,Solares y suelo disponible,5,171,0,0.0,45131,3.79,0.111,0.0
-2,l'Eixample,16,Instalaciones deportivas,2,160,0,0.0,45131,3.55,0.044,0.0
-2,l'Eixample,27,Recogida de residuos,7,144,1,270000.0,45131,3.19,0.155,0.143
-2,l'Eixample,30,Rehabilitación de mercados,7,105,0,200000.0,45131,2.33,0.155,0.0
-2,l'Eixample,9,Centros de salud,3,104,0,0.0,45131,2.3,0.066,0.0
-2,l'Eixample,34,Río Turia y litoral,1,75,0,0.0,45131,1.66,0.022,0.0
-2,l'Eixample,33,Reurbanización de calles,4,70,0,127000.0,45131,1.55,0.089,0.0
-2,l'Eixample,15,Iluminación pública,5,67,0,0.0,45131,1.48,0.111,0.0
-2,l'Eixample,22,Parques infantiles,4,66,0,0.0,45131,1.46,0.089,0.0
-2,l'Eixample,6,Bienestar animal,2,58,1,5000.0,45131,1.29,0.044,0.5
-2,l'Eixample,35,Seguridad ciudadana,2,58,0,0.0,45131,1.29,0.044,0.0
-2,l'Eixample,32,Repavimentación de calzadas,3,56,0,61000.0,45131,1.24,0.066,0.0
-2,l'Eixample,5,Bibliotecas y ludotecas,2,35,2,45000.0,45131,0.78,0.044,1.0
-2,l'Eixample,14,Fuentes y aseos públicos,3,35,1,37500.0,45131,0.78,0.066,0.333
-2,l'Eixample,13,Equipamientos específicos,4,23,0,0.0,45131,0.51,0.089,0.0
-2,l'Eixample,19,Mobiliario urbano deportivo,1,22,0,0.0,45131,0.49,0.022,0.0
-2,l'Eixample,20,Pacificación del tráfico,5,22,2,47629.0,45131,0.49,0.111,0.4
-2,l'Eixample,4,Asfalto y pavimentación,2,20,0,0.0,45131,0.44,0.044,0.0
-2,l'Eixample,21,Paneles informativos,3,18,0,0.0,45131,0.4,0.066,0.0
-2,l'Eixample,8,Centros cívicos y huertos urbanos,1,14,0,0.0,45131,0.31,0.022,0.0
-2,l'Eixample,38,Transporte público (EMT),1,10,0,0.0,45131,0.22,0.022,0.0
-2,l'Eixample,26,Puentes y vías peatonales,1,3,0,0.0,45131,0.07,0.022,0.0
-2,l'Eixample,18,Litoral y puerto,1,0,0,250000.0,45131,0.0,0.022,0.0
-3,Extramurs,7,Carriles bici y movilidad ciclista,29,1098,0,2943247.0,50686,21.66,0.572,0.0
-3,Extramurs,2,Aceras y movilidad peatonal,28,808,4,1114000.0,50686,15.94,0.552,0.143
-3,Extramurs,24,Pedanías y barrios periféricos,24,565,0,709200.0,50686,11.15,0.474,0.0
-3,Extramurs,27,Recogida de residuos,11,535,1,519705.0,50686,10.56,0.217,0.091
-3,Extramurs,17,Jardines y arbolado,15,426,3,526808.0,50686,8.4,0.296,0.2
-3,Extramurs,22,Parques infantiles,8,413,2,667318.0,50686,8.15,0.158,0.25
-3,Extramurs,11,Convivencia y mobiliario urbano,12,293,0,320000.0,50686,5.78,0.237,0.0
-3,Extramurs,33,Reurbanización de calles,7,271,1,400310.0,50686,5.35,0.138,0.143
-3,Extramurs,25,Pipicanes y zonas caninas,10,264,2,939993.0,50686,5.21,0.197,0.2
-3,Extramurs,30,Rehabilitación de mercados,9,246,0,743205.0,50686,4.85,0.178,0.0
-3,Extramurs,23,Parques y plazas,8,199,1,60000.0,50686,3.93,0.158,0.125
-3,Extramurs,20,Pacificación del tráfico,6,141,0,145000.0,50686,2.78,0.118,0.0
-3,Extramurs,8,Centros cívicos y huertos urbanos,6,137,0,190000.0,50686,2.7,0.118,0.0
-3,Extramurs,3,Aparcamiento para vehículos,11,134,0,250000.0,50686,2.64,0.217,0.0
-3,Extramurs,12,Equipamientos culturales,2,108,0,137000.0,50686,2.13,0.039,0.0
-3,Extramurs,16,Instalaciones deportivas,2,94,0,0.0,50686,1.85,0.039,0.0
-3,Extramurs,4,Asfalto y pavimentación,3,75,0,0.0,50686,1.48,0.059,0.0
-3,Extramurs,10,Centros educativos,1,65,0,400000.0,50686,1.28,0.02,0.0
-3,Extramurs,37,Solares y suelo disponible,2,61,0,230000.0,50686,1.2,0.039,0.0
-3,Extramurs,39,Zonas verdes,1,55,0,75000.0,50686,1.09,0.02,0.0
-3,Extramurs,31,Rehabilitación del patrimonio,2,52,0,411900.0,50686,1.03,0.039,0.0
-3,Extramurs,6,Bienestar animal,1,45,1,3400.0,50686,0.89,0.02,1.0
-3,Extramurs,32,Repavimentación de calzadas,2,45,1,75000.0,50686,0.89,0.039,0.5
-3,Extramurs,21,Paneles informativos,2,39,0,10000.0,50686,0.77,0.039,0.0
-3,Extramurs,29,Reducción del ruido,3,39,1,3000.0,50686,0.77,0.059,0.333
-3,Extramurs,15,Iluminación pública,4,33,0,0.0,50686,0.65,0.079,0.0
-3,Extramurs,5,Bibliotecas y ludotecas,2,28,0,0.0,50686,0.55,0.039,0.0
-3,Extramurs,38,Transporte público (EMT),1,24,0,0.0,50686,0.47,0.02,0.0
-3,Extramurs,28,Reducción de velocidad y zonas 30,2,17,0,0.0,50686,0.34,0.039,0.0
-3,Extramurs,9,Centros de salud,1,11,0,0.0,50686,0.22,0.02,0.0
-3,Extramurs,14,Fuentes y aseos públicos,2,10,0,0.0,50686,0.2,0.039,0.0
-3,Extramurs,35,Seguridad ciudadana,1,9,0,0.0,50686,0.18,0.02,0.0
-3,Extramurs,1,Accesibilidad peatonal,1,6,0,0.0,50686,0.12,0.02,0.0
-3,Extramurs,34,Río Turia y litoral,1,5,0,0.0,50686,0.1,0.02,0.0
-4,Campanar,37,Solares y suelo disponible,14,484,2,275000.0,34708,13.94,0.403,0.143
-4,Campanar,23,Parques y plazas,10,427,2,70000.0,34708,12.3,0.288,0.2
-4,Campanar,5,Bibliotecas y ludotecas,4,412,0,0.0,34708,11.87,0.115,0.0
-4,Campanar,7,Carriles bici y movilidad ciclista,15,332,2,1331801.0,34708,9.57,0.432,0.133
-4,Campanar,11,Convivencia y mobiliario urbano,18,319,0,532000.0,34708,9.19,0.519,0.0
-4,Campanar,8,Centros cívicos y huertos urbanos,10,275,1,650750.0,34708,7.92,0.288,0.1
-4,Campanar,16,Instalaciones deportivas,6,249,0,60000.0,34708,7.17,0.173,0.0
-4,Campanar,31,Rehabilitación del patrimonio,2,240,1,50000.0,34708,6.91,0.058,0.5
-4,Campanar,24,Pedanías y barrios periféricos,10,232,2,150135.0,34708,6.68,0.288,0.2
-4,Campanar,22,Parques infantiles,7,200,1,365000.0,34708,5.76,0.202,0.143
-4,Campanar,9,Centros de salud,3,147,0,0.0,34708,4.24,0.086,0.0
-4,Campanar,17,Jardines y arbolado,5,146,0,425000.0,34708,4.21,0.144,0.0
-4,Campanar,2,Aceras y movilidad peatonal,12,115,3,447188.0,34708,3.31,0.346,0.25
-4,Campanar,25,Pipicanes y zonas caninas,9,108,1,99160.0,34708,3.11,0.259,0.111
-4,Campanar,34,Río Turia y litoral,3,108,0,0.0,34708,3.11,0.086,0.0
-4,Campanar,14,Fuentes y aseos públicos,4,79,1,37500.0,34708,2.28,0.115,0.25
-4,Campanar,6,Bienestar animal,2,76,0,6800.0,34708,2.19,0.058,0.0
-4,Campanar,15,Iluminación pública,5,62,0,0.0,34708,1.79,0.144,0.0
-4,Campanar,3,Aparcamiento para vehículos,5,54,1,21700.0,34708,1.56,0.144,0.2
-4,Campanar,4,Asfalto y pavimentación,4,43,1,173310.0,34708,1.24,0.115,0.25
-4,Campanar,19,Mobiliario urbano deportivo,2,41,1,250000.0,34708,1.18,0.058,0.5
-4,Campanar,38,Transporte público (EMT),2,40,0,0.0,34708,1.15,0.058,0.0
-4,Campanar,12,Equipamientos culturales,1,36,0,0.0,34708,1.04,0.029,0.0
-4,Campanar,28,Reducción de velocidad y zonas 30,2,35,0,0.0,34708,1.01,0.058,0.0
-4,Campanar,39,Zonas verdes,1,13,0,0.0,34708,0.37,0.029,0.0
-4,Campanar,32,Repavimentación de calzadas,2,8,0,100000.0,34708,0.23,0.058,0.0
-4,Campanar,29,Reducción del ruido,1,4,0,0.0,34708,0.12,0.029,0.0
-4,Campanar,33,Reurbanización de calles,1,4,0,0.0,34708,0.12,0.029,0.0
-4,Campanar,26,Puentes y vías peatonales,1,0,0,0.0,34708,0.0,0.029,0.0
-5,la Saïdia,7,Carriles bici y movilidad ciclista,20,773,1,1550394.0,50191,15.4,0.398,0.05
-5,la Saïdia,2,Aceras y movilidad peatonal,28,639,3,1181922.0,50191,12.73,0.558,0.107
-5,la Saïdia,37,Solares y suelo disponible,14,482,2,300000.0,50191,9.6,0.279,0.143
-5,la Saïdia,30,Rehabilitación de mercados,10,428,1,806285.0,50191,8.53,0.199,0.1
-5,la Saïdia,26,Puentes y vías peatonales,8,318,0,343000.0,50191,6.34,0.159,0.0
-5,la Saïdia,22,Parques infantiles,4,292,1,720000.0,50191,5.82,0.08,0.25
-5,la Saïdia,27,Recogida de residuos,5,276,2,15000.0,50191,5.5,0.1,0.4
-5,la Saïdia,16,Instalaciones deportivas,3,269,1,220000.0,50191,5.36,0.06,0.333
-5,la Saïdia,18,Litoral y puerto,7,228,0,0.0,50191,4.54,0.139,0.0
-5,la Saïdia,15,Iluminación pública,13,215,2,592715.0,50191,4.28,0.259,0.154
-5,la Saïdia,24,Pedanías y barrios periféricos,10,212,3,314336.0,50191,4.22,0.199,0.3
-5,la Saïdia,17,Jardines y arbolado,9,192,1,46000.0,50191,3.83,0.179,0.111
-5,la Saïdia,9,Centros de salud,4,176,0,416000.0,50191,3.51,0.08,0.0
-5,la Saïdia,12,Equipamientos culturales,3,158,0,0.0,50191,3.15,0.06,0.0
-5,la Saïdia,33,Reurbanización de calles,6,141,0,18000.0,50191,2.81,0.12,0.0
-5,la Saïdia,34,Río Turia y litoral,4,117,0,363000.0,50191,2.33,0.08,0.0
-5,la Saïdia,25,Pipicanes y zonas caninas,8,116,0,327000.0,50191,2.31,0.159,0.0
-5,la Saïdia,23,Parques y plazas,5,115,0,200000.0,50191,2.29,0.1,0.0
-5,la Saïdia,8,Centros cívicos y huertos urbanos,8,106,0,355540.0,50191,2.11,0.159,0.0
-5,la Saïdia,31,Rehabilitación del patrimonio,3,99,0,0.0,50191,1.97,0.06,0.0
-5,la Saïdia,11,Convivencia y mobiliario urbano,4,85,0,20000.0,50191,1.69,0.08,0.0
-5,la Saïdia,14,Fuentes y aseos públicos,2,79,1,51720.0,50191,1.57,0.04,0.5
-5,la Saïdia,4,Asfalto y pavimentación,2,72,0,0.0,50191,1.43,0.04,0.0
-5,la Saïdia,29,Reducción del ruido,2,49,0,113517.0,50191,0.98,0.04,0.0
-5,la Saïdia,20,Pacificación del tráfico,1,37,0,0.0,50191,0.74,0.02,0.0
-5,la Saïdia,21,Paneles informativos,2,24,0,0.0,50191,0.48,0.04,0.0
-5,la Saïdia,5,Bibliotecas y ludotecas,1,17,0,0.0,50191,0.34,0.02,0.0
-5,la Saïdia,3,Aparcamiento para vehículos,1,15,0,0.0,50191,0.3,0.02,0.0
-5,la Saïdia,35,Seguridad ciudadana,2,13,1,3000.0,50191,0.26,0.04,0.5
-5,la Saïdia,13,Equipamientos específicos,1,11,0,0.0,50191,0.22,0.02,0.0
-5,la Saïdia,10,Centros educativos,2,10,0,0.0,50191,0.2,0.04,0.0
-5,la Saïdia,32,Repavimentación de calzadas,1,10,0,0.0,50191,0.2,0.02,0.0
-6,el Pla del Real,7,Carriles bici y movilidad ciclista,21,518,4,194068.0,31616,16.38,0.664,0.19
-6,el Pla del Real,37,Solares y suelo disponible,6,438,1,242038.0,31616,13.85,0.19,0.167
-6,el Pla del Real,16,Instalaciones deportivas,4,311,1,100000.0,31616,9.84,0.127,0.25
-6,el Pla del Real,17,Jardines y arbolado,6,240,0,372127.0,31616,7.59,0.19,0.0
-6,el Pla del Real,2,Aceras y movilidad peatonal,10,224,1,346000.0,31616,7.09,0.316,0.1
-6,el Pla del Real,27,Recogida de residuos,7,166,1,48000.0,31616,5.25,0.221,0.143
-6,el Pla del Real,23,Parques y plazas,6,141,1,140000.0,31616,4.46,0.19,0.167
-6,el Pla del Real,22,Parques infantiles,5,121,1,75000.0,31616,3.83,0.158,0.2
-6,el Pla del Real,26,Puentes y vías peatonales,3,119,1,234385.0,31616,3.76,0.095,0.333
-6,el Pla del Real,11,Convivencia y mobiliario urbano,8,111,1,31931.0,31616,3.51,0.253,0.125
-6,el Pla del Real,34,Río Turia y litoral,5,86,1,277127.0,31616,2.72,0.158,0.2
-6,el Pla del Real,15,Iluminación pública,7,60,0,0.0,31616,1.9,0.221,0.0
-6,el Pla del Real,25,Pipicanes y zonas caninas,5,53,2,102250.0,31616,1.68,0.158,0.4
-6,el Pla del Real,10,Centros educativos,2,37,1,1890.0,31616,1.17,0.063,0.5
-6,el Pla del Real,6,Bienestar animal,1,35,0,3000.0,31616,1.11,0.032,0.0
-6,el Pla del Real,14,Fuentes y aseos públicos,2,35,0,0.0,31616,1.11,0.063,0.0
-6,el Pla del Real,31,Rehabilitación del patrimonio,1,35,0,0.0,31616,1.11,0.032,0.0
-6,el Pla del Real,21,Paneles informativos,1,34,0,0.0,31616,1.08,0.032,0.0
-6,el Pla del Real,30,Rehabilitación de mercados,2,33,0,197000.0,31616,1.04,0.063,0.0
-6,el Pla del Real,29,Reducción del ruido,2,23,0,0.0,31616,0.73,0.063,0.0
-6,el Pla del Real,12,Equipamientos culturales,2,19,0,0.0,31616,0.6,0.063,0.0
-6,el Pla del Real,24,Pedanías y barrios periféricos,3,12,0,0.0,31616,0.38,0.095,0.0
-6,el Pla del Real,32,Repavimentación de calzadas,1,9,0,0.0,31616,0.28,0.032,0.0
-6,el Pla del Real,8,Centros cívicos y huertos urbanos,1,6,0,0.0,31616,0.19,0.032,0.0
-6,el Pla del Real,1,Accesibilidad peatonal,2,3,1,4900.0,31616,0.09,0.063,0.5
-6,el Pla del Real,35,Seguridad ciudadana,1,2,0,0.0,31616,0.06,0.032,0.0
-6,el Pla del Real,3,Aparcamiento para vehículos,1,0,1,2100.0,31616,0.0,0.032,1.0
-6,el Pla del Real,20,Pacificación del tráfico,1,0,1,3000.0,31616,0.0,0.032,1.0
-7,l'Olivereta,23,Parques y plazas,16,361,3,1863522.0,50581,7.14,0.316,0.188
-7,l'Olivereta,37,Solares y suelo disponible,8,339,4,505000.0,50581,6.7,0.158,0.5
-7,l'Olivereta,31,Rehabilitación del patrimonio,6,310,0,760000.0,50581,6.13,0.119,0.0
-7,l'Olivereta,24,Pedanías y barrios periféricos,11,291,1,548000.0,50581,5.75,0.217,0.091
-7,l'Olivereta,2,Aceras y movilidad peatonal,14,277,3,732000.0,50581,5.48,0.277,0.214
-7,l'Olivereta,10,Centros educativos,9,238,1,852500.0,50581,4.71,0.178,0.111
-7,l'Olivereta,3,Aparcamiento para vehículos,10,209,1,18900.0,50581,4.13,0.198,0.1
-7,l'Olivereta,20,Pacificación del tráfico,6,202,3,481500.0,50581,3.99,0.119,0.5
-7,l'Olivereta,4,Asfalto y pavimentación,4,192,0,0.0,50581,3.8,0.079,0.0
-7,l'Olivereta,7,Carriles bici y movilidad ciclista,8,178,3,837608.0,50581,3.52,0.158,0.375
-7,l'Olivereta,34,Río Turia y litoral,4,176,1,125000.0,50581,3.48,0.079,0.25
-7,l'Olivereta,5,Bibliotecas y ludotecas,2,165,0,0.0,50581,3.26,0.04,0.0
-7,l'Olivereta,27,Recogida de residuos,6,140,0,0.0,50581,2.77,0.119,0.0
-7,l'Olivereta,15,Iluminación pública,6,128,0,850000.0,50581,2.53,0.119,0.0
-7,l'Olivereta,11,Convivencia y mobiliario urbano,8,116,1,387870.0,50581,2.29,0.158,0.125
-7,l'Olivereta,17,Jardines y arbolado,4,116,0,180000.0,50581,2.29,0.079,0.0
-7,l'Olivereta,22,Parques infantiles,3,93,0,800000.0,50581,1.84,0.059,0.0
-7,l'Olivereta,25,Pipicanes y zonas caninas,5,75,1,289000.0,50581,1.48,0.099,0.2
-7,l'Olivereta,33,Reurbanización de calles,1,68,0,0.0,50581,1.34,0.02,0.0
-7,l'Olivereta,1,Accesibilidad peatonal,2,56,1,40250.0,50581,1.11,0.04,0.5
-7,l'Olivereta,35,Seguridad ciudadana,3,55,1,50000.0,50581,1.09,0.059,0.333
-7,l'Olivereta,14,Fuentes y aseos públicos,1,54,1,47720.0,50581,1.07,0.02,1.0
-7,l'Olivereta,9,Centros de salud,2,44,0,0.0,50581,0.87,0.04,0.0
-7,l'Olivereta,21,Paneles informativos,1,44,1,13000.0,50581,0.87,0.02,1.0
-7,l'Olivereta,6,Bienestar animal,1,42,1,5600.0,50581,0.83,0.02,1.0
-7,l'Olivereta,8,Centros cívicos y huertos urbanos,2,33,0,0.0,50581,0.65,0.04,0.0
-7,l'Olivereta,16,Instalaciones deportivas,1,30,0,40000.0,50581,0.59,0.02,0.0
-7,l'Olivereta,30,Rehabilitación de mercados,1,30,0,0.0,50581,0.59,0.02,0.0
-7,l'Olivereta,13,Equipamientos específicos,2,25,1,25000.0,50581,0.49,0.04,0.5
-8,Patraix,7,Carriles bici y movilidad ciclista,20,836,4,941000.0,59441,14.06,0.336,0.2
-8,Patraix,23,Parques y plazas,20,727,5,2042489.0,59441,12.23,0.336,0.25
-8,Patraix,10,Centros educativos,8,675,4,151000.0,59441,11.36,0.135,0.5
-8,Patraix,37,Solares y suelo disponible,15,506,1,40000.0,59441,8.51,0.252,0.067
-8,Patraix,2,Aceras y movilidad peatonal,16,396,2,398528.0,59441,6.66,0.269,0.125
-8,Patraix,16,Instalaciones deportivas,6,395,1,60000.0,59441,6.65,0.101,0.167
-8,Patraix,24,Pedanías y barrios periféricos,19,300,2,455000.0,59441,5.05,0.32,0.105
-8,Patraix,9,Centros de salud,8,291,0,0.0,59441,4.9,0.135,0.0
-8,Patraix,22,Parques infantiles,11,273,1,1303000.0,59441,4.59,0.185,0.091
-8,Patraix,8,Centros cívicos y huertos urbanos,12,267,1,906500.0,59441,4.49,0.202,0.083
-8,Patraix,31,Rehabilitación del patrimonio,2,230,0,0.0,59441,3.87,0.034,0.0
-8,Patraix,20,Pacificación del tráfico,4,210,0,635000.0,59441,3.53,0.067,0.0
-8,Patraix,5,Bibliotecas y ludotecas,3,201,1,45000.0,59441,3.38,0.05,0.333
-8,Patraix,25,Pipicanes y zonas caninas,9,197,2,281500.0,59441,3.31,0.151,0.222
-8,Patraix,19,Mobiliario urbano deportivo,1,192,1,116232.0,59441,3.23,0.017,1.0
-8,Patraix,27,Recogida de residuos,10,181,3,581500.0,59441,3.05,0.168,0.3
-8,Patraix,3,Aparcamiento para vehículos,9,146,0,0.0,59441,2.46,0.151,0.0
-8,Patraix,17,Jardines y arbolado,9,141,0,435000.0,59441,2.37,0.151,0.0
-8,Patraix,14,Fuentes y aseos públicos,6,135,4,102000.0,59441,2.27,0.101,0.667
-8,Patraix,29,Reducción del ruido,2,122,1,140360.0,59441,2.05,0.034,0.5
-8,Patraix,11,Convivencia y mobiliario urbano,6,115,0,0.0,59441,1.93,0.101,0.0
-8,Patraix,15,Iluminación pública,6,74,0,150000.0,59441,1.24,0.101,0.0
-8,Patraix,33,Reurbanización de calles,3,68,0,0.0,59441,1.14,0.05,0.0
-8,Patraix,6,Bienestar animal,1,66,1,6200.0,59441,1.11,0.017,1.0
-8,Patraix,30,Rehabilitación de mercados,3,66,0,0.0,59441,1.11,0.05,0.0
-8,Patraix,38,Transporte público (EMT),3,47,0,0.0,59441,0.79,0.05,0.0
-8,Patraix,18,Litoral y puerto,3,30,1,4700.0,59441,0.5,0.05,0.333
-8,Patraix,34,Río Turia y litoral,1,20,0,0.0,59441,0.34,0.017,0.0
-8,Patraix,32,Repavimentación de calzadas,3,15,0,0.0,59441,0.25,0.05,0.0
-8,Patraix,4,Asfalto y pavimentación,1,8,0,0.0,59441,0.13,0.017,0.0
-8,Patraix,13,Equipamientos específicos,1,2,0,0.0,59441,0.03,0.017,0.0
-9,Jesús,7,Carriles bici y movilidad ciclista,16,727,5,372300.0,53819,13.51,0.297,0.312
-9,Jesús,37,Solares y suelo disponible,8,701,3,275000.0,53819,13.03,0.149,0.375
-9,Jesús,23,Parques y plazas,14,603,2,1598664.0,53819,11.2,0.26,0.143
-9,Jesús,2,Aceras y movilidad peatonal,15,554,2,232477.0,53819,10.29,0.279,0.133
-9,Jesús,24,Pedanías y barrios periféricos,10,501,1,120000.0,53819,9.31,0.186,0.1
-9,Jesús,3,Aparcamiento para vehículos,6,227,0,0.0,53819,4.22,0.111,0.0
-9,Jesús,8,Centros cívicos y huertos urbanos,6,226,0,230500.0,53819,4.2,0.111,0.0
-9,Jesús,20,Pacificación del tráfico,4,197,1,72500.0,53819,3.66,0.074,0.25
-9,Jesús,25,Pipicanes y zonas caninas,9,138,1,100000.0,53819,2.56,0.167,0.111
-9,Jesús,16,Instalaciones deportivas,3,123,0,160000.0,53819,2.29,0.056,0.0
-9,Jesús,33,Reurbanización de calles,5,122,1,205000.0,53819,2.27,0.093,0.2
-9,Jesús,5,Bibliotecas y ludotecas,3,110,1,22000.0,53819,2.04,0.056,0.333
-9,Jesús,30,Rehabilitación de mercados,3,103,1,55000.0,53819,1.91,0.056,0.333
-9,Jesús,15,Iluminación pública,5,70,2,415629.0,53819,1.3,0.093,0.4
-9,Jesús,11,Convivencia y mobiliario urbano,2,61,0,0.0,53819,1.13,0.037,0.0
-9,Jesús,22,Parques infantiles,3,61,1,104092.0,53819,1.13,0.056,0.333
-9,Jesús,6,Bienestar animal,1,51,1,7800.0,53819,0.95,0.019,1.0
-9,Jesús,17,Jardines y arbolado,3,41,1,160000.0,53819,0.76,0.056,0.333
-9,Jesús,14,Fuentes y aseos públicos,2,38,0,120000.0,53819,0.71,0.037,0.0
-9,Jesús,10,Centros educativos,1,30,0,0.0,53819,0.56,0.019,0.0
-9,Jesús,27,Recogida de residuos,4,26,0,0.0,53819,0.48,0.074,0.0
-9,Jesús,29,Reducción del ruido,1,12,0,0.0,53819,0.22,0.019,0.0
-9,Jesús,26,Puentes y vías peatonales,1,11,0,0.0,53819,0.2,0.019,0.0
-9,Jesús,32,Repavimentación de calzadas,2,10,0,0.0,53819,0.19,0.037,0.0
-9,Jesús,9,Centros de salud,2,7,0,297000.0,53819,0.13,0.037,0.0
-9,Jesús,34,Río Turia y litoral,1,6,0,0.0,53819,0.11,0.019,0.0
-9,Jesús,4,Asfalto y pavimentación,1,4,0,0.0,53819,0.07,0.019,0.0
-9,Jesús,21,Paneles informativos,1,0,0,141300.0,53819,0.0,0.019,0.0
-9,Jesús,31,Rehabilitación del patrimonio,1,0,0,0.0,53819,0.0,0.019,0.0
-10,Quatre Carreres,16,Instalaciones deportivas,14,840,4,615000.0,75274,11.16,0.186,0.286
-10,Quatre Carreres,24,Pedanías y barrios periféricos,24,630,1,485500.0,75274,8.37,0.319,0.042
-10,Quatre Carreres,7,Carriles bici y movilidad ciclista,19,609,3,1577610.0,75274,8.09,0.252,0.158
-10,Quatre Carreres,37,Solares y suelo disponible,15,513,1,895500.0,75274,6.82,0.199,0.067
-10,Quatre Carreres,23,Parques y plazas,21,511,3,1025000.0,75274,6.79,0.279,0.143
-10,Quatre Carreres,2,Aceras y movilidad peatonal,20,462,0,613180.0,75274,6.14,0.266,0.0
-10,Quatre Carreres,11,Convivencia y mobiliario urbano,15,390,0,200000.0,75274,5.18,0.199,0.0
-10,Quatre Carreres,25,Pipicanes y zonas caninas,14,328,0,1035998.0,75274,4.36,0.186,0.0
-10,Quatre Carreres,3,Aparcamiento para vehículos,17,317,3,85920.0,75274,4.21,0.226,0.176
-10,Quatre Carreres,19,Mobiliario urbano deportivo,7,280,1,160000.0,75274,3.72,0.093,0.143
-10,Quatre Carreres,14,Fuentes y aseos públicos,6,260,1,462500.0,75274,3.45,0.08,0.167
-10,Quatre Carreres,27,Recogida de residuos,11,259,4,607047.0,75274,3.44,0.146,0.364
-10,Quatre Carreres,20,Pacificación del tráfico,5,257,0,0.0,75274,3.41,0.066,0.0
-10,Quatre Carreres,10,Centros educativos,8,250,0,1314000.0,75274,3.32,0.106,0.0
-10,Quatre Carreres,39,Zonas verdes,6,242,3,464406.0,75274,3.21,0.08,0.5
-10,Quatre Carreres,35,Seguridad ciudadana,9,226,0,740000.0,75274,3.0,0.12,0.0
-10,Quatre Carreres,30,Rehabilitación de mercados,2,214,0,0.0,75274,2.84,0.027,0.0
-10,Quatre Carreres,17,Jardines y arbolado,5,200,0,720000.0,75274,2.66,0.066,0.0
-10,Quatre Carreres,5,Bibliotecas y ludotecas,6,189,4,72400.0,75274,2.51,0.08,0.667
-10,Quatre Carreres,15,Iluminación pública,8,174,2,124020.0,75274,2.31,0.106,0.25
-10,Quatre Carreres,1,Accesibilidad peatonal,2,152,0,977000.0,75274,2.02,0.027,0.0
-10,Quatre Carreres,29,Reducción del ruido,5,107,1,20000.0,75274,1.42,0.066,0.2
-10,Quatre Carreres,4,Asfalto y pavimentación,4,97,0,51000.0,75274,1.29,0.053,0.0
-10,Quatre Carreres,22,Parques infantiles,4,81,1,260500.0,75274,1.08,0.053,0.25
-10,Quatre Carreres,9,Centros de salud,7,74,1,120000.0,75274,0.98,0.093,0.143
-10,Quatre Carreres,21,Paneles informativos,2,65,0,0.0,75274,0.86,0.027,0.0
-10,Quatre Carreres,18,Litoral y puerto,2,51,0,325000.0,75274,0.68,0.027,0.0
-10,Quatre Carreres,34,Río Turia y litoral,2,47,0,60000.0,75274,0.62,0.027,0.0
-10,Quatre Carreres,6,Bienestar animal,1,40,1,8400.0,75274,0.53,0.013,1.0
-10,Quatre Carreres,8,Centros cívicos y huertos urbanos,3,38,0,250000.0,75274,0.5,0.04,0.0
-10,Quatre Carreres,12,Equipamientos culturales,2,9,0,0.0,75274,0.12,0.027,0.0
-10,Quatre Carreres,28,Reducción de velocidad y zonas 30,3,9,0,0.0,75274,0.12,0.04,0.0
-10,Quatre Carreres,33,Reurbanización de calles,1,8,0,0.0,75274,0.11,0.013,0.0
-10,Quatre Carreres,26,Puentes y vías peatonales,3,7,0,0.0,75274,0.09,0.04,0.0
-11,Poblats Marítims,16,Instalaciones deportivas,14,736,3,422000.0,59489,12.37,0.235,0.214
-11,Poblats Marítims,18,Litoral y puerto,12,725,0,280800.0,59489,12.19,0.202,0.0
-11,Poblats Marítims,7,Carriles bici y movilidad ciclista,15,710,4,2316607.0,59489,11.93,0.252,0.267
-11,Poblats Marítims,5,Bibliotecas y ludotecas,6,325,2,35699.0,59489,5.46,0.101,0.333
-11,Poblats Marítims,37,Solares y suelo disponible,9,300,2,597986.0,59489,5.04,0.151,0.222
-11,Poblats Marítims,25,Pipicanes y zonas caninas,11,267,0,60000.0,59489,4.49,0.185,0.0
-11,Poblats Marítims,3,Aparcamiento para vehículos,8,240,0,0.0,59489,4.03,0.134,0.0
-11,Poblats Marítims,6,Bienestar animal,3,239,1,5200.0,59489,4.02,0.05,0.333
-11,Poblats Marítims,23,Parques y plazas,11,212,0,1244610.0,59489,3.56,0.185,0.0
-11,Poblats Marítims,2,Aceras y movilidad peatonal,7,190,1,298000.0,59489,3.19,0.118,0.143
-11,Poblats Marítims,27,Recogida de residuos,6,152,0,0.0,59489,2.56,0.101,0.0
-11,Poblats Marítims,15,Iluminación pública,6,149,1,552262.0,59489,2.5,0.101,0.167
-11,Poblats Marítims,34,Río Turia y litoral,8,147,2,499042.0,59489,2.47,0.134,0.25
-11,Poblats Marítims,11,Convivencia y mobiliario urbano,7,140,0,0.0,59489,2.35,0.118,0.0
-11,Poblats Marítims,8,Centros cívicos y huertos urbanos,6,132,0,1229606.0,59489,2.22,0.101,0.0
-11,Poblats Marítims,30,Rehabilitación de mercados,4,103,0,0.0,59489,1.73,0.067,0.0
-11,Poblats Marítims,39,Zonas verdes,1,99,0,0.0,59489,1.66,0.017,0.0
-11,Poblats Marítims,20,Pacificación del tráfico,4,82,0,0.0,59489,1.38,0.067,0.0
-11,Poblats Marítims,24,Pedanías y barrios periféricos,6,80,0,457600.0,59489,1.34,0.101,0.0
-11,Poblats Marítims,12,Equipamientos culturales,3,75,2,91620.0,59489,1.26,0.05,0.667
-11,Poblats Marítims,17,Jardines y arbolado,4,75,0,0.0,59489,1.26,0.067,0.0
-11,Poblats Marítims,14,Fuentes y aseos públicos,3,48,0,0.0,59489,0.81,0.05,0.0
-11,Poblats Marítims,21,Paneles informativos,3,48,1,2420.0,59489,0.81,0.05,0.333
-11,Poblats Marítims,9,Centros de salud,1,46,1,92000.0,59489,0.77,0.017,1.0
-11,Poblats Marítims,22,Parques infantiles,2,43,0,0.0,59489,0.72,0.034,0.0
-11,Poblats Marítims,33,Reurbanización de calles,2,40,0,0.0,59489,0.67,0.034,0.0
-11,Poblats Marítims,35,Seguridad ciudadana,1,40,0,0.0,59489,0.67,0.017,0.0
-11,Poblats Marítims,31,Rehabilitación del patrimonio,1,37,0,0.0,59489,0.62,0.017,0.0
-11,Poblats Marítims,19,Mobiliario urbano deportivo,1,34,0,0.0,59489,0.57,0.017,0.0
-11,Poblats Marítims,29,Reducción del ruido,1,9,0,0.0,59489,0.15,0.017,0.0
-11,Poblats Marítims,28,Reducción de velocidad y zonas 30,2,8,0,0.0,59489,0.13,0.034,0.0
-11,Poblats Marítims,10,Centros educativos,1,7,0,0.0,59489,0.12,0.017,0.0
-11,Poblats Marítims,1,Accesibilidad peatonal,2,4,0,475699.0,59489,0.07,0.034,0.0
-11,Poblats Marítims,4,Asfalto y pavimentación,1,4,0,0.0,59489,0.07,0.017,0.0
-12,Camins al Grau,7,Carriles bici y movilidad ciclista,28,1166,2,1855000.0,63372,18.4,0.442,0.071
-12,Camins al Grau,17,Jardines y arbolado,8,462,2,356000.0,63372,7.29,0.126,0.25
-12,Camins al Grau,16,Instalaciones deportivas,5,407,1,150000.0,63372,6.42,0.079,0.2
-12,Camins al Grau,2,Aceras y movilidad peatonal,14,307,3,237000.0,63372,4.84,0.221,0.214
-12,Camins al Grau,3,Aparcamiento para vehículos,8,294,1,9100.0,63372,4.64,0.126,0.125
-12,Camins al Grau,5,Bibliotecas y ludotecas,2,289,0,0.0,63372,4.56,0.032,0.0
-12,Camins al Grau,11,Convivencia y mobiliario urbano,6,281,1,787261.0,63372,4.43,0.095,0.167
-12,Camins al Grau,37,Solares y suelo disponible,11,274,1,100000.0,63372,4.32,0.174,0.091
-12,Camins al Grau,23,Parques y plazas,9,225,1,929000.0,63372,3.55,0.142,0.111
-12,Camins al Grau,35,Seguridad ciudadana,5,217,0,0.0,63372,3.42,0.079,0.0
-12,Camins al Grau,19,Mobiliario urbano deportivo,3,159,2,125000.0,63372,2.51,0.047,0.667
-12,Camins al Grau,18,Litoral y puerto,5,135,0,0.0,63372,2.13,0.079,0.0
-12,Camins al Grau,24,Pedanías y barrios periféricos,4,135,1,236131.0,63372,2.13,0.063,0.25
-12,Camins al Grau,20,Pacificación del tráfico,4,116,0,0.0,63372,1.83,0.063,0.0
-12,Camins al Grau,6,Bienestar animal,2,106,1,3000.0,63372,1.67,0.032,0.5
-12,Camins al Grau,9,Centros de salud,3,94,0,0.0,63372,1.48,0.047,0.0
-12,Camins al Grau,15,Iluminación pública,5,83,2,72017.0,63372,1.31,0.079,0.4
-12,Camins al Grau,27,Recogida de residuos,5,73,0,350000.0,63372,1.15,0.079,0.0
-12,Camins al Grau,25,Pipicanes y zonas caninas,8,64,1,252966.0,63372,1.01,0.126,0.125
-12,Camins al Grau,33,Reurbanización de calles,4,52,1,174749.0,63372,0.82,0.063,0.25
-12,Camins al Grau,38,Transporte público (EMT),1,50,0,0.0,63372,0.79,0.016,0.0
-12,Camins al Grau,8,Centros cívicos y huertos urbanos,3,45,0,0.0,63372,0.71,0.047,0.0
-12,Camins al Grau,10,Centros educativos,2,43,2,173036.0,63372,0.68,0.032,1.0
-12,Camins al Grau,14,Fuentes y aseos públicos,2,41,1,47720.0,63372,0.65,0.032,0.5
-12,Camins al Grau,29,Reducción del ruido,1,40,0,0.0,63372,0.63,0.016,0.0
-12,Camins al Grau,31,Rehabilitación del patrimonio,1,40,0,0.0,63372,0.63,0.016,0.0
-12,Camins al Grau,39,Zonas verdes,2,38,0,250000.0,63372,0.6,0.032,0.0
-12,Camins al Grau,4,Asfalto y pavimentación,1,31,0,0.0,63372,0.49,0.016,0.0
-12,Camins al Grau,34,Río Turia y litoral,2,22,0,362000.0,63372,0.35,0.032,0.0
-12,Camins al Grau,1,Accesibilidad peatonal,1,5,0,0.0,63372,0.08,0.016,0.0
-12,Camins al Grau,32,Repavimentación de calzadas,1,4,0,0.0,63372,0.06,0.016,0.0
-12,Camins al Grau,22,Parques infantiles,2,0,1,130000.0,63372,0.0,0.032,0.5
-13,Algirós,7,Carriles bici y movilidad ciclista,25,840,2,1213000.0,41781,20.1,0.598,0.08
-13,Algirós,24,Pedanías y barrios periféricos,16,403,1,860740.0,41781,9.65,0.383,0.062
-13,Algirós,2,Aceras y movilidad peatonal,22,365,3,977841.0,41781,8.74,0.527,0.136
-13,Algirós,25,Pipicanes y zonas caninas,12,293,0,300000.0,41781,7.01,0.287,0.0
-13,Algirós,16,Instalaciones deportivas,4,256,0,140000.0,41781,6.13,0.096,0.0
-13,Algirós,10,Centros educativos,4,251,0,0.0,41781,6.01,0.096,0.0
-13,Algirós,11,Convivencia y mobiliario urbano,6,234,1,140752.0,41781,5.6,0.144,0.167
-13,Algirós,22,Parques infantiles,9,198,1,385000.0,41781,4.74,0.215,0.111
-13,Algirós,32,Repavimentación de calzadas,4,160,0,0.0,41781,3.83,0.096,0.0
-13,Algirós,8,Centros cívicos y huertos urbanos,4,140,0,0.0,41781,3.35,0.096,0.0
-13,Algirós,3,Aparcamiento para vehículos,7,131,1,18000.0,41781,3.14,0.168,0.143
-13,Algirós,5,Bibliotecas y ludotecas,2,126,1,29734.0,41781,3.02,0.048,0.5
-13,Algirós,23,Parques y plazas,5,114,1,400000.0,41781,2.73,0.12,0.2
-13,Algirós,15,Iluminación pública,6,109,3,217140.0,41781,2.61,0.144,0.5
-13,Algirós,17,Jardines y arbolado,3,104,2,469000.0,41781,2.49,0.072,0.667
-13,Algirós,20,Pacificación del tráfico,6,95,2,886094.0,41781,2.27,0.144,0.333
-13,Algirós,14,Fuentes y aseos públicos,2,84,1,47720.0,41781,2.01,0.048,0.5
-13,Algirós,29,Reducción del ruido,2,81,0,453094.0,41781,1.94,0.048,0.0
-13,Algirós,9,Centros de salud,3,52,0,0.0,41781,1.24,0.072,0.0
-13,Algirós,6,Bienestar animal,1,36,1,6200.0,41781,0.86,0.024,1.0
-13,Algirós,30,Rehabilitación de mercados,1,33,0,0.0,41781,0.79,0.024,0.0
-13,Algirós,4,Asfalto y pavimentación,1,32,0,453094.0,41781,0.77,0.024,0.0
-13,Algirós,28,Reducción de velocidad y zonas 30,1,18,0,0.0,41781,0.43,0.024,0.0
-13,Algirós,27,Recogida de residuos,3,12,0,0.0,41781,0.29,0.072,0.0
-13,Algirós,39,Zonas verdes,1,11,0,0.0,41781,0.26,0.024,0.0
-13,Algirós,31,Rehabilitación del patrimonio,1,10,0,0.0,41781,0.24,0.024,0.0
-13,Algirós,19,Mobiliario urbano deportivo,1,5,1,10000.0,41781,0.12,0.024,1.0
-13,Algirós,37,Solares y suelo disponible,2,2,0,0.0,41781,0.05,0.048,0.0
-13,Algirós,21,Paneles informativos,1,0,0,0.0,41781,0.0,0.024,0.0
-14,Benimaclet,7,Carriles bici y movilidad ciclista,12,622,0,1394000.0,31062,20.02,0.386,0.0
-14,Benimaclet,2,Aceras y movilidad peatonal,12,541,3,1036130.0,31062,17.42,0.386,0.25
-14,Benimaclet,3,Aparcamiento para vehículos,9,330,1,18000.0,31062,10.62,0.29,0.111
-14,Benimaclet,30,Rehabilitación de mercados,4,297,0,0.0,31062,9.56,0.129,0.0
-14,Benimaclet,16,Instalaciones deportivas,6,230,0,0.0,31062,7.4,0.193,0.0
-14,Benimaclet,12,Equipamientos culturales,3,227,0,0.0,31062,7.31,0.097,0.0
-14,Benimaclet,25,Pipicanes y zonas caninas,8,193,2,240909.0,31062,6.21,0.258,0.25
-14,Benimaclet,23,Parques y plazas,7,158,2,570453.0,31062,5.09,0.225,0.286
-14,Benimaclet,37,Solares y suelo disponible,4,150,0,0.0,31062,4.83,0.129,0.0
-14,Benimaclet,22,Parques infantiles,4,145,0,0.0,31062,4.67,0.129,0.0
-14,Benimaclet,5,Bibliotecas y ludotecas,2,109,1,20000.0,31062,3.51,0.064,0.5
-14,Benimaclet,24,Pedanías y barrios periféricos,8,105,1,136000.0,31062,3.38,0.258,0.125
-14,Benimaclet,20,Pacificación del tráfico,2,104,0,0.0,31062,3.35,0.064,0.0
-14,Benimaclet,11,Convivencia y mobiliario urbano,1,99,0,0.0,31062,3.19,0.032,0.0
-14,Benimaclet,35,Seguridad ciudadana,4,86,0,0.0,31062,2.77,0.129,0.0
-14,Benimaclet,14,Fuentes y aseos públicos,2,70,1,47720.0,31062,2.25,0.064,0.5
-14,Benimaclet,4,Asfalto y pavimentación,2,65,0,0.0,31062,2.09,0.064,0.0
-14,Benimaclet,29,Reducción del ruido,2,65,0,0.0,31062,2.09,0.064,0.0
-14,Benimaclet,33,Reurbanización de calles,4,62,0,473032.0,31062,2.0,0.129,0.0
-14,Benimaclet,39,Zonas verdes,3,60,0,0.0,31062,1.93,0.097,0.0
-14,Benimaclet,6,Bienestar animal,1,55,1,3400.0,31062,1.77,0.032,1.0
-14,Benimaclet,8,Centros cívicos y huertos urbanos,2,50,0,0.0,31062,1.61,0.064,0.0
-14,Benimaclet,15,Iluminación pública,2,50,0,92000.0,31062,1.61,0.064,0.0
-14,Benimaclet,21,Paneles informativos,3,45,2,33000.0,31062,1.45,0.097,0.667
-14,Benimaclet,10,Centros educativos,1,35,0,0.0,31062,1.13,0.032,0.0
-14,Benimaclet,19,Mobiliario urbano deportivo,1,35,0,0.0,31062,1.13,0.032,0.0
-14,Benimaclet,31,Rehabilitación del patrimonio,2,31,0,362677.0,31062,1.0,0.064,0.0
-14,Benimaclet,27,Recogida de residuos,3,28,0,0.0,31062,0.9,0.097,0.0
-14,Benimaclet,13,Equipamientos específicos,3,24,0,0.0,31062,0.77,0.097,0.0
-14,Benimaclet,38,Transporte público (EMT),2,14,0,0.0,31062,0.45,0.064,0.0
-14,Benimaclet,1,Accesibilidad peatonal,1,5,0,0.0,31062,0.16,0.032,0.0
-14,Benimaclet,17,Jardines y arbolado,1,3,0,0.0,31062,0.1,0.032,0.0
-14,Benimaclet,28,Reducción de velocidad y zonas 30,1,1,0,0.0,31062,0.03,0.032,0.0
-15,Rascanya,16,Instalaciones deportivas,9,419,4,360000.0,51860,8.08,0.174,0.444
-15,Rascanya,37,Solares y suelo disponible,10,394,3,400000.0,51860,7.6,0.193,0.3
-15,Rascanya,35,Seguridad ciudadana,5,367,0,0.0,51860,7.08,0.096,0.0
-15,Rascanya,25,Pipicanes y zonas caninas,14,330,2,609250.0,51860,6.36,0.27,0.143
-15,Rascanya,24,Pedanías y barrios periféricos,7,268,3,288573.0,51860,5.17,0.135,0.429
-15,Rascanya,23,Parques y plazas,12,265,2,794000.0,51860,5.11,0.231,0.167
-15,Rascanya,7,Carriles bici y movilidad ciclista,12,223,4,787888.0,51860,4.3,0.231,0.333
-15,Rascanya,3,Aparcamiento para vehículos,7,182,0,574000.0,51860,3.51,0.135,0.0
-15,Rascanya,27,Recogida de residuos,4,130,1,130000.0,51860,2.51,0.077,0.25
-15,Rascanya,11,Convivencia y mobiliario urbano,5,98,2,314130.0,51860,1.89,0.096,0.4
-15,Rascanya,15,Iluminación pública,3,80,2,50647.0,51860,1.54,0.058,0.667
-15,Rascanya,2,Aceras y movilidad peatonal,4,75,1,2400.0,51860,1.45,0.077,0.25
-15,Rascanya,8,Centros cívicos y huertos urbanos,6,59,0,0.0,51860,1.14,0.116,0.0
-15,Rascanya,20,Pacificación del tráfico,3,55,2,38573.0,51860,1.06,0.058,0.667
-15,Rascanya,9,Centros de salud,3,52,0,0.0,51860,1.0,0.058,0.0
-15,Rascanya,17,Jardines y arbolado,2,50,0,0.0,51860,0.96,0.039,0.0
-15,Rascanya,29,Reducción del ruido,2,49,0,0.0,51860,0.94,0.039,0.0
-15,Rascanya,4,Asfalto y pavimentación,1,33,0,0.0,51860,0.64,0.019,0.0
-15,Rascanya,14,Fuentes y aseos públicos,1,32,1,15910.0,51860,0.62,0.019,1.0
-15,Rascanya,22,Parques infantiles,1,29,0,0.0,51860,0.56,0.019,0.0
-15,Rascanya,6,Bienestar animal,1,10,0,0.0,51860,0.19,0.019,0.0
-15,Rascanya,10,Centros educativos,1,4,0,0.0,51860,0.08,0.019,0.0
-15,Rascanya,1,Accesibilidad peatonal,1,3,0,0.0,51860,0.06,0.019,0.0
-15,Rascanya,13,Equipamientos específicos,1,3,0,0.0,51860,0.06,0.019,0.0
-15,Rascanya,28,Reducción de velocidad y zonas 30,1,3,0,0.0,51860,0.06,0.019,0.0
-15,Rascanya,12,Equipamientos culturales,1,1,0,0.0,51860,0.02,0.019,0.0
-15,Rascanya,5,Bibliotecas y ludotecas,1,0,1,5000.0,51860,0.0,0.019,1.0
-16,Benicalap,37,Solares y suelo disponible,18,656,3,975000.0,42607,15.4,0.422,0.167
-16,Benicalap,16,Instalaciones deportivas,13,581,1,50000.0,42607,13.64,0.305,0.077
-16,Benicalap,6,Bienestar animal,6,498,0,6200.0,42607,11.69,0.141,0.0
-16,Benicalap,10,Centros educativos,7,370,0,0.0,42607,8.68,0.164,0.0
-16,Benicalap,20,Pacificación del tráfico,5,332,1,343024.0,42607,7.79,0.117,0.2
-16,Benicalap,24,Pedanías y barrios periféricos,11,331,1,182000.0,42607,7.77,0.258,0.091
-16,Benicalap,25,Pipicanes y zonas caninas,13,318,1,275000.0,42607,7.46,0.305,0.077
-16,Benicalap,7,Carriles bici y movilidad ciclista,9,242,1,1818000.0,42607,5.68,0.211,0.111
-16,Benicalap,8,Centros cívicos y huertos urbanos,8,226,1,100610.0,42607,5.3,0.188,0.125
-16,Benicalap,23,Parques y plazas,9,218,1,60000.0,42607,5.12,0.211,0.111
-16,Benicalap,38,Transporte público (EMT),5,191,0,0.0,42607,4.48,0.117,0.0
-16,Benicalap,15,Iluminación pública,7,189,3,355609.0,42607,4.44,0.164,0.429
-16,Benicalap,2,Aceras y movilidad peatonal,8,171,1,176851.0,42607,4.01,0.188,0.125
-16,Benicalap,12,Equipamientos culturales,3,125,0,0.0,42607,2.93,0.07,0.0
-16,Benicalap,21,Paneles informativos,5,122,0,0.0,42607,2.86,0.117,0.0
-16,Benicalap,22,Parques infantiles,4,118,2,484000.0,42607,2.77,0.094,0.5
-16,Benicalap,27,Recogida de residuos,5,109,1,130000.0,42607,2.56,0.117,0.2
-16,Benicalap,3,Aparcamiento para vehículos,7,102,0,0.0,42607,2.39,0.164,0.0
-16,Benicalap,11,Convivencia y mobiliario urbano,7,88,1,175000.0,42607,2.07,0.164,0.143
-16,Benicalap,32,Repavimentación de calzadas,1,75,0,0.0,42607,1.76,0.023,0.0
-16,Benicalap,17,Jardines y arbolado,2,52,0,0.0,42607,1.22,0.047,0.0
-16,Benicalap,14,Fuentes y aseos públicos,2,45,1,37500.0,42607,1.06,0.047,0.5
-16,Benicalap,33,Reurbanización de calles,3,45,0,0.0,42607,1.06,0.07,0.0
-16,Benicalap,35,Seguridad ciudadana,5,45,0,0.0,42607,1.06,0.117,0.0
-16,Benicalap,29,Reducción del ruido,1,24,0,0.0,42607,0.56,0.023,0.0
-16,Benicalap,30,Rehabilitación de mercados,1,24,0,0.0,42607,0.56,0.023,0.0
-16,Benicalap,31,Rehabilitación del patrimonio,1,16,0,0.0,42607,0.38,0.023,0.0
-16,Benicalap,4,Asfalto y pavimentación,1,11,0,0.0,42607,0.26,0.023,0.0
-16,Benicalap,34,Río Turia y litoral,1,7,0,0.0,42607,0.16,0.023,0.0
-17,Pobles del Nord,7,Carriles bici y movilidad ciclista,15,673,1,5000.0,6104,110.26,2.457,0.067
-17,Pobles del Nord,23,Parques y plazas,14,269,4,392937.0,6104,44.07,2.294,0.286
-17,Pobles del Nord,2,Aceras y movilidad peatonal,9,156,1,598524.0,6104,25.56,1.474,0.111
-17,Pobles del Nord,21,Paneles informativos,2,145,0,0.0,6104,23.75,0.328,0.0
-17,Pobles del Nord,27,Recogida de residuos,7,134,1,5000.0,6104,21.95,1.147,0.143
-17,Pobles del Nord,16,Instalaciones deportivas,6,127,1,85000.0,6104,20.81,0.983,0.167
-17,Pobles del Nord,20,Pacificación del tráfico,8,117,1,53000.0,6104,19.17,1.311,0.125
-17,Pobles del Nord,25,Pipicanes y zonas caninas,9,105,0,0.0,6104,17.2,1.474,0.0
-17,Pobles del Nord,11,Convivencia y mobiliario urbano,6,87,0,15734.0,6104,14.25,0.983,0.0
-17,Pobles del Nord,14,Fuentes y aseos públicos,4,87,2,55489.0,6104,14.25,0.655,0.5
-17,Pobles del Nord,17,Jardines y arbolado,7,86,2,26898.0,6104,14.09,1.147,0.286
-17,Pobles del Nord,1,Accesibilidad peatonal,4,85,1,18000.0,6104,13.93,0.655,0.25
-17,Pobles del Nord,10,Centros educativos,3,82,0,14000.0,6104,13.43,0.491,0.0
-17,Pobles del Nord,15,Iluminación pública,8,77,0,18000.0,6104,12.61,1.311,0.0
-17,Pobles del Nord,30,Rehabilitación de mercados,2,76,0,0.0,6104,12.45,0.328,0.0
-17,Pobles del Nord,6,Bienestar animal,2,68,1,5500.0,6104,11.14,0.328,0.5
-17,Pobles del Nord,33,Reurbanización de calles,3,68,1,107307.0,6104,11.14,0.491,0.333
-17,Pobles del Nord,24,Pedanías y barrios periféricos,2,65,0,0.0,6104,10.65,0.328,0.0
-17,Pobles del Nord,12,Equipamientos culturales,3,59,1,27112.0,6104,9.67,0.491,0.333
-17,Pobles del Nord,22,Parques infantiles,4,58,2,178360.0,6104,9.5,0.655,0.5
-17,Pobles del Nord,39,Zonas verdes,1,55,0,0.0,6104,9.01,0.164,0.0
-17,Pobles del Nord,3,Aparcamiento para vehículos,4,52,1,36121.0,6104,8.52,0.655,0.25
-17,Pobles del Nord,5,Bibliotecas y ludotecas,2,46,0,0.0,6104,7.54,0.328,0.0
-17,Pobles del Nord,13,Equipamientos específicos,3,46,0,0.0,6104,7.54,0.491,0.0
-17,Pobles del Nord,37,Solares y suelo disponible,2,39,1,19760.0,6104,6.39,0.328,0.5
-17,Pobles del Nord,35,Seguridad ciudadana,2,37,0,0.0,6104,6.06,0.328,0.0
-17,Pobles del Nord,28,Reducción de velocidad y zonas 30,2,35,1,96014.0,6104,5.73,0.328,0.5
-17,Pobles del Nord,38,Transporte público (EMT),2,35,0,0.0,6104,5.73,0.328,0.0
-17,Pobles del Nord,31,Rehabilitación del patrimonio,3,34,2,218706.0,6104,5.57,0.491,0.667
-17,Pobles del Nord,8,Centros cívicos y huertos urbanos,3,30,1,86810.0,6104,4.91,0.491,0.333
-17,Pobles del Nord,9,Centros de salud,1,22,0,0.0,6104,3.6,0.164,0.0
-17,Pobles del Nord,32,Repavimentación de calzadas,3,8,1,106911.0,6104,1.31,0.491,0.333
-17,Pobles del Nord,4,Asfalto y pavimentación,1,6,1,27803.0,6104,0.98,0.164,1.0
-18,Pobles de l'Oest,23,Parques y plazas,14,430,2,546000.0,13841,31.07,1.011,0.143
-18,Pobles de l'Oest,37,Solares y suelo disponible,6,320,2,814332.0,13841,23.12,0.433,0.333
-18,Pobles de l'Oest,35,Seguridad ciudadana,4,269,0,0.0,13841,19.44,0.289,0.0
-18,Pobles de l'Oest,8,Centros cívicos y huertos urbanos,6,251,1,296000.0,13841,18.13,0.433,0.167
-18,Pobles de l'Oest,2,Aceras y movilidad peatonal,14,237,4,611662.0,13841,17.12,1.011,0.286
-18,Pobles de l'Oest,25,Pipicanes y zonas caninas,5,200,1,14000.0,13841,14.45,0.361,0.2
-18,Pobles de l'Oest,16,Instalaciones deportivas,9,196,2,240000.0,13841,14.16,0.65,0.222
-18,Pobles de l'Oest,7,Carriles bici y movilidad ciclista,5,182,2,82000.0,13841,13.15,0.361,0.4
-18,Pobles de l'Oest,30,Rehabilitación de mercados,4,153,1,35000.0,13841,11.05,0.289,0.25
-18,Pobles de l'Oest,12,Equipamientos culturales,5,152,0,0.0,13841,10.98,0.361,0.0
-18,Pobles de l'Oest,27,Recogida de residuos,3,143,0,615000.0,13841,10.33,0.217,0.0
-18,Pobles de l'Oest,24,Pedanías y barrios periféricos,7,89,0,0.0,13841,6.43,0.506,0.0
-18,Pobles de l'Oest,3,Aparcamiento para vehículos,5,82,2,188306.0,13841,5.92,0.361,0.4
-18,Pobles de l'Oest,10,Centros educativos,3,81,1,3000.0,13841,5.85,0.217,0.333
-18,Pobles de l'Oest,19,Mobiliario urbano deportivo,2,76,1,124555.0,13841,5.49,0.144,0.5
-18,Pobles de l'Oest,4,Asfalto y pavimentación,2,70,1,177300.0,13841,5.06,0.144,0.5
-18,Pobles de l'Oest,13,Equipamientos específicos,2,66,0,0.0,13841,4.77,0.144,0.0
-18,Pobles de l'Oest,9,Centros de salud,1,65,0,0.0,13841,4.7,0.072,0.0
-18,Pobles de l'Oest,5,Bibliotecas y ludotecas,3,61,2,26000.0,13841,4.41,0.217,0.667
-18,Pobles de l'Oest,14,Fuentes y aseos públicos,3,54,2,142000.0,13841,3.9,0.217,0.667
-18,Pobles de l'Oest,11,Convivencia y mobiliario urbano,4,53,0,490000.0,13841,3.83,0.289,0.0
-18,Pobles de l'Oest,26,Puentes y vías peatonales,1,53,0,0.0,13841,3.83,0.072,0.0
-18,Pobles de l'Oest,22,Parques infantiles,3,40,3,130616.0,13841,2.89,0.217,1.0
-18,Pobles de l'Oest,6,Bienestar animal,1,36,1,5000.0,13841,2.6,0.072,1.0
-18,Pobles de l'Oest,29,Reducción del ruido,2,27,0,0.0,13841,1.95,0.144,0.0
-18,Pobles de l'Oest,17,Jardines y arbolado,2,25,0,0.0,13841,1.81,0.144,0.0
-18,Pobles de l'Oest,38,Transporte público (EMT),1,23,0,0.0,13841,1.66,0.072,0.0
-18,Pobles de l'Oest,21,Paneles informativos,2,22,0,0.0,13841,1.59,0.144,0.0
-18,Pobles de l'Oest,1,Accesibilidad peatonal,2,21,2,166539.0,13841,1.52,0.144,1.0
-18,Pobles de l'Oest,31,Rehabilitación del patrimonio,1,15,0,0.0,13841,1.08,0.072,0.0
-18,Pobles de l'Oest,15,Iluminación pública,2,9,0,0.0,13841,0.65,0.144,0.0
-18,Pobles de l'Oest,28,Reducción de velocidad y zonas 30,2,9,0,30000.0,13841,0.65,0.144,0.0
-18,Pobles de l'Oest,33,Reurbanización de calles,1,9,0,0.0,13841,0.65,0.072,0.0
-18,Pobles de l'Oest,32,Repavimentación de calzadas,6,8,3,141562.0,13841,0.58,0.433,0.5
-18,Pobles de l'Oest,20,Pacificación del tráfico,4,1,3,51500.0,13841,0.07,0.289,0.75
-19,Pobles del Sud,24,Pedanías y barrios periféricos,27,909,5,1147999.0,20287,44.81,1.331,0.185
-19,Pobles del Sud,7,Carriles bici y movilidad ciclista,16,559,1,40700.0,20287,27.55,0.789,0.062
-19,Pobles del Sud,23,Parques y plazas,22,471,2,394813.0,20287,23.22,1.084,0.091
-19,Pobles del Sud,16,Instalaciones deportivas,16,452,4,268219.0,20287,22.28,0.789,0.25
-19,Pobles del Sud,2,Aceras y movilidad peatonal,15,404,1,204267.0,20287,19.91,0.739,0.067
-19,Pobles del Sud,25,Pipicanes y zonas caninas,15,325,2,72000.0,20287,16.02,0.739,0.133
-19,Pobles del Sud,13,Equipamientos específicos,5,252,0,0.0,20287,12.42,0.246,0.0
-19,Pobles del Sud,34,Río Turia y litoral,12,248,2,216378.0,20287,12.22,0.592,0.167
-19,Pobles del Sud,8,Centros cívicos y huertos urbanos,10,224,2,97452.0,20287,11.04,0.493,0.2
-19,Pobles del Sud,15,Iluminación pública,8,224,3,215117.0,20287,11.04,0.394,0.375
-19,Pobles del Sud,11,Convivencia y mobiliario urbano,12,198,3,238410.0,20287,9.76,0.592,0.25
-19,Pobles del Sud,27,Recogida de residuos,8,154,2,209036.0,20287,7.59,0.394,0.25
-19,Pobles del Sud,31,Rehabilitación del patrimonio,4,102,1,28901.0,20287,5.03,0.197,0.25
-19,Pobles del Sud,9,Centros de salud,2,101,0,0.0,20287,4.98,0.099,0.0
-19,Pobles del Sud,14,Fuentes y aseos públicos,4,84,1,71610.0,20287,4.14,0.197,0.25
-19,Pobles del Sud,22,Parques infantiles,5,84,0,0.0,20287,4.14,0.246,0.0
-19,Pobles del Sud,5,Bibliotecas y ludotecas,5,83,0,0.0,20287,4.09,0.246,0.0
-19,Pobles del Sud,3,Aparcamiento para vehículos,10,81,0,0.0,20287,3.99,0.493,0.0
-19,Pobles del Sud,20,Pacificación del tráfico,4,79,2,35851.0,20287,3.89,0.197,0.5
-19,Pobles del Sud,38,Transporte público (EMT),2,72,0,0.0,20287,3.55,0.099,0.0
-19,Pobles del Sud,10,Centros educativos,8,67,1,32975.0,20287,3.3,0.394,0.125
-19,Pobles del Sud,21,Paneles informativos,5,66,1,16153.0,20287,3.25,0.246,0.2
-19,Pobles del Sud,1,Accesibilidad peatonal,7,61,5,161127.0,20287,3.01,0.345,0.714
-19,Pobles del Sud,35,Seguridad ciudadana,3,58,0,0.0,20287,2.86,0.148,0.0
-19,Pobles del Sud,4,Asfalto y pavimentación,3,55,0,109036.0,20287,2.71,0.148,0.0
-19,Pobles del Sud,28,Reducción de velocidad y zonas 30,4,50,0,0.0,20287,2.46,0.197,0.0
-19,Pobles del Sud,33,Reurbanización de calles,3,48,0,0.0,20287,2.37,0.148,0.0
-19,Pobles del Sud,6,Bienestar animal,2,38,0,0.0,20287,1.87,0.099,0.0
-19,Pobles del Sud,29,Reducción del ruido,3,38,0,0.0,20287,1.87,0.148,0.0
-19,Pobles del Sud,17,Jardines y arbolado,2,28,0,0.0,20287,1.38,0.099,0.0
-19,Pobles del Sud,32,Repavimentación de calzadas,5,27,0,161889.0,20287,1.33,0.246,0.0
-19,Pobles del Sud,37,Solares y suelo disponible,3,22,2,62843.0,20287,1.08,0.148,0.667
-19,Pobles del Sud,12,Equipamientos culturales,1,18,0,0.0,20287,0.89,0.049,0.0
-19,Pobles del Sud,18,Litoral y puerto,1,18,0,0.0,20287,0.89,0.049,0.0
-19,Pobles del Sud,39,Zonas verdes,1,16,0,0.0,20287,0.79,0.049,0.0
-19,Pobles del Sud,30,Rehabilitación de mercados,1,15,0,66522.0,20287,0.74,0.049,0.0
+1,Ciutat Vella,23,Parques y plazas,14,645,2,121082.0,27661,23.32,0.506,0.143
+1,Ciutat Vella,24,Pedanías y barrios periféricos,15,500,1,229000.0,27661,18.08,0.542,0.067
+1,Ciutat Vella,17,Jardines y arbolado,8,358,1,7000.0,27661,12.94,0.289,0.125
+1,Ciutat Vella,37,Solares y suelo disponible,10,324,0,0.0,27661,11.71,0.362,0.0
+1,Ciutat Vella,27,Recogida de residuos,9,300,0,402178.0,27661,10.85,0.325,0.0
+1,Ciutat Vella,8,Centros cívicos y huertos urbanos,11,278,0,157000.0,27661,10.05,0.398,0.0
+1,Ciutat Vella,20,Pacificación del tráfico,8,261,1,148433.0,27661,9.44,0.289,0.125
+1,Ciutat Vella,7,Carriles bici y movilidad ciclista,8,242,0,225000.0,27661,8.75,0.289,0.0
+1,Ciutat Vella,22,Parques infantiles,5,181,1,675423.0,27661,6.54,0.181,0.2
+1,Ciutat Vella,14,Fuentes y aseos públicos,4,157,1,247720.0,27661,5.68,0.145,0.25
+1,Ciutat Vella,6,Bienestar animal,2,156,1,3000.0,27661,5.64,0.072,0.5
+1,Ciutat Vella,2,Aceras y movilidad peatonal,10,145,0,0.0,27661,5.24,0.362,0.0
+1,Ciutat Vella,3,Aparcamiento para vehículos,3,132,2,28000.0,27661,4.77,0.108,0.667
+1,Ciutat Vella,9,Centros de salud,3,100,1,80000.0,27661,3.62,0.108,0.333
+1,Ciutat Vella,12,Equipamientos culturales,3,80,1,75536.0,27661,2.89,0.108,0.333
+1,Ciutat Vella,5,Bibliotecas y ludotecas,2,78,1,15000.0,27661,2.82,0.072,0.5
+1,Ciutat Vella,25,Pipicanes y zonas caninas,5,76,0,0.0,27661,2.75,0.181,0.0
+1,Ciutat Vella,39,Zonas verdes,1,71,0,0.0,27661,2.57,0.036,0.0
+1,Ciutat Vella,29,Reducción del ruido,2,59,1,21096.0,27661,2.13,0.072,0.5
+1,Ciutat Vella,15,Iluminación pública,4,48,1,150000.0,27661,1.74,0.145,0.25
+1,Ciutat Vella,10,Centros educativos,2,47,1,18000.0,27661,1.7,0.072,0.5
+1,Ciutat Vella,31,Rehabilitación del patrimonio,1,37,0,0.0,27661,1.34,0.036,0.0
+1,Ciutat Vella,35,Seguridad ciudadana,1,36,0,0.0,27661,1.3,0.036,0.0
+1,Ciutat Vella,26,Puentes y vías peatonales,2,34,0,0.0,27661,1.23,0.072,0.0
+1,Ciutat Vella,19,Mobiliario urbano deportivo,1,32,1,18000.0,27661,1.16,0.036,1.0
+1,Ciutat Vella,33,Reurbanización de calles,2,31,0,0.0,27661,1.12,0.072,0.0
+1,Ciutat Vella,30,Rehabilitación de mercados,2,17,0,0.0,27661,0.61,0.072,0.0
+1,Ciutat Vella,32,Repavimentación de calzadas,1,12,0,0.0,27661,0.43,0.036,0.0
+1,Ciutat Vella,11,Convivencia y mobiliario urbano,3,8,0,0.0,27661,0.29,0.108,0.0
+1,Ciutat Vella,13,Equipamientos específicos,1,7,0,0.0,27661,0.25,0.036,0.0
+1,Ciutat Vella,1,Accesibilidad peatonal,2,4,0,144000.0,27661,0.14,0.072,0.0
+2,l'Eixample,7,Carriles bici y movilidad ciclista,22,1696,4,1199000.0,42447,39.96,0.518,0.182
+2,l'Eixample,10,Centros educativos,8,498,1,394928.0,42447,11.73,0.188,0.125
+2,l'Eixample,23,Parques y plazas,14,445,4,394408.0,42447,10.48,0.33,0.286
+2,l'Eixample,24,Pedanías y barrios periféricos,15,370,1,383768.0,42447,8.72,0.353,0.067
+2,l'Eixample,2,Aceras y movilidad peatonal,16,359,0,162700.0,42447,8.46,0.377,0.0
+2,l'Eixample,29,Reducción del ruido,7,313,1,245000.0,42447,7.37,0.165,0.143
+2,l'Eixample,3,Aparcamiento para vehículos,15,300,0,65000.0,42447,7.07,0.353,0.0
+2,l'Eixample,25,Pipicanes y zonas caninas,8,261,1,139000.0,42447,6.15,0.188,0.125
+2,l'Eixample,11,Convivencia y mobiliario urbano,7,192,0,0.0,42447,4.52,0.165,0.0
+2,l'Eixample,37,Solares y suelo disponible,5,171,0,0.0,42447,4.03,0.118,0.0
+2,l'Eixample,16,Instalaciones deportivas,2,160,0,0.0,42447,3.77,0.047,0.0
+2,l'Eixample,27,Recogida de residuos,7,144,1,270000.0,42447,3.39,0.165,0.143
+2,l'Eixample,30,Rehabilitación de mercados,7,105,0,200000.0,42447,2.47,0.165,0.0
+2,l'Eixample,9,Centros de salud,3,104,0,0.0,42447,2.45,0.071,0.0
+2,l'Eixample,34,Río Turia y litoral,1,75,0,0.0,42447,1.77,0.024,0.0
+2,l'Eixample,33,Reurbanización de calles,4,70,0,127000.0,42447,1.65,0.094,0.0
+2,l'Eixample,15,Iluminación pública,5,67,0,0.0,42447,1.58,0.118,0.0
+2,l'Eixample,22,Parques infantiles,4,66,0,0.0,42447,1.55,0.094,0.0
+2,l'Eixample,6,Bienestar animal,2,58,1,5000.0,42447,1.37,0.047,0.5
+2,l'Eixample,35,Seguridad ciudadana,2,58,0,0.0,42447,1.37,0.047,0.0
+2,l'Eixample,32,Repavimentación de calzadas,3,56,0,61000.0,42447,1.32,0.071,0.0
+2,l'Eixample,5,Bibliotecas y ludotecas,2,35,2,45000.0,42447,0.82,0.047,1.0
+2,l'Eixample,14,Fuentes y aseos públicos,3,35,1,37500.0,42447,0.82,0.071,0.333
+2,l'Eixample,13,Equipamientos específicos,4,23,0,0.0,42447,0.54,0.094,0.0
+2,l'Eixample,19,Mobiliario urbano deportivo,1,22,0,0.0,42447,0.52,0.024,0.0
+2,l'Eixample,20,Pacificación del tráfico,5,22,2,47629.0,42447,0.52,0.118,0.4
+2,l'Eixample,4,Asfalto y pavimentación,2,20,0,0.0,42447,0.47,0.047,0.0
+2,l'Eixample,21,Paneles informativos,3,18,0,0.0,42447,0.42,0.071,0.0
+2,l'Eixample,8,Centros cívicos y huertos urbanos,1,14,0,0.0,42447,0.33,0.024,0.0
+2,l'Eixample,38,Transporte público (EMT),1,10,0,0.0,42447,0.24,0.024,0.0
+2,l'Eixample,26,Puentes y vías peatonales,1,3,0,0.0,42447,0.07,0.024,0.0
+2,l'Eixample,18,Litoral y puerto,1,0,0,250000.0,42447,0.0,0.024,0.0
+3,Extramurs,7,Carriles bici y movilidad ciclista,29,1098,0,2943247.0,48244,22.76,0.601,0.0
+3,Extramurs,2,Aceras y movilidad peatonal,28,808,4,1114000.0,48244,16.75,0.58,0.143
+3,Extramurs,24,Pedanías y barrios periféricos,24,565,0,709200.0,48244,11.71,0.497,0.0
+3,Extramurs,27,Recogida de residuos,11,535,1,519705.0,48244,11.09,0.228,0.091
+3,Extramurs,17,Jardines y arbolado,15,426,3,526808.0,48244,8.83,0.311,0.2
+3,Extramurs,22,Parques infantiles,8,413,2,667318.0,48244,8.56,0.166,0.25
+3,Extramurs,11,Convivencia y mobiliario urbano,12,293,0,320000.0,48244,6.07,0.249,0.0
+3,Extramurs,33,Reurbanización de calles,7,271,1,400310.0,48244,5.62,0.145,0.143
+3,Extramurs,25,Pipicanes y zonas caninas,10,264,2,939993.0,48244,5.47,0.207,0.2
+3,Extramurs,30,Rehabilitación de mercados,9,246,0,743205.0,48244,5.1,0.187,0.0
+3,Extramurs,23,Parques y plazas,8,199,1,60000.0,48244,4.12,0.166,0.125
+3,Extramurs,20,Pacificación del tráfico,6,141,0,145000.0,48244,2.92,0.124,0.0
+3,Extramurs,8,Centros cívicos y huertos urbanos,6,137,0,190000.0,48244,2.84,0.124,0.0
+3,Extramurs,3,Aparcamiento para vehículos,11,134,0,250000.0,48244,2.78,0.228,0.0
+3,Extramurs,12,Equipamientos culturales,2,108,0,137000.0,48244,2.24,0.041,0.0
+3,Extramurs,16,Instalaciones deportivas,2,94,0,0.0,48244,1.95,0.041,0.0
+3,Extramurs,4,Asfalto y pavimentación,3,75,0,0.0,48244,1.55,0.062,0.0
+3,Extramurs,10,Centros educativos,1,65,0,400000.0,48244,1.35,0.021,0.0
+3,Extramurs,37,Solares y suelo disponible,2,61,0,230000.0,48244,1.26,0.041,0.0
+3,Extramurs,39,Zonas verdes,1,55,0,75000.0,48244,1.14,0.021,0.0
+3,Extramurs,31,Rehabilitación del patrimonio,2,52,0,411900.0,48244,1.08,0.041,0.0
+3,Extramurs,6,Bienestar animal,1,45,1,3400.0,48244,0.93,0.021,1.0
+3,Extramurs,32,Repavimentación de calzadas,2,45,1,75000.0,48244,0.93,0.041,0.5
+3,Extramurs,21,Paneles informativos,2,39,0,10000.0,48244,0.81,0.041,0.0
+3,Extramurs,29,Reducción del ruido,3,39,1,3000.0,48244,0.81,0.062,0.333
+3,Extramurs,15,Iluminación pública,4,33,0,0.0,48244,0.68,0.083,0.0
+3,Extramurs,5,Bibliotecas y ludotecas,2,28,0,0.0,48244,0.58,0.041,0.0
+3,Extramurs,38,Transporte público (EMT),1,24,0,0.0,48244,0.5,0.021,0.0
+3,Extramurs,28,Reducción de velocidad y zonas 30,2,17,0,0.0,48244,0.35,0.041,0.0
+3,Extramurs,9,Centros de salud,1,11,0,0.0,48244,0.23,0.021,0.0
+3,Extramurs,14,Fuentes y aseos públicos,2,10,0,0.0,48244,0.21,0.041,0.0
+3,Extramurs,35,Seguridad ciudadana,1,9,0,0.0,48244,0.19,0.021,0.0
+3,Extramurs,1,Accesibilidad peatonal,1,6,0,0.0,48244,0.12,0.021,0.0
+3,Extramurs,34,Río Turia y litoral,1,5,0,0.0,48244,0.1,0.021,0.0
+4,Campanar,37,Solares y suelo disponible,14,484,2,275000.0,38925,12.43,0.36,0.143
+4,Campanar,23,Parques y plazas,10,427,2,70000.0,38925,10.97,0.257,0.2
+4,Campanar,5,Bibliotecas y ludotecas,4,412,0,0.0,38925,10.58,0.103,0.0
+4,Campanar,7,Carriles bici y movilidad ciclista,15,332,2,1331801.0,38925,8.53,0.385,0.133
+4,Campanar,11,Convivencia y mobiliario urbano,18,319,0,532000.0,38925,8.2,0.462,0.0
+4,Campanar,8,Centros cívicos y huertos urbanos,10,275,1,650750.0,38925,7.06,0.257,0.1
+4,Campanar,16,Instalaciones deportivas,6,249,0,60000.0,38925,6.4,0.154,0.0
+4,Campanar,31,Rehabilitación del patrimonio,2,240,1,50000.0,38925,6.17,0.051,0.5
+4,Campanar,24,Pedanías y barrios periféricos,10,232,2,150135.0,38925,5.96,0.257,0.2
+4,Campanar,22,Parques infantiles,7,200,1,365000.0,38925,5.14,0.18,0.143
+4,Campanar,9,Centros de salud,3,147,0,0.0,38925,3.78,0.077,0.0
+4,Campanar,17,Jardines y arbolado,5,146,0,425000.0,38925,3.75,0.128,0.0
+4,Campanar,2,Aceras y movilidad peatonal,12,115,3,447188.0,38925,2.95,0.308,0.25
+4,Campanar,25,Pipicanes y zonas caninas,9,108,1,99160.0,38925,2.77,0.231,0.111
+4,Campanar,34,Río Turia y litoral,3,108,0,0.0,38925,2.77,0.077,0.0
+4,Campanar,14,Fuentes y aseos públicos,4,79,1,37500.0,38925,2.03,0.103,0.25
+4,Campanar,6,Bienestar animal,2,76,0,6800.0,38925,1.95,0.051,0.0
+4,Campanar,15,Iluminación pública,5,62,0,0.0,38925,1.59,0.128,0.0
+4,Campanar,3,Aparcamiento para vehículos,5,54,1,21700.0,38925,1.39,0.128,0.2
+4,Campanar,4,Asfalto y pavimentación,4,43,1,173310.0,38925,1.1,0.103,0.25
+4,Campanar,19,Mobiliario urbano deportivo,2,41,1,250000.0,38925,1.05,0.051,0.5
+4,Campanar,38,Transporte público (EMT),2,40,0,0.0,38925,1.03,0.051,0.0
+4,Campanar,12,Equipamientos culturales,1,36,0,0.0,38925,0.92,0.026,0.0
+4,Campanar,28,Reducción de velocidad y zonas 30,2,35,0,0.0,38925,0.9,0.051,0.0
+4,Campanar,39,Zonas verdes,1,13,0,0.0,38925,0.33,0.026,0.0
+4,Campanar,32,Repavimentación de calzadas,2,8,0,100000.0,38925,0.21,0.051,0.0
+4,Campanar,29,Reducción del ruido,1,4,0,0.0,38925,0.1,0.026,0.0
+4,Campanar,33,Reurbanización de calles,1,4,0,0.0,38925,0.1,0.026,0.0
+4,Campanar,26,Puentes y vías peatonales,1,0,0,0.0,38925,0.0,0.026,0.0
+5,la Saïdia,7,Carriles bici y movilidad ciclista,20,773,1,1550394.0,46671,16.56,0.429,0.05
+5,la Saïdia,2,Aceras y movilidad peatonal,28,639,3,1181922.0,46671,13.69,0.6,0.107
+5,la Saïdia,37,Solares y suelo disponible,14,482,2,300000.0,46671,10.33,0.3,0.143
+5,la Saïdia,30,Rehabilitación de mercados,10,428,1,806285.0,46671,9.17,0.214,0.1
+5,la Saïdia,26,Puentes y vías peatonales,8,318,0,343000.0,46671,6.81,0.171,0.0
+5,la Saïdia,22,Parques infantiles,4,292,1,720000.0,46671,6.26,0.086,0.25
+5,la Saïdia,27,Recogida de residuos,5,276,2,15000.0,46671,5.91,0.107,0.4
+5,la Saïdia,16,Instalaciones deportivas,3,269,1,220000.0,46671,5.76,0.064,0.333
+5,la Saïdia,18,Litoral y puerto,7,228,0,0.0,46671,4.89,0.15,0.0
+5,la Saïdia,15,Iluminación pública,13,215,2,592715.0,46671,4.61,0.279,0.154
+5,la Saïdia,24,Pedanías y barrios periféricos,10,212,3,314336.0,46671,4.54,0.214,0.3
+5,la Saïdia,17,Jardines y arbolado,9,192,1,46000.0,46671,4.11,0.193,0.111
+5,la Saïdia,9,Centros de salud,4,176,0,416000.0,46671,3.77,0.086,0.0
+5,la Saïdia,12,Equipamientos culturales,3,158,0,0.0,46671,3.39,0.064,0.0
+5,la Saïdia,33,Reurbanización de calles,6,141,0,18000.0,46671,3.02,0.129,0.0
+5,la Saïdia,34,Río Turia y litoral,4,117,0,363000.0,46671,2.51,0.086,0.0
+5,la Saïdia,25,Pipicanes y zonas caninas,8,116,0,327000.0,46671,2.49,0.171,0.0
+5,la Saïdia,23,Parques y plazas,5,115,0,200000.0,46671,2.46,0.107,0.0
+5,la Saïdia,8,Centros cívicos y huertos urbanos,8,106,0,355540.0,46671,2.27,0.171,0.0
+5,la Saïdia,31,Rehabilitación del patrimonio,3,99,0,0.0,46671,2.12,0.064,0.0
+5,la Saïdia,11,Convivencia y mobiliario urbano,4,85,0,20000.0,46671,1.82,0.086,0.0
+5,la Saïdia,14,Fuentes y aseos públicos,2,79,1,51720.0,46671,1.69,0.043,0.5
+5,la Saïdia,4,Asfalto y pavimentación,2,72,0,0.0,46671,1.54,0.043,0.0
+5,la Saïdia,29,Reducción del ruido,2,49,0,113517.0,46671,1.05,0.043,0.0
+5,la Saïdia,20,Pacificación del tráfico,1,37,0,0.0,46671,0.79,0.021,0.0
+5,la Saïdia,21,Paneles informativos,2,24,0,0.0,46671,0.51,0.043,0.0
+5,la Saïdia,5,Bibliotecas y ludotecas,1,17,0,0.0,46671,0.36,0.021,0.0
+5,la Saïdia,3,Aparcamiento para vehículos,1,15,0,0.0,46671,0.32,0.021,0.0
+5,la Saïdia,35,Seguridad ciudadana,2,13,1,3000.0,46671,0.28,0.043,0.5
+5,la Saïdia,13,Equipamientos específicos,1,11,0,0.0,46671,0.24,0.021,0.0
+5,la Saïdia,10,Centros educativos,2,10,0,0.0,46671,0.21,0.043,0.0
+5,la Saïdia,32,Repavimentación de calzadas,1,10,0,0.0,46671,0.21,0.021,0.0
+6,el Pla del Real,7,Carriles bici y movilidad ciclista,21,518,4,194068.0,30249,17.12,0.694,0.19
+6,el Pla del Real,37,Solares y suelo disponible,6,438,1,242038.0,30249,14.48,0.198,0.167
+6,el Pla del Real,16,Instalaciones deportivas,4,311,1,100000.0,30249,10.28,0.132,0.25
+6,el Pla del Real,17,Jardines y arbolado,6,240,0,372127.0,30249,7.93,0.198,0.0
+6,el Pla del Real,2,Aceras y movilidad peatonal,10,224,1,346000.0,30249,7.41,0.331,0.1
+6,el Pla del Real,27,Recogida de residuos,7,166,1,48000.0,30249,5.49,0.231,0.143
+6,el Pla del Real,23,Parques y plazas,6,141,1,140000.0,30249,4.66,0.198,0.167
+6,el Pla del Real,22,Parques infantiles,5,121,1,75000.0,30249,4.0,0.165,0.2
+6,el Pla del Real,26,Puentes y vías peatonales,3,119,1,234385.0,30249,3.93,0.099,0.333
+6,el Pla del Real,11,Convivencia y mobiliario urbano,8,111,1,31931.0,30249,3.67,0.264,0.125
+6,el Pla del Real,34,Río Turia y litoral,5,86,1,277127.0,30249,2.84,0.165,0.2
+6,el Pla del Real,15,Iluminación pública,7,60,0,0.0,30249,1.98,0.231,0.0
+6,el Pla del Real,25,Pipicanes y zonas caninas,5,53,2,102250.0,30249,1.75,0.165,0.4
+6,el Pla del Real,10,Centros educativos,2,37,1,1890.0,30249,1.22,0.066,0.5
+6,el Pla del Real,6,Bienestar animal,1,35,0,3000.0,30249,1.16,0.033,0.0
+6,el Pla del Real,14,Fuentes y aseos públicos,2,35,0,0.0,30249,1.16,0.066,0.0
+6,el Pla del Real,31,Rehabilitación del patrimonio,1,35,0,0.0,30249,1.16,0.033,0.0
+6,el Pla del Real,21,Paneles informativos,1,34,0,0.0,30249,1.12,0.033,0.0
+6,el Pla del Real,30,Rehabilitación de mercados,2,33,0,197000.0,30249,1.09,0.066,0.0
+6,el Pla del Real,29,Reducción del ruido,2,23,0,0.0,30249,0.76,0.066,0.0
+6,el Pla del Real,12,Equipamientos culturales,2,19,0,0.0,30249,0.63,0.066,0.0
+6,el Pla del Real,24,Pedanías y barrios periféricos,3,12,0,0.0,30249,0.4,0.099,0.0
+6,el Pla del Real,32,Repavimentación de calzadas,1,9,0,0.0,30249,0.3,0.033,0.0
+6,el Pla del Real,8,Centros cívicos y huertos urbanos,1,6,0,0.0,30249,0.2,0.033,0.0
+6,el Pla del Real,1,Accesibilidad peatonal,2,3,1,4900.0,30249,0.1,0.066,0.5
+6,el Pla del Real,35,Seguridad ciudadana,1,2,0,0.0,30249,0.07,0.033,0.0
+6,el Pla del Real,3,Aparcamiento para vehículos,1,0,1,2100.0,30249,0.0,0.033,1.0
+6,el Pla del Real,20,Pacificación del tráfico,1,0,1,3000.0,30249,0.0,0.033,1.0
+7,l'Olivereta,23,Parques y plazas,16,361,3,1863522.0,48329,7.47,0.331,0.188
+7,l'Olivereta,37,Solares y suelo disponible,8,339,4,505000.0,48329,7.01,0.166,0.5
+7,l'Olivereta,31,Rehabilitación del patrimonio,6,310,0,760000.0,48329,6.41,0.124,0.0
+7,l'Olivereta,24,Pedanías y barrios periféricos,11,291,1,548000.0,48329,6.02,0.228,0.091
+7,l'Olivereta,2,Aceras y movilidad peatonal,14,277,3,732000.0,48329,5.73,0.29,0.214
+7,l'Olivereta,10,Centros educativos,9,238,1,852500.0,48329,4.92,0.186,0.111
+7,l'Olivereta,3,Aparcamiento para vehículos,10,209,1,18900.0,48329,4.32,0.207,0.1
+7,l'Olivereta,20,Pacificación del tráfico,6,202,3,481500.0,48329,4.18,0.124,0.5
+7,l'Olivereta,4,Asfalto y pavimentación,4,192,0,0.0,48329,3.97,0.083,0.0
+7,l'Olivereta,7,Carriles bici y movilidad ciclista,8,178,3,837608.0,48329,3.68,0.166,0.375
+7,l'Olivereta,34,Río Turia y litoral,4,176,1,125000.0,48329,3.64,0.083,0.25
+7,l'Olivereta,5,Bibliotecas y ludotecas,2,165,0,0.0,48329,3.41,0.041,0.0
+7,l'Olivereta,27,Recogida de residuos,6,140,0,0.0,48329,2.9,0.124,0.0
+7,l'Olivereta,15,Iluminación pública,6,128,0,850000.0,48329,2.65,0.124,0.0
+7,l'Olivereta,11,Convivencia y mobiliario urbano,8,116,1,387870.0,48329,2.4,0.166,0.125
+7,l'Olivereta,17,Jardines y arbolado,4,116,0,180000.0,48329,2.4,0.083,0.0
+7,l'Olivereta,22,Parques infantiles,3,93,0,800000.0,48329,1.92,0.062,0.0
+7,l'Olivereta,25,Pipicanes y zonas caninas,5,75,1,289000.0,48329,1.55,0.103,0.2
+7,l'Olivereta,33,Reurbanización de calles,1,68,0,0.0,48329,1.41,0.021,0.0
+7,l'Olivereta,1,Accesibilidad peatonal,2,56,1,40250.0,48329,1.16,0.041,0.5
+7,l'Olivereta,35,Seguridad ciudadana,3,55,1,50000.0,48329,1.14,0.062,0.333
+7,l'Olivereta,14,Fuentes y aseos públicos,1,54,1,47720.0,48329,1.12,0.021,1.0
+7,l'Olivereta,9,Centros de salud,2,44,0,0.0,48329,0.91,0.041,0.0
+7,l'Olivereta,21,Paneles informativos,1,44,1,13000.0,48329,0.91,0.021,1.0
+7,l'Olivereta,6,Bienestar animal,1,42,1,5600.0,48329,0.87,0.021,1.0
+7,l'Olivereta,8,Centros cívicos y huertos urbanos,2,33,0,0.0,48329,0.68,0.041,0.0
+7,l'Olivereta,16,Instalaciones deportivas,1,30,0,40000.0,48329,0.62,0.021,0.0
+7,l'Olivereta,30,Rehabilitación de mercados,1,30,0,0.0,48329,0.62,0.021,0.0
+7,l'Olivereta,13,Equipamientos específicos,2,25,1,25000.0,48329,0.52,0.041,0.5
+8,Patraix,7,Carriles bici y movilidad ciclista,20,836,4,941000.0,57576,14.52,0.347,0.2
+8,Patraix,23,Parques y plazas,20,727,5,2042489.0,57576,12.63,0.347,0.25
+8,Patraix,10,Centros educativos,8,675,4,151000.0,57576,11.72,0.139,0.5
+8,Patraix,37,Solares y suelo disponible,15,506,1,40000.0,57576,8.79,0.261,0.067
+8,Patraix,2,Aceras y movilidad peatonal,16,396,2,398528.0,57576,6.88,0.278,0.125
+8,Patraix,16,Instalaciones deportivas,6,395,1,60000.0,57576,6.86,0.104,0.167
+8,Patraix,24,Pedanías y barrios periféricos,19,300,2,455000.0,57576,5.21,0.33,0.105
+8,Patraix,9,Centros de salud,8,291,0,0.0,57576,5.05,0.139,0.0
+8,Patraix,22,Parques infantiles,11,273,1,1303000.0,57576,4.74,0.191,0.091
+8,Patraix,8,Centros cívicos y huertos urbanos,12,267,1,906500.0,57576,4.64,0.208,0.083
+8,Patraix,31,Rehabilitación del patrimonio,2,230,0,0.0,57576,3.99,0.035,0.0
+8,Patraix,20,Pacificación del tráfico,4,210,0,635000.0,57576,3.65,0.069,0.0
+8,Patraix,5,Bibliotecas y ludotecas,3,201,1,45000.0,57576,3.49,0.052,0.333
+8,Patraix,25,Pipicanes y zonas caninas,9,197,2,281500.0,57576,3.42,0.156,0.222
+8,Patraix,19,Mobiliario urbano deportivo,1,192,1,116232.0,57576,3.33,0.017,1.0
+8,Patraix,27,Recogida de residuos,10,181,3,581500.0,57576,3.14,0.174,0.3
+8,Patraix,3,Aparcamiento para vehículos,9,146,0,0.0,57576,2.54,0.156,0.0
+8,Patraix,17,Jardines y arbolado,9,141,0,435000.0,57576,2.45,0.156,0.0
+8,Patraix,14,Fuentes y aseos públicos,6,135,4,102000.0,57576,2.34,0.104,0.667
+8,Patraix,29,Reducción del ruido,2,122,1,140360.0,57576,2.12,0.035,0.5
+8,Patraix,11,Convivencia y mobiliario urbano,6,115,0,0.0,57576,2.0,0.104,0.0
+8,Patraix,15,Iluminación pública,6,74,0,150000.0,57576,1.29,0.104,0.0
+8,Patraix,33,Reurbanización de calles,3,68,0,0.0,57576,1.18,0.052,0.0
+8,Patraix,6,Bienestar animal,1,66,1,6200.0,57576,1.15,0.017,1.0
+8,Patraix,30,Rehabilitación de mercados,3,66,0,0.0,57576,1.15,0.052,0.0
+8,Patraix,38,Transporte público (EMT),3,47,0,0.0,57576,0.82,0.052,0.0
+8,Patraix,18,Litoral y puerto,3,30,1,4700.0,57576,0.52,0.052,0.333
+8,Patraix,34,Río Turia y litoral,1,20,0,0.0,57576,0.35,0.017,0.0
+8,Patraix,32,Repavimentación de calzadas,3,15,0,0.0,57576,0.26,0.052,0.0
+8,Patraix,4,Asfalto y pavimentación,1,8,0,0.0,57576,0.14,0.017,0.0
+8,Patraix,13,Equipamientos específicos,1,2,0,0.0,57576,0.03,0.017,0.0
+9,Jesús,7,Carriles bici y movilidad ciclista,16,727,5,372300.0,51619,14.08,0.31,0.312
+9,Jesús,37,Solares y suelo disponible,8,701,3,275000.0,51619,13.58,0.155,0.375
+9,Jesús,23,Parques y plazas,14,603,2,1598664.0,51619,11.68,0.271,0.143
+9,Jesús,2,Aceras y movilidad peatonal,15,554,2,232477.0,51619,10.73,0.291,0.133
+9,Jesús,24,Pedanías y barrios periféricos,10,501,1,120000.0,51619,9.71,0.194,0.1
+9,Jesús,3,Aparcamiento para vehículos,6,227,0,0.0,51619,4.4,0.116,0.0
+9,Jesús,8,Centros cívicos y huertos urbanos,6,226,0,230500.0,51619,4.38,0.116,0.0
+9,Jesús,20,Pacificación del tráfico,4,197,1,72500.0,51619,3.82,0.077,0.25
+9,Jesús,25,Pipicanes y zonas caninas,9,138,1,100000.0,51619,2.67,0.174,0.111
+9,Jesús,16,Instalaciones deportivas,3,123,0,160000.0,51619,2.38,0.058,0.0
+9,Jesús,33,Reurbanización de calles,5,122,1,205000.0,51619,2.36,0.097,0.2
+9,Jesús,5,Bibliotecas y ludotecas,3,110,1,22000.0,51619,2.13,0.058,0.333
+9,Jesús,30,Rehabilitación de mercados,3,103,1,55000.0,51619,2.0,0.058,0.333
+9,Jesús,15,Iluminación pública,5,70,2,415629.0,51619,1.36,0.097,0.4
+9,Jesús,11,Convivencia y mobiliario urbano,2,61,0,0.0,51619,1.18,0.039,0.0
+9,Jesús,22,Parques infantiles,3,61,1,104092.0,51619,1.18,0.058,0.333
+9,Jesús,6,Bienestar animal,1,51,1,7800.0,51619,0.99,0.019,1.0
+9,Jesús,17,Jardines y arbolado,3,41,1,160000.0,51619,0.79,0.058,0.333
+9,Jesús,14,Fuentes y aseos públicos,2,38,0,120000.0,51619,0.74,0.039,0.0
+9,Jesús,10,Centros educativos,1,30,0,0.0,51619,0.58,0.019,0.0
+9,Jesús,27,Recogida de residuos,4,26,0,0.0,51619,0.5,0.077,0.0
+9,Jesús,29,Reducción del ruido,1,12,0,0.0,51619,0.23,0.019,0.0
+9,Jesús,26,Puentes y vías peatonales,1,11,0,0.0,51619,0.21,0.019,0.0
+9,Jesús,32,Repavimentación de calzadas,2,10,0,0.0,51619,0.19,0.039,0.0
+9,Jesús,9,Centros de salud,2,7,0,297000.0,51619,0.14,0.039,0.0
+9,Jesús,34,Río Turia y litoral,1,6,0,0.0,51619,0.12,0.019,0.0
+9,Jesús,4,Asfalto y pavimentación,1,4,0,0.0,51619,0.08,0.019,0.0
+9,Jesús,21,Paneles informativos,1,0,0,141300.0,51619,0.0,0.019,0.0
+9,Jesús,31,Rehabilitación del patrimonio,1,0,0,0.0,51619,0.0,0.019,0.0
+10,Quatre Carreres,16,Instalaciones deportivas,14,840,4,615000.0,74112,11.33,0.189,0.286
+10,Quatre Carreres,24,Pedanías y barrios periféricos,24,630,1,485500.0,74112,8.5,0.324,0.042
+10,Quatre Carreres,7,Carriles bici y movilidad ciclista,19,609,3,1577610.0,74112,8.22,0.256,0.158
+10,Quatre Carreres,37,Solares y suelo disponible,15,513,1,895500.0,74112,6.92,0.202,0.067
+10,Quatre Carreres,23,Parques y plazas,21,511,3,1025000.0,74112,6.89,0.283,0.143
+10,Quatre Carreres,2,Aceras y movilidad peatonal,20,462,0,613180.0,74112,6.23,0.27,0.0
+10,Quatre Carreres,11,Convivencia y mobiliario urbano,15,390,0,200000.0,74112,5.26,0.202,0.0
+10,Quatre Carreres,25,Pipicanes y zonas caninas,14,328,0,1035998.0,74112,4.43,0.189,0.0
+10,Quatre Carreres,3,Aparcamiento para vehículos,17,317,3,85920.0,74112,4.28,0.229,0.176
+10,Quatre Carreres,19,Mobiliario urbano deportivo,7,280,1,160000.0,74112,3.78,0.094,0.143
+10,Quatre Carreres,14,Fuentes y aseos públicos,6,260,1,462500.0,74112,3.51,0.081,0.167
+10,Quatre Carreres,27,Recogida de residuos,11,259,4,607047.0,74112,3.49,0.148,0.364
+10,Quatre Carreres,20,Pacificación del tráfico,5,257,0,0.0,74112,3.47,0.067,0.0
+10,Quatre Carreres,10,Centros educativos,8,250,0,1314000.0,74112,3.37,0.108,0.0
+10,Quatre Carreres,39,Zonas verdes,6,242,3,464406.0,74112,3.27,0.081,0.5
+10,Quatre Carreres,35,Seguridad ciudadana,9,226,0,740000.0,74112,3.05,0.121,0.0
+10,Quatre Carreres,30,Rehabilitación de mercados,2,214,0,0.0,74112,2.89,0.027,0.0
+10,Quatre Carreres,17,Jardines y arbolado,5,200,0,720000.0,74112,2.7,0.067,0.0
+10,Quatre Carreres,5,Bibliotecas y ludotecas,6,189,4,72400.0,74112,2.55,0.081,0.667
+10,Quatre Carreres,15,Iluminación pública,8,174,2,124020.0,74112,2.35,0.108,0.25
+10,Quatre Carreres,1,Accesibilidad peatonal,2,152,0,977000.0,74112,2.05,0.027,0.0
+10,Quatre Carreres,29,Reducción del ruido,5,107,1,20000.0,74112,1.44,0.067,0.2
+10,Quatre Carreres,4,Asfalto y pavimentación,4,97,0,51000.0,74112,1.31,0.054,0.0
+10,Quatre Carreres,22,Parques infantiles,4,81,1,260500.0,74112,1.09,0.054,0.25
+10,Quatre Carreres,9,Centros de salud,7,74,1,120000.0,74112,1.0,0.094,0.143
+10,Quatre Carreres,21,Paneles informativos,2,65,0,0.0,74112,0.88,0.027,0.0
+10,Quatre Carreres,18,Litoral y puerto,2,51,0,325000.0,74112,0.69,0.027,0.0
+10,Quatre Carreres,34,Río Turia y litoral,2,47,0,60000.0,74112,0.63,0.027,0.0
+10,Quatre Carreres,6,Bienestar animal,1,40,1,8400.0,74112,0.54,0.013,1.0
+10,Quatre Carreres,8,Centros cívicos y huertos urbanos,3,38,0,250000.0,74112,0.51,0.04,0.0
+10,Quatre Carreres,12,Equipamientos culturales,2,9,0,0.0,74112,0.12,0.027,0.0
+10,Quatre Carreres,28,Reducción de velocidad y zonas 30,3,9,0,0.0,74112,0.12,0.04,0.0
+10,Quatre Carreres,33,Reurbanización de calles,1,8,0,0.0,74112,0.11,0.013,0.0
+10,Quatre Carreres,26,Puentes y vías peatonales,3,7,0,0.0,74112,0.09,0.04,0.0
+11,Poblats Marítims,16,Instalaciones deportivas,14,736,3,422000.0,55033,13.37,0.254,0.214
+11,Poblats Marítims,18,Litoral y puerto,12,725,0,280800.0,55033,13.17,0.218,0.0
+11,Poblats Marítims,7,Carriles bici y movilidad ciclista,15,710,4,2316607.0,55033,12.9,0.273,0.267
+11,Poblats Marítims,5,Bibliotecas y ludotecas,6,325,2,35699.0,55033,5.91,0.109,0.333
+11,Poblats Marítims,37,Solares y suelo disponible,9,300,2,597986.0,55033,5.45,0.164,0.222
+11,Poblats Marítims,25,Pipicanes y zonas caninas,11,267,0,60000.0,55033,4.85,0.2,0.0
+11,Poblats Marítims,3,Aparcamiento para vehículos,8,240,0,0.0,55033,4.36,0.145,0.0
+11,Poblats Marítims,6,Bienestar animal,3,239,1,5200.0,55033,4.34,0.055,0.333
+11,Poblats Marítims,23,Parques y plazas,11,212,0,1244610.0,55033,3.85,0.2,0.0
+11,Poblats Marítims,2,Aceras y movilidad peatonal,7,190,1,298000.0,55033,3.45,0.127,0.143
+11,Poblats Marítims,27,Recogida de residuos,6,152,0,0.0,55033,2.76,0.109,0.0
+11,Poblats Marítims,15,Iluminación pública,6,149,1,552262.0,55033,2.71,0.109,0.167
+11,Poblats Marítims,34,Río Turia y litoral,8,147,2,499042.0,55033,2.67,0.145,0.25
+11,Poblats Marítims,11,Convivencia y mobiliario urbano,7,140,0,0.0,55033,2.54,0.127,0.0
+11,Poblats Marítims,8,Centros cívicos y huertos urbanos,6,132,0,1229606.0,55033,2.4,0.109,0.0
+11,Poblats Marítims,30,Rehabilitación de mercados,4,103,0,0.0,55033,1.87,0.073,0.0
+11,Poblats Marítims,39,Zonas verdes,1,99,0,0.0,55033,1.8,0.018,0.0
+11,Poblats Marítims,20,Pacificación del tráfico,4,82,0,0.0,55033,1.49,0.073,0.0
+11,Poblats Marítims,24,Pedanías y barrios periféricos,6,80,0,457600.0,55033,1.45,0.109,0.0
+11,Poblats Marítims,12,Equipamientos culturales,3,75,2,91620.0,55033,1.36,0.055,0.667
+11,Poblats Marítims,17,Jardines y arbolado,4,75,0,0.0,55033,1.36,0.073,0.0
+11,Poblats Marítims,14,Fuentes y aseos públicos,3,48,0,0.0,55033,0.87,0.055,0.0
+11,Poblats Marítims,21,Paneles informativos,3,48,1,2420.0,55033,0.87,0.055,0.333
+11,Poblats Marítims,9,Centros de salud,1,46,1,92000.0,55033,0.84,0.018,1.0
+11,Poblats Marítims,22,Parques infantiles,2,43,0,0.0,55033,0.78,0.036,0.0
+11,Poblats Marítims,33,Reurbanización de calles,2,40,0,0.0,55033,0.73,0.036,0.0
+11,Poblats Marítims,35,Seguridad ciudadana,1,40,0,0.0,55033,0.73,0.018,0.0
+11,Poblats Marítims,31,Rehabilitación del patrimonio,1,37,0,0.0,55033,0.67,0.018,0.0
+11,Poblats Marítims,19,Mobiliario urbano deportivo,1,34,0,0.0,55033,0.62,0.018,0.0
+11,Poblats Marítims,29,Reducción del ruido,1,9,0,0.0,55033,0.16,0.018,0.0
+11,Poblats Marítims,28,Reducción de velocidad y zonas 30,2,8,0,0.0,55033,0.15,0.036,0.0
+11,Poblats Marítims,10,Centros educativos,1,7,0,0.0,55033,0.13,0.018,0.0
+11,Poblats Marítims,1,Accesibilidad peatonal,2,4,0,475699.0,55033,0.07,0.036,0.0
+11,Poblats Marítims,4,Asfalto y pavimentación,1,4,0,0.0,55033,0.07,0.018,0.0
+12,Camins al Grau,7,Carriles bici y movilidad ciclista,28,1166,2,1855000.0,65070,17.92,0.43,0.071
+12,Camins al Grau,17,Jardines y arbolado,8,462,2,356000.0,65070,7.1,0.123,0.25
+12,Camins al Grau,16,Instalaciones deportivas,5,407,1,150000.0,65070,6.25,0.077,0.2
+12,Camins al Grau,2,Aceras y movilidad peatonal,14,307,3,237000.0,65070,4.72,0.215,0.214
+12,Camins al Grau,3,Aparcamiento para vehículos,8,294,1,9100.0,65070,4.52,0.123,0.125
+12,Camins al Grau,5,Bibliotecas y ludotecas,2,289,0,0.0,65070,4.44,0.031,0.0
+12,Camins al Grau,11,Convivencia y mobiliario urbano,6,281,1,787261.0,65070,4.32,0.092,0.167
+12,Camins al Grau,37,Solares y suelo disponible,11,274,1,100000.0,65070,4.21,0.169,0.091
+12,Camins al Grau,23,Parques y plazas,9,225,1,929000.0,65070,3.46,0.138,0.111
+12,Camins al Grau,35,Seguridad ciudadana,5,217,0,0.0,65070,3.33,0.077,0.0
+12,Camins al Grau,19,Mobiliario urbano deportivo,3,159,2,125000.0,65070,2.44,0.046,0.667
+12,Camins al Grau,18,Litoral y puerto,5,135,0,0.0,65070,2.07,0.077,0.0
+12,Camins al Grau,24,Pedanías y barrios periféricos,4,135,1,236131.0,65070,2.07,0.061,0.25
+12,Camins al Grau,20,Pacificación del tráfico,4,116,0,0.0,65070,1.78,0.061,0.0
+12,Camins al Grau,6,Bienestar animal,2,106,1,3000.0,65070,1.63,0.031,0.5
+12,Camins al Grau,9,Centros de salud,3,94,0,0.0,65070,1.44,0.046,0.0
+12,Camins al Grau,15,Iluminación pública,5,83,2,72017.0,65070,1.28,0.077,0.4
+12,Camins al Grau,27,Recogida de residuos,5,73,0,350000.0,65070,1.12,0.077,0.0
+12,Camins al Grau,25,Pipicanes y zonas caninas,8,64,1,252966.0,65070,0.98,0.123,0.125
+12,Camins al Grau,33,Reurbanización de calles,4,52,1,174749.0,65070,0.8,0.061,0.25
+12,Camins al Grau,38,Transporte público (EMT),1,50,0,0.0,65070,0.77,0.015,0.0
+12,Camins al Grau,8,Centros cívicos y huertos urbanos,3,45,0,0.0,65070,0.69,0.046,0.0
+12,Camins al Grau,10,Centros educativos,2,43,2,173036.0,65070,0.66,0.031,1.0
+12,Camins al Grau,14,Fuentes y aseos públicos,2,41,1,47720.0,65070,0.63,0.031,0.5
+12,Camins al Grau,29,Reducción del ruido,1,40,0,0.0,65070,0.61,0.015,0.0
+12,Camins al Grau,31,Rehabilitación del patrimonio,1,40,0,0.0,65070,0.61,0.015,0.0
+12,Camins al Grau,39,Zonas verdes,2,38,0,250000.0,65070,0.58,0.031,0.0
+12,Camins al Grau,4,Asfalto y pavimentación,1,31,0,0.0,65070,0.48,0.015,0.0
+12,Camins al Grau,34,Río Turia y litoral,2,22,0,362000.0,65070,0.34,0.031,0.0
+12,Camins al Grau,1,Accesibilidad peatonal,1,5,0,0.0,65070,0.08,0.015,0.0
+12,Camins al Grau,32,Repavimentación de calzadas,1,4,0,0.0,65070,0.06,0.015,0.0
+12,Camins al Grau,22,Parques infantiles,2,0,1,130000.0,65070,0.0,0.031,0.5
+13,Algirós,7,Carriles bici y movilidad ciclista,25,840,2,1213000.0,35510,23.66,0.704,0.08
+13,Algirós,24,Pedanías y barrios periféricos,16,403,1,860740.0,35510,11.35,0.451,0.062
+13,Algirós,2,Aceras y movilidad peatonal,22,365,3,977841.0,35510,10.28,0.62,0.136
+13,Algirós,25,Pipicanes y zonas caninas,12,293,0,300000.0,35510,8.25,0.338,0.0
+13,Algirós,16,Instalaciones deportivas,4,256,0,140000.0,35510,7.21,0.113,0.0
+13,Algirós,10,Centros educativos,4,251,0,0.0,35510,7.07,0.113,0.0
+13,Algirós,11,Convivencia y mobiliario urbano,6,234,1,140752.0,35510,6.59,0.169,0.167
+13,Algirós,22,Parques infantiles,9,198,1,385000.0,35510,5.58,0.253,0.111
+13,Algirós,32,Repavimentación de calzadas,4,160,0,0.0,35510,4.51,0.113,0.0
+13,Algirós,8,Centros cívicos y huertos urbanos,4,140,0,0.0,35510,3.94,0.113,0.0
+13,Algirós,3,Aparcamiento para vehículos,7,131,1,18000.0,35510,3.69,0.197,0.143
+13,Algirós,5,Bibliotecas y ludotecas,2,126,1,29734.0,35510,3.55,0.056,0.5
+13,Algirós,23,Parques y plazas,5,114,1,400000.0,35510,3.21,0.141,0.2
+13,Algirós,15,Iluminación pública,6,109,3,217140.0,35510,3.07,0.169,0.5
+13,Algirós,17,Jardines y arbolado,3,104,2,469000.0,35510,2.93,0.084,0.667
+13,Algirós,20,Pacificación del tráfico,6,95,2,886094.0,35510,2.68,0.169,0.333
+13,Algirós,14,Fuentes y aseos públicos,2,84,1,47720.0,35510,2.37,0.056,0.5
+13,Algirós,29,Reducción del ruido,2,81,0,453094.0,35510,2.28,0.056,0.0
+13,Algirós,9,Centros de salud,3,52,0,0.0,35510,1.46,0.084,0.0
+13,Algirós,6,Bienestar animal,1,36,1,6200.0,35510,1.01,0.028,1.0
+13,Algirós,30,Rehabilitación de mercados,1,33,0,0.0,35510,0.93,0.028,0.0
+13,Algirós,4,Asfalto y pavimentación,1,32,0,453094.0,35510,0.9,0.028,0.0
+13,Algirós,28,Reducción de velocidad y zonas 30,1,18,0,0.0,35510,0.51,0.028,0.0
+13,Algirós,27,Recogida de residuos,3,12,0,0.0,35510,0.34,0.084,0.0
+13,Algirós,39,Zonas verdes,1,11,0,0.0,35510,0.31,0.028,0.0
+13,Algirós,31,Rehabilitación del patrimonio,1,10,0,0.0,35510,0.28,0.028,0.0
+13,Algirós,19,Mobiliario urbano deportivo,1,5,1,10000.0,35510,0.14,0.028,1.0
+13,Algirós,37,Solares y suelo disponible,2,2,0,0.0,35510,0.06,0.056,0.0
+13,Algirós,21,Paneles informativos,1,0,0,0.0,35510,0.0,0.028,0.0
+14,Benimaclet,7,Carriles bici y movilidad ciclista,12,622,0,1394000.0,27912,22.28,0.43,0.0
+14,Benimaclet,2,Aceras y movilidad peatonal,12,541,3,1036130.0,27912,19.38,0.43,0.25
+14,Benimaclet,3,Aparcamiento para vehículos,9,330,1,18000.0,27912,11.82,0.322,0.111
+14,Benimaclet,30,Rehabilitación de mercados,4,297,0,0.0,27912,10.64,0.143,0.0
+14,Benimaclet,16,Instalaciones deportivas,6,230,0,0.0,27912,8.24,0.215,0.0
+14,Benimaclet,12,Equipamientos culturales,3,227,0,0.0,27912,8.13,0.107,0.0
+14,Benimaclet,25,Pipicanes y zonas caninas,8,193,2,240909.0,27912,6.91,0.287,0.25
+14,Benimaclet,23,Parques y plazas,7,158,2,570453.0,27912,5.66,0.251,0.286
+14,Benimaclet,37,Solares y suelo disponible,4,150,0,0.0,27912,5.37,0.143,0.0
+14,Benimaclet,22,Parques infantiles,4,145,0,0.0,27912,5.19,0.143,0.0
+14,Benimaclet,5,Bibliotecas y ludotecas,2,109,1,20000.0,27912,3.91,0.072,0.5
+14,Benimaclet,24,Pedanías y barrios periféricos,8,105,1,136000.0,27912,3.76,0.287,0.125
+14,Benimaclet,20,Pacificación del tráfico,2,104,0,0.0,27912,3.73,0.072,0.0
+14,Benimaclet,11,Convivencia y mobiliario urbano,1,99,0,0.0,27912,3.55,0.036,0.0
+14,Benimaclet,35,Seguridad ciudadana,4,86,0,0.0,27912,3.08,0.143,0.0
+14,Benimaclet,14,Fuentes y aseos públicos,2,70,1,47720.0,27912,2.51,0.072,0.5
+14,Benimaclet,4,Asfalto y pavimentación,2,65,0,0.0,27912,2.33,0.072,0.0
+14,Benimaclet,29,Reducción del ruido,2,65,0,0.0,27912,2.33,0.072,0.0
+14,Benimaclet,33,Reurbanización de calles,4,62,0,473032.0,27912,2.22,0.143,0.0
+14,Benimaclet,39,Zonas verdes,3,60,0,0.0,27912,2.15,0.107,0.0
+14,Benimaclet,6,Bienestar animal,1,55,1,3400.0,27912,1.97,0.036,1.0
+14,Benimaclet,8,Centros cívicos y huertos urbanos,2,50,0,0.0,27912,1.79,0.072,0.0
+14,Benimaclet,15,Iluminación pública,2,50,0,92000.0,27912,1.79,0.072,0.0
+14,Benimaclet,21,Paneles informativos,3,45,2,33000.0,27912,1.61,0.107,0.667
+14,Benimaclet,10,Centros educativos,1,35,0,0.0,27912,1.25,0.036,0.0
+14,Benimaclet,19,Mobiliario urbano deportivo,1,35,0,0.0,27912,1.25,0.036,0.0
+14,Benimaclet,31,Rehabilitación del patrimonio,2,31,0,362677.0,27912,1.11,0.072,0.0
+14,Benimaclet,27,Recogida de residuos,3,28,0,0.0,27912,1.0,0.107,0.0
+14,Benimaclet,13,Equipamientos específicos,3,24,0,0.0,27912,0.86,0.107,0.0
+14,Benimaclet,38,Transporte público (EMT),2,14,0,0.0,27912,0.5,0.072,0.0
+14,Benimaclet,1,Accesibilidad peatonal,1,5,0,0.0,27912,0.18,0.036,0.0
+14,Benimaclet,17,Jardines y arbolado,1,3,0,0.0,27912,0.11,0.036,0.0
+14,Benimaclet,28,Reducción de velocidad y zonas 30,1,1,0,0.0,27912,0.04,0.036,0.0
+15,Rascanya,16,Instalaciones deportivas,9,419,4,360000.0,53237,7.87,0.169,0.444
+15,Rascanya,37,Solares y suelo disponible,10,394,3,400000.0,53237,7.4,0.188,0.3
+15,Rascanya,35,Seguridad ciudadana,5,367,0,0.0,53237,6.89,0.094,0.0
+15,Rascanya,25,Pipicanes y zonas caninas,14,330,2,609250.0,53237,6.2,0.263,0.143
+15,Rascanya,24,Pedanías y barrios periféricos,7,268,3,288573.0,53237,5.03,0.131,0.429
+15,Rascanya,23,Parques y plazas,12,265,2,794000.0,53237,4.98,0.225,0.167
+15,Rascanya,7,Carriles bici y movilidad ciclista,12,223,4,787888.0,53237,4.19,0.225,0.333
+15,Rascanya,3,Aparcamiento para vehículos,7,182,0,574000.0,53237,3.42,0.131,0.0
+15,Rascanya,27,Recogida de residuos,4,130,1,130000.0,53237,2.44,0.075,0.25
+15,Rascanya,11,Convivencia y mobiliario urbano,5,98,2,314130.0,53237,1.84,0.094,0.4
+15,Rascanya,15,Iluminación pública,3,80,2,50647.0,53237,1.5,0.056,0.667
+15,Rascanya,2,Aceras y movilidad peatonal,4,75,1,2400.0,53237,1.41,0.075,0.25
+15,Rascanya,8,Centros cívicos y huertos urbanos,6,59,0,0.0,53237,1.11,0.113,0.0
+15,Rascanya,20,Pacificación del tráfico,3,55,2,38573.0,53237,1.03,0.056,0.667
+15,Rascanya,9,Centros de salud,3,52,0,0.0,53237,0.98,0.056,0.0
+15,Rascanya,17,Jardines y arbolado,2,50,0,0.0,53237,0.94,0.038,0.0
+15,Rascanya,29,Reducción del ruido,2,49,0,0.0,53237,0.92,0.038,0.0
+15,Rascanya,4,Asfalto y pavimentación,1,33,0,0.0,53237,0.62,0.019,0.0
+15,Rascanya,14,Fuentes y aseos públicos,1,32,1,15910.0,53237,0.6,0.019,1.0
+15,Rascanya,22,Parques infantiles,1,29,0,0.0,53237,0.54,0.019,0.0
+15,Rascanya,6,Bienestar animal,1,10,0,0.0,53237,0.19,0.019,0.0
+15,Rascanya,10,Centros educativos,1,4,0,0.0,53237,0.08,0.019,0.0
+15,Rascanya,1,Accesibilidad peatonal,1,3,0,0.0,53237,0.06,0.019,0.0
+15,Rascanya,13,Equipamientos específicos,1,3,0,0.0,53237,0.06,0.019,0.0
+15,Rascanya,28,Reducción de velocidad y zonas 30,1,3,0,0.0,53237,0.06,0.019,0.0
+15,Rascanya,12,Equipamientos culturales,1,1,0,0.0,53237,0.02,0.019,0.0
+15,Rascanya,5,Bibliotecas y ludotecas,1,0,1,5000.0,53237,0.0,0.019,1.0
+16,Benicalap,37,Solares y suelo disponible,18,656,3,975000.0,47457,13.82,0.379,0.167
+16,Benicalap,16,Instalaciones deportivas,13,581,1,50000.0,47457,12.24,0.274,0.077
+16,Benicalap,6,Bienestar animal,6,498,0,6200.0,47457,10.49,0.126,0.0
+16,Benicalap,10,Centros educativos,7,370,0,0.0,47457,7.8,0.148,0.0
+16,Benicalap,20,Pacificación del tráfico,5,332,1,343024.0,47457,7.0,0.105,0.2
+16,Benicalap,24,Pedanías y barrios periféricos,11,331,1,182000.0,47457,6.97,0.232,0.091
+16,Benicalap,25,Pipicanes y zonas caninas,13,318,1,275000.0,47457,6.7,0.274,0.077
+16,Benicalap,7,Carriles bici y movilidad ciclista,9,242,1,1818000.0,47457,5.1,0.19,0.111
+16,Benicalap,8,Centros cívicos y huertos urbanos,8,226,1,100610.0,47457,4.76,0.169,0.125
+16,Benicalap,23,Parques y plazas,9,218,1,60000.0,47457,4.59,0.19,0.111
+16,Benicalap,38,Transporte público (EMT),5,191,0,0.0,47457,4.02,0.105,0.0
+16,Benicalap,15,Iluminación pública,7,189,3,355609.0,47457,3.98,0.148,0.429
+16,Benicalap,2,Aceras y movilidad peatonal,8,171,1,176851.0,47457,3.6,0.169,0.125
+16,Benicalap,12,Equipamientos culturales,3,125,0,0.0,47457,2.63,0.063,0.0
+16,Benicalap,21,Paneles informativos,5,122,0,0.0,47457,2.57,0.105,0.0
+16,Benicalap,22,Parques infantiles,4,118,2,484000.0,47457,2.49,0.084,0.5
+16,Benicalap,27,Recogida de residuos,5,109,1,130000.0,47457,2.3,0.105,0.2
+16,Benicalap,3,Aparcamiento para vehículos,7,102,0,0.0,47457,2.15,0.148,0.0
+16,Benicalap,11,Convivencia y mobiliario urbano,7,88,1,175000.0,47457,1.85,0.148,0.143
+16,Benicalap,32,Repavimentación de calzadas,1,75,0,0.0,47457,1.58,0.021,0.0
+16,Benicalap,17,Jardines y arbolado,2,52,0,0.0,47457,1.1,0.042,0.0
+16,Benicalap,14,Fuentes y aseos públicos,2,45,1,37500.0,47457,0.95,0.042,0.5
+16,Benicalap,33,Reurbanización de calles,3,45,0,0.0,47457,0.95,0.063,0.0
+16,Benicalap,35,Seguridad ciudadana,5,45,0,0.0,47457,0.95,0.105,0.0
+16,Benicalap,29,Reducción del ruido,1,24,0,0.0,47457,0.51,0.021,0.0
+16,Benicalap,30,Rehabilitación de mercados,1,24,0,0.0,47457,0.51,0.021,0.0
+16,Benicalap,31,Rehabilitación del patrimonio,1,16,0,0.0,47457,0.34,0.021,0.0
+16,Benicalap,4,Asfalto y pavimentación,1,11,0,0.0,47457,0.23,0.021,0.0
+16,Benicalap,34,Río Turia y litoral,1,7,0,0.0,47457,0.15,0.021,0.0
+17,Pobles del Nord,7,Carriles bici y movilidad ciclista,15,673,1,5000.0,6730,100.0,2.229,0.067
+17,Pobles del Nord,23,Parques y plazas,14,269,4,392937.0,6730,39.97,2.08,0.286
+17,Pobles del Nord,2,Aceras y movilidad peatonal,9,156,1,598524.0,6730,23.18,1.337,0.111
+17,Pobles del Nord,21,Paneles informativos,2,145,0,0.0,6730,21.55,0.297,0.0
+17,Pobles del Nord,27,Recogida de residuos,7,134,1,5000.0,6730,19.91,1.04,0.143
+17,Pobles del Nord,16,Instalaciones deportivas,6,127,1,85000.0,6730,18.87,0.892,0.167
+17,Pobles del Nord,20,Pacificación del tráfico,8,117,1,53000.0,6730,17.38,1.189,0.125
+17,Pobles del Nord,25,Pipicanes y zonas caninas,9,105,0,0.0,6730,15.6,1.337,0.0
+17,Pobles del Nord,11,Convivencia y mobiliario urbano,6,87,0,15734.0,6730,12.93,0.892,0.0
+17,Pobles del Nord,14,Fuentes y aseos públicos,4,87,2,55489.0,6730,12.93,0.594,0.5
+17,Pobles del Nord,17,Jardines y arbolado,7,86,2,26898.0,6730,12.78,1.04,0.286
+17,Pobles del Nord,1,Accesibilidad peatonal,4,85,1,18000.0,6730,12.63,0.594,0.25
+17,Pobles del Nord,10,Centros educativos,3,82,0,14000.0,6730,12.18,0.446,0.0
+17,Pobles del Nord,15,Iluminación pública,8,77,0,18000.0,6730,11.44,1.189,0.0
+17,Pobles del Nord,30,Rehabilitación de mercados,2,76,0,0.0,6730,11.29,0.297,0.0
+17,Pobles del Nord,6,Bienestar animal,2,68,1,5500.0,6730,10.1,0.297,0.5
+17,Pobles del Nord,33,Reurbanización de calles,3,68,1,107307.0,6730,10.1,0.446,0.333
+17,Pobles del Nord,24,Pedanías y barrios periféricos,2,65,0,0.0,6730,9.66,0.297,0.0
+17,Pobles del Nord,12,Equipamientos culturales,3,59,1,27112.0,6730,8.77,0.446,0.333
+17,Pobles del Nord,22,Parques infantiles,4,58,2,178360.0,6730,8.62,0.594,0.5
+17,Pobles del Nord,39,Zonas verdes,1,55,0,0.0,6730,8.17,0.149,0.0
+17,Pobles del Nord,3,Aparcamiento para vehículos,4,52,1,36121.0,6730,7.73,0.594,0.25
+17,Pobles del Nord,5,Bibliotecas y ludotecas,2,46,0,0.0,6730,6.84,0.297,0.0
+17,Pobles del Nord,13,Equipamientos específicos,3,46,0,0.0,6730,6.84,0.446,0.0
+17,Pobles del Nord,37,Solares y suelo disponible,2,39,1,19760.0,6730,5.79,0.297,0.5
+17,Pobles del Nord,35,Seguridad ciudadana,2,37,0,0.0,6730,5.5,0.297,0.0
+17,Pobles del Nord,28,Reducción de velocidad y zonas 30,2,35,1,96014.0,6730,5.2,0.297,0.5
+17,Pobles del Nord,38,Transporte público (EMT),2,35,0,0.0,6730,5.2,0.297,0.0
+17,Pobles del Nord,31,Rehabilitación del patrimonio,3,34,2,218706.0,6730,5.05,0.446,0.667
+17,Pobles del Nord,8,Centros cívicos y huertos urbanos,3,30,1,86810.0,6730,4.46,0.446,0.333
+17,Pobles del Nord,9,Centros de salud,1,22,0,0.0,6730,3.27,0.149,0.0
+17,Pobles del Nord,32,Repavimentación de calzadas,3,8,1,106911.0,6730,1.19,0.446,0.333
+17,Pobles del Nord,4,Asfalto y pavimentación,1,6,1,27803.0,6730,0.89,0.149,1.0
+18,Pobles de l'Oest,23,Parques y plazas,14,430,2,546000.0,14481,29.69,0.967,0.143
+18,Pobles de l'Oest,37,Solares y suelo disponible,6,320,2,814332.0,14481,22.1,0.414,0.333
+18,Pobles de l'Oest,35,Seguridad ciudadana,4,269,0,0.0,14481,18.58,0.276,0.0
+18,Pobles de l'Oest,8,Centros cívicos y huertos urbanos,6,251,1,296000.0,14481,17.33,0.414,0.167
+18,Pobles de l'Oest,2,Aceras y movilidad peatonal,14,237,4,611662.0,14481,16.37,0.967,0.286
+18,Pobles de l'Oest,25,Pipicanes y zonas caninas,5,200,1,14000.0,14481,13.81,0.345,0.2
+18,Pobles de l'Oest,16,Instalaciones deportivas,9,196,2,240000.0,14481,13.53,0.622,0.222
+18,Pobles de l'Oest,7,Carriles bici y movilidad ciclista,5,182,2,82000.0,14481,12.57,0.345,0.4
+18,Pobles de l'Oest,30,Rehabilitación de mercados,4,153,1,35000.0,14481,10.57,0.276,0.25
+18,Pobles de l'Oest,12,Equipamientos culturales,5,152,0,0.0,14481,10.5,0.345,0.0
+18,Pobles de l'Oest,27,Recogida de residuos,3,143,0,615000.0,14481,9.88,0.207,0.0
+18,Pobles de l'Oest,24,Pedanías y barrios periféricos,7,89,0,0.0,14481,6.15,0.483,0.0
+18,Pobles de l'Oest,3,Aparcamiento para vehículos,5,82,2,188306.0,14481,5.66,0.345,0.4
+18,Pobles de l'Oest,10,Centros educativos,3,81,1,3000.0,14481,5.59,0.207,0.333
+18,Pobles de l'Oest,19,Mobiliario urbano deportivo,2,76,1,124555.0,14481,5.25,0.138,0.5
+18,Pobles de l'Oest,4,Asfalto y pavimentación,2,70,1,177300.0,14481,4.83,0.138,0.5
+18,Pobles de l'Oest,13,Equipamientos específicos,2,66,0,0.0,14481,4.56,0.138,0.0
+18,Pobles de l'Oest,9,Centros de salud,1,65,0,0.0,14481,4.49,0.069,0.0
+18,Pobles de l'Oest,5,Bibliotecas y ludotecas,3,61,2,26000.0,14481,4.21,0.207,0.667
+18,Pobles de l'Oest,14,Fuentes y aseos públicos,3,54,2,142000.0,14481,3.73,0.207,0.667
+18,Pobles de l'Oest,11,Convivencia y mobiliario urbano,4,53,0,490000.0,14481,3.66,0.276,0.0
+18,Pobles de l'Oest,26,Puentes y vías peatonales,1,53,0,0.0,14481,3.66,0.069,0.0
+18,Pobles de l'Oest,22,Parques infantiles,3,40,3,130616.0,14481,2.76,0.207,1.0
+18,Pobles de l'Oest,6,Bienestar animal,1,36,1,5000.0,14481,2.49,0.069,1.0
+18,Pobles de l'Oest,29,Reducción del ruido,2,27,0,0.0,14481,1.86,0.138,0.0
+18,Pobles de l'Oest,17,Jardines y arbolado,2,25,0,0.0,14481,1.73,0.138,0.0
+18,Pobles de l'Oest,38,Transporte público (EMT),1,23,0,0.0,14481,1.59,0.069,0.0
+18,Pobles de l'Oest,21,Paneles informativos,2,22,0,0.0,14481,1.52,0.138,0.0
+18,Pobles de l'Oest,1,Accesibilidad peatonal,2,21,2,166539.0,14481,1.45,0.138,1.0
+18,Pobles de l'Oest,31,Rehabilitación del patrimonio,1,15,0,0.0,14481,1.04,0.069,0.0
+18,Pobles de l'Oest,15,Iluminación pública,2,9,0,0.0,14481,0.62,0.138,0.0
+18,Pobles de l'Oest,28,Reducción de velocidad y zonas 30,2,9,0,30000.0,14481,0.62,0.138,0.0
+18,Pobles de l'Oest,33,Reurbanización de calles,1,9,0,0.0,14481,0.62,0.069,0.0
+18,Pobles de l'Oest,32,Repavimentación de calzadas,6,8,3,141562.0,14481,0.55,0.414,0.5
+18,Pobles de l'Oest,20,Pacificación del tráfico,4,1,3,51500.0,14481,0.07,0.276,0.75
+19,Pobles del Sud,24,Pedanías y barrios periféricos,27,909,5,1147999.0,21229,42.82,1.272,0.185
+19,Pobles del Sud,7,Carriles bici y movilidad ciclista,16,559,1,40700.0,21229,26.33,0.754,0.062
+19,Pobles del Sud,23,Parques y plazas,22,471,2,394813.0,21229,22.19,1.036,0.091
+19,Pobles del Sud,16,Instalaciones deportivas,16,452,4,268219.0,21229,21.29,0.754,0.25
+19,Pobles del Sud,2,Aceras y movilidad peatonal,15,404,1,204267.0,21229,19.03,0.707,0.067
+19,Pobles del Sud,25,Pipicanes y zonas caninas,15,325,2,72000.0,21229,15.31,0.707,0.133
+19,Pobles del Sud,13,Equipamientos específicos,5,252,0,0.0,21229,11.87,0.236,0.0
+19,Pobles del Sud,34,Río Turia y litoral,12,248,2,216378.0,21229,11.68,0.565,0.167
+19,Pobles del Sud,8,Centros cívicos y huertos urbanos,10,224,2,97452.0,21229,10.55,0.471,0.2
+19,Pobles del Sud,15,Iluminación pública,8,224,3,215117.0,21229,10.55,0.377,0.375
+19,Pobles del Sud,11,Convivencia y mobiliario urbano,12,198,3,238410.0,21229,9.33,0.565,0.25
+19,Pobles del Sud,27,Recogida de residuos,8,154,2,209036.0,21229,7.25,0.377,0.25
+19,Pobles del Sud,31,Rehabilitación del patrimonio,4,102,1,28901.0,21229,4.8,0.188,0.25
+19,Pobles del Sud,9,Centros de salud,2,101,0,0.0,21229,4.76,0.094,0.0
+19,Pobles del Sud,14,Fuentes y aseos públicos,4,84,1,71610.0,21229,3.96,0.188,0.25
+19,Pobles del Sud,22,Parques infantiles,5,84,0,0.0,21229,3.96,0.236,0.0
+19,Pobles del Sud,5,Bibliotecas y ludotecas,5,83,0,0.0,21229,3.91,0.236,0.0
+19,Pobles del Sud,3,Aparcamiento para vehículos,10,81,0,0.0,21229,3.82,0.471,0.0
+19,Pobles del Sud,20,Pacificación del tráfico,4,79,2,35851.0,21229,3.72,0.188,0.5
+19,Pobles del Sud,38,Transporte público (EMT),2,72,0,0.0,21229,3.39,0.094,0.0
+19,Pobles del Sud,10,Centros educativos,8,67,1,32975.0,21229,3.16,0.377,0.125
+19,Pobles del Sud,21,Paneles informativos,5,66,1,16153.0,21229,3.11,0.236,0.2
+19,Pobles del Sud,1,Accesibilidad peatonal,7,61,5,161127.0,21229,2.87,0.33,0.714
+19,Pobles del Sud,35,Seguridad ciudadana,3,58,0,0.0,21229,2.73,0.141,0.0
+19,Pobles del Sud,4,Asfalto y pavimentación,3,55,0,109036.0,21229,2.59,0.141,0.0
+19,Pobles del Sud,28,Reducción de velocidad y zonas 30,4,50,0,0.0,21229,2.36,0.188,0.0
+19,Pobles del Sud,33,Reurbanización de calles,3,48,0,0.0,21229,2.26,0.141,0.0
+19,Pobles del Sud,6,Bienestar animal,2,38,0,0.0,21229,1.79,0.094,0.0
+19,Pobles del Sud,29,Reducción del ruido,3,38,0,0.0,21229,1.79,0.141,0.0
+19,Pobles del Sud,17,Jardines y arbolado,2,28,0,0.0,21229,1.32,0.094,0.0
+19,Pobles del Sud,32,Repavimentación de calzadas,5,27,0,161889.0,21229,1.27,0.236,0.0
+19,Pobles del Sud,37,Solares y suelo disponible,3,22,2,62843.0,21229,1.04,0.141,0.667
+19,Pobles del Sud,12,Equipamientos culturales,1,18,0,0.0,21229,0.85,0.047,0.0
+19,Pobles del Sud,18,Litoral y puerto,1,18,0,0.0,21229,0.85,0.047,0.0
+19,Pobles del Sud,39,Zonas verdes,1,16,0,0.0,21229,0.75,0.047,0.0
+19,Pobles del Sud,30,Rehabilitación de mercados,1,15,0,66522.0,21229,0.71,0.047,0.0

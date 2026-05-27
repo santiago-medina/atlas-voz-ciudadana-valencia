@@ -43,11 +43,11 @@ Los carriles bici son el tema con mayor crecimiento entre 2015 y 2023: de 11 pro
 *Fuente: evolucion.json · emergentes_top10 + demandas_zombi*
 
 
-## H05 · Pobles del Nord: el peso relativo de los distritos pequeños
+## H05 · Pobles del Nord: el efecto de escala en los distritos pequeños
 
-**503 apoyos/1.000 hab**
+**456 apoyos/1.000 hab**
 
-Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 503 apoyos por 1.000 habitantes, 3,4 veces la media de la ciudad (147). En distritos pequeños, una organización vecinal activa puede amplificar el peso relativo del distrito en el proceso participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio.
+Con solo 6.730 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, equivalentes a 456 apoyos por 1.000 habitantes, 3,1 veces la media de la ciudad (145). Esta cifra alta por habitante no significa necesariamente que el distrito participe más en términos absolutos: con tan pocos vecinos, un grupo relativamente pequeño basta para destacar mucho per cápita. La normalización por habitante mejora la comparabilidad entre distritos pero amplifica los territorios poco poblados, por lo que el mecanismo de reequilibrio territorial de la 8ª edición conviene complementar con este tipo de comparación.
 
 
 *Fuente: decidim_tagged.csv + poblacion_distritos.csv*
@@ -63,11 +63,11 @@ Con solo 6.104 habitantes, Pobles del Nord acumula 3.069 apoyos en propuestas, e
 *Fuente: decidim_tagged.csv · count(id_distrito == 0)*
 
 
-## H07 · Verde: el distrito mejor servido tiene 6 veces más m² por habitante que el peor
+## H07 · Verde: el distrito mejor servido tiene 5 veces más m² por habitante que el peor
 
-**17,5 vs 2,7 m²/hab**
+**15,6 vs 3,0 m²/hab**
 
-Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 2,7 m²/hab, unas 6 veces menos. La mediana de la ciudad se sitúa en 6,4 m²/hab, con 9 de los 19 distritos por debajo de esa cifra. Ninguno de los distritos con menos verde por habitante figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.
+Campanar lidera con 15,6 m² de zona verde por habitante. En el extremo opuesto, Benimaclet ofrece 3,0 m²/hab, unas 5 veces menos. La mediana de la ciudad se sitúa en 6,8 m²/hab, con 9 de los 19 distritos por debajo de esa cifra. Ninguno de los distritos con menos verde por habitante figura en el top de demanda del tema 'Zonas verdes' dentro de Decidim, lo que sugiere que la carencia medida no se traduce automáticamente en demanda expresada.
 
 
 *Fuente: matriz_realidad.csv · m2_verde_per_hab (comparación interna a la ciudad, sin umbral externo)*
@@ -75,9 +75,9 @@ Campanar lidera con 17,5 m² de zona verde por habitante. En el extremo opuesto,
 
 ## H08 · El silencio sobre carencia observable es la situación más frecuente
 
-**199 de 437 pares (46 %)**
+**175 de 437 pares (40 %)**
 
-Cruzando los 23 temas que tienen un indicador municipal específico con los 19 distritos obtenemos 437 pares analizables. En 199 (46 %) detectamos un patrón de 'silencio sobre carencia observable': el distrito tiene una carencia observable por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. Es el cuadrante más numeroso, por delante de 'cómodo' (96), 'demanda legítima' (76) y 'sobre-demandante' (66).
+Cruzando los 23 temas que tienen un indicador municipal específico con los 19 distritos obtenemos 437 pares analizables. En 175 (40 %) detectamos un patrón de 'silencio sobre carencia observable': el distrito tiene una carencia observable por encima de la media de la ciudad pero su demanda en Decidim queda por debajo. Es el cuadrante más numeroso, por delante de 'cómodo' (110), 'demanda legítima' (85) y 'sobre-demandante' (67).
 
 
 *Fuente: indice_discrepancia.csv · value_counts(cuadrante)*
@@ -115,7 +115,7 @@ El conjunto de propuestas de las 7 ediciones suma 233,6 millones de euros en inv
 
 ## H12 · Pobles de l'Oest, ejemplo de demanda alineada con la carencia
 
-**8 temas con demanda legítima**
+**9 temas con demanda legítima**
 
 En Pobles de l'Oest, varias demandas ciudadanas coinciden con carencias objetivas medibles: centros cívicos y huertos urbanos, mobiliario urbano deportivo, equipamientos culturales. Es un caso donde el proceso participativo funciona como cabe esperar: los vecinos identifican y priorizan exactamente los temas en los que su distrito está peor que la media.
 

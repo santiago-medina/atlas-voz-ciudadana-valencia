@@ -140,15 +140,18 @@ def main() -> None:
     ratio = apoyos_per_capita_pn / media_apoyos
     hallazgos.append({
         "id": "H05",
-        "titulo": "Pobles del Nord: el peso relativo de los distritos pequeños",
+        "titulo": "Pobles del Nord: el efecto de escala en los distritos pequeños",
         "cifra": f"{apoyos_per_capita_pn:.0f} apoyos/1.000 hab",
         "texto": (
             f"Con solo {es(int(pn['poblacion']))} habitantes, Pobles del Nord acumula "
             f"{es(int(decidim_pn['Numero_Apoyos'].sum()))} apoyos en propuestas, equivalentes a "
             f"{apoyos_per_capita_pn:.0f} apoyos por 1.000 habitantes, {str(round(ratio,1)).replace('.',',')} veces la media "
-            f"de la ciudad ({media_apoyos:.0f}). En distritos pequeños, una organización "
-            "vecinal activa puede amplificar el peso relativo del distrito en el proceso "
-            "participativo, lo que conviene considerar al diseñar mecanismos de reequilibrio."
+            f"de la ciudad ({media_apoyos:.0f}). Esta cifra alta por habitante no significa "
+            "necesariamente que el distrito participe más en términos absolutos: con tan pocos "
+            "vecinos, un grupo relativamente pequeño basta para destacar mucho per cápita. La "
+            "normalización por habitante mejora la comparabilidad entre distritos pero amplifica "
+            "los territorios poco poblados, por lo que el mecanismo de reequilibrio territorial "
+            "de la 8ª edición conviene complementar con este tipo de comparación."
         ),
         "fuente": "decidim_tagged.csv + poblacion_distritos.csv",
     })

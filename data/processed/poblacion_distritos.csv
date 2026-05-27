@@ -1,20 +1,20 @@
 id_distrito,nombre_distrito,poblacion,anno,fuente
-1,Ciutat Vella,25546,2022,Padrón municipal — Ayuntamiento de València
-2,l'Eixample,45131,2022,Padrón municipal — Ayuntamiento de València
-3,Extramurs,50686,2022,Padrón municipal — Ayuntamiento de València
-4,Campanar,34708,2022,Padrón municipal — Ayuntamiento de València
-5,la Saïdia,50191,2022,Padrón municipal — Ayuntamiento de València
-6,el Pla del Real,31616,2022,Padrón municipal — Ayuntamiento de València
-7,l'Olivereta,50581,2022,Padrón municipal — Ayuntamiento de València
-8,Patraix,59441,2022,Padrón municipal — Ayuntamiento de València
-9,Jesús,53819,2022,Padrón municipal — Ayuntamiento de València
-10,Quatre Carreres,75274,2022,Padrón municipal — Ayuntamiento de València
-11,Poblats Marítims,59489,2022,Padrón municipal — Ayuntamiento de València
-12,Camins al Grau,63372,2022,Padrón municipal — Ayuntamiento de València
-13,Algirós,41781,2022,Padrón municipal — Ayuntamiento de València
-14,Benimaclet,31062,2022,Padrón municipal — Ayuntamiento de València
-15,Rascanya,51860,2022,Padrón municipal — Ayuntamiento de València
-16,Benicalap,42607,2022,Padrón municipal — Ayuntamiento de València
-17,Pobles del Nord,6104,2022,Padrón municipal — Ayuntamiento de València
-18,Pobles de l'Oest,13841,2022,Padrón municipal — Ayuntamiento de València
-19,Pobles del Sud,20287,2022,Padrón municipal — Ayuntamiento de València
+1,"Ciutat Vella",27661,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+2,"l'Eixample",42447,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+3,"Extramurs",48244,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+4,"Campanar",38925,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+5,"la Saïdia",46671,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+6,"el Pla del Real",30249,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+7,"l'Olivereta",48329,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+8,"Patraix",57576,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+9,"Jesús",51619,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+10,"Quatre Carreres",74112,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+11,"Poblats Marítims",55033,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+12,"Camins al Grau",65070,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+13,"Algirós",35510,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+14,"Benimaclet",27912,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+15,"Rascanya",53237,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+16,"Benicalap",47457,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+17,"Pobles del Nord",6730,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+18,"Pobles de l'Oest",14481,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"
+19,"Pobles del Sud",21229,2022,"Padrón municipal continuo 2022 - explotación estadística por distritos y secciones censales - Instituto Valenciano de Estadística (IVE), GVA"

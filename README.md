@@ -33,7 +33,7 @@ Cada par (distrito × tema) se sitúa en uno de cuatro cuadrantes:
 
 El cuadrante interesante es el de los **silenciosos vulnerables**: distritos
 con carencia objetiva por encima de la media pero demanda en Decidim por
-debajo. Es el cuadrante más numeroso (46% de los
+debajo. Es el cuadrante más numeroso (40% de los
 437 pares analizados) y el que requiere acción proactiva: no
 llegará por sí solo a través del proceso participativo.
 
@@ -79,7 +79,7 @@ Todos del [Portal de Datos Abiertos del Ayuntamiento de València](https://opend
 - `falles-fallas` (349)
 
 Manifest completo en [`data/raw/MANIFEST.json`](data/raw/MANIFEST.json).
-Adicionalmente se usa el **padrón municipal 2022** (807.396
+Adicionalmente se usa el **padrón municipal 2022** (792.492
 habitantes) para normalizar todos los indicadores per cápita.
 
 **Trazabilidad completa de cómo se usa cada dataset (qué columna genera, qué
